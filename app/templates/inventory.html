@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail - Inventory Dashboard</title>
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Dashboard Styling (Vanilla CSS) */
+        :root {
+            --bg-primary: #080c14;
+            --bg-secondary: rgba(15, 23, 42, 0.6);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            
+            --accent: #6366f1; /* Indigo */
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            
+            --success: #10b981; /* Emerald */
+            --success-glow: rgba(16, 185, 129, 0.1);
+            
+            --warning: #f59e0b; /* Amber */
+            --warning-glow: rgba(245, 158, 11, 0.15);
+            --warning-border: rgba(245, 158, 11, 0.3);
+
+            --danger: #f43f5e; /* Rose */
+            --danger-glow: rgba(244, 63, 94, 0.15);
+            --danger-border: rgba(244, 63, 94, 0.3);
+
+            --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+            --font-display: 'Outfit', sans-serif;
+            
+            --shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+            padding: 40px 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .background-glow {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(16, 185, 129, 0.02) 50%, transparent 100%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent) 0%, #4338ca 100%);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 16px -4px rgba(99, 102, 241, 0.4);
+        }
+
+        .brand-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+
+        .brand-title {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #4f46e5;
+            transform: translateY(-1px);
+        }
+
+        /* KPI Cards Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .kpi-card {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent);
+        }
+
+        .kpi-card.success::before { background: var(--success); }
+        .kpi-card.warning::before { background: var(--warning); }
+
+        .kpi-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .kpi-value {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+
+        .kpi-footer {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Search Section */
+        .controls-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .search-input {
+            flex-grow: 1;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 10px 16px;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Inventory Table Table styling */
+        .table-wrapper {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 16px 24px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 16px 24px;
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            color: var(--text-primary);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        /* Warning Highlight styling */
+        tr.row-warning td {
+            background: rgba(245, 158, 11, 0.03);
+        }
+
+        tr.row-warning:hover td {
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .badge-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .badge-status.ok {
+            background: var(--success-glow);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .badge-status.low {
+            background: var(--warning-glow);
+            color: var(--warning);
+            border: 1px solid var(--warning-border);
+            animation: pulse-border 2s infinite;
+        }
+
+        @keyframes pulse-border {
+            0% { border-color: rgba(245, 158, 11, 0.2); }
+            50% { border-color: rgba(245, 158, 11, 0.6); }
+            100% { border-color: rgba(245, 158, 11, 0.2); }
+        }
+
+        .empty-state {
+            padding: 40px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container">
+        <!-- App Header -->
+        <header>
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                    </svg>
+                </div>
+                <h1 class="brand-title">Smart Retail Inventory</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/dashboard" class="btn btn-secondary">System Health</a>
+            </div>
+        </header>
+
+        <!-- KPI Metrics -->
+        <section class="stats-grid">
+            <div class="kpi-card">
+                <span class="kpi-label">Total Products</span>
+                <span class="kpi-value">{{ stats.total_products }}</span>
+                <span class="kpi-footer">Unique item lines registered</span>
+            </div>
+            <div class="kpi-card success">
+                <span class="kpi-label">Total Quantity</span>
+                <span class="kpi-value">{{ stats.total_quantity }}</span>
+                <span class="kpi-footer">Cumulative stock items in store</span>
+            </div>
+            <div class="kpi-card {% if stats.low_stock_count > 0 %}warning{% endif %}">
+                <span class="kpi-label">Low Stock Warnings</span>
+                <span class="kpi-value" style="color: {% if stats.low_stock_count > 0 %}var(--warning){% else %}var(--text-primary){% endif %};">
+                    {{ stats.low_stock_count }}
+                </span>
+                <span class="kpi-footer">Products at or below reorder levels</span>
+            </div>
+        </section>
+
+        <!-- Controls (Search) -->
+        <section class="controls-row">
+            <form class="search-form" method="GET" action="/inventory-dashboard">
+                <input 
+                    type="text" 
+                    name="q" 
+                    class="search-input" 
+                    placeholder="Search by name, barcode, category..." 
+                    value="{{ search_query or '' }}"
+                >
+                <button type="submit" class="btn btn-primary">Search</button>
+                {% if search_query %}
+                    <a href="/inventory-dashboard" class="btn btn-secondary">Reset</a>
+                {% endif %}
+            </form>
+
+            {% if search_query %}
+                <span class="kpi-footer">Showing results for "{{ search_query }}"</span>
+            {% endif %}
+        </section>
+
+        <!-- Table View -->
+        <section class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Barcode</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock Qty</th>
+                        <th>Reorder Level</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr class="{% if product.quantity <= product.reorder_level %}row-warning{% endif %}">
+                        <td style="font-family: monospace; font-size: 0.85rem; color: var(--text-secondary);">{{ product.barcode }}</td>
+                        <td style="font-weight: 600;">{{ product.name }}</td>
+                        <td><span class="badge-status btn-secondary" style="border: none; padding: 2px 6px;">{{ product.category }}</span></td>
+                        <td>${{ "%.2f"|format(product.price) }}</td>
+                        <td style="font-weight: 600;">{{ product.quantity }}</td>
+                        <td>{{ product.reorder_level }}</td>
+                        <td>
+                            {% if product.quantity <= product.reorder_level %}
+                                <span class="badge-status low">Low Stock</span>
+                            {% else %}
+                                <span class="badge-status ok">Healthy</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7" class="empty-state">
+                            No products found matching your search.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

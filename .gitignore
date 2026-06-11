@@ -1,0 +1,23 @@
+# Python virtual environments & bytecode caching
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and editors configuration
+.idea/
+.vscode/
+*.swp
+*.swo
+*.suo

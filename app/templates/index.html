@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail System</title>
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="dashboard-container">
+        <!-- Dashboard Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </div>
+                <h1 class="logo-text">Smart Retail</h1>
+            </div>
+            <span class="badge badge-primary">v1.0.0 Foundation</span>
+        </header>
+
+        <!-- Main Card -->
+        <section class="card glassmorphism main-card animate-fade-in">
+            <div class="card-content">
+                <h2 class="card-title">Smart Retail System</h2>
+                <p class="card-description">Welcome to the core foundation of the Smart Retail management platform. This interface displays the status of the connection between the web frontend and the FastAPI backend service.</p>
+                
+                <div class="divider"></div>
+
+                <!-- Status Panel -->
+                <div class="status-panel">
+                    <div class="status-indicator-wrapper">
+                        <span id="connection-dot" class="status-dot pulse-amber"></span>
+                        <h3 id="connection-text" class="status-text text-amber">Checking Connection...</h3>
+                    </div>
+                    
+                    <!-- Detail Grid -->
+                    <div class="detail-grid">
+                        <div class="detail-card">
+                            <span class="detail-label">API Status</span>
+                            <span id="api-status" class="detail-value text-muted">Checking...</span>
+                        </div>
+                        <div class="detail-card">
+                            <span class="detail-label">Database Connection</span>
+                            <span id="db-status" class="detail-value text-muted">Checking...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="refresh-btn" class="btn btn-secondary">
+                        <svg class="icon-refresh" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                        </svg>
+                        Test Connection
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Smart Retail Project Foundation • FastAPI & PostgreSQL</p>
+        </footer>
+    </main>
+
+    <!-- App JavaScript -->
+    <script src="{{ url_for('static', path='js/app.js') }}"></script>
+</body>
+</html>
