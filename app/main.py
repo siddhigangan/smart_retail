@@ -53,7 +53,7 @@ def get_dashboard(request: Request):
     """
     Renders the HTML Dashboard.
     """
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html")
 
 @app.get("/inventory-dashboard", response_class=HTMLResponse)
 def get_inventory_dashboard(
@@ -70,8 +70,7 @@ def get_inventory_dashboard(
     else:
         products = ProductService.get_all(db)
         
-    return templates.TemplateResponse("inventory.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "inventory.html", {
         "stats": stats,
         "products": products,
         "search_query": q

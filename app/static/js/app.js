@@ -66,17 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error("Connectivity check failed:", error);
             connectionDot.className = 'status-dot pulse-red';
-            connectionText.textContent = 'Backend Connected'; // Wait, let's keep the user's display text requirement in mind:
-            // The requirement says:
-            // "Page should display:
-            // Smart Retail System
-            // Backend Connected"
-            // Wait, does it mean we should display "Backend Connected" as the default text, or display it when connected?
-            // "Page should display:
-            // Smart Retail System
-            // Backend Connected"
-            // Let's make sure it definitely displays "Backend Connected" when successful, and if it fails to connect, we show "Backend Connection Failed" but default it appropriately. Let's make sure it shows "Backend Connected" clearly in the DOM!
-            
             connectionText.textContent = 'Connection Error';
             connectionText.className = 'status-text text-red';
             apiStatusVal.textContent = 'Offline';

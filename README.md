@@ -32,6 +32,9 @@ smart-retail/
 │   ├── __init__.py
 │   └── main.py              # Main FastAPI application entrypoint
 │
+├── tests/
+│   └── test_services.py     # Automated backend & service validation tests
+│
 ├── .env                     # Local environment settings
 ├── requirements.txt         # Project package requirements
 ├── README.md                # Project documentation & instructions
@@ -226,4 +229,16 @@ uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 }
 ```
 
+## Verification & Testing
 
+The repository contains an automated service validation suite to check backend correctness (database, models, schemas, and logic).
+
+To execute the test suite locally:
+```bash
+# Verify services using virtual environment Python
+venv\Scripts\python tests/test_services.py
+```
+
+## Compatibility & Framework Notes
+
+* **Starlette 1.0.0+ Template Response**: In Starlette v1.0.0+ (and newer versions of FastAPI), `TemplateResponse` requires the `request` object as the first positional argument (i.e. `TemplateResponse(request, name, context)`). The deprecated signature `TemplateResponse(name, context)` will raise a caching Type Error: `cannot use 'tuple' as a dict key (unhashable type: 'dict')` in Jinja2. This has been fully corrected in [main.py](file:///d:/Startup/smart-retail/app/main.py).
