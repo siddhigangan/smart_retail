@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail - Cashier Billing</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Main Style Link & Retheme CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/billing.css') }}">
+</head>
+<body>
+    
+    <!-- Topbar Header -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <div class="brand-badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </div>
+            <div class="brand-text-block">
+                <span class="brand-main-title">Smart Retail</span>
+                <span class="brand-sub-title">Cashier</span>
+            </div>
+        </div>
+
+        <div class="topbar-center">
+            <div class="top-search-group">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="search-icon-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.602 10.602Z" />
+                </svg>
+                <input type="text" id="topbar-search-input" placeholder="Search products by name, barcode or scan" autocomplete="off">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="barcode-scanner-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.625 13.5H16.5v-1.125a.375.375 0 0 1 .375-.375h.75a.375.375 0 0 1 .375.375v1.125Zm0 3h-1.125v-1.125a.375.375 0 0 1 .375-.375h.75a.375.375 0 0 1 .375.375V16.5Zm-3-3h-1.125v-1.125a.375.375 0 0 1 .375-.375h.75a.375.375 0 0 1 .375.375v1.125Zm0 3h-1.125v-1.125a.375.375 0 0 1 .375-.375h.75a.375.375 0 0 1 .375.375V16.5Zm6 0H19.5v-1.125a.375.375 0 0 1 .375-.375h.75a.375.375 0 0 1 .375.375V16.5Zm0-3H19.5v-1.125a.375.375 0 0 1 .375-.375h.75a.375.375 0 0 1 .375.375v1.125Z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="topbar-right">
+            <!-- Calendar Time Details -->
+            <div class="topbar-info-block">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon-clock">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                </svg>
+                <div class="time-date-text">
+                    <span id="live-date">20 Jun 2026</span>
+                    <span id="live-time">06:24 PM</span>
+                </div>
+            </div>
+
+            <!-- Cashier Identity -->
+            <div class="topbar-info-block border-left">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon-user">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+                <div class="cashier-role-text">
+                    <span class="cashier-name">Cashier</span>
+                    <span class="cashier-role">Admin</span>
+                </div>
+            </div>
+
+            <!-- Navigation link -->
+            <a href="/inventory-dashboard" class="btn-inventory-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nav-box-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 1 1 0 3m0-3a1.5 1.5 0 1 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 1 1 0 3m0-3a1.5 1.5 0 1 0 0 3m0 9.75V10.5" />
+                </svg>
+                Inventory Control
+            </a>
+        </div>
+    </header>
+
+    <!-- App Main Layout Container -->
+    <main class="billing-workspace">
+        
+        <!-- COLUMN 1: Add Items (Left) -->
+        <section class="workspace-column left-column card">
+            <h2 class="section-main-title">Add Items</h2>
+            
+            <!-- Scan Barcode Input Row -->
+            <div class="scan-row">
+                <div class="scan-input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="scanner-embed-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+                    </svg>
+                    <input type="text" id="input-barcode" placeholder="Scan or enter barcode" autocomplete="off">
+                </div>
+                <button id="btn-add-to-cart" class="btn btn-add">Add</button>
+            </div>
+
+            <!-- Search and Filter Dropdown Row -->
+            <div class="search-filter-row">
+                <div class="search-product-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="embed-search-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.602 10.602Z" />
+                    </svg>
+                    <input type="text" id="search-product-input" placeholder="Search product by name" autocomplete="off">
+                </div>
+                <select id="category-filter-select" class="dropdown-category">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+
+            <!-- Scrollable product listing -->
+            <div class="product-cards-container" id="products-list-wrapper">
+                <!-- Dynamically loaded product list -->
+                <div class="empty-state">Loading products...</div>
+            </div>
+
+            <!-- Alert box for left panel -->
+            <div id="alert-box" class="alert-box hide"></div>
+
+            <!-- View all products button -->
+            <button id="btn-view-all-products" class="btn btn-view-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="grid-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                </svg>
+                View All Products
+            </button>
+        </section>
+
+        <!-- COLUMN 2: Active Cart (Middle) -->
+        <section class="workspace-column middle-column card">
+            <div class="cart-header-row">
+                <h2 id="cart-count-title" class="section-main-title">Active Cart (0)</h2>
+                <button id="btn-clear-cart-top" class="btn btn-clear-cart-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="icon-trash-sm">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                    </svg>
+                    Clear Cart
+                </button>
+            </div>
+
+            <!-- Cart Table Wrapper -->
+            <div class="cart-table-wrapper">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th class="text-center" style="width: 130px;">Qty</th>
+                            <th class="text-right">Price</th>
+                            <th class="text-right">Subtotal</th>
+                            <th class="text-center" style="width: 60px;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-body">
+                        <tr class="empty-row">
+                            <td colspan="5" class="empty-state">Cart is currently empty. Scan a barcode to start billing.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Active Cart Checkout Summaries -->
+            <div class="cart-billing-summaries">
+                <div class="summary-line">
+                    <span class="summary-label">Subtotal</span>
+                    <span id="summary-subtotal" class="summary-val">₹0.00</span>
+                </div>
+                <div class="summary-line">
+                    <span class="summary-label">Discount</span>
+                    <span id="summary-discount" class="summary-val">₹0.00</span>
+                </div>
+                <div class="summary-line">
+                    <span class="summary-label">GST (0%)</span>
+                    <span id="summary-gst" class="summary-val">₹0.00</span>
+                </div>
+                <div class="total-amount-divider"></div>
+                <div class="summary-line total-large">
+                    <span class="summary-label bold-total">Total Amount</span>
+                    <span id="summary-total-amount" class="summary-val bold-total green-total">₹0.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLUMN 3: Cashier Controls (Right) -->
+        <section class="workspace-column right-column flex-col-gap">
+            
+        <!-- Customer Info Card -->
+            <div class="checkout-control-card padding-sm" id="customer-info-card">
+                <h3 class="card-section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                    Customer Info <span class="optional-label">(optional)</span>
+                </h3>
+                <div class="customer-field-row">
+                    <label class="customer-field-label" for="input-customer-name">Name</label>
+                    <input type="text" id="input-customer-name" class="customer-field-input" placeholder="Walk-in customer" maxlength="100" autocomplete="off">
+                </div>
+                <div class="customer-field-row">
+                    <label class="customer-field-label" for="input-customer-phone">Phone</label>
+                    <input type="tel" id="input-customer-phone" class="customer-field-input" placeholder="10-digit number" maxlength="10" autocomplete="off">
+                </div>
+                <div class="customer-field-row">
+                    <label class="customer-field-label" for="input-customer-email">Email</label>
+                    <input type="email" id="input-customer-email" class="customer-field-input" placeholder="customer@email.com" maxlength="255" autocomplete="off">
+                </div>
+                <p class="customer-notify-hint">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:12px;height:12px;vertical-align:middle;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+                    SMS &amp;
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:12px;height:12px;vertical-align:middle;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Email receipt sent automatically
+                </p>
+            </div>
+
+            <!-- Grand Total Card -->
+            <div class="checkout-control-card border-green shadow-green">
+                <div class="grand-total-label">Grand Total</div>
+                <div id="grand-total-amount" class="grand-total-price">₹0.00</div>
+            </div>
+
+            <!-- Quick Cash Card -->
+            <div class="checkout-control-card padding-sm">
+                <h3 class="card-section-header">Quick Cash</h3>
+                <div class="quick-cash-grid">
+                    <button class="cash-btn" data-cash="100">₹100</button>
+                    <button class="cash-btn" data-cash="200">₹200</button>
+                    <button class="cash-btn" data-cash="500">₹500</button>
+                    <button class="cash-btn" data-cash="1000">₹1000</button>
+                    <button class="cash-btn" data-cash="2000">₹2000</button>
+                    <button class="cash-btn secondary-cash" id="btn-custom-cash">Other</button>
+                </div>
+            </div>
+
+            <!-- Payment Mode Card -->
+            <div class="checkout-control-card padding-sm">
+                <h3 class="card-section-header">Payment Mode</h3>
+                <div class="payment-mode-grid">
+                    <button class="pay-btn active" data-mode="Cash">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="pay-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5h16.5c.621 0 1.125.504 1.125 1.125v12.25c0 .621-.504 1.125-1.125 1.125H3.75A1.125 1.125 0 0 1 2.5 16.875V5.625C2.5 5.004 3.004 4.5 3.75 4.5ZM10.5 11.25a2.25 2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0Z" />
+                        </svg>
+                        Cash
+                    </button>
+                    <button class="pay-btn" data-mode="UPI">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="pay-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                        UPI
+                    </button>
+                    <button class="pay-btn" data-mode="Card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="pay-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75-3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                        </svg>
+                        Card
+                    </button>
+                </div>
+            </div>
+
+            <!-- Calculator / Tender Input Card -->
+            <div class="checkout-control-card padding-sm" id="tender-calculator-card">
+                <div class="calculator-row">
+                    <span class="calc-label">Cash Tendered</span>
+                    <input type="text" id="input-tender" class="calc-tender-input" placeholder="₹0.00">
+                </div>
+                <div class="calculator-row mt-sm">
+                    <span class="calc-label font-bold">Change Return</span>
+                    <span id="change-return-display" class="calc-change-output">₹0.00</span>
+                </div>
+            </div>
+
+            <!-- Bottom Checkout Execution Actions -->
+            <div class="checkout-execution-buttons">
+                <!-- Huge green print/generate button -->
+                <button id="btn-generate-bill" class="btn btn-primary-generate">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="generate-icon-svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h-11.32m12.355-12.75a1.875 1.875 0 0 0-1.875-1.875H5.25A1.875 1.875 0 0 0 3.375 5.25v7.5c0 1.035.84 1.875 1.875 1.875h13.5a1.875 1.875 0 0 0 1.875-1.875v-7.5Z" />
+                    </svg>
+                    Generate Bill
+                </button>
+                
+                <!-- Auxiliary Actions Row -->
+                <div class="auxiliary-actions-row">
+                    <button id="btn-hold-order" class="btn btn-hold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Hold Order
+                    </button>
+                    <button id="btn-clear-cart-bottom" class="btn btn-clear-bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                        </svg>
+                        Clear Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Marketing / Trust Badges Footer -->
+    <footer class="badges-footer">
+        <div class="footer-badge">
+            <span class="badge-dot-icon fill-green">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="badge-icon-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                </svg>
+            </span>
+            <span class="footer-badge-text">Fast Billing</span>
+        </div>
+        <div class="footer-badge">
+            <span class="badge-dot-icon fill-green">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="badge-icon-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </span>
+            <span class="footer-badge-text">Easy to Use</span>
+        </div>
+        <div class="footer-badge">
+            <span class="badge-dot-icon fill-green">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="badge-icon-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                </svg>
+            </span>
+            <span class="footer-badge-text">Real-time Stock</span>
+        </div>
+        <div class="footer-badge">
+            <span class="badge-dot-icon fill-green">
+                </span>
+                <span class="footer-badge-text">Secure & Reliable</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Invoice print modal popup -->
+    <div id="invoice-modal" class="modal-overlay hide">
+        <div class="modal-card">
+            <h3 class="modal-success-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="icon-success">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                Bill Generated Successfully
+            </h3>
+
+            <!-- Loyalty Points Badge (shown when points earned) -->
+            <div id="loyalty-badge" class="loyalty-badge hide">
+                <span id="loyalty-points-text"></span>
+                <span id="loyalty-total-text" class="loyalty-total"></span>
+            </div>
+
+            <!-- Notification status row -->
+            <div id="notification-status-row" class="notification-status-row hide">
+                <span id="sms-status-badge" class="notif-badge hide"></span>
+                <span id="email-status-badge" class="notif-badge hide"></span>
+            </div>
+            
+            <div id="invoice-print-area">
+                <div class="invoice-header">
+                    <h4>SMART RETAIL POS</h4>
+                    <p id="invoice-date"></p>
+                    <p id="invoice-number"></p>
+                    <p id="invoice-customer-name" class="hide" style="font-weight:700;margin-top:4px;"></p>
+                    <p id="invoice-customer-phone" class="hide" style="color:#888;"></p>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <table class="invoice-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th class="text-center">Qty</th>
+                            <th class="text-right">Price</th>
+                            <th class="text-right">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoice-items-body">
+                        <!-- Invoice Items -->
+                    </tbody>
+                </table>
+                
+                <div class="divider"></div>
+                
+                <div class="invoice-total-row">
+                    <span>Grand Total:</span>
+                    <span id="invoice-total-amount">₹0.00</span>
+                </div>
+                <div class="invoice-total-row text-sm">
+                    <span>Cash Tendered:</span>
+                    <span id="invoice-cash-tendered">₹0.00</span>
+                </div>
+                <div class="invoice-total-row text-sm">
+                    <span>Change Due:</span>
+                    <span id="invoice-change-due">₹0.00</span>
+                </div>
+                
+                <div class="invoice-footer">
+                    <p>Thank you for shopping with us!</p>
+                </div>
+            </div>
+
+            <button id="btn-close-modal" class="btn btn-secondary">Close &amp; Next Order</button>
+        </div>
+    </div>
+
+    <!-- Script integrations -->
+    <script src="{{ url_for('static', path='js/billing.js') }}"></script>
+</body>
+</html>

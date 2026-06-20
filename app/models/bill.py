@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, Numeric, DateTime, ForeignKey, func
+from sqlalchemy import Column, Integer, String, Numeric, DateTime, ForeignKey, func
 from sqlalchemy.orm import relationship
 from app.database.session import Base
 
@@ -9,7 +9,15 @@ class Bill(Base):
     total_amount = Column(Numeric(10, 2), nullable=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
+    # Customer link (nullable — walk-in customers have no record)
+    customer_id = Column(Integer, ForeignKey("customers.id", ondelete="SET NULL"), nullable=True)
+    # Denormalized snapshot at time of sale (so history is preserved even if customer record changes)
+    customer_name = Column(String(100), nullable=True)
+    customer_phone = Column(String(15), nullable=True)
+    customer_email = Column(String(255), nullable=True)
+
     items = relationship("BillItem", back_populates="bill", cascade="all, delete-orphan")
+    customer = relationship("Customer", back_populates="bills")
 
     def __repr__(self):
         return f"<Bill(id={self.id}, total_amount={self.total_amount})>"
@@ -29,3 +37,4 @@ class BillItem(Base):
 
     def __repr__(self):
         return f"<BillItem(id={self.id}, bill_id={self.bill_id}, product_id={self.product_id}, subtotal={self.subtotal})>"
+

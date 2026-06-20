@@ -9,33 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom Dashboard Styling (Vanilla CSS) */
+        /* Custom Dashboard Styling - Light SaaS Theme */
         :root {
-            --bg-primary: #080c14;
-            --bg-secondary: rgba(15, 23, 42, 0.6);
-            --border-color: rgba(255, 255, 255, 0.08);
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
+            --bg-primary: #F5F5F5;
+            --bg-secondary: #FFFFFF;
+            --border-color: #E5E5E5;
+            --text-primary: #1A1A1A;
+            --text-secondary: #555555;
+            --text-muted: #888888;
             
-            --accent: #6366f1; /* Indigo */
-            --accent-glow: rgba(99, 102, 241, 0.15);
+            --accent: #2E8B57; /* SeaGreen */
+            --accent-glow: rgba(46, 139, 87, 0.15);
             
-            --success: #10b981; /* Emerald */
-            --success-glow: rgba(16, 185, 129, 0.1);
+            --success: #2E8B57;
+            --success-glow: #D4EDDA;
+            --success-text: #155724;
             
-            --warning: #f59e0b; /* Amber */
-            --warning-glow: rgba(245, 158, 11, 0.15);
-            --warning-border: rgba(245, 158, 11, 0.3);
+            --warning: #856404;
+            --warning-glow: #FFF3CD;
+            --warning-border: #FFEBAA;
 
-            --danger: #f43f5e; /* Rose */
-            --danger-glow: rgba(244, 63, 94, 0.15);
-            --danger-border: rgba(244, 63, 94, 0.3);
-
-            --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+            --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
             --font-display: 'Outfit', sans-serif;
             
-            --shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
         }
 
         * {
@@ -61,7 +58,7 @@
             transform: translate(-50%, -50%);
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(16, 185, 129, 0.02) 50%, transparent 100%);
+            background: radial-gradient(circle, rgba(46, 139, 87, 0.03) 0%, transparent 100%);
             z-index: 0;
             pointer-events: none;
         }
@@ -94,12 +91,11 @@
         .brand-icon {
             width: 42px;
             height: 42px;
-            background: linear-gradient(135deg, var(--accent) 0%, #4338ca 100%);
+            background: var(--accent);
             border-radius: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 8px 16px -4px rgba(99, 102, 241, 0.4);
         }
 
         .brand-icon svg {
@@ -111,11 +107,9 @@
         .brand-title {
             font-family: var(--font-display);
             font-size: 1.8rem;
-            font-weight: 800;
+            font-weight: 700;
             letter-spacing: -0.02em;
-            background: linear-gradient(to right, #ffffff, #cbd5e1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #1a1a1a;
         }
 
         .nav-links {
@@ -128,7 +122,7 @@
             align-items: center;
             gap: 8px;
             padding: 10px 20px;
-            border-radius: 10px;
+            border-radius: 6px;
             font-weight: 600;
             font-size: 0.9rem;
             cursor: pointer;
@@ -137,25 +131,24 @@
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            color: var(--text-primary);
+            background: #FFFFFF;
+            border: 1px solid var(--accent);
+            color: var(--accent);
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(46, 139, 87, 0.05);
             transform: translateY(-1px);
         }
 
         .btn-primary {
             background: var(--accent);
-            border: 1px solid rgba(99, 102, 241, 0.2);
+            border: 1px solid var(--accent);
             color: white;
         }
 
         .btn-primary:hover {
-            background: #4f46e5;
+            background: #256e46;
             transform: translateY(-1px);
         }
 
@@ -168,10 +161,8 @@
 
         .kpi-card {
             background: var(--bg-secondary);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border: 1px solid var(--border-color);
-            border-radius: 20px;
+            border-radius: 8px;
             padding: 24px;
             display: flex;
             flex-direction: column;
@@ -191,8 +182,8 @@
             background: var(--accent);
         }
 
-        .kpi-card.success::before { background: var(--success); }
-        .kpi-card.warning::before { background: var(--warning); }
+        .kpi-card.success::before { background: var(--accent); }
+        .kpi-card.warning::before { background: #DC3545; }
 
         .kpi-label {
             font-size: 0.85rem;
@@ -205,7 +196,8 @@
         .kpi-value {
             font-family: var(--font-display);
             font-size: 2.2rem;
-            font-weight: 800;
+            font-weight: 700;
+            color: #1a1a1a;
         }
 
         .kpi-footer {
@@ -231,9 +223,9 @@
 
         .search-input {
             flex-grow: 1;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
+            background: #FFFFFF;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
             padding: 10px 16px;
             color: var(--text-primary);
             font-family: var(--font-sans);
@@ -244,16 +236,15 @@
         .search-input:focus {
             outline: none;
             border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.05);
+            background: #FFFFFF;
+            box-shadow: 0 0 0 3px var(--accent-glow);
         }
 
-        /* Inventory Table Table styling */
+        /* Inventory Table styling */
         .table-wrapper {
             background: var(--bg-secondary);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border: 1px solid var(--border-color);
-            border-radius: 20px;
+            border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow);
         }
@@ -265,67 +256,64 @@
         }
 
         th {
-            background: rgba(255, 255, 255, 0.02);
+            background: #F5F5F5;
             padding: 16px 24px;
             font-size: 0.8rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: var(--text-secondary);
+            color: #555555;
             border-bottom: 1px solid var(--border-color);
         }
 
         td {
             padding: 16px 24px;
             font-size: 0.95rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            color: var(--text-primary);
+            border-bottom: 1px solid #f0f0f0;
+            color: #333333;
         }
 
         tr:last-child td {
             border-bottom: none;
         }
 
+        tr:nth-child(even) td {
+            background-color: #FAFAFA;
+        }
+
         tr:hover td {
-            background: rgba(255, 255, 255, 0.01);
+            background: rgba(46, 139, 87, 0.02);
         }
 
         /* Warning Highlight styling */
         tr.row-warning td {
-            background: rgba(245, 158, 11, 0.03);
+            background: rgba(133, 100, 4, 0.02);
         }
 
         tr.row-warning:hover td {
-            background: rgba(245, 158, 11, 0.05);
+            background: rgba(133, 100, 4, 0.04);
         }
 
         .badge-status {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 4px 10px;
-            border-radius: 6px;
+            padding: 4px 12px;
+            border-radius: 999px;
             font-size: 0.75rem;
             font-weight: 700;
         }
 
         .badge-status.ok {
             background: var(--success-glow);
-            color: var(--success);
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success-text);
+            border: 1px solid #C3E6CB;
         }
 
         .badge-status.low {
             background: var(--warning-glow);
             color: var(--warning);
             border: 1px solid var(--warning-border);
-            animation: pulse-border 2s infinite;
-        }
-
-        @keyframes pulse-border {
-            0% { border-color: rgba(245, 158, 11, 0.2); }
-            50% { border-color: rgba(245, 158, 11, 0.6); }
-            100% { border-color: rgba(245, 158, 11, 0.2); }
         }
 
         .empty-state {
@@ -418,7 +406,7 @@
                         <td style="font-family: monospace; font-size: 0.85rem; color: var(--text-secondary);">{{ product.barcode }}</td>
                         <td style="font-weight: 600;">{{ product.name }}</td>
                         <td><span class="badge-status btn-secondary" style="border: none; padding: 2px 6px;">{{ product.category }}</span></td>
-                        <td>${{ "%.2f"|format(product.price) }}</td>
+                        <td>₹{{ "%.2f"|format(product.price) }}</td>
                         <td style="font-weight: 600;">{{ product.quantity }}</td>
                         <td>{{ product.reorder_level }}</td>
                         <td>

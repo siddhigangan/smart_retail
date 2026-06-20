@@ -11,6 +11,8 @@ from app.api import health, products, billing
 from app.database.session import engine, Base, get_db
 # Import models to register them on Base metadata
 from app.models.product import Product
+from app.models.customer import Customer
+from app.models.bill import Bill, BillItem
 
 # Import services for dashboard data rendering
 from app.services.inventory import InventoryService
@@ -76,4 +78,12 @@ def get_inventory_dashboard(
         "products": products,
         "search_query": q
     })
+
+@app.get("/billing", response_class=HTMLResponse)
+def get_billing(request: Request):
+    """
+    Renders the cashier billing screen.
+    """
+    return templates.TemplateResponse(request, "billing.html")
+
 

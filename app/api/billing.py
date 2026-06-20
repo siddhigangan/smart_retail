@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 from app.database.session import get_db
-from app.schemas.billing import CartAdd, CartRemove, CartItemResponse, BillResponse, BillHistoryResponse
+from app.schemas.billing import CartAdd, CartRemove, CartItemResponse, BillResponse, BillHistoryResponse, GenerateBillRequest
 from app.services.billing import BillingService
 
 router = APIRouter(
@@ -31,13 +31,26 @@ def get_cart():
     """
     return BillingService.get_cart()
 
-@router.post("/generate", response_model=BillResponse, status_code=status.HTTP_201_CREATED)
-def generate_bill(db: Session = Depends(get_db)):
+@router.post("/generate", status_code=status.HTTP_201_CREATED)
+def generate_bill(
+    request: GenerateBillRequest = None,
+    db: Session = Depends(get_db)
+):
     """
-    Generates a bill from current cart items, registers the bill,
-    and decrements the product stock quantities.
+    Generates a bill from current cart items. Accepts optional customer details.
+    Sends SMS + email receipt if contact info is provided.
+    Awards loyalty points (1 per Rs.10 spent) when phone number is given.
     """
-    return BillingService.generate_bill(db)
+    customer_name = request.customer_name if request else None
+    customer_phone = request.customer_phone if request else None
+    customer_email = request.customer_email if request else None
+
+    return BillingService.generate_bill(
+        db,
+        customer_name=customer_name,
+        customer_phone=customer_phone,
+        customer_email=customer_email
+    )
 
 @router.get("/history", response_model=list[BillHistoryResponse], status_code=status.HTTP_200_OK)
 def get_history(db: Session = Depends(get_db)):
@@ -45,3 +58,4 @@ def get_history(db: Session = Depends(get_db)):
     Retrieves bill history records (bill number, date, amount).
     """
     return BillingService.get_history(db)
+
