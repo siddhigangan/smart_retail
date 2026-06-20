@@ -6,8 +6,8 @@ from fastapi.templating import Jinja2Templates
 from dotenv import load_dotenv
 from sqlalchemy.orm import Session
 
-# Import health & products routers
-from app.api import health, products
+# Import health, products & billing routers
+from app.api import health, products, billing
 from app.database.session import engine, Base, get_db
 # Import models to register them on Base metadata
 from app.models.product import Product
@@ -39,6 +39,7 @@ templates = Jinja2Templates(directory="app/templates")
 # Include routers
 app.include_router(health.router, prefix="/api")
 app.include_router(products.router)
+app.include_router(billing.router)
 
 
 @app.get("/", response_class=JSONResponse)
