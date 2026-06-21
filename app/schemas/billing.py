@@ -42,29 +42,27 @@ class CartItemResponse(BaseModel):
     subtotal: Decimal
 
 class GenerateBillRequest(BaseModel):
-    """Optional customer details to attach to the bill."""
-    customer_name: Optional[str] = Field(None, max_length=100)
-    customer_phone: Optional[str] = Field(None, max_length=15)
+    """Customer details to attach to the bill."""
+    customer_name: str = Field(..., max_length=100)
+    customer_phone: str = Field(..., max_length=15)
     customer_email: Optional[str] = Field(None, max_length=255)
 
     @field_validator('customer_phone')
     @classmethod
-    def validate_phone(cls, v: Optional[str]) -> Optional[str]:
-        if v is not None:
-            v = v.strip()
-            if v and not v.isdigit():
-                raise ValueError("Phone number must contain only digits.")
-            if v and len(v) != 10:
-                raise ValueError("Phone number must be exactly 10 digits.")
-            return v if v else None
+    def validate_phone(cls, v: str) -> str:
+        v = v.strip()
+        if not v.isdigit():
+            raise ValueError("Phone number must contain only digits.")
+        if len(v) != 10:
+            raise ValueError("Phone number must be exactly 10 digits.")
         return v
 
-    @field_validator('customer_name', 'customer_email')
+    @field_validator('customer_name')
     @classmethod
-    def strip_optional_str(cls, v: Optional[str]) -> Optional[str]:
-        if v is not None:
-            v = v.strip()
-            return v if v else None
+    def validate_name(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("Name cannot be empty.")
         return v
 
 class BillItemResponse(BaseModel):
@@ -82,9 +80,8 @@ class BillResponse(BaseModel):
     created_at: datetime
     items: list[BillItemResponse]
     # Customer info
-    customer_name: Optional[str] = None
-    customer_phone: Optional[str] = None
-    customer_email: Optional[str] = None
+    customer_name: str
+    customer_phone: str
     # Loyalty
     loyalty_points_earned: int = 0
     customer_total_points: int = 0
