@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail - Inventory Analytics</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}?v=3.0">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary-green: #2E8B57;
+            --hover-green: #236B43;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --text-main: #0F172A;
+            --text-sec: #475569;
+            --text-mut: #94A3B8;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Topbar Header */
+        .topbar {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid var(--border-color);
+            height: 60px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .brand-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-nav {
+            background-color: #FFFFFF;
+            color: var(--text-sec);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .btn-nav:hover {
+            background-color: #F1F5F9;
+            border-color: #CBD5E1;
+            color: var(--text-main);
+        }
+
+        .btn-nav.active {
+            background-color: var(--primary-green);
+            color: #FFFFFF;
+            border-color: var(--primary-green);
+        }
+
+        /* Main Wrapper */
+        .analytics-container {
+            max-width: 1400px;
+            margin: 24px auto;
+            padding: 0 24px 48px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Interactive Filter Bar */
+        .filter-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .filter-form {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 200px;
+            flex: 1;
+        }
+
+        .filter-group label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-sec);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            background-color: #FFFFFF;
+            color: var(--text-main);
+            outline: none;
+            cursor: pointer;
+            transition: border 0.15s;
+        }
+
+        .filter-select:focus {
+            border-color: var(--primary-green);
+        }
+
+        .btn-submit {
+            background-color: var(--primary-green);
+            color: #FFFFFF;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s;
+            height: 38px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--hover-green);
+        }
+
+        .btn-clear {
+            background-color: #F1F5F9;
+            color: var(--text-sec);
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            cursor: pointer;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            transition: background 0.15s;
+        }
+
+        .btn-clear:hover {
+            background-color: #E2E8F0;
+        }
+
+        /* KPI cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .kpi-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: var(--primary-green);
+        }
+
+        .kpi-card.warn::after {
+            background-color: #EAB308;
+        }
+
+        .kpi-card.danger::after {
+            background-color: #EF4444;
+        }
+
+        .kpi-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-sec);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .kpi-val {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin: 4px 0;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 6px;
+            background-color: #F1F5F9;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: var(--primary-green);
+            border-radius: 3px;
+            transition: width 0.4s ease;
+        }
+
+        .progress-bar.warn {
+            background-color: #EAB308;
+        }
+
+        .progress-bar.danger {
+            background-color: #EF4444;
+        }
+
+        /* Charts grid */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .chart-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+            color: var(--text-main);
+            border-bottom: 1px solid #F1F5F9;
+            padding-bottom: 8px;
+        }
+
+        .chart-container {
+            flex-grow: 1;
+            position: relative;
+            height: 250px;
+        }
+
+        /* Tabbed Tables Component */
+        .tables-section-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            overflow: hidden;
+        }
+
+        .tab-headers {
+            display: flex;
+            background-color: #F8FAFC;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tab-btn {
+            padding: 14px 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-sec);
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-right: 1px solid var(--border-color);
+            transition: all 0.15s;
+            outline: none;
+        }
+
+        .tab-btn:hover {
+            background-color: #F1F5F9;
+            color: var(--text-main);
+        }
+
+        .tab-btn.active {
+            background-color: #FFFFFF;
+            color: var(--primary-green);
+            border-bottom: 2px solid var(--primary-green);
+        }
+
+        .tab-content {
+            padding: 0;
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .dashboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .dashboard-table th {
+            background-color: #F8FAFC;
+            padding: 12px 16px;
+            font-weight: 700;
+            color: var(--text-sec);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dashboard-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .dashboard-table tr:hover td {
+            background-color: #F8FAFC;
+        }
+
+        .badge-status {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .badge-fast { background-color: #DCFCE7; color: #15803D; }
+        .badge-slow { background-color: #FEF9C3; color: #A16207; }
+        .badge-dead { background-color: #FEE2E2; color: #B91C1C; }
+
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header bar -->
+    <header class="topbar">
+        <a href="/dashboard" class="brand-title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 24px; height: 24px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+            </svg>
+            Smart Retail Analytics
+        </a>
+        <nav class="nav-links">
+            <a href="/billing" class="btn-nav">Cashier checkout</a>
+            <a href="/inventory-dashboard" class="btn-nav">Inventory Panel</a>
+            <a href="/shelf-management" class="btn-nav">Shelf planogram</a>
+            <a href="/inventory-analytics" class="btn-nav active">Analytics Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="analytics-container">
+        
+        <!-- Interactive Filter Bar -->
+        <section class="filter-card">
+            <form action="/inventory-analytics" method="GET" class="filter-form">
+                
+                <!-- Category filter -->
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" class="filter-select">
+                        <option value="">All Categories</option>
+                        {% for cat in filters_options.categories %}
+                            <option value="{{ cat }}" {% if selected_category == cat %}selected{% endif %}>{{ cat }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Floor filter -->
+                <div class="filter-group">
+                    <label for="floor">Floor Level</label>
+                    <select id="floor" name="floor" class="filter-select">
+                        <option value="">All Floors</option>
+                        {% for fl in filters_options.floors %}
+                            <option value="{{ fl }}" {% if selected_floor == fl %}selected{% endif %}>Floor {{ fl }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Movement class filter -->
+                <div class="filter-group">
+                    <label for="movement_class">Movement Class</label>
+                    <select id="movement_class" name="movement_class" class="filter-select">
+                        <option value="">All Classes</option>
+                        {% for mc in filters_options.movement_classes %}
+                            <option value="{{ mc }}" {% if selected_movement_class == mc %}selected{% endif %}>{{ mc }} Moving</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Actions -->
+                <button type="submit" class="btn-submit">Apply Filters</button>
+                <a href="/inventory-analytics" class="btn-clear">Reset Filters</a>
+
+            </form>
+        </section>
+
+        <!-- KPI Grid -->
+        <section class="cards-grid">
+            
+            <!-- Value -->
+            <div class="kpi-card">
+                <span class="kpi-label">Inventory Value</span>
+                <span class="kpi-val" style="color: var(--primary-green);">₹{{ "{:,.2f}".format(cards.inventory_value) }}</span>
+                <span style="font-size:0.75rem; color: var(--text-sec);">At Cost Price valuation</span>
+            </div>
+
+            <!-- Total Products -->
+            <div class="kpi-card">
+                <span class="kpi-label">Total Product Lines</span>
+                <span class="kpi-val">{{ cards.total_products }}</span>
+                <span style="font-size:0.75rem; color: var(--text-sec);">Matching filtered catalog</span>
+            </div>
+
+            <!-- Low Stock -->
+            <div class="kpi-card {% if cards.low_stock > 0 %}warn{% endif %}">
+                <span class="kpi-label">Low Stock items</span>
+                <span class="kpi-val {% if cards.low_stock > 0 %}warn-text{% endif %}">{{ cards.low_stock }}</span>
+                <span style="font-size:0.75rem; color: var(--text-sec);">At reorder or shelf min</span>
+            </div>
+
+            <!-- Out of Stock -->
+            <div class="kpi-card {% if cards.out_of_stock > 0 %}danger{% endif %}">
+                <span class="kpi-label">Out of Stock</span>
+                <span class="kpi-val" style="color: {% if cards.out_of_stock > 0 %}#EF4444{% else %}inherit{% endif %};">{{ cards.out_of_stock }}</span>
+                <span style="font-size:0.75rem; color: var(--text-sec);">Total quantity is zero</span>
+            </div>
+
+            <!-- Dead Stock -->
+            <div class="kpi-card {% if cards.dead_stock > 0 %}danger{% endif %}">
+                <span class="kpi-label">Dead Stock</span>
+                <span class="kpi-val">{{ cards.dead_stock }}</span>
+                <span style="font-size:0.75rem; color: var(--text-sec);">Zero movement class tags</span>
+            </div>
+
+            <!-- Overstocked -->
+            <div class="kpi-card">
+                <span class="kpi-label">Overstocked lines</span>
+                <span class="kpi-val">{{ cards.overstocked }}</span>
+                <span style="font-size:0.75rem; color: var(--text-sec);">Exceeds max stock capacity</span>
+            </div>
+
+            <!-- Shelf utilization -->
+            <div class="kpi-card">
+                <span class="kpi-label">Shelf Utilization</span>
+                <span class="kpi-val">{{ cards.shelf_utilization }}%</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: {{ cards.shelf_utilization }}%;"></div>
+                </div>
+            </div>
+
+            <!-- Warehouse utilization -->
+            <div class="kpi-card">
+                <span class="kpi-label">Warehouse Utilization</span>
+                <span class="kpi-val">{{ cards.warehouse_utilization }}%</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: {{ cards.warehouse_utilization }}%;"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Charts Grid -->
+        <section class="charts-grid">
+            
+            <!-- Category Distribution -->
+            <div class="chart-card">
+                <h3>Category Distribution (Product Counts)</h3>
+                <div class="chart-container">
+                    <canvas id="categoryDistributionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Stock Distribution -->
+            <div class="chart-card">
+                <h3>Stock Distribution (Total Quantities)</h3>
+                <div class="chart-container">
+                    <canvas id="stockDistributionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Value Distribution -->
+            <div class="chart-card">
+                <h3>Inventory Value by Category (₹)</h3>
+                <div class="chart-container">
+                    <canvas id="valueDistributionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Top Categories -->
+            <div class="chart-card">
+                <h3>Top Categories by Valuation (₹)</h3>
+                <div class="chart-container">
+                    <canvas id="topCategoriesChart"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Dynamic Tables Card -->
+        <section class="tables-section-card">
+            
+            <!-- Tab Headers -->
+            <div class="tab-headers">
+                <button class="tab-btn active" onclick="openTab(event, 'tab-fast-moving')">Fast Moving Products</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab-slow-moving')">Slow Moving Products</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab-dead-stock')">Dead Stock</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab-expiring-soon')">Expiring Soon</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab-wh-empty')">Warehouse Empty</button>
+            </div>
+
+            <!-- TAB CONTENT: Fast Moving -->
+            <div id="tab-fast-moving" class="tab-content active">
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Barcode</th>
+                                <th>Category</th>
+                                <th class="text-right">Price</th>
+                                <th class="text-right">Cost Price</th>
+                                <th class="text-right">Shelf Qty</th>
+                                <th class="text-right">Warehouse Qty</th>
+                                <th class="text-right">Total Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if tables.fast_moving|length == 0 %}
+                                <tr><td colspan="8" class="empty-state">No fast moving products matching this criteria.</td></tr>
+                            {% else %}
+                                {% for item in tables.fast_moving %}
+                                <tr>
+                                    <td><strong>{{ item.name }}</strong></td>
+                                    <td><span style="font-family: monospace;">{{ item.barcode }}</span></td>
+                                    <td>{{ item.category }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.price) }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.cost_price) }}</td>
+                                    <td class="text-right">{{ item.shelf_quantity }}</td>
+                                    <td class="text-right">{{ item.warehouse_quantity }}</td>
+                                    <td class="text-right" style="font-weight: 700;">{{ item.quantity }}</td>
+                                </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: Slow Moving -->
+            <div id="tab-slow-moving" class="tab-content">
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Barcode</th>
+                                <th>Category</th>
+                                <th class="text-right">Price</th>
+                                <th class="text-right">Cost Price</th>
+                                <th class="text-right">Shelf Qty</th>
+                                <th class="text-right">Warehouse Qty</th>
+                                <th class="text-right">Total Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if tables.slow_moving|length == 0 %}
+                                <tr><td colspan="8" class="empty-state">No slow moving products.</td></tr>
+                            {% else %}
+                                {% for item in tables.slow_moving %}
+                                <tr>
+                                    <td><strong>{{ item.name }}</strong></td>
+                                    <td><span style="font-family: monospace;">{{ item.barcode }}</span></td>
+                                    <td>{{ item.category }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.price) }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.cost_price) }}</td>
+                                    <td class="text-right">{{ item.shelf_quantity }}</td>
+                                    <td class="text-right">{{ item.warehouse_quantity }}</td>
+                                    <td class="text-right" style="font-weight: 700;">{{ item.quantity }}</td>
+                                </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: Dead Stock -->
+            <div id="tab-dead-stock" class="tab-content">
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Barcode</th>
+                                <th>Category</th>
+                                <th class="text-right">Price</th>
+                                <th class="text-right">Cost Price</th>
+                                <th class="text-right">Shelf Qty</th>
+                                <th class="text-right">Warehouse Qty</th>
+                                <th class="text-right">Total Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if tables.dead_stock|length == 0 %}
+                                <tr><td colspan="8" class="empty-state">No dead stock products.</td></tr>
+                            {% else %}
+                                {% for item in tables.dead_stock %}
+                                <tr>
+                                    <td><strong>{{ item.name }}</strong></td>
+                                    <td><span style="font-family: monospace;">{{ item.barcode }}</span></td>
+                                    <td>{{ item.category }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.price) }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.cost_price) }}</td>
+                                    <td class="text-right">{{ item.shelf_quantity }}</td>
+                                    <td class="text-right">{{ item.warehouse_quantity }}</td>
+                                    <td class="text-right" style="font-weight: 700; color: #EF4444;">{{ item.quantity }}</td>
+                                </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: Expiring Soon -->
+            <div id="tab-expiring-soon" class="tab-content">
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Barcode</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th class="text-right">Price</th>
+                                <th class="text-right">Total Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if tables.expiring_soon|length == 0 %}
+                                <tr><td colspan="6" class="empty-state">No expiring soon products.</td></tr>
+                            {% else %}
+                                {% for item in tables.expiring_soon %}
+                                <tr>
+                                    <td><strong>{{ item.name }}</strong></td>
+                                    <td><span style="font-family: monospace;">{{ item.barcode }}</span></td>
+                                    <td>{{ item.category }}</td>
+                                    <td><span class="badge-status badge-dead">{{ item.expiry_date }}</span></td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.price) }}</td>
+                                    <td class="text-right" style="font-weight: 700;">{{ item.quantity }}</td>
+                                </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: Warehouse Empty -->
+            <div id="tab-wh-empty" class="tab-content">
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Barcode</th>
+                                <th>Category</th>
+                                <th class="text-right">Price</th>
+                                <th class="text-right">Cost Price</th>
+                                <th class="text-right">Shelf Qty</th>
+                                <th class="text-right">Warehouse Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if tables.warehouse_empty|length == 0 %}
+                                <tr><td colspan="7" class="empty-state">No warehouse empty records.</td></tr>
+                            {% else %}
+                                {% for item in tables.warehouse_empty %}
+                                <tr>
+                                    <td><strong>{{ item.name }}</strong></td>
+                                    <td><span style="font-family: monospace;">{{ item.barcode }}</span></td>
+                                    <td>{{ item.category }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.price) }}</td>
+                                    <td class="text-right">₹{{ "{:.2f}".format(item.cost_price) }}</td>
+                                    <td class="text-right" style="font-weight: 700;">{{ item.shelf_quantity }}</td>
+                                    <td class="text-right" style="color: #EF4444; font-weight: 700;">{{ item.warehouse_quantity }}</td>
+                                </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Charts setup scripts -->
+    <script>
+        // Tab display switcher
+        function openTab(evt, tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Charts data received from backend JSON
+        const chartData = {
+            categoryDist: {
+                labels: {{ charts.category_distribution.labels | tojson }},
+                data: {{ charts.category_distribution.data | tojson }}
+            },
+            stockDist: {
+                labels: {{ charts.stock_distribution.labels | tojson }},
+                data: {{ charts.stock_distribution.data | tojson }}
+            },
+            valueDist: {
+                labels: {{ charts.value_distribution.labels | tojson }},
+                data: {{ charts.value_distribution.data | tojson }}
+            },
+            topCats: {
+                labels: {{ charts.top_categories.labels | tojson }},
+                data: {{ charts.top_categories.data | tojson }}
+            }
+        };
+
+        // Elegant green color palette
+        const palette = [
+            '#2E8B57', '#48BB78', '#68D391', '#38A169', '#276749',
+            '#2F855A', '#22543D', '#9AE6B4', '#C6F6D5', '#E6FFFA'
+        ];
+
+        // 1. Category Distribution Doughnut
+        new Chart(document.getElementById('categoryDistributionChart'), {
+            type: 'doughnut',
+            data: {
+                labels: chartData.categoryDist.labels,
+                datasets: [{
+                    data: chartData.categoryDist.data,
+                    backgroundColor: palette,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } }
+                }
+            }
+        });
+
+        // 2. Stock Distribution Bar
+        new Chart(document.getElementById('stockDistributionChart'), {
+            type: 'bar',
+            data: {
+                labels: chartData.stockDist.labels,
+                datasets: [{
+                    label: 'Total Stock Units',
+                    data: chartData.stockDist.data,
+                    backgroundColor: '#48BB78',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: '#F1F5F9' } },
+                    x: { grid: { display: false }, labels: chartData.stockDist.labels.map(l => l.length > 10 ? l.substring(0, 10) + '..' : l) }
+                }
+            }
+        });
+
+        // 3. Value Distribution Pie
+        new Chart(document.getElementById('valueDistributionChart'), {
+            type: 'pie',
+            data: {
+                labels: chartData.valueDist.labels,
+                datasets: [{
+                    data: chartData.valueDist.data,
+                    backgroundColor: palette,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } }
+                }
+            }
+        });
+
+        // 4. Top Categories Horizontal Bar
+        new Chart(document.getElementById('topCategoriesChart'), {
+            type: 'bar',
+            data: {
+                labels: chartData.topCats.labels,
+                datasets: [{
+                    label: 'Inventory Value (₹)',
+                    data: chartData.topCats.data,
+                    backgroundColor: '#2E8B57',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { beginAtZero: true, grid: { color: '#F1F5F9' } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 import os
-from fastapi import FastAPI, Request, Depends
+from fastapi import FastAPI, Request, Depends, Query
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -72,6 +72,11 @@ def get_inventory_dashboard(
     Renders the visual Inventory Dashboard.
     """
     stats = InventoryService.get_dashboard_stats(db)
+    
+    # Fetch initial counts for quick buttons
+    filter_data = InventoryService.get_filtered_inventory(db, "all")
+    counts = filter_data["counts"]
+    
     if q:
         products = ProductService.search(db, q)
     else:
@@ -79,9 +84,21 @@ def get_inventory_dashboard(
         
     return templates.TemplateResponse(request, "inventory.html", {
         "stats": stats,
+        "counts": counts,
         "products": products,
         "search_query": q
     })
+
+@app.get("/inventory/filter", response_class=JSONResponse)
+def filter_inventory(
+    type: str = Query("all"),
+    db: Session = Depends(get_db)
+):
+    """
+    API endpoint to retrieve filtered inventory products and counts dynamically.
+    """
+    data = InventoryService.get_filtered_inventory(db, type)
+    return JSONResponse(content=data)
 
 @app.get("/billing", response_class=HTMLResponse)
 def get_billing(request: Request):
@@ -134,6 +151,84 @@ def get_shelf_management(
         "analytics": analytics,
         "history": history
     })
+
+@app.get("/inventory-analytics", response_class=HTMLResponse)
+def inventory_analytics(
+    request: Request,
+    category: str = Query(None),
+    floor: int = Query(None),
+    movement_class: str = Query(None),
+    db: Session = Depends(get_db)
+):
+    """
+    Renders the visual Inventory Analytics Dashboard.
+    """
+    from app.services.analytics import AnalyticsService
+    data = AnalyticsService.get_dashboard_data(
+        db,
+        category=category,
+        floor=floor,
+        movement_class=movement_class
+    )
+    return templates.TemplateResponse(request, "inventory_analytics.html", {
+        "cards": data["cards"],
+        "charts": data["charts"],
+        "tables": data["tables"],
+        "filters_options": data["filters_options"],
+        "selected_category": category,
+        "selected_floor": floor,
+        "selected_movement_class": movement_class
+    })
+
+@app.get("/invoice/{invoice_number}", response_class=HTMLResponse)
+def get_invoice_page(
+    request: Request,
+    invoice_number: str,
+    db: Session = Depends(get_db)
+):
+    """
+    Retrieves invoice details and renders the HTML printable receipt view.
+    """
+    import math
+    from fastapi import HTTPException
+    from app.models.invoice import Invoice
+    from app.models.bill import Bill
+    from app.models.product import Product
+
+    invoice = db.query(Invoice).filter(Invoice.invoice_number == invoice_number).first()
+    if not invoice:
+        raise HTTPException(status_code=404, detail=f"Invoice {invoice_number} not found.")
+
+    # Find corresponding Bill
+    db_bill = db.query(Bill).filter(
+        Bill.customer_phone == invoice.customer_phone,
+        Bill.total_amount == invoice.total_amount
+    ).order_by(Bill.created_at.desc()).first()
+
+    items = []
+    total_quantity = 0
+    if db_bill:
+        for bi in db_bill.items:
+            product = db.query(Product).filter(Product.id == bi.product_id).first()
+            items.append({
+                "barcode": product.barcode if product else "N/A",
+                "product_name": product.name if product else f"Product #{bi.product_id}",
+                "quantity": bi.quantity,
+                "price": float(bi.unit_price),
+                "subtotal": float(bi.subtotal)
+            })
+            total_quantity += bi.quantity
+
+    # Calculate loyalty points earned: 1 point per Rs.10 spent
+    loyalty_points = math.floor(float(invoice.total_amount) / 10)
+
+    return templates.TemplateResponse(request, "invoice_view.html", {
+        "invoice": invoice,
+        "items": items,
+        "total_quantity": total_quantity,
+        "loyalty_points": loyalty_points
+    })
+
 
 
 

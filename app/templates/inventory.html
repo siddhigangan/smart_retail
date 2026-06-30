@@ -11,28 +11,28 @@
     <style>
         /* Custom Dashboard Styling - Light SaaS Theme */
         :root {
-            --bg-primary: #F5F5F5;
+            --bg-primary: #F8FAFC;
             --bg-secondary: #FFFFFF;
-            --border-color: #E5E5E5;
-            --text-primary: #1A1A1A;
-            --text-secondary: #555555;
-            --text-muted: #888888;
+            --border-color: #E2E8F0;
+            --text-primary: #0F172A;
+            --text-secondary: #475569;
+            --text-muted: #94A3B8;
             
             --accent: #2E8B57; /* SeaGreen */
-            --accent-glow: rgba(46, 139, 87, 0.15);
+            --accent-glow: rgba(46, 139, 87, 0.12);
             
             --success: #2E8B57;
-            --success-glow: #D4EDDA;
-            --success-text: #155724;
+            --success-glow: #DCFCE7;
+            --success-text: #15803D;
             
-            --warning: #856404;
-            --warning-glow: #FFF3CD;
-            --warning-border: #FFEBAA;
+            --warning: #A16207;
+            --warning-glow: #FEF9C3;
+            --warning-border: #FEF08A;
 
-            --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+            --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
             --font-display: 'Outfit', sans-serif;
             
-            --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
         * {
@@ -66,11 +66,11 @@
         .container {
             position: relative;
             z-index: 1;
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 24px;
         }
 
         /* Header */
@@ -79,7 +79,7 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 24px;
+            padding-bottom: 20px;
         }
 
         .brand {
@@ -89,42 +89,42 @@
         }
 
         .brand-icon {
-            width: 42px;
-            height: 42px;
+            width: 40px;
+            height: 40px;
             background: var(--accent);
-            border-radius: 12px;
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .brand-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             color: white;
         }
 
         .brand-title {
             font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-size: 1.6rem;
+            font-weight: 800;
             letter-spacing: -0.02em;
-            color: #1a1a1a;
+            color: #0f172a;
         }
 
         .nav-links {
             display: flex;
-            gap: 16px;
+            gap: 12px;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 6px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             cursor: pointer;
             text-decoration: none;
             transition: all 0.2s ease;
@@ -132,12 +132,12 @@
 
         .btn-secondary {
             background: #FFFFFF;
-            border: 1px solid var(--accent);
-            color: var(--accent);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
         }
 
         .btn-secondary:hover {
-            background: rgba(46, 139, 87, 0.05);
+            background: #F1F5F9;
             transform: translateY(-1px);
         }
 
@@ -155,18 +155,18 @@
         /* KPI Cards Grid */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
         }
 
         .kpi-card {
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 24px;
+            padding: 16px 20px;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 6px;
             box-shadow: var(--shadow);
             position: relative;
             overflow: hidden;
@@ -182,27 +182,93 @@
             background: var(--accent);
         }
 
-        .kpi-card.success::before { background: var(--accent); }
-        .kpi-card.warning::before { background: #DC3545; }
+        .kpi-card.warn::before { background: #EAB308; }
+        .kpi-card.danger::before { background: #EF4444; }
 
         .kpi-label {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             color: var(--text-muted);
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .kpi-value {
             font-family: var(--font-display);
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #1a1a1a;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0f172a;
         }
 
         .kpi-footer {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-secondary);
+        }
+
+        /* Quick Filters Buttons Container */
+        .filters-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .filters-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+
+        .filter-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .btn-filter-tag {
+            background: #FFFFFF;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-filter-tag:hover {
+            background: rgba(46, 139, 87, 0.05);
+        }
+
+        .btn-filter-tag.active {
+            background: var(--accent);
+            color: #FFFFFF;
+            border-color: var(--accent);
+        }
+
+        .badge-count {
+            background: rgba(46, 139, 87, 0.1);
+            color: var(--accent);
+            font-size: 0.7rem;
+            padding: 1px 5px;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+
+        .btn-filter-tag.active .badge-count {
+            background: rgba(255, 255, 255, 0.2);
+            color: #FFFFFF;
         }
 
         /* Search Section */
@@ -216,7 +282,7 @@
 
         .search-form {
             display: flex;
-            gap: 12px;
+            gap: 8px;
             width: 100%;
             max-width: 450px;
         }
@@ -224,19 +290,18 @@
         .search-input {
             flex-grow: 1;
             background: #FFFFFF;
-            border: 1px solid #d1d5db;
+            border: 1px solid #CBD5E1;
             border-radius: 6px;
-            padding: 10px 16px;
+            padding: 8px 14px;
             color: var(--text-primary);
             font-family: var(--font-sans);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.2s ease;
         }
 
         .search-input:focus {
             outline: none;
             border-color: var(--accent);
-            background: #FFFFFF;
             box-shadow: 0 0 0 3px var(--accent-glow);
         }
 
@@ -256,21 +321,21 @@
         }
 
         th {
-            background: #F5F5F5;
-            padding: 16px 24px;
-            font-size: 0.8rem;
-            font-weight: 600;
+            background: #F8FAFC;
+            padding: 12px 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: #555555;
+            color: var(--text-secondary);
             border-bottom: 1px solid var(--border-color);
         }
 
         td {
-            padding: 16px 24px;
-            font-size: 0.95rem;
-            border-bottom: 1px solid #f0f0f0;
-            color: #333333;
+            padding: 12px 20px;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #F1F5F9;
+            color: var(--text-primary);
         }
 
         tr:last-child td {
@@ -282,32 +347,32 @@
         }
 
         tr:hover td {
-            background: rgba(46, 139, 87, 0.02);
+            background: rgba(46, 139, 87, 0.01);
         }
 
         /* Warning Highlight styling */
         tr.row-warning td {
-            background: rgba(133, 100, 4, 0.02);
+            background: rgba(161, 98, 7, 0.02);
         }
 
         tr.row-warning:hover td {
-            background: rgba(133, 100, 4, 0.04);
+            background: rgba(161, 98, 7, 0.04);
         }
 
         .badge-status {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 4px 12px;
+            padding: 2px 10px;
             border-radius: 999px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 700;
         }
 
         .badge-status.ok {
             background: var(--success-glow);
             color: var(--success-text);
-            border: 1px solid #C3E6CB;
+            border: 1px solid #BBF7D0;
         }
 
         .badge-status.low {
@@ -320,7 +385,8 @@
             padding: 40px;
             text-align: center;
             color: var(--text-muted);
-            font-size: 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -340,36 +406,99 @@
                 <h1 class="brand-title">Smart Retail Inventory</h1>
             </div>
             <div class="nav-links">
+                <a href="/billing" class="btn btn-secondary">Cashier Billing</a>
+                <a href="/shelf-management" class="btn btn-secondary">Shelf planogram</a>
+                <a href="/inventory-analytics" class="btn btn-secondary">Analytics Dashboard</a>
                 <a href="/dashboard" class="btn btn-secondary">System Health</a>
             </div>
         </header>
 
         <!-- KPI Metrics -->
         <section class="stats-grid">
+            <!-- 1. Total Products -->
             <div class="kpi-card">
                 <span class="kpi-label">Total Products</span>
-                <span class="kpi-value">{{ stats.total_products }}</span>
-                <span class="kpi-footer">Unique item lines registered</span>
+                <span class="kpi-value" id="card-total-products">{{ stats.total_products }}</span>
+                <span class="kpi-footer">Unique items catalog</span>
             </div>
+            <!-- 2. Total Quantity -->
             <div class="kpi-card success">
                 <span class="kpi-label">Total Quantity</span>
-                <span class="kpi-value">{{ stats.total_quantity }}</span>
-                <span class="kpi-footer">Cumulative stock items in store</span>
+                <span class="kpi-value" id="card-total-quantity">{{ stats.total_quantity }}</span>
+                <span class="kpi-footer">Cumulative stock items</span>
             </div>
-            <div class="kpi-card {% if stats.low_stock_count > 0 %}warning{% endif %}">
+            <!-- 3. Low Stock Warnings -->
+            <div class="kpi-card {% if stats.low_stock_count > 0 %}warn{% endif %}">
                 <span class="kpi-label">Low Stock Warnings</span>
-                <span class="kpi-value" style="color: {% if stats.low_stock_count > 0 %}var(--warning){% else %}var(--text-primary){% endif %};">
+                <span class="kpi-value" id="card-low-stock" style="color: {% if stats.low_stock_count > 0 %}var(--warning){% else %}var(--text-primary){% endif %};">
                     {{ stats.low_stock_count }}
                 </span>
-                <span class="kpi-footer">Products at or below reorder levels</span>
+                <span class="kpi-footer">At or below reorder level</span>
+            </div>
+            <!-- 4. Out of Stock -->
+            <div class="kpi-card {% if stats.out_of_stock_count > 0 %}danger{% endif %}">
+                <span class="kpi-label">Out of Stock</span>
+                <span class="kpi-value" id="card-out-of-stock" style="color: {% if stats.out_of_stock_count > 0 %}#EF4444{% else %}var(--text-primary){% endif %};">
+                    {{ stats.out_of_stock_count }}
+                </span>
+                <span class="kpi-footer">Product quantity is zero</span>
+            </div>
+            <!-- 5. Shelf Refill Needed -->
+            <div class="kpi-card {% if stats.shelf_refill_count > 0 %}warn{% endif %}">
+                <span class="kpi-label">Shelf Refill Needed</span>
+                <span class="kpi-value" id="card-shelf-refill">{{ stats.shelf_refill_count }}</span>
+                <span class="kpi-footer">Shelf stock <= minimum</span>
+            </div>
+            <!-- 6. Warehouse Empty -->
+            <div class="kpi-card {% if stats.wh_empty_count > 0 %}danger{% endif %}">
+                <span class="kpi-label">Warehouse Empty</span>
+                <span class="kpi-value" id="card-wh-empty" style="color: {% if stats.wh_empty_count > 0 %}#EF4444{% else %}var(--text-primary){% endif %};">
+                    {{ stats.wh_empty_count }}
+                </span>
+                <span class="kpi-footer">Warehouse quantity is zero</span>
+            </div>
+        </section>
+
+        <!-- Quick Filters Buttons Row -->
+        <section class="filters-section">
+            <span class="filters-title">Quick Action Filters</span>
+            <div class="filter-buttons-container">
+                <button class="btn-filter-tag active" data-filter="all">
+                    All Products <span class="badge-count" id="badge-all">{{ counts.all }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="low_stock">
+                    Low Stock <span class="badge-count" id="badge-low_stock">{{ counts.low_stock }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="out_of_stock">
+                    Out of Stock <span class="badge-count" id="badge-out_of_stock">{{ counts.out_of_stock }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="overstocked">
+                    Overstocked <span class="badge-count" id="badge-overstocked">{{ counts.overstocked }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="fast_moving">
+                    Fast Moving <span class="badge-count" id="badge-fast_moving">{{ counts.fast_moving }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="slow_moving">
+                    Slow Moving <span class="badge-count" id="badge-slow_moving">{{ counts.slow_moving }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="expiring_soon">
+                    Expiring Soon <span class="badge-count" id="badge-expiring_soon">{{ counts.expiring_soon }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="warehouse_empty">
+                    Warehouse Empty <span class="badge-count" id="badge-warehouse_empty">{{ counts.warehouse_empty }}</span>
+                </button>
+                <button class="btn-filter-tag" data-filter="shelf_refill_needed">
+                    Shelf Refill Needed <span class="badge-count" id="badge-shelf_refill_needed">{{ counts.shelf_refill_needed }}</span>
+                </button>
             </div>
         </section>
 
         <!-- Controls (Search) -->
         <section class="controls-row">
-            <form class="search-form" method="GET" action="/inventory-dashboard">
+            <form class="search-form" id="search-form-el" method="GET" action="/inventory-dashboard">
                 <input 
                     type="text" 
+                    id="search-input-el"
                     name="q" 
                     class="search-input" 
                     placeholder="Search by name, barcode, category..." 
@@ -377,7 +506,7 @@
                 >
                 <button type="submit" class="btn btn-primary">Search</button>
                 {% if search_query %}
-                    <a href="/inventory-dashboard" class="btn btn-secondary">Reset</a>
+                    <a href="/inventory-dashboard" class="btn btn-secondary">Reset Search</a>
                 {% endif %}
             </form>
 
@@ -400,7 +529,7 @@
                         <th>Status</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="inventory-tbody">
                     {% for product in products %}
                     <tr class="{% if product.quantity <= product.reorder_level %}row-warning{% endif %}">
                         <td style="font-family: monospace; font-size: 0.85rem; color: var(--text-secondary);">{{ product.barcode }}</td>
@@ -428,5 +557,111 @@
             </table>
         </section>
     </div>
+
+    <!-- Scripting for AJAX filtering -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.btn-filter-tag');
+            const tbody = document.getElementById('inventory-tbody');
+            
+            // KPI card elements
+            const cardTotalProducts = document.getElementById('card-total-products');
+            const cardTotalQuantity = document.getElementById('card-total-quantity');
+            const cardLowStock = document.getElementById('card-low-stock');
+            const cardOutOfStock = document.getElementById('card-out-of-stock');
+            const cardShelfRefill = document.getElementById('card-shelf-refill');
+            const cardWhEmpty = document.getElementById('card-wh-empty');
+
+            // Quick Badge counts
+            const badges = {
+                all: document.getElementById('badge-all'),
+                low_stock: document.getElementById('badge-low_stock'),
+                out_of_stock: document.getElementById('badge-out_of_stock'),
+                overstocked: document.getElementById('badge-overstocked'),
+                fast_moving: document.getElementById('badge-fast_moving'),
+                slow_moving: document.getElementById('badge-slow_moving'),
+                expiring_soon: document.getElementById('badge-expiring_soon'),
+                warehouse_empty: document.getElementById('badge-warehouse_empty'),
+                shelf_refill_needed: document.getElementById('badge-shelf_refill_needed')
+            };
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', async () => {
+                    // Set active visual state
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterType = btn.getAttribute('data-filter');
+                    
+                    try {
+                        tbody.innerHTML = '<tr><td colspan="7" class="empty-state">Loading filter results...</td></tr>';
+                        
+                        const response = await fetch(`/inventory/filter?type=${filterType}`);
+                        if (!response.ok) {
+                            throw new Error('Failed to retrieve inventory data');
+                        }
+
+                        const data = await response.json();
+
+                        // 1. Check if placeholder message exists
+                        if (data.placeholder_message) {
+                            tbody.innerHTML = `<tr><td colspan="7" class="empty-state">${data.placeholder_message}</td></tr>`;
+                        } else {
+                            renderTable(data.products);
+                        }
+
+                        // 2. Update count badges on buttons
+                        if (data.counts) {
+                            Object.keys(badges).forEach(key => {
+                                if (badges[key] && data.counts[key] !== undefined) {
+                                    badges[key].textContent = data.counts[key];
+                                }
+                            });
+
+                            // 3. Update main summary KPI cards
+                            if (cardTotalProducts) cardTotalProducts.textContent = data.counts.all;
+                            if (cardLowStock) cardLowStock.textContent = data.counts.low_stock;
+                            if (cardOutOfStock) cardOutOfStock.textContent = data.counts.out_of_stock;
+                            if (cardShelfRefill) cardShelfRefill.textContent = data.counts.shelf_refill_needed;
+                            if (cardWhEmpty) cardWhEmpty.textContent = data.counts.warehouse_empty;
+                        }
+
+                    } catch (error) {
+                        tbody.innerHTML = '<tr><td colspan="7" class="empty-state" style="color: #EF4444;">Error loading products list.</td></tr>';
+                    }
+                });
+            });
+
+            function renderTable(products) {
+                tbody.innerHTML = '';
+                
+                if (products.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="7" class="empty-state">No products found matching this filter criteria.</td></tr>';
+                    return;
+                }
+
+                products.forEach(p => {
+                    const isLow = p.quantity <= p.reorder_level;
+                    const tr = document.createElement('tr');
+                    if (isLow) {
+                        tr.className = 'row-warning';
+                    }
+
+                    tr.innerHTML = `
+                        <td style="font-family: monospace; font-size: 0.85rem; color: var(--text-secondary);">${p.barcode}</td>
+                        <td style="font-weight: 600;">${p.name}</td>
+                        <td><span class="badge-status btn-secondary" style="border: none; padding: 2px 6px;">${p.category}</span></td>
+                        <td>₹${p.price.toFixed(2)}</td>
+                        <td style="font-weight: 600;">${p.quantity}</td>
+                        <td>${p.reorder_level}</td>
+                        <td>
+                            ${isLow ? '<span class="badge-status low">Low Stock</span>' : '<span class="badge-status ok">Healthy</span>'}
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+        });
+    </script>
 </body>
 </html>

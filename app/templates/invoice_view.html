@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail - Invoice {{ invoice.invoice_number }}</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2E8B57;
+            --primary-glow: rgba(46, 139, 87, 0.08);
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --text-main: #0F172A;
+            --text-sec: #475569;
+            --text-mut: #94A3B8;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .invoice-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            width: 720px;
+            max-width: 100%;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .invoice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .brand-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            margin: 0 0 6px 0;
+        }
+
+        .invoice-meta {
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text-sec);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .invoice-number-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .customer-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background-color: #F8FAFC;
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .customer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .customer-col label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-sec);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .customer-col span {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Products Table */
+        .products-table-wrapper {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        th {
+            background-color: #F8FAFC;
+            padding: 12px 16px;
+            font-weight: 700;
+            color: var(--text-sec);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Invoice Summary block */
+        .summary-block {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .summary-table {
+            width: 320px;
+            font-size: 0.9rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #F1F5F9;
+        }
+
+        .summary-row:last-child {
+            border-bottom: none;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            padding-top: 12px;
+            border-top: 2px solid var(--border-color);
+        }
+
+        /* Actions buttons block */
+        .action-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+            margin-top: 16px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .btn-print {
+            background-color: #FFFFFF;
+            color: var(--text-sec);
+        }
+
+        .btn-print:hover {
+            background-color: #F1F5F9;
+        }
+
+        .btn-download {
+            background-color: var(--primary-green);
+            color: #FFFFFF;
+            border-color: var(--primary-green);
+        }
+
+        .btn-download:hover {
+            background-color: var(--hover-green);
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: #FFFFFF;
+                padding: 0;
+            }
+            .invoice-card {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
+            }
+            .action-row, .btn-nav-back {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invoice-card">
+        
+        <!-- Header -->
+        <div class="invoice-header">
+            <div>
+                <h1 class="brand-title">Smart Retail</h1>
+                <span style="font-size: 0.8rem; color: var(--text-sec);">Premium Supermarket POS Terminal</span>
+            </div>
+            <div class="invoice-meta">
+                <span class="invoice-number-title">{{ invoice.invoice_number }}</span>
+                <span>Date: {{ invoice.created_at.strftime("%d-%b-%Y %I:%M %p") }}</span>
+                <span>Status: Paid</span>
+            </div>
+        </div>
+
+        <!-- Customer Section -->
+        <div class="customer-section">
+            <div class="customer-col">
+                <label>Billed To</label>
+                <span>{{ invoice.customer_name }}</span>
+            </div>
+            <div class="customer-col">
+                <label>WhatsApp Number</label>
+                <span>{{ invoice.customer_phone }}</span>
+            </div>
+        </div>
+
+        <!-- Purchased Products -->
+        <div class="products-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Barcode</th>
+                        <th>Product</th>
+                        <th class="text-center">Qty</th>
+                        <th class="text-right">Price</th>
+                        <th class="text-right">GST</th>
+                        <th class="text-right">Discount</th>
+                        <th class="text-right">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td style="font-family: monospace; font-size: 0.8rem; color: var(--text-sec);">{{ item.barcode }}</td>
+                        <td style="font-weight: 600;">{{ item.product_name }}</td>
+                        <td class="text-center">{{ item.quantity }}</td>
+                        <td class="text-right">₹{{ "%.2f"|format(item.price) }}</td>
+                        <td class="text-right">0%</td>
+                        <td class="text-right">₹0.00</td>
+                        <td class="text-right" style="font-weight: 600;">₹{{ "%.2f"|format(item.subtotal) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary-block">
+            <div class="summary-table">
+                <div class="summary-row">
+                    <span>Total Quantity</span>
+                    <strong>{{ total_quantity }} Items</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Loyalty Points Earned</span>
+                    <strong style="color: var(--primary-green);">+{{ loyalty_points }} Points</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Grand Total</span>
+                    <span>₹{{ "%.2f"|format(invoice.total_amount) }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="action-row">
+            <a href="/billing" class="btn btn-print btn-nav-back" style="border: 1px solid var(--primary-green); color: var(--primary-green);">
+                Back to POS Billing
+            </a>
+            <div class="action-buttons">
+                <button onclick="window.print()" class="btn btn-print">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width:16px; height:16px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.821V21h10.56v-7.179m-10.56 0a2.386 2.386 0 0 1-1.28-2.078V5.53a2.386 2.386 0 0 1 1.28-2.077m10.56 10.368c.84.453 1.28 1.356 1.28 2.078v4.392a2.386 2.386 0 0 1-1.28 2.077m-10.56-10.368A11.966 11.966 0 0 0 12 14.25c1.256 0 2.45-.192 3.568-.547M5.44 11.743A11.97 11.97 0 0 0 12 13.5c2.47 0 4.796-.743 6.74-2.02M6 6.31c-.347-.384-.56-.91-.56-1.493a2.386 2.386 0 0 1 1.28-2.077m10.56 3.57c.347-.384.56-.91.56-1.493a2.386 2.386 0 0 0-1.28-2.077M6 6.31A11.966 11.966 0 0 1 12 4.5c2.47 0 4.796.743 6.74 2.02M6 6.31v5.433m12-5.433v5.433" />
+                    </svg>
+                    Print Receipt
+                </button>
+                <a href="{{ invoice.invoice_url }}" download class="btn btn-download">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width:16px; height:16px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

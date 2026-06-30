@@ -1,6 +1,7 @@
 import os
 import csv
 from decimal import Decimal
+from datetime import datetime
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from app.database.session import Base
@@ -231,10 +232,40 @@ def run_seed():
                     }
                 )
                 
-                # Align products.quantity = shelf_qty + wh_qty
+                # Parse additional analytics fields
+                movement_class = row["movement_class"].strip() if row.get("movement_class") else None
+                cost_price_val = Decimal(row["cost_price"].strip()) if row.get("cost_price") else None
+                max_stock_val = int(row["max_stock_capacity"].strip()) if row.get("max_stock_capacity") else None
+                
+                expiry_date_val = None
+                if row.get("expiry_date"):
+                    exp_str = row["expiry_date"].strip()
+                    if exp_str and exp_str.lower() != "null":
+                        try:
+                            expiry_date_val = datetime.strptime(exp_str, "%Y-%m-%d").date()
+                        except:
+                            try:
+                                expiry_date_val = datetime.strptime(exp_str, "%d-%m-%Y").date()
+                            except:
+                                expiry_date_val = None
+
+                # Align products.quantity = shelf_qty + wh_qty and update metadata
                 conn.execute(
-                    text("UPDATE products SET quantity = :qty WHERE id = :prod_id;"),
-                    {"qty": shelf_qty + wh_qty, "prod_id": prod_id}
+                    text("""UPDATE products 
+                            SET quantity = :qty, 
+                                movement_class = :movement_class, 
+                                expiry_date = :expiry_date, 
+                                cost_price = :cost_price, 
+                                max_stock_capacity = :max_stock_capacity 
+                            WHERE id = :prod_id;"""),
+                    {
+                        "qty": shelf_qty + wh_qty,
+                        "movement_class": movement_class,
+                        "expiry_date": expiry_date_val,
+                        "cost_price": cost_price_val,
+                        "max_stock_capacity": max_stock_val,
+                        "prod_id": prod_id
+                    }
                 )
                 
                 mapping_count += 1

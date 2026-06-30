@@ -708,7 +708,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showInvoiceModal(bill, phone) {
         if (!invoiceModal) return;
 
-        if (invoiceNumber) invoiceNumber.textContent = `SR-${bill.id.toString().padStart(6, '0')}`;
+        if (invoiceNumber) invoiceNumber.textContent = bill.invoice_number || `SR-${bill.id.toString().padStart(6, '0')}`;
         if (invoiceAmountDisplay) invoiceAmountDisplay.textContent = `₹${parseFloat(bill.total_amount).toFixed(2)}`;
         
         let methodStr = bill.payment_method;
@@ -729,8 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // WhatsApp redirect parameters
         if (whatsappSendLink) {
-            const invoiceLink = window.location.origin + "/history";
-            const textMsg = `Thank you for shopping at Smart Retail.\n\nInvoice Number: SR-${bill.id.toString().padStart(6, '0')}\nAmount: ₹${parseFloat(bill.total_amount).toFixed(2)}\nPayment: ${methodStr}\n\nView invoice here:\n${invoiceLink}`;
+            const textMsg = bill.whatsapp_message || `Thank you for shopping at Smart Retail.\n\nInvoice Number: ${bill.invoice_number || bill.id}\nAmount: ₹${parseFloat(bill.total_amount).toFixed(2)}\nPayment: ${methodStr}\n\nView invoice here:\n${window.location.origin}/invoice/${bill.invoice_number || bill.id}`;
             const encoded = encodeURIComponent(textMsg);
             whatsappSendLink.href = `https://wa.me/91${phone}?text=${encoded}`;
         }

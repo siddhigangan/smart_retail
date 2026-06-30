@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Numeric, DateTime, func
+from sqlalchemy import Column, Integer, String, Numeric, DateTime, Date, func
 from app.database.session import Base
 
 class Product(Base):
@@ -11,6 +11,13 @@ class Product(Base):
     price = Column(Numeric(10, 2), nullable=False)
     quantity = Column(Integer, nullable=False)
     reorder_level = Column(Integer, nullable=False, default=0)
+    
+    # Analytics fields
+    movement_class = Column(String(50), nullable=True)
+    expiry_date = Column(Date, nullable=True)
+    cost_price = Column(Numeric(10, 2), nullable=True)
+    max_stock_capacity = Column(Integer, nullable=True)
+
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
     def __repr__(self):

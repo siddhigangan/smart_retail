@@ -1,4 +1,5 @@
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from fastapi import HTTPException, status
 from app.models.product import Product
 from app.models.bill import Bill, BillItem
@@ -159,9 +160,142 @@ class BillingService:
                 db.refresh(customer_obj)
                 customer_total_points = customer_obj.total_points
 
+            # 5b. Generate PDF Invoice & save metadata (before commit)
+            import os
+            from datetime import datetime
+            from app.models.invoice import Invoice
+            from app.services.pdf_generator import PDFGenerator
+            from app.services.invoice_storage import InvoiceStorageService
+
+            # Generate unique invoice number: INV-YYYYMMDD-0001
+            today_str = datetime.now().strftime("%Y%m%d")
+            prefix = f"INV-{today_str}-"
+            count = db.query(func.count(Invoice.id)).filter(Invoice.invoice_number.like(f"{prefix}%")).scalar() or 0
+            serial = str(count + 1).zfill(4)
+            invoice_number = f"{prefix}{serial}"
+
+            # Prepare items for PDF generator
+            pdf_items = []
+            for barcode, item in cls._cart.items():
+                pdf_items.append({
+                    "barcode": item["barcode"],
+                    "product_name": item["product_name"],
+                    "quantity": item["quantity"],
+                    "unit_price": item["unit_price"],
+                    "subtotal": item["subtotal"]
+                })
+
+            # Generate PDF
+            pdf_bytes = PDFGenerator.generate(
+                invoice_number=invoice_number,
+                customer_name=customer_name or "Walk-in Customer",
+                customer_phone=customer_phone or "0000000000",
+                total_amount=float(total_amount),
+                cart_items=pdf_items,
+                loyalty_points=loyalty_points_earned
+            )
+
+            # Save PDF
+            filename = f"{invoice_number}.pdf"
+            invoice_url = InvoiceStorageService.save_invoice(filename, pdf_bytes)
+            pdf_path = os.path.join("app/static/invoices", filename)
+
+            # Create Invoice record
+            db_invoice = Invoice(
+                invoice_number=invoice_number,
+                invoice_url=invoice_url,
+                pdf_path=pdf_path,
+                customer_name=customer_name or "Walk-in Customer",
+                customer_phone=customer_phone or "0000000000",
+                total_amount=total_amount,
+                whatsapp_status="MOCK_SENT"
+            )
+            db.add(db_invoice)
+            db.flush()
+
             # 6. Commit everything
             db.commit()
             db.refresh(db_bill)
+
+            # Format payment summary dynamically
+            payment_summary = ""
+            if payment_method == "Cash":
+                cr = float(cash_received) if cash_received is not None else 0.0
+                ch = float(change_returned) if change_returned is not None else 0.0
+                payment_summary = f"Cash Payment: ₹{cr:.2f}\nChange Returned: ₹{ch:.2f}"
+            elif payment_method == "UPI":
+                payment_summary = f"UPI Payment: ₹{float(total_amount):.2f}"
+            elif payment_method == "Card":
+                payment_summary = f"Card Payment: ₹{float(total_amount):.2f}"
+            elif payment_method == "Split":
+                sc = float(split_cash) if split_cash is not None else 0.0
+                su = float(split_upi) if split_upi is not None else 0.0
+                scard = float(split_card) if split_card is not None else 0.0
+                payment_summary = f"Split Payment:\nCash: ₹{sc:.2f}\nUPI: ₹{su:.2f}\nCard: ₹{scard:.2f}"
+
+            now = datetime.now()
+            bill_date = now.strftime("%Y-%m-%d")
+            bill_time = now.strftime("%I:%M %p")
+            total_items = len(pdf_items)
+            total_quantity_val = sum(item["quantity"] for item in pdf_items)
+            
+            local_invoice_url = f"http://127.0.0.1:8000/invoice/{invoice_number}"
+
+            whatsapp_message = f"""🛒 Smart Retail
+
+Thank you for shopping with us, {customer_name or 'Walk-in Customer'}!
+
+🧾 Invoice Number:
+{invoice_number}
+
+📅 Date:
+{bill_date}
+
+⏰ Time:
+{bill_time}
+
+📱 Customer Contact:
+{customer_phone or '0000000000'}
+
+💳 Payment:
+{payment_summary}
+
+🛍 Items Purchased:
+{total_items}
+
+📦 Total Quantity:
+{total_quantity_val}
+
+💰 Bill Summary:
+Subtotal: ₹{float(total_amount):.2f}
+Discount: ₹0.00
+GST: ₹0.00
+Grand Total: ₹{float(total_amount):.2f}
+
+🎁 Loyalty:
+Points Earned: {loyalty_points_earned}
+Total Points: {customer_total_points}
+
+📄 View / Download Invoice:
+{local_invoice_url}
+
+Thank you for visiting Smart Retail.
+Have a great day! 😊"""
+
+            whatsapp_status = "MOCK_SENT"
+
+            # Print mock WhatsApp message in terminal
+            print("\n" + "="*80)
+            print("[MOCK WHATSAPP MESSAGE SENT]")
+            print(f"To: {customer_phone or '0000000000'}")
+            print("Message:")
+            try:
+                print(whatsapp_message)
+            except UnicodeEncodeError:
+                # Replace unsupported unicode symbols with safe ASCII placeholders for console logging
+                print(whatsapp_message.encode('ascii', errors='replace').decode('ascii'))
+            print("="*80 + "\n")
+
             cls.clear_cart()
 
             # 7. Build item list for notifications (after commit)
@@ -234,7 +368,11 @@ class BillingService:
                 "change_returned": db_bill.change_returned,
                 "split_cash": db_bill.split_cash,
                 "split_upi": db_bill.split_upi,
-                "split_card": db_bill.split_card
+                "split_card": db_bill.split_card,
+                "invoice_number": invoice_number,
+                "invoice_url": invoice_url,
+                "whatsapp_message": whatsapp_message,
+                "whatsapp_status": whatsapp_status
             }
 
         except HTTPException:

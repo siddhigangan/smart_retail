@@ -106,6 +106,32 @@ The **Supermarket POS system** supports robust checkout payment operations:
    - **Cancel Bill**: Allows cashiers to void/cancel an active cart, saving details into a session audit log viewable via **Cancelled Bills**.
 4. **WhatsApp Dispatch**: Post-checkout, cashiers can dispatch invoices instantly to customer WhatsApp numbers. The UI displays **WhatsApp Status** as `Pending` until dispatched, which then toggles to `Sent`.
 
+## Inventory Analytics Dashboard
+The **Inventory Analytics** dashboard serves as the central control room for store managers, offering:
+1. **Critical KPI Summaries**: Instantly tracks inventory valuation (calculated at cost price), product line counts, low stock items, out-of-stock items, dead stock lines, overstocked products, and dynamic utilization percentages for both storefront shelves and backroom warehouses.
+2. **Interactive Visualizations (Chart.js)**: Doughnut, bar, and pie charts visualise stock/value allocations and category distribution dynamically.
+3. **Tabular Operational Lists**: Shows categorised reports:
+   - **Fast Moving Products**: Items requiring frequent shelf replenishment checks.
+   - **Slow Moving Products**: Low-frequency sales items.
+   - **Dead Stock**: Products flagged with no active customer demand.
+   - **Expiring Soon**: Batches sorted by their expiration dates to prevent wastage.
+   - **Warehouse Empty**: Alerts listing slots where backroom stocks have depleted.
+4. **Dynamic Filters**: Quick filtering by Category, Floor Level, and Movement Class instantly updates all KPIs, charts, and tables without reloading context.
+
+## Inventory Dashboard Quick Filters
+The **Inventory Dashboard** ([/inventory-dashboard](http://127.0.0.1:8000/inventory-dashboard)) has been updated with high-performance quick-action buttons below the metrics section:
+1. **Quick Filters**: All Products, Low Stock, Out of Stock, Overstocked, Fast Moving, Slow Moving, Expiring Soon, Warehouse Empty, and Shelf Refill Needed.
+2. **Badges Count**: Each button displays a live item count. KPI metric cards (Total Products, Total Quantity, Low Stock Warnings, Out of Stock, Shelf Refill Needed, and Warehouse Empty) are automatically updated in sync with filters.
+3. **Graceful Analytics Fallbacks**: If sales histories or batch expiries are not yet generated, clicking *Fast/Slow Moving* or *Expiring Soon* displays a professional placeholder message explaining how to activate tracking.
+4. **AJAX Dynamic Updates**: Uses non-blocking backend JSON requests to `/inventory/filter?type=...` to dynamically refresh metrics and tables without full-page reloads.
+
+## PDF Invoice Generator & Mock WhatsApp Dispatch
+The **Invoicing System** generates professional PDF invoices on checkout and logs mock WhatsApp messages:
+1. **Local File Storage**: PDF receipts are programmatically generated using `reportlab` and saved locally under `app/static/invoices/` using format `INV-YYYYMMDD-[SERIAL].pdf`. The implementation uses a swappable `InvoiceStorageService` architecture for future cloud integration.
+2. **Metadata Logs**: Stores invoice metadata (`invoice_number`, `invoice_url`, `pdf_path`, `customer_name`, `customer_phone`, `total_amount`, `whatsapp_status = MOCK_SENT`, `created_at`) in PostgreSQL.
+3. **Receipt Retrieval Screen**: The web route `/invoice/{invoice_number}` renders a corporate green/white template displaying the items table (quantities, prices, GST, discounts), loyalty points earned, a print window trigger, and a PDF downloader link.
+4. **Simulated WhatsApp Dispatch**: In development mode, the checkout system prints the outbound customer SMS/WhatsApp message containing the invoice url directly to the stdout console.
+
 ## Access Points
 
 - **JSON Health API**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
@@ -113,6 +139,8 @@ The **Supermarket POS system** supports robust checkout payment operations:
 - **Web Dashboard**: [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard)
 - **Inventory Dashboard**: [http://127.0.0.1:8000/inventory-dashboard](http://127.0.0.1:8000/inventory-dashboard)
 - **Shelf Management Dashboard**: [http://127.0.0.1:8000/shelf-management](http://127.0.0.1:8000/shelf-management)
+- **Inventory Analytics Dashboard**: [http://127.0.0.1:8000/inventory-analytics](http://127.0.0.1:8000/inventory-analytics)
+- **Invoice Retrieval Page**: [http://127.0.0.1:8000/invoice/{invoice_number}](http://127.0.0.1:8000/invoice/INV-20260630-0001)
 - **Swagger interactive API documentation**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ## Product Management API Endpoints
