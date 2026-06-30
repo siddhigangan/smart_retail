@@ -1,0 +1,151 @@
+customer_id,customer_name,whatsapp_number,area,loyalty_points,customer_segment
+1,Sai Chandak,9649133424,Sadar,181,Occasional
+2,Yash Verma,9894256529,Bajaj Nagar,8,Occasional
+3,Vivaan Agrawal,9202032650,Trimurti Nagar,123,Occasional
+4,Neha Agrawal,9967379487,Sitabuldi,190,Monthly Bulk Buyer
+5,Sneha Gangan,9524578715,Pratap Nagar,67,Regular
+6,Neha Rathi,9082137118,Bajaj Nagar,75,Family Shopper
+7,Neha Jain,9768182683,Mahal,174,Family Shopper
+8,Aarav Agrawal,9589298808,Sadar,138,Family Shopper
+9,Sneha Deshmukh,9521293289,Nandanvan,51,Monthly Bulk Buyer
+10,Vivaan Rathi,9468677524,Dharampeth,19,Monthly Bulk Buyer
+11,Om Kale,9439910622,Wardha Road,41,Family Shopper
+12,Rahul Deshmukh,9669335134,Mahal,102,Regular
+13,Yash Kale,9237245018,Hingna,134,Regular
+14,Krish Maheshwari,9374189721,Bajaj Nagar,87,Monthly Bulk Buyer
+15,Vivaan Rathi,9417692743,Pratap Nagar,26,Regular
+16,Krish Joshi,9537660144,Hingna,163,Premium
+17,Riya Rathi,9451017397,Manish Nagar,151,Occasional
+18,Ananya Patil,9789969860,Trimurti Nagar,27,Premium
+19,Sai Joshi,9113599660,Sadar,165,Occasional
+20,Pooja Joshi,9806603920,Itwari,84,Regular
+21,Isha Rathi,9074555347,Dharampeth,83,Occasional
+22,Ananya Deshmukh,9388565271,Sadar,90,Premium
+23,Om Chandak,9354116597,Itwari,47,Occasional
+24,Saanvi Jain,9755752250,Sitabuldi,48,Premium
+25,Isha Verma,9848826913,Sitabuldi,23,Premium
+26,Rahul Jain,9258562614,Trimurti Nagar,145,Regular
+27,Riya Agrawal,9703824073,Bajaj Nagar,56,Family Shopper
+28,Siddhi Maheshwari,9320430977,Nandanvan,142,Premium
+29,Yash Agrawal,9628969645,Hingna,110,Monthly Bulk Buyer
+30,Neha Agrawal,9585125389,Mahal,24,Premium
+31,Kunal Verma,9519358374,Trimurti Nagar,13,Occasional
+32,Krish Maheshwari,9796120878,Itwari,14,Monthly Bulk Buyer
+33,Kunal Chandak,9215149409,Wardha Road,110,Family Shopper
+34,Rahul Agrawal,9748453986,Mahal,196,Premium
+35,Yash Gangan,9090591191,Pratap Nagar,105,Family Shopper
+36,Saanvi Agrawal,9922071511,Nandanvan,146,Occasional
+37,Rohan Rathi,9725214526,Hingna,127,Regular
+38,Aarohi Jain,9633515718,Hingna,5,Premium
+39,Vivaan Verma,9051208005,Nandanvan,78,Regular
+40,Yash Joshi,9512397283,Sadar,24,Family Shopper
+41,Krish Gangan,9927282709,Dharampeth,137,Regular
+42,Isha Jain,9152982173,Trimurti Nagar,39,Premium
+43,Riya Maheshwari,9867181535,Mahal,61,Occasional
+44,Saanvi Rathi,9050791815,Pratap Nagar,144,Premium
+45,Om Verma,9683452734,Itwari,109,Occasional
+46,Rohan Rathi,9170715879,Nandanvan,78,Occasional
+47,Isha Kale,9080314998,Mahal,164,Monthly Bulk Buyer
+48,Vivaan Verma,9004635806,Bajaj Nagar,130,Premium
+49,Aarohi Verma,9503172351,Bajaj Nagar,52,Occasional
+50,Saanvi Joshi,9900631403,Itwari,84,Family Shopper
+51,Rahul Agrawal,9560229394,Nandanvan,174,Premium
+52,Isha Agrawal,9460666437,Hingna,153,Regular
+53,Rahul Sharma,9723111271,Mahal,137,Monthly Bulk Buyer
+54,Aarohi Chandak,9464844941,Sitabuldi,101,Family Shopper
+55,Aditya Verma,9732807711,Manish Nagar,9,Occasional
+56,Aarohi Patil,9136957279,Dharampeth,169,Premium
+57,Saanvi Agrawal,9509025425,Wardha Road,51,Regular
+58,Rahul Rathi,9248132357,Dharampeth,112,Regular
+59,Siddhi Joshi,9848228501,Itwari,16,Occasional
+60,Sneha Verma,9092550213,Dharampeth,97,Regular
+61,Yash Sharma,9691309810,Itwari,121,Premium
+62,Rahul Jain,9967379457,Wardha Road,39,Occasional
+63,Om Gangan,9324264250,Nandanvan,76,Family Shopper
+64,Vivaan Maheshwari,9683625366,Nandanvan,117,Occasional
+65,Pooja Rathi,9755562833,Manish Nagar,182,Family Shopper
+66,Yash Agrawal,9957865436,Mahal,120,Regular
+67,Om Kale,9749603358,Mahal,168,Occasional
+68,Sneha Rathi,9270369249,Mahal,164,Occasional
+69,Yash Agrawal,9265732759,Trimurti Nagar,135,Regular
+70,Sai Patil,9100051553,Bajaj Nagar,38,Family Shopper
+71,Isha Patil,9595977524,Hingna,25,Premium
+72,Aarohi Deshmukh,9261896288,Itwari,120,Monthly Bulk Buyer
+73,Siddhi Patil,9271026767,Mahal,196,Regular
+74,Yash Chandak,9579927079,Sadar,86,Regular
+75,Neha Patil,9229462135,Hingna,182,Regular
+76,Neha Joshi,9709962543,Pratap Nagar,71,Premium
+77,Aarav Maheshwari,9520344765,Dharampeth,69,Occasional
+78,Aditya Gangan,9802909046,Manish Nagar,120,Occasional
+79,Rahul Sharma,9465586652,Sadar,184,Monthly Bulk Buyer
+80,Om Agrawal,9744171581,Dharampeth,32,Regular
+81,Siddhi Patil,9251293110,Bajaj Nagar,3,Monthly Bulk Buyer
+82,Krish Patil,9297519102,Manish Nagar,190,Regular
+83,Aarohi Patil,9106330165,Itwari,135,Family Shopper
+84,Kunal Agrawal,9792749072,Pratap Nagar,1,Regular
+85,Aarohi Agrawal,9428931132,Sadar,193,Family Shopper
+86,Aarohi Rathi,9949684364,Sadar,188,Family Shopper
+87,Sneha Sharma,9442101750,Trimurti Nagar,193,Occasional
+88,Aditya Kale,9701595919,Hingna,186,Monthly Bulk Buyer
+89,Pooja Gangan,9757475833,Trimurti Nagar,43,Regular
+90,Neha Rathi,9775677722,Bajaj Nagar,192,Occasional
+91,Rohan Sharma,9256265062,Mahal,151,Family Shopper
+92,Saanvi Patil,9067245307,Nandanvan,40,Monthly Bulk Buyer
+93,Om Jain,9337976627,Itwari,15,Monthly Bulk Buyer
+94,Sai Patil,9579423873,Nandanvan,125,Regular
+95,Isha Kale,9254969192,Pratap Nagar,72,Monthly Bulk Buyer
+96,Neha Chandak,9259710756,Manish Nagar,53,Monthly Bulk Buyer
+97,Siddhi Gangan,9748595325,Itwari,146,Family Shopper
+98,Yash Joshi,9337970581,Nandanvan,192,Family Shopper
+99,Krish Gangan,9187794176,Manish Nagar,197,Monthly Bulk Buyer
+100,Arjun Gangan,9073305597,Pratap Nagar,37,Monthly Bulk Buyer
+101,Riya Maheshwari,9598339914,Bajaj Nagar,15,Family Shopper
+102,Sneha Verma,9436604432,Hingna,6,Regular
+103,Rohan Patil,9572768297,Sadar,27,Monthly Bulk Buyer
+104,Pooja Jain,9397429250,Sitabuldi,13,Monthly Bulk Buyer
+105,Om Maheshwari,9525680656,Mahal,83,Premium
+106,Vivaan Kale,9459908027,Sitabuldi,17,Family Shopper
+107,Arjun Patil,9823155516,Sadar,192,Regular
+108,Kunal Rathi,9808662813,Wardha Road,40,Regular
+109,Ananya Agrawal,9308003700,Manish Nagar,194,Family Shopper
+110,Arjun Deshmukh,9855660847,Dharampeth,171,Occasional
+111,Om Patil,9039033970,Sadar,179,Regular
+112,Yash Gangan,9826328094,Hingna,142,Monthly Bulk Buyer
+113,Sneha Rathi,9239453546,Sitabuldi,166,Monthly Bulk Buyer
+114,Pooja Sharma,9798632106,Sitabuldi,190,Family Shopper
+115,Saanvi Joshi,9439457039,Hingna,55,Premium
+116,Aarav Jain,9032537657,Nandanvan,154,Family Shopper
+117,Kunal Maheshwari,9894319100,Trimurti Nagar,12,Regular
+118,Ananya Sharma,9476921053,Itwari,48,Occasional
+119,Neha Patil,9460401424,Wardha Road,52,Regular
+120,Aarav Maheshwari,9201137984,Hingna,5,Premium
+121,Kunal Patil,9231660076,Wardha Road,105,Family Shopper
+122,Aarav Joshi,9014473404,Manish Nagar,60,Occasional
+123,Aarav Kale,9096873045,Sitabuldi,153,Monthly Bulk Buyer
+124,Pooja Maheshwari,9825588255,Nandanvan,44,Premium
+125,Rahul Gangan,9754278656,Sitabuldi,154,Monthly Bulk Buyer
+126,Arjun Gangan,9577820582,Trimurti Nagar,87,Premium
+127,Aarohi Joshi,9236161880,Pratap Nagar,26,Premium
+128,Aarav Jain,9823571558,Nandanvan,133,Occasional
+129,Siddhi Joshi,9561372308,Sitabuldi,126,Family Shopper
+130,Aditya Chandak,9436438130,Dharampeth,7,Monthly Bulk Buyer
+131,Sai Agrawal,9211471656,Dharampeth,178,Premium
+132,Isha Gangan,9653469979,Trimurti Nagar,10,Occasional
+133,Vivaan Maheshwari,9550476816,Bajaj Nagar,150,Premium
+134,Neha Kale,9706071748,Sitabuldi,21,Family Shopper
+135,Sai Maheshwari,9653970548,Bajaj Nagar,115,Family Shopper
+136,Krish Rathi,9102908718,Mahal,118,Monthly Bulk Buyer
+137,Yash Rathi,9804918727,Hingna,41,Regular
+138,Isha Joshi,9561213773,Dharampeth,99,Family Shopper
+139,Rahul Sharma,9423597371,Sitabuldi,42,Family Shopper
+140,Arjun Chandak,9990775608,Bajaj Nagar,94,Premium
+141,Sai Rathi,9704686111,Hingna,170,Monthly Bulk Buyer
+142,Kunal Rathi,9832102192,Itwari,50,Occasional
+143,Om Gangan,9847129618,Dharampeth,59,Family Shopper
+144,Arjun Jain,9260508018,Itwari,68,Premium
+145,Sneha Sharma,9425373377,Wardha Road,54,Regular
+146,Aarohi Rathi,9881228217,Pratap Nagar,18,Premium
+147,Aarohi Agrawal,9653460605,Nandanvan,7,Family Shopper
+148,Neha Rathi,9793279862,Manish Nagar,153,Premium
+149,Isha Maheshwari,9169061812,Itwari,10,Monthly Bulk Buyer
+150,Ananya Rathi,9475489547,Pratap Nagar,124,Occasional

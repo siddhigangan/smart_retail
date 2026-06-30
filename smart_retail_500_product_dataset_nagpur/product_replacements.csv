@@ -1,0 +1,1501 @@
+product_barcode,product_name,replacement_rank,replacement_barcode,replacement_name,replacement_reason,price_difference,replacement_score
+8906000000001,Bisleri Water Regular 2L,1,8906000000235,Kinley Water Classic 500ml,Same subcategory,0.75,86.925
+8906000000001,Bisleri Water Regular 2L,2,8906000000108,Bisleri Water Jumbo 2L,Same subcategory,0.75,78.925
+8906000000001,Bisleri Water Regular 2L,3,8906000000177,Kinley Water Regular 2L,Same subcategory,0.75,70.925
+8906000000002,Sunfeast Dark Fantasy Cookies Family Pack 120g,1,8906000000425,Bisk Farm Cookies Regular 75g,Same subcategory,0.0,87.0
+8906000000002,Sunfeast Dark Fantasy Cookies Family Pack 120g,2,8906000000160,Bisk Farm Cookies Family Pack 200g,Same subcategory,3.33,78.667
+8906000000002,Sunfeast Dark Fantasy Cookies Family Pack 120g,3,8906000000439,Unibic Cookies Premium 75g,Same subcategory,22.9,68.71
+8906000000003,Bailey Water Lite 1L,1,8906000000408,Aquafina Water Family Pack 2L,Same subcategory,-0.77,86.923
+8906000000003,Bailey Water Lite 1L,2,8906000000294,Bisleri Water Mini 500ml,Same subcategory,-1.37,78.863
+8906000000003,Bailey Water Lite 1L,3,8906000000110,Bisleri Water Value Pack 1L,Same subcategory,2.13,70.787
+8906000000004,Apis Honey Family Pack 500g,1,8906000000339,Saffola Honey Value Pack 250g,Same subcategory,-58.32,81.168
+8906000000004,Apis Honey Family Pack 500g,2,8906000000315,Apis Honey Classic 250g,Same subcategory,-77.44,71.256
+8906000000004,Apis Honey Family Pack 500g,3,8906000000332,Apis Honey Fresh 250g,Same subcategory,-93.32,61.668
+8906000000005,Amul Ice Cream Value Pack 700ml,1,8906000000178,Dinshaw's Ice Cream Lite 1L,Same subcategory,-9.5,86.05
+8906000000005,Amul Ice Cream Value Pack 700ml,2,8906000000178,Dinshaw's Ice Cream Lite 1L,Same subcategory,-9.5,78.05
+8906000000005,Amul Ice Cream Value Pack 700ml,3,8906000000480,McCain Frozen Snacks Regular 400g,Same category fallback,-21.25,68.875
+8906000000006,Tata Sampann Dal Regular 2kg,1,8906000000342,24 Mantra Dal Original 1kg,Same subcategory,-13.0,85.7
+8906000000006,Tata Sampann Dal Regular 2kg,2,8906000000126,Fortune Dal Fresh 2kg,Same subcategory,16.66,77.334
+8906000000006,Tata Sampann Dal Regular 2kg,3,8906000000333,Tata Sampann Dal Jumbo 2kg,Same subcategory,-34.3,67.57
+8906000000007,Amul Paneer Lite 200g,1,8906000000062,Mother Dairy Paneer Value Pack 500g,Same subcategory,-37.8,83.22
+8906000000007,Amul Paneer Lite 200g,2,8906000000422,Amul Paneer Original 200g,Same subcategory,-39.2,75.08
+8906000000007,Amul Paneer Lite 200g,3,8906000000452,Mother Dairy Paneer Fresh 500g,Same subcategory,44.1,66.59
+8906000000008,Kinley Water Classic 500ml,1,8906000000104,Bailey Water Lite 1L,Same subcategory,0.35,86.965
+8906000000008,Kinley Water Classic 500ml,2,8906000000310,Kinley Water Family Pack 1L,Same subcategory,-2.45,78.755
+8906000000008,Kinley Water Classic 500ml,3,8906000000274,Bisleri Water Premium 1L,Same subcategory,-3.95,70.605
+8906000000009,Godrej Hair Color Premium 1pc,1,8906000000028,Garnier Hair Color Mini 1pc,Same subcategory,-72.29,79.771
+8906000000009,Godrej Hair Color Premium 1pc,2,8906000000318,Garnier Hair Color Value Pack 1pc,Same subcategory,75.36,71.464
+8906000000009,Godrej Hair Color Premium 1pc,3,8906000000455,L'Oreal Hair Color Value Pack 1pc,Same subcategory,120.96,58.903999999999996
+8906000000010,Tata Sampann Poha Jumbo 500g,1,8906000000023,Organic Tattva Poha Classic 500g,Same subcategory,31.28,83.872
+8906000000010,Tata Sampann Poha Jumbo 500g,2,8906000000192,Organic Tattva Poha Mini 500g,Same subcategory,-31.89,75.81099999999999
+8906000000010,Tata Sampann Poha Jumbo 500g,3,8906000000238,Local Mill Poha Family Pack 500g,Same subcategory,-55.17,65.483
+8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,1,8906000000043,Sunfeast Dark Fantasy Cookies Lite 120g,Same subcategory,-4.5,86.55
+8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,2,8906000000189,Unibic Cookies Classic 75g,Same subcategory,-15.85,77.415
+8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,3,8906000000439,Unibic Cookies Premium 75g,Same subcategory,-48.83,66.117
+8906000000012,Pomegranate 1kg,1,8906000000366,Sweet Lime 1kg,Same subcategory,-5.2,86.48
+8906000000012,Pomegranate 1kg,2,8906000000087,Pomegranate 1kg,Same subcategory,16.75,77.325
+8906000000012,Pomegranate 1kg,3,8906000000044,Apple 1kg,Same subcategory,65.36,64.464
+8906000000013,Aashirvaad Suji Original 1kg,1,8906000000042,Rajdhani Suji Jumbo 1kg,Same subcategory,-57.32,81.268
+8906000000013,Aashirvaad Suji Original 1kg,2,8906000000239,Rajdhani Suji Premium 500g,Same subcategory,-59.52,73.048
+8906000000013,Aashirvaad Suji Original 1kg,3,8906000000409,Local Mill Suji Value Pack 500g,Same subcategory,-61.27,64.873
+8906000000014,Parle Small Snacks Jumbo 50g,1,8906000000415,Parle Small Snacks Original 50g,Same subcategory,1.8,86.82
+8906000000014,Parle Small Snacks Jumbo 50g,2,8906000000085,Balaji Small Snacks Family Pack 50g,Same subcategory,-4.3,78.57
+8906000000014,Parle Small Snacks Jumbo 50g,3,8906000000448,Haldiram Small Snacks Fresh 50g,Same subcategory,7.46,70.254
+8906000000015,Sofy Sanitary Care Premium 30pc,1,8906000000215,Stayfree Sanitary Care Classic 30pc,Same subcategory,4.51,86.549
+8906000000015,Sofy Sanitary Care Premium 30pc,2,8906000000184,Whisper Sanitary Care Mini 7pc,Same subcategory,13.3,77.67
+8906000000015,Sofy Sanitary Care Premium 30pc,3,8906000000410,Whisper Sanitary Care Premium 15pc,Same subcategory,-31.0,67.9
+8906000000016,Aquafina Water Family Pack 500ml,1,8906000000294,Bisleri Water Mini 500ml,Same subcategory,1.0,86.9
+8906000000016,Aquafina Water Family Pack 500ml,2,8906000000408,Aquafina Water Family Pack 2L,Same subcategory,1.6,78.84
+8906000000016,Aquafina Water Family Pack 500ml,3,8906000000003,Bailey Water Lite 1L,Same subcategory,2.37,70.763
+8906000000017,Pepsodent Toothbrush Family Pack 4pc,1,8906000000277,Colgate Toothbrush Lite 1pc,Same subcategory,2.7,86.73
+8906000000017,Pepsodent Toothbrush Family Pack 4pc,2,8906000000084,Colgate Toothbrush Fresh 1pc,Same subcategory,11.7,77.83
+8906000000017,Pepsodent Toothbrush Family Pack 4pc,3,8906000000081,Oral-B Toothbrush Value Pack 1pc,Same subcategory,25.6,68.44
+8906000000018,Sensodyne Toothbrush Lite 2pc,1,8906000000081,Oral-B Toothbrush Value Pack 1pc,Same subcategory,-23.9,84.61
+8906000000018,Sensodyne Toothbrush Lite 2pc,2,8906000000084,Colgate Toothbrush Fresh 1pc,Same subcategory,-37.8,75.22
+8906000000018,Sensodyne Toothbrush Lite 2pc,3,8906000000277,Colgate Toothbrush Lite 1pc,Same subcategory,-46.8,66.32
+8906000000019,Tops Jam Lite 500g,1,8906000000228,Tops Jam Lite 200g,Same subcategory,-0.05,86.995
+8906000000019,Tops Jam Lite 500g,2,8906000000265,Mapro Jam Jumbo 500g,Same subcategory,-1.2,78.88
+8906000000019,Tops Jam Lite 500g,3,8906000000050,Tops Jam Jumbo 500g,Same subcategory,-21.8,68.82
+8906000000020,Continental Coffee Lite 100g,1,8906000000296,Nescafe Coffee Fresh 50g,Same subcategory,1.78,86.822
+8906000000020,Continental Coffee Lite 100g,2,8906000000030,Nescafe Coffee Value Pack 50g,Same subcategory,-18.82,77.118
+8906000000020,Continental Coffee Lite 100g,3,8906000000419,Nescafe Coffee Mini 50g,Same subcategory,104.38,60.562000000000005
+8906000000021,Maggi Soup Original 100g,1,8906000000340,Maggi Soup Value Pack 45g,Same subcategory,15.15,85.485
+8906000000021,Maggi Soup Original 100g,2,8906000000281,Knorr Soup Family Pack 100g,Same subcategory,90.3,69.97
+8906000000021,Maggi Soup Original 100g,3,8906000000282,Knorr Soup Fresh 45g,Same subcategory,97.6,61.24
+8906000000022,McCain Frozen Snacks Jumbo 400g,1,8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,Same subcategory,-11.97,85.803
+8906000000022,McCain Frozen Snacks Jumbo 400g,2,8906000000176,ITC Master Chef Frozen Snacks Original 1kg,Same subcategory,-13.0,77.7
+8906000000022,McCain Frozen Snacks Jumbo 400g,3,8906000000286,McCain Frozen Snacks Family Pack 1kg,Same subcategory,13.5,69.65
+8906000000023,Organic Tattva Poha Classic 500g,1,8906000000010,Tata Sampann Poha Jumbo 500g,Same subcategory,-31.28,83.872
+8906000000023,Organic Tattva Poha Classic 500g,2,8906000000192,Organic Tattva Poha Mini 500g,Same subcategory,-63.17,72.68299999999999
+8906000000023,Organic Tattva Poha Classic 500g,3,8906000000238,Local Mill Poha Family Pack 500g,Same subcategory,-86.45,62.355
+8906000000024,Spring Onion 1 bunch,1,8906000000224,Mint 1 bunch,Same subcategory,-3.25,86.675
+8906000000024,Spring Onion 1 bunch,2,8906000000267,Spring Onion 1 bunch,Same subcategory,6.95,78.305
+8906000000024,Spring Onion 1 bunch,3,8906000000381,Mint 1 bunch,Same subcategory,6.95,70.305
+8906000000025,Tropicana Juices Value Pack 1L,1,8906000000321,B Natural Juices Jumbo 1L,Same subcategory,1.57,86.843
+8906000000025,Tropicana Juices Value Pack 1L,2,8906000000092,Real Juices Value Pack 200ml,Same subcategory,-11.16,77.884
+8906000000025,Tropicana Juices Value Pack 1L,3,8906000000258,Real Juices Regular 200ml,Same subcategory,-28.83,68.117
+8906000000026,Duracell Batteries Regular 4pc,1,8906000000240,Eveready Batteries Original 4pc,Same subcategory,-3.31,86.669
+8906000000026,Duracell Batteries Regular 4pc,2,8906000000326,Eveready Batteries Jumbo 2pc,Same subcategory,10.09,77.991
+8906000000026,Duracell Batteries Regular 4pc,3,8906000000058,Eveready Batteries Premium 4pc,Same subcategory,22.44,68.756
+8906000000027,Mother Dairy Curd Jumbo 1kg,1,8906000000462,Gowardhan Curd Mini 1kg,Same subcategory,50.34,81.966
+8906000000027,Mother Dairy Curd Jumbo 1kg,2,8906000000057,Amul Curd Regular 400g,Same subcategory,71.1,71.89
+8906000000027,Mother Dairy Curd Jumbo 1kg,3,8906000000351,Amul Curd Classic 1kg,Same subcategory,91.6,61.84
+8906000000028,Garnier Hair Color Mini 1pc,1,8906000000009,Godrej Hair Color Premium 1pc,Same subcategory,72.29,79.771
+8906000000028,Garnier Hair Color Mini 1pc,2,8906000000318,Garnier Hair Color Value Pack 1pc,Same subcategory,147.65,64.235
+8906000000028,Garnier Hair Color Mini 1pc,3,8906000000455,L'Oreal Hair Color Value Pack 1pc,Same subcategory,193.25,55
+8906000000029,MTR Instant Mix Value Pack 200g,1,8906000000490,Gits Instant Mix Lite 500g,Same subcategory,5.8,86.42
+8906000000029,MTR Instant Mix Value Pack 200g,2,8906000000082,Gits Instant Mix Mini 200g,Same subcategory,-11.0,77.9
+8906000000029,MTR Instant Mix Value Pack 200g,3,8906000000254,MTR Instant Mix Jumbo 500g,Same subcategory,-170.0,55
+8906000000030,Nescafe Coffee Value Pack 50g,1,8906000000020,Continental Coffee Lite 100g,Same subcategory,18.82,85.118
+8906000000030,Nescafe Coffee Value Pack 50g,2,8906000000296,Nescafe Coffee Fresh 50g,Same subcategory,20.6,76.94
+8906000000030,Nescafe Coffee Value Pack 50g,3,8906000000419,Nescafe Coffee Mini 50g,Same subcategory,123.2,58.68
+8906000000031,Harpic Toilet Cleaner Classic 500ml,1,8906000000316,Harpic Toilet Cleaner Value Pack 1L,Same subcategory,-8.9,86.11
+8906000000031,Harpic Toilet Cleaner Classic 500ml,2,8906000000052,Harpic Toilet Cleaner Original 1L,Same subcategory,-34.75,75.525
+8906000000031,Harpic Toilet Cleaner Classic 500ml,3,8906000000390,Sanifresh Toilet Cleaner Jumbo 1L,Same subcategory,35.45,67.455
+8906000000032,Pears Body Wash Regular 500ml,1,8906000000428,Dove Body Wash Mini 250ml,Same subcategory,26.43,84.357
+8906000000032,Pears Body Wash Regular 500ml,2,8906000000295,Nivea Body Wash Lite 500ml,Same subcategory,56.1,73.39
+8906000000032,Pears Body Wash Regular 500ml,3,8906000000111,Nivea Body Wash Original 250ml,Same subcategory,-67.66,64.234
+8906000000033,Sunrich Edible Oil Jumbo 5L,1,8906000000476,Dhara Edible Oil Mini 1L,Same subcategory,-18.7,85.13
+8906000000033,Sunrich Edible Oil Jumbo 5L,2,8906000000476,Dhara Edible Oil Mini 1L,Same subcategory,-18.7,77.13
+8906000000033,Sunrich Edible Oil Jumbo 5L,3,8906000000182,Gowardhan Ghee Mini 500ml,Same category fallback,42.9,66.71
+8906000000034,Dove Shampoo Regular 650ml,1,8906000000385,Dove Shampoo Lite 650ml,Same subcategory,29.55,84.045
+8906000000034,Dove Shampoo Regular 650ml,2,8906000000123,Head & Shoulders Shampoo Regular 650ml,Same subcategory,-45.15,74.485
+8906000000034,Dove Shampoo Regular 650ml,3,8906000000400,Pantene Shampoo Regular 80ml,Same subcategory,77.1,63.29
+8906000000035,Fortune Dal Fresh 1kg,1,8906000000299,Fortune Dal Mini 500g,Same subcategory,6.65,86.335
+8906000000035,Fortune Dal Fresh 1kg,2,8906000000464,24 Mantra Dal Jumbo 1kg,Same subcategory,-15.75,77.425
+8906000000035,Fortune Dal Fresh 1kg,3,8906000000469,24 Mantra Dal Value Pack 500g,Same subcategory,22.09,68.791
+8906000000036,Amul Cheese Family Pack 400g,1,8906000000165,Go Cheese Classic 200g,Same subcategory,-4.9,86.51
+8906000000036,Amul Cheese Family Pack 400g,2,8906000000416,Amul Cheese Premium 200g,Same subcategory,14.9,77.51
+8906000000036,Amul Cheese Family Pack 400g,3,8906000000173,Go Cheese Value Pack 200g,Same subcategory,-47.1,66.29
+8906000000037,Sofy Sanitary Care Regular 30pc,1,8906000000152,Whisper Sanitary Care Original 30pc,Same subcategory,13.0,85.7
+8906000000037,Sofy Sanitary Care Regular 30pc,2,8906000000436,Sofy Sanitary Care Family Pack 30pc,Same subcategory,31.25,75.875
+8906000000037,Sofy Sanitary Care Regular 30pc,3,8906000000179,Stayfree Sanitary Care Family Pack 30pc,Same subcategory,-39.88,67.012
+8906000000038,Orbit Mints Original 10pc,1,8906000000352,Parle Small Snacks Family Pack 50g,Same category fallback,8.12,86.188
+8906000000038,Orbit Mints Original 10pc,2,8906000000429,Eveready Batteries Original 4pc,Same category fallback,-14.4,77.56
+8906000000038,Orbit Mints Original 10pc,3,8906000000283,Eveready Batteries Lite 2pc,Same category fallback,-21.64,68.836
+8906000000039,Camlin Stationery Original 10pc,1,8906000000272,Classmate Stationery Regular 1pc,Same subcategory,4.4,86.56
+8906000000039,Camlin Stationery Original 10pc,2,8906000000137,Nataraj Stationery Original 10pc,Same subcategory,11.15,77.885
+8906000000039,Camlin Stationery Original 10pc,3,8906000000456,Nataraj Stationery Value Pack 10pc,Same subcategory,68.7,64.13
+8906000000040,Methi 1 bunch,1,8906000000224,Mint 1 bunch,Same subcategory,9.35,86.065
+8906000000040,Methi 1 bunch,2,8906000000024,Spring Onion 1 bunch,Same subcategory,12.6,77.74
+8906000000040,Methi 1 bunch,3,8906000000267,Spring Onion 1 bunch,Same subcategory,19.55,69.045
+8906000000041,Pantene Conditioner Jumbo 80ml,1,8906000000347,Dove Conditioner Value Pack 175ml,Same subcategory,-27.5,84.25
+8906000000041,Pantene Conditioner Jumbo 80ml,2,8906000000139,Dove Conditioner Original 340ml,Same subcategory,-32.0,75.8
+8906000000041,Pantene Conditioner Jumbo 80ml,3,8906000000378,L'Oreal Conditioner Jumbo 175ml,Same subcategory,-35.9,67.41
+8906000000042,Rajdhani Suji Jumbo 1kg,1,8906000000239,Rajdhani Suji Premium 500g,Same subcategory,-2.2,86.78
+8906000000042,Rajdhani Suji Jumbo 1kg,2,8906000000409,Local Mill Suji Value Pack 500g,Same subcategory,-3.95,78.605
+8906000000042,Rajdhani Suji Jumbo 1kg,3,8906000000309,Rajdhani Suji Fresh 1kg,Same subcategory,-29.95,68.005
+8906000000043,Sunfeast Dark Fantasy Cookies Lite 120g,1,8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,Same subcategory,4.5,86.55
+8906000000043,Sunfeast Dark Fantasy Cookies Lite 120g,2,8906000000189,Unibic Cookies Classic 75g,Same subcategory,-11.35,77.865
+8906000000043,Sunfeast Dark Fantasy Cookies Lite 120g,3,8906000000439,Unibic Cookies Premium 75g,Same subcategory,-44.33,66.56700000000001
+8906000000044,Apple 1kg,1,8906000000248,Watermelon 1kg,Same subcategory,39.9,83.01
+8906000000044,Apple 1kg,2,8906000000087,Pomegranate 1kg,Same subcategory,-48.61,74.139
+8906000000044,Apple 1kg,3,8906000000012,Pomegranate 1kg,Same subcategory,-65.36,64.464
+8906000000045,Ching's Sauces Fresh 500g,1,8906000000495,Everest Masala Fresh 50g,Same category fallback,0.0,87.0
+8906000000045,Ching's Sauces Fresh 500g,2,8906000000287,Everest Masala Lite 50g,Same category fallback,2.82,78.718
+8906000000045,Ching's Sauces Fresh 500g,3,8906000000187,Nilon's Pickles Original 1kg,Same category fallback,-16.7,69.33
+8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,1,8906000000176,ITC Master Chef Frozen Snacks Original 1kg,Same subcategory,-1.03,86.897
+8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,2,8906000000237,ITC Master Chef Frozen Snacks Original 400g,Same subcategory,-5.03,78.497
+8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,3,8906000000022,McCain Frozen Snacks Jumbo 400g,Same subcategory,11.97,69.803
+8906000000047,Farm Fresh Eggs Lite 6pc,1,8906000000059,Farm Fresh Eggs Fresh 12pc,Same subcategory,0.9,86.91
+8906000000047,Farm Fresh Eggs Lite 6pc,2,8906000000485,Suguna Eggs Classic 12pc,Same subcategory,12.35,77.765
+8906000000047,Farm Fresh Eggs Lite 6pc,3,8906000000356,Local Farm Eggs Lite 12pc,Same subcategory,29.0,68.1
+8906000000048,Kissan Jam Lite 200g,1,8906000000050,Tops Jam Jumbo 500g,Same subcategory,42.0,82.8
+8906000000048,Kissan Jam Lite 200g,2,8906000000265,Mapro Jam Jumbo 500g,Same subcategory,62.6,72.74
+8906000000048,Kissan Jam Lite 200g,3,8906000000228,Tops Jam Lite 200g,Same subcategory,63.75,64.625
+8906000000049,Sofy Sanitary Care Jumbo 30pc,1,8906000000300,Stayfree Sanitary Care Original 15pc,Same subcategory,10.44,85.956
+8906000000049,Sofy Sanitary Care Jumbo 30pc,2,8906000000410,Whisper Sanitary Care Premium 15pc,Same subcategory,19.0,77.1
+8906000000049,Sofy Sanitary Care Jumbo 30pc,3,8906000000015,Sofy Sanitary Care Premium 30pc,Same subcategory,50.0,66.0
+8906000000050,Tops Jam Jumbo 500g,1,8906000000265,Mapro Jam Jumbo 500g,Same subcategory,20.6,84.94
+8906000000050,Tops Jam Jumbo 500g,2,8906000000228,Tops Jam Lite 200g,Same subcategory,21.75,76.825
+8906000000050,Tops Jam Jumbo 500g,3,8906000000019,Tops Jam Lite 500g,Same subcategory,21.8,68.82
+8906000000051,Priya Pickles Jumbo 200g,1,8906000000262,Pachranga Pickles Regular 1kg,Same subcategory,-24.95,84.505
+8906000000051,Priya Pickles Jumbo 200g,2,8906000000226,Nilon's Pickles Fresh 500g,Same subcategory,-43.9,74.61
+8906000000051,Priya Pickles Jumbo 200g,3,8906000000367,Pachranga Pickles Lite 200g,Same subcategory,49.2,66.08
+8906000000052,Harpic Toilet Cleaner Original 1L,1,8906000000316,Harpic Toilet Cleaner Value Pack 1L,Same subcategory,25.85,84.415
+8906000000052,Harpic Toilet Cleaner Original 1L,2,8906000000031,Harpic Toilet Cleaner Classic 500ml,Same subcategory,34.75,75.525
+8906000000052,Harpic Toilet Cleaner Original 1L,3,8906000000390,Sanifresh Toilet Cleaner Jumbo 1L,Same subcategory,70.2,63.980000000000004
+8906000000053,Comfort Fabric Care Lite 1L,1,8906000000394,Domex Toilet Cleaner Value Pack 1L,Same category fallback,1.08,86.892
+8906000000053,Comfort Fabric Care Lite 1L,2,8906000000194,Domex Toilet Cleaner Premium 500ml,Same category fallback,-1.35,78.865
+8906000000053,Comfort Fabric Care Lite 1L,3,8906000000200,Domex Toilet Cleaner Mini 500ml,Same category fallback,2.37,70.763
+8906000000054,Tide Detergent Family Pack 2kg,1,8906000000486,Surf Excel Detergent Jumbo 2kg,Same subcategory,-5.85,86.41499999999999
+8906000000054,Tide Detergent Family Pack 2kg,2,8906000000305,Rin Detergent Premium 2kg,Same subcategory,-11.3,77.87
+8906000000054,Tide Detergent Family Pack 2kg,3,8906000000407,Surf Excel Detergent Premium 2kg,Same subcategory,42.45,66.755
+8906000000055,Amul Butter Lite 100g,1,8906000000142,Gowardhan Butter Mini 100g,Same subcategory,-6.0,86.4
+8906000000055,Amul Butter Lite 100g,2,8906000000320,Gowardhan Butter Mini 100g,Same subcategory,-49.0,74.1
+8906000000055,Amul Butter Lite 100g,3,8906000000124,Amul Butter Original 100g,Same subcategory,-78.96,63.104
+8906000000056,Mother Dairy Curd Jumbo 1kg,1,8906000000027,Mother Dairy Curd Jumbo 1kg,Same subcategory,100.2,76.98
+8906000000056,Mother Dairy Curd Jumbo 1kg,2,8906000000462,Gowardhan Curd Mini 1kg,Same subcategory,150.54,63.946
+8906000000056,Mother Dairy Curd Jumbo 1kg,3,8906000000057,Amul Curd Regular 400g,Same subcategory,171.3,55
+8906000000057,Amul Curd Regular 400g,1,8906000000351,Amul Curd Classic 1kg,Same subcategory,20.5,84.95
+8906000000057,Amul Curd Regular 400g,2,8906000000462,Gowardhan Curd Mini 1kg,Same subcategory,-20.76,76.924
+8906000000057,Amul Curd Regular 400g,3,8906000000027,Mother Dairy Curd Jumbo 1kg,Same subcategory,-71.1,63.89
+8906000000058,Eveready Batteries Premium 4pc,1,8906000000326,Eveready Batteries Jumbo 2pc,Same subcategory,-12.35,85.765
+8906000000058,Eveready Batteries Premium 4pc,2,8906000000026,Duracell Batteries Regular 4pc,Same subcategory,-22.44,76.756
+8906000000058,Eveready Batteries Premium 4pc,3,8906000000240,Eveready Batteries Original 4pc,Same subcategory,-25.75,68.425
+8906000000059,Farm Fresh Eggs Fresh 12pc,1,8906000000047,Farm Fresh Eggs Lite 6pc,Same subcategory,-0.9,86.91
+8906000000059,Farm Fresh Eggs Fresh 12pc,2,8906000000485,Suguna Eggs Classic 12pc,Same subcategory,11.45,77.855
+8906000000059,Farm Fresh Eggs Fresh 12pc,3,8906000000356,Local Farm Eggs Lite 12pc,Same subcategory,28.1,68.19
+8906000000060,Dabur Amla Hair Oil Lite 500ml,1,8906000000204,Bajaj Almond Drops Hair Oil Mini 500ml,Same subcategory,-8.3,86.17
+8906000000060,Dabur Amla Hair Oil Lite 500ml,2,8906000000167,Navratna Hair Oil Jumbo 500ml,Same subcategory,-31.55,75.845
+8906000000060,Dabur Amla Hair Oil Lite 500ml,3,8906000000468,Parachute Hair Oil Family Pack 200ml,Same subcategory,53.48,65.652
+8906000000061,Bourbon Cream Biscuits Jumbo 150g,1,8906000000089,Hide & Seek Cream Biscuits Regular 150g,Same subcategory,-3.13,86.687
+8906000000061,Bourbon Cream Biscuits Jumbo 150g,2,8906000000071,Hide & Seek Cream Biscuits Premium 150g,Same subcategory,6.28,78.372
+8906000000061,Bourbon Cream Biscuits Jumbo 150g,3,8906000000217,Bourbon Cream Biscuits Classic 100g,Same subcategory,6.88,70.312
+8906000000062,Mother Dairy Paneer Value Pack 500g,1,8906000000422,Amul Paneer Original 200g,Same subcategory,-1.4,86.86
+8906000000062,Mother Dairy Paneer Value Pack 500g,2,8906000000007,Amul Paneer Lite 200g,Same subcategory,37.8,75.22
+8906000000062,Mother Dairy Paneer Value Pack 500g,3,8906000000452,Mother Dairy Paneer Fresh 500g,Same subcategory,81.9,62.81
+8906000000063,Parle Small Snacks Classic 100g,1,8906000000477,Haldiram Small Snacks Value Pack 50g,Same subcategory,-51.85,81.815
+8906000000063,Parle Small Snacks Classic 100g,2,8906000000352,Parle Small Snacks Family Pack 50g,Same subcategory,-80.68,70.932
+8906000000063,Parle Small Snacks Classic 100g,3,8906000000412,Parle Small Snacks Regular 100g,Same subcategory,-127.2,58.28
+8906000000064,Kissan Sauces Mini 200g,1,8906000000193,Catch Masala Original 200g,Same category fallback,-13.72,85.628
+8906000000064,Kissan Sauces Mini 200g,2,8906000000051,Priya Pickles Jumbo 200g,Same category fallback,-18.82,77.118
+8906000000064,Kissan Sauces Mini 200g,3,8906000000155,Everest Masala Classic 200g,Same category fallback,-29.22,68.078
+8906000000065,Mother Dairy Milk Mini 1L,1,8906000000270,Dinshaw's Milk Family Pack 1L,Same subcategory,0.9,86.91
+8906000000065,Mother Dairy Milk Mini 1L,2,8906000000370,Dinshaw's Milk Lite 500ml,Same subcategory,-1.3,78.87
+8906000000065,Mother Dairy Milk Mini 1L,3,8906000000117,Dinshaw's Milk Original 1L,Same subcategory,-1.78,70.822
+8906000000066,Bingo Chips Lite 150g,1,8906000000263,Too Yumm Chips Fresh 90g,Same subcategory,1.95,86.805
+8906000000066,Bingo Chips Lite 150g,2,8906000000465,Lay's Chips Regular 52g,Same subcategory,-3.8,78.62
+8906000000066,Bingo Chips Lite 150g,3,8906000000424,Too Yumm Chips Classic 90g,Same subcategory,-9.0,70.1
+8906000000067,Kinley Water Classic 1L,1,8906000000158,Kinley Water Fresh 1L,Same subcategory,0.74,86.926
+8906000000067,Kinley Water Classic 1L,2,8906000000110,Bisleri Water Value Pack 1L,Same subcategory,-1.26,78.874
+8906000000067,Kinley Water Classic 1L,3,8906000000003,Bailey Water Lite 1L,Same subcategory,-3.39,70.661
+8906000000068,Bourbon Cream Biscuits Fresh 150g,1,8906000000355,Treat Cream Biscuits Jumbo 100g,Same subcategory,3.75,86.625
+8906000000068,Bourbon Cream Biscuits Fresh 150g,2,8906000000209,Oreo Cream Biscuits Family Pack 100g,Same subcategory,-9.3,78.07
+8906000000068,Bourbon Cream Biscuits Fresh 150g,3,8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,Same subcategory,-11.55,69.845
+8906000000069,Duracell Batteries Original 4pc,1,8906000000471,Nippo Batteries Classic 4pc,Same subcategory,6.85,86.315
+8906000000069,Duracell Batteries Original 4pc,2,8906000000344,Eveready Batteries Regular 4pc,Same subcategory,51.4,73.86
+8906000000069,Duracell Batteries Original 4pc,3,8906000000283,Eveready Batteries Lite 2pc,Same subcategory,87.76,62.224000000000004
+8906000000070,Amul Butter Jumbo 500g,1,8906000000195,Gowardhan Butter Mini 500g,Same subcategory,-0.32,86.968
+8906000000070,Amul Butter Jumbo 500g,2,8906000000079,Britannia Butter Fresh 100g,Same subcategory,-4.85,78.515
+8906000000070,Amul Butter Jumbo 500g,3,8906000000500,Britannia Butter Fresh 500g,Same subcategory,-14.55,69.545
+8906000000071,Hide & Seek Cream Biscuits Premium 150g,1,8906000000217,Bourbon Cream Biscuits Classic 100g,Same subcategory,0.6,86.94
+8906000000071,Hide & Seek Cream Biscuits Premium 150g,2,8906000000375,Oreo Cream Biscuits Original 100g,Same subcategory,0.6,78.94
+8906000000071,Hide & Seek Cream Biscuits Premium 150g,3,8906000000131,Oreo Cream Biscuits Fresh 150g,Same subcategory,0.82,70.918
+8906000000072,Pantene Shampoo Classic 340ml,1,8906000000400,Pantene Shampoo Regular 80ml,Same subcategory,-3.3,86.67
+8906000000072,Pantene Shampoo Classic 340ml,2,8906000000385,Dove Shampoo Lite 650ml,Same subcategory,-50.85,73.91499999999999
+8906000000072,Pantene Shampoo Classic 340ml,3,8906000000034,Dove Shampoo Regular 650ml,Same subcategory,-80.4,62.96
+8906000000073,Amul Cheese Mini 200g,1,8906000000416,Amul Cheese Premium 200g,Same subcategory,-51.45,81.855
+8906000000073,Amul Cheese Mini 200g,2,8906000000036,Amul Cheese Family Pack 400g,Same subcategory,-66.35,72.365
+8906000000073,Amul Cheese Mini 200g,3,8906000000165,Go Cheese Classic 200g,Same subcategory,-71.25,63.875
+8906000000074,Dabur Red Toothpaste Classic 150g,1,8906000000095,Listerine Mouthwash Family Pack 250ml,Same category fallback,4.0,86.6
+8906000000074,Dabur Red Toothpaste Classic 150g,2,8906000000236,Colgate Toothpaste Value Pack 80g,Same subcategory,-6.8,78.32
+8906000000074,Dabur Red Toothpaste Classic 150g,3,8906000000236,Colgate Toothpaste Value Pack 80g,Same subcategory,-6.8,70.32
+8906000000075,Pepsi Soft Drinks Fresh 600ml,1,8906000000472,Fanta Soft Drinks Regular 1.25L,Same subcategory,-7.81,86.219
+8906000000075,Pepsi Soft Drinks Fresh 600ml,2,8906000000319,Thums Up Soft Drinks Original 2L,Same subcategory,10.1,77.99
+8906000000075,Pepsi Soft Drinks Fresh 600ml,3,8906000000094,Thums Up Soft Drinks Mini 600ml,Same subcategory,-12.31,69.769
+8906000000076,Apsara Stationery Mini 10pc,1,8906000000387,Apsara Stationery Classic 1pc,Same subcategory,-33.3,83.67
+8906000000076,Apsara Stationery Mini 10pc,2,8906000000172,Camlin Stationery Jumbo 1pc,Same subcategory,-103.79,68.621
+8906000000076,Apsara Stationery Mini 10pc,3,8906000000456,Nataraj Stationery Value Pack 10pc,Same subcategory,-112.44,59.756
+8906000000077,Saffola Oats Original 400g,1,8906000000136,Quaker Oats Regular 400g,Same subcategory,7.0,86.3
+8906000000077,Saffola Oats Original 400g,2,8906000000210,Kellogg's Oats Regular 1kg,Same subcategory,-15.9,77.41
+8906000000077,Saffola Oats Original 400g,3,8906000000162,Saffola Oats Classic 400g,Same subcategory,-32.4,67.76
+8906000000078,Cadbury Chocolates Original 100g,1,8906000000203,Cadbury Chocolates Mini 50g,Same subcategory,9.34,86.066
+8906000000078,Cadbury Chocolates Original 100g,2,8906000000498,Nestle Chocolates Value Pack 100g,Same subcategory,-18.7,77.13
+8906000000078,Cadbury Chocolates Original 100g,3,8906000000435,Ferrero Chocolates Family Pack 100g,Same subcategory,136.25,57.375
+8906000000079,Britannia Butter Fresh 100g,1,8906000000195,Gowardhan Butter Mini 500g,Same subcategory,4.53,86.547
+8906000000079,Britannia Butter Fresh 100g,2,8906000000070,Amul Butter Jumbo 500g,Same subcategory,4.85,78.515
+8906000000079,Britannia Butter Fresh 100g,3,8906000000500,Britannia Butter Fresh 500g,Same subcategory,-9.7,70.03
+8906000000080,Gowardhan Ghee Mini 1L,1,8906000000182,Gowardhan Ghee Mini 500ml,Same subcategory,162.64,70.736
+8906000000080,Gowardhan Ghee Mini 1L,2,8906000000393,Gowardhan Ghee Value Pack 500ml,Same subcategory,168.8,62.120000000000005
+8906000000080,Gowardhan Ghee Mini 1L,3,8906000000449,Gowardhan Ghee Classic 1L,Same subcategory,199.6,55
+8906000000081,Oral-B Toothbrush Value Pack 1pc,1,8906000000084,Colgate Toothbrush Fresh 1pc,Same subcategory,-13.9,85.61
+8906000000081,Oral-B Toothbrush Value Pack 1pc,2,8906000000277,Colgate Toothbrush Lite 1pc,Same subcategory,-22.9,76.71000000000001
+8906000000081,Oral-B Toothbrush Value Pack 1pc,3,8906000000018,Sensodyne Toothbrush Lite 2pc,Same subcategory,23.9,68.61
+8906000000082,Gits Instant Mix Mini 200g,1,8906000000029,MTR Instant Mix Value Pack 200g,Same subcategory,11.0,85.9
+8906000000082,Gits Instant Mix Mini 200g,2,8906000000490,Gits Instant Mix Lite 500g,Same subcategory,16.8,77.32
+8906000000082,Gits Instant Mix Mini 200g,3,8906000000254,MTR Instant Mix Jumbo 500g,Same subcategory,-159.0,55.1
+8906000000083,Eveready Batteries Family Pack 4pc,1,8906000000429,Eveready Batteries Original 4pc,Same subcategory,-36.25,83.375
+8906000000083,Eveready Batteries Family Pack 4pc,2,8906000000234,Duracell Batteries Mini 4pc,Same subcategory,42.3,74.77
+8906000000083,Eveready Batteries Family Pack 4pc,3,8906000000283,Eveready Batteries Lite 2pc,Same subcategory,-43.49,66.651
+8906000000084,Colgate Toothbrush Fresh 1pc,1,8906000000277,Colgate Toothbrush Lite 1pc,Same subcategory,-9.0,86.1
+8906000000084,Colgate Toothbrush Fresh 1pc,2,8906000000017,Pepsodent Toothbrush Family Pack 4pc,Same subcategory,-11.7,77.83
+8906000000084,Colgate Toothbrush Fresh 1pc,3,8906000000081,Oral-B Toothbrush Value Pack 1pc,Same subcategory,13.9,69.61
+8906000000085,Balaji Small Snacks Family Pack 50g,1,8906000000014,Parle Small Snacks Jumbo 50g,Same subcategory,4.3,86.57
+8906000000085,Balaji Small Snacks Family Pack 50g,2,8906000000415,Parle Small Snacks Original 50g,Same subcategory,6.1,78.39
+8906000000085,Balaji Small Snacks Family Pack 50g,3,8906000000448,Haldiram Small Snacks Fresh 50g,Same subcategory,11.76,69.824
+8906000000086,Tropicana Juices Regular 1L,1,8906000000119,B Natural Juices Mini 1L,Same subcategory,9.3,86.07
+8906000000086,Tropicana Juices Regular 1L,2,8906000000258,Real Juices Regular 200ml,Same subcategory,38.85,75.115
+8906000000086,Tropicana Juices Regular 1L,3,8906000000092,Real Juices Value Pack 200ml,Same subcategory,56.52,65.348
+8906000000087,Pomegranate 1kg,1,8906000000012,Pomegranate 1kg,Same subcategory,-16.75,85.325
+8906000000087,Pomegranate 1kg,2,8906000000366,Sweet Lime 1kg,Same subcategory,-21.95,76.805
+8906000000087,Pomegranate 1kg,3,8906000000044,Apple 1kg,Same subcategory,48.61,66.139
+8906000000088,Mother Dairy Ghee Original 500ml,1,8906000000186,Mother Dairy Ghee Value Pack 500ml,Same subcategory,5.69,86.43100000000001
+8906000000088,Mother Dairy Ghee Original 500ml,2,8906000000449,Gowardhan Ghee Classic 1L,Same subcategory,-21.09,76.89099999999999
+8906000000088,Mother Dairy Ghee Original 500ml,3,8906000000163,Patanjali Ghee Regular 500ml,Same subcategory,27.62,68.238
+8906000000089,Hide & Seek Cream Biscuits Regular 150g,1,8906000000061,Bourbon Cream Biscuits Jumbo 150g,Same subcategory,3.13,86.687
+8906000000089,Hide & Seek Cream Biscuits Regular 150g,2,8906000000143,Hide & Seek Cream Biscuits Mini 150g,Same subcategory,-5.99,78.401
+8906000000089,Hide & Seek Cream Biscuits Regular 150g,3,8906000000071,Hide & Seek Cream Biscuits Premium 150g,Same subcategory,9.41,70.059
+8906000000090,Saffola Salt Salt Classic 1kg,1,8906000000252,Aashirvaad Salt Salt Mini 1kg,Same subcategory,-26.0,84.4
+8906000000090,Saffola Salt Salt Classic 1kg,2,8906000000470,Saffola Salt Salt Classic 1kg,Same subcategory,-69.7,72.03
+8906000000090,Saffola Salt Salt Classic 1kg,3,8906000000260,Saffola Salt Salt Fresh 1kg,Same subcategory,-92.0,61.8
+8906000000091,Amul Butter Family Pack 100g,1,8906000000336,Gowardhan Butter Premium 500g,Same subcategory,-18.48,85.152
+8906000000091,Amul Butter Family Pack 100g,2,8906000000144,Amul Butter Jumbo 100g,Same subcategory,-24.03,76.597
+8906000000091,Amul Butter Family Pack 100g,3,8906000000383,Gowardhan Butter Lite 100g,Same subcategory,28.7,68.13
+8906000000092,Real Juices Value Pack 200ml,1,8906000000025,Tropicana Juices Value Pack 1L,Same subcategory,11.16,85.884
+8906000000092,Real Juices Value Pack 200ml,2,8906000000321,B Natural Juices Jumbo 1L,Same subcategory,12.73,77.727
+8906000000092,Real Juices Value Pack 200ml,3,8906000000258,Real Juices Regular 200ml,Same subcategory,-17.67,69.233
+8906000000093,Kellogg's Oats Family Pack 1kg,1,8906000000162,Saffola Oats Classic 400g,Same subcategory,12.6,85.74
+8906000000093,Kellogg's Oats Family Pack 1kg,2,8906000000210,Kellogg's Oats Regular 1kg,Same subcategory,29.1,76.09
+8906000000093,Kellogg's Oats Family Pack 1kg,3,8906000000077,Saffola Oats Original 400g,Same subcategory,45.0,66.5
+8906000000094,Thums Up Soft Drinks Mini 600ml,1,8906000000484,Sprite Soft Drinks Regular 250ml,Same subcategory,-1.3,86.87
+8906000000094,Thums Up Soft Drinks Mini 600ml,2,8906000000472,Fanta Soft Drinks Regular 1.25L,Same subcategory,4.5,78.55
+8906000000094,Thums Up Soft Drinks Mini 600ml,3,8906000000075,Pepsi Soft Drinks Fresh 600ml,Same subcategory,12.31,69.769
+8906000000095,Listerine Mouthwash Family Pack 250ml,1,8906000000491,Listerine Mouthwash Original 250ml,Same subcategory,-48.25,82.175
+8906000000095,Listerine Mouthwash Family Pack 250ml,2,8906000000377,Listerine Mouthwash Family Pack 250ml,Same subcategory,49.1,74.09
+8906000000095,Listerine Mouthwash Family Pack 250ml,3,8906000000421,Listerine Mouthwash Original 250ml,Same subcategory,-57.75,65.225
+8906000000096,Tide Detergent Lite 2kg,1,8906000000388,Tide Detergent Classic 2kg,Same subcategory,-7.6,86.24
+8906000000096,Tide Detergent Lite 2kg,2,8906000000460,Tide Detergent Original 4kg,Same subcategory,-41.6,74.84
+8906000000096,Tide Detergent Lite 2kg,3,8906000000398,Rin Detergent Classic 1kg,Same subcategory,54.77,65.523
+8906000000097,Top Ramen Noodles Original 140g,1,8906000000313,Yippee Noodles Value Pack 280g,Same subcategory,4.65,86.535
+8906000000097,Top Ramen Noodles Original 140g,2,8906000000218,Yippee Noodles Regular 70g,Same subcategory,-9.8,78.02
+8906000000097,Top Ramen Noodles Original 140g,3,8906000000303,Knorr Noodles Regular 140g,Same subcategory,20.7,68.93
+8906000000098,Nivea Face Wash Family Pack 100g,1,8906000000208,Garnier Face Wash Classic 150g,Same subcategory,13.14,85.68599999999999
+8906000000098,Nivea Face Wash Family Pack 100g,2,8906000000382,Ponds Face Wash Fresh 150g,Same subcategory,-20.2,76.98
+8906000000098,Nivea Face Wash Family Pack 100g,3,8906000000481,Garnier Face Wash Regular 150g,Same subcategory,-28.65,68.135
+8906000000099,Dhampur Sugar Family Pack 1kg,1,8906000000403,Madhur Sugar Lite 5kg,Same subcategory,-6.58,86.342
+8906000000099,Dhampur Sugar Family Pack 1kg,2,8906000000420,Dhampur Sugar Value Pack 5kg,Same subcategory,-27.97,76.203
+8906000000099,Dhampur Sugar Family Pack 1kg,3,8906000000170,Dhampur Sugar Value Pack 5kg,Same subcategory,-34.68,67.532
+8906000000100,Pillsbury Atta Classic 5kg,1,8906000000487,Aashirvaad Atta Regular 5kg,Same subcategory,98.9,77.11
+8906000000100,Pillsbury Atta Classic 5kg,2,8906000000461,Fortune Atta Regular 1kg,Same subcategory,-133.8,65.62
+8906000000100,Pillsbury Atta Classic 5kg,3,8906000000251,Pillsbury Atta Mini 5kg,Same subcategory,-142.0,56.8
+8906000000101,Medimix Soap Fresh 75g,1,8906000000128,Pears Soap Fresh 100g,Same subcategory,11.95,85.805
+8906000000101,Medimix Soap Fresh 75g,2,8906000000350,Dove Soap Lite 125g,Same subcategory,12.95,77.705
+8906000000101,Medimix Soap Fresh 75g,3,8906000000289,Santoor Soap Regular 75g,Same subcategory,15.95,69.405
+8906000000102,Farm Fresh Eggs Lite 6pc,1,8906000000343,Local Farm Eggs Regular 12pc,Same subcategory,-0.4,86.96
+8906000000102,Farm Fresh Eggs Lite 6pc,2,8906000000107,Suguna Eggs Lite 12pc,Same subcategory,-1.05,78.895
+8906000000102,Farm Fresh Eggs Lite 6pc,3,8906000000497,Suguna Eggs Classic 12pc,Same subcategory,2.54,70.746
+8906000000103,MTR Ready To Eat Value Pack 500g,1,8906000000479,Haldiram Ready To Eat Jumbo 500g,Same subcategory,-27.45,84.255
+8906000000103,MTR Ready To Eat Value Pack 500g,2,8906000000437,MTR Ready To Eat Classic 500g,Same subcategory,-27.45,76.255
+8906000000103,MTR Ready To Eat Value Pack 500g,3,8906000000207,Haldiram Ready To Eat Jumbo 500g,Same subcategory,27.9,68.21
+8906000000104,Bailey Water Lite 1L,1,8906000000008,Kinley Water Classic 500ml,Same subcategory,-0.35,86.965
+8906000000104,Bailey Water Lite 1L,2,8906000000310,Kinley Water Family Pack 1L,Same subcategory,-2.8,78.72
+8906000000104,Bailey Water Lite 1L,3,8906000000274,Bisleri Water Premium 1L,Same subcategory,-4.3,70.57
+8906000000105,Soulfull Cereal Fresh 500g,1,8906000000122,Kellogg's Cereal Original 250g,Same subcategory,5.9,86.41
+8906000000105,Soulfull Cereal Fresh 500g,2,8906000000220,Kellogg's Cereal Regular 1kg,Same subcategory,34.59,75.541
+8906000000105,Soulfull Cereal Fresh 500g,3,8906000000418,Bagrry's Cereal Family Pack 1kg,Same subcategory,70.5,63.95
+8906000000106,Vim Dishwash Mini 750ml,1,8906000000290,Pril Dishwash Mini 750ml,Same subcategory,33.0,83.7
+8906000000106,Vim Dishwash Mini 750ml,2,8906000000432,Pril Dishwash Fresh 750ml,Same subcategory,-48.5,74.15
+8906000000106,Vim Dishwash Mini 750ml,3,8906000000276,Vim Dishwash Premium 250g,Same subcategory,51.41,65.859
+8906000000107,Suguna Eggs Lite 12pc,1,8906000000343,Local Farm Eggs Regular 12pc,Same subcategory,0.65,86.935
+8906000000107,Suguna Eggs Lite 12pc,2,8906000000102,Farm Fresh Eggs Lite 6pc,Same subcategory,1.05,78.895
+8906000000107,Suguna Eggs Lite 12pc,3,8906000000497,Suguna Eggs Classic 12pc,Same subcategory,3.59,70.641
+8906000000108,Bisleri Water Jumbo 2L,1,8906000000235,Kinley Water Classic 500ml,Same subcategory,0.0,87.0
+8906000000108,Bisleri Water Jumbo 2L,2,8906000000177,Kinley Water Regular 2L,Same subcategory,0.0,79.0
+8906000000108,Bisleri Water Jumbo 2L,3,8906000000001,Bisleri Water Regular 2L,Same subcategory,-0.75,70.925
+8906000000109,Sanifresh Toilet Cleaner Regular 500ml,1,8906000000200,Domex Toilet Cleaner Mini 500ml,Same subcategory,-8.03,86.197
+8906000000109,Sanifresh Toilet Cleaner Regular 500ml,2,8906000000394,Domex Toilet Cleaner Value Pack 1L,Same subcategory,-9.32,78.068
+8906000000109,Sanifresh Toilet Cleaner Regular 500ml,3,8906000000194,Domex Toilet Cleaner Premium 500ml,Same subcategory,-11.75,69.825
+8906000000110,Bisleri Water Value Pack 1L,1,8906000000067,Kinley Water Classic 1L,Same subcategory,1.26,86.874
+8906000000110,Bisleri Water Value Pack 1L,2,8906000000158,Kinley Water Fresh 1L,Same subcategory,2.0,78.8
+8906000000110,Bisleri Water Value Pack 1L,3,8906000000003,Bailey Water Lite 1L,Same subcategory,-2.13,70.787
+8906000000111,Nivea Body Wash Original 250ml,1,8906000000494,Pears Body Wash Classic 500ml,Same subcategory,-12.34,85.766
+8906000000111,Nivea Body Wash Original 250ml,2,8906000000361,Fiama Body Wash Value Pack 500ml,Same subcategory,-29.24,76.076
+8906000000111,Nivea Body Wash Original 250ml,3,8906000000032,Pears Body Wash Regular 500ml,Same subcategory,67.66,64.234
+8906000000112,Gowardhan Milk Fresh 500ml,1,8906000000157,Dinshaw's Milk Value Pack 1L,Same subcategory,5.82,86.418
+8906000000112,Gowardhan Milk Fresh 500ml,2,8906000000285,Amul Milk Lite 500ml,Same subcategory,7.87,78.213
+8906000000112,Gowardhan Milk Fresh 500ml,3,8906000000117,Dinshaw's Milk Original 1L,Same subcategory,10.59,69.941
+8906000000113,Wagh Bakri Tea Jumbo 500g,1,8906000000317,Wagh Bakri Tea Family Pack 1kg,Same subcategory,-0.75,86.925
+8906000000113,Wagh Bakri Tea Jumbo 500g,2,8906000000496,Wagh Bakri Tea Lite 250g,Same subcategory,40.3,74.97
+8906000000113,Wagh Bakri Tea Jumbo 500g,3,8906000000341,Wagh Bakri Tea Mini 500g,Same subcategory,85.49,62.451
+8906000000114,Sensodyne Toothbrush Original 4pc,1,8906000000017,Pepsodent Toothbrush Family Pack 4pc,Same subcategory,27.5,84.25
+8906000000114,Sensodyne Toothbrush Original 4pc,2,8906000000277,Colgate Toothbrush Lite 1pc,Same subcategory,30.2,75.98
+8906000000114,Sensodyne Toothbrush Original 4pc,3,8906000000084,Colgate Toothbrush Fresh 1pc,Same subcategory,39.2,67.08
+8906000000115,Dabur Honey Original 500g,1,8906000000332,Apis Honey Fresh 250g,Same subcategory,24.0,84.6
+8906000000115,Dabur Honey Original 500g,2,8906000000315,Apis Honey Classic 250g,Same subcategory,39.88,75.012
+8906000000115,Dabur Honey Original 500g,3,8906000000339,Saffola Honey Value Pack 250g,Same subcategory,59.0,65.1
+8906000000116,Navratna Hair Oil Mini 100ml,1,8906000000396,Dabur Amla Hair Oil Regular 500ml,Same subcategory,-8.35,86.16499999999999
+8906000000116,Navratna Hair Oil Mini 100ml,2,8906000000392,Parachute Hair Oil Value Pack 100ml,Same subcategory,-21.34,76.866
+8906000000116,Navratna Hair Oil Mini 100ml,3,8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,Same subcategory,-29.74,68.026
+8906000000117,Dinshaw's Milk Original 1L,1,8906000000370,Dinshaw's Milk Lite 500ml,Same subcategory,0.48,86.952
+8906000000117,Dinshaw's Milk Original 1L,2,8906000000065,Mother Dairy Milk Mini 1L,Same subcategory,1.78,78.822
+8906000000117,Dinshaw's Milk Original 1L,3,8906000000270,Dinshaw's Milk Family Pack 1L,Same subcategory,2.68,70.732
+8906000000118,Knorr Soup Lite 100g,1,8906000000183,Knorr Soup Regular 45g,Same subcategory,18.3,85.17
+8906000000118,Knorr Soup Lite 100g,2,8906000000431,Knorr Soup Regular 45g,Same subcategory,-20.9,76.91
+8906000000118,Knorr Soup Lite 100g,3,8906000000474,Knorr Soup Lite 100g,Same subcategory,-50.51,65.949
+8906000000119,B Natural Juices Mini 1L,1,8906000000086,Tropicana Juices Regular 1L,Same subcategory,-9.3,86.07
+8906000000119,B Natural Juices Mini 1L,2,8906000000258,Real Juices Regular 200ml,Same subcategory,29.55,76.045
+8906000000119,B Natural Juices Mini 1L,3,8906000000092,Real Juices Value Pack 200ml,Same subcategory,47.22,66.278
+8906000000120,Ponds Moisturizer Value Pack 200ml,1,8906000000361,Fiama Body Wash Value Pack 500ml,Same category fallback,0.75,86.925
+8906000000120,Ponds Moisturizer Value Pack 200ml,2,8906000000230,Navratna Talcum Powder Regular 300g,Same category fallback,1.9,78.81
+8906000000120,Ponds Moisturizer Value Pack 200ml,3,8906000000345,Ponds Face Wash Regular 50g,Same category fallback,8.65,70.135
+8906000000121,Ezee Fabric Care Family Pack 1L,1,8906000000432,Pril Dishwash Fresh 750ml,Same category fallback,15.51,85.449
+8906000000121,Ezee Fabric Care Family Pack 1L,2,8906000000174,Wheel Detergent Premium 2kg,Same category fallback,41.21,74.879
+8906000000121,Ezee Fabric Care Family Pack 1L,3,8906000000052,Harpic Toilet Cleaner Original 1L,Same category fallback,57.56,65.244
+8906000000122,Kellogg's Cereal Original 250g,1,8906000000105,Soulfull Cereal Fresh 500g,Same subcategory,-5.9,86.41
+8906000000122,Kellogg's Cereal Original 250g,2,8906000000220,Kellogg's Cereal Regular 1kg,Same subcategory,28.69,76.131
+8906000000122,Kellogg's Cereal Original 250g,3,8906000000418,Bagrry's Cereal Family Pack 1kg,Same subcategory,64.6,64.54
+8906000000123,Head & Shoulders Shampoo Regular 650ml,1,8906000000034,Dove Shampoo Regular 650ml,Same subcategory,45.15,82.485
+8906000000123,Head & Shoulders Shampoo Regular 650ml,2,8906000000385,Dove Shampoo Lite 650ml,Same subcategory,74.7,71.53
+8906000000123,Head & Shoulders Shampoo Regular 650ml,3,8906000000400,Pantene Shampoo Regular 80ml,Same subcategory,122.25,58.775
+8906000000124,Amul Butter Original 100g,1,8906000000320,Gowardhan Butter Mini 100g,Same subcategory,29.96,84.004
+8906000000124,Amul Butter Original 100g,2,8906000000070,Amul Butter Jumbo 500g,Same subcategory,-56.84,73.316
+8906000000124,Amul Butter Original 100g,3,8906000000195,Gowardhan Butter Mini 500g,Same subcategory,-57.16,65.284
+8906000000125,McCain Frozen Snacks Value Pack 1kg,1,8906000000480,McCain Frozen Snacks Regular 400g,Same subcategory,-45.5,82.45
+8906000000125,McCain Frozen Snacks Value Pack 1kg,2,8906000000293,McCain Frozen Snacks Regular 400g,Same subcategory,-47.3,74.27
+8906000000125,McCain Frozen Snacks Value Pack 1kg,3,8906000000286,McCain Frozen Snacks Family Pack 1kg,Same subcategory,-72.5,63.75
+8906000000126,Fortune Dal Fresh 2kg,1,8906000000006,Tata Sampann Dal Regular 2kg,Same subcategory,-16.66,85.334
+8906000000126,Fortune Dal Fresh 2kg,2,8906000000342,24 Mantra Dal Original 1kg,Same subcategory,-29.66,76.034
+8906000000126,Fortune Dal Fresh 2kg,3,8906000000333,Tata Sampann Dal Jumbo 2kg,Same subcategory,-50.96,65.904
+8906000000127,Potato 1kg,1,8906000000389,Beans 1kg,Same subcategory,17.0,85.3
+8906000000127,Potato 1kg,2,8906000000225,Onion 1kg,Same subcategory,19.1,77.09
+8906000000127,Potato 1kg,3,8906000000190,Onion 1kg,Same subcategory,36.16,67.384
+8906000000128,Pears Soap Fresh 100g,1,8906000000350,Dove Soap Lite 125g,Same subcategory,1.0,86.9
+8906000000128,Pears Soap Fresh 100g,2,8906000000289,Santoor Soap Regular 75g,Same subcategory,4.0,78.6
+8906000000128,Pears Soap Fresh 100g,3,8906000000101,Medimix Soap Fresh 75g,Same subcategory,-11.95,69.805
+8906000000129,Godrej Yummiez Frozen Snacks Value Pack 1kg,1,8906000000175,ITC Master Chef Frozen Snacks Premium 1kg,Same subcategory,34.54,83.54599999999999
+8906000000129,Godrej Yummiez Frozen Snacks Value Pack 1kg,2,8906000000237,ITC Master Chef Frozen Snacks Original 400g,Same subcategory,116.0,67.4
+8906000000129,Godrej Yummiez Frozen Snacks Value Pack 1kg,3,8906000000176,ITC Master Chef Frozen Snacks Original 1kg,Same subcategory,120.0,59.0
+8906000000130,Sprite Soft Drinks Lite 250ml,1,8906000000148,Pepsi Soft Drinks Lite 2L,Same subcategory,-12.75,85.725
+8906000000130,Sprite Soft Drinks Lite 250ml,2,8906000000353,Pepsi Soft Drinks Premium 250ml,Same subcategory,-13.35,77.665
+8906000000130,Sprite Soft Drinks Lite 250ml,3,8906000000484,Sprite Soft Drinks Regular 250ml,Same subcategory,14.45,69.555
+8906000000131,Oreo Cream Biscuits Fresh 150g,1,8906000000217,Bourbon Cream Biscuits Classic 100g,Same subcategory,-0.22,86.978
+8906000000131,Oreo Cream Biscuits Fresh 150g,2,8906000000375,Oreo Cream Biscuits Original 100g,Same subcategory,-0.22,78.978
+8906000000131,Oreo Cream Biscuits Fresh 150g,3,8906000000071,Hide & Seek Cream Biscuits Premium 150g,Same subcategory,-0.82,70.918
+8906000000132,MTR Ready To Eat Premium 500g,1,8906000000207,Haldiram Ready To Eat Jumbo 500g,Same subcategory,-9.74,86.026
+8906000000132,MTR Ready To Eat Premium 500g,2,8906000000103,MTR Ready To Eat Value Pack 500g,Same subcategory,-37.64,75.236
+8906000000132,MTR Ready To Eat Premium 500g,3,8906000000479,Haldiram Ready To Eat Jumbo 500g,Same subcategory,-65.09,64.491
+8906000000133,Britannia Bread Regular 400g,1,8906000000298,Local Bakery Bread Jumbo 700g,Same subcategory,-2.27,86.773
+8906000000133,Britannia Bread Regular 400g,2,8906000000185,Britannia Bread Regular 700g,Same subcategory,-20.02,76.998
+8906000000133,Britannia Bread Regular 400g,3,8906000000259,Harvest Gold Bread Fresh 400g,Same subcategory,-31.47,67.853
+8906000000134,Patanjali Ghee Lite 1L,1,8906000000445,Patanjali Ghee Fresh 1L,Same subcategory,8.0,86.2
+8906000000134,Patanjali Ghee Lite 1L,2,8906000000163,Patanjali Ghee Regular 500ml,Same subcategory,-53.53,73.647
+8906000000134,Patanjali Ghee Lite 1L,3,8906000000186,Mother Dairy Ghee Value Pack 500ml,Same subcategory,-75.46,63.45399999999999
+8906000000135,Rin Detergent Fresh 1kg,1,8906000000138,Surf Excel Detergent Regular 2kg,Same subcategory,3.1,86.69
+8906000000135,Rin Detergent Fresh 1kg,2,8906000000407,Surf Excel Detergent Premium 2kg,Same subcategory,-62.15,72.785
+8906000000135,Rin Detergent Fresh 1kg,3,8906000000054,Tide Detergent Family Pack 2kg,Same subcategory,-104.6,60.540000000000006
+8906000000136,Quaker Oats Regular 400g,1,8906000000077,Saffola Oats Original 400g,Same subcategory,-7.0,86.3
+8906000000136,Quaker Oats Regular 400g,2,8906000000210,Kellogg's Oats Regular 1kg,Same subcategory,-22.9,76.71
+8906000000136,Quaker Oats Regular 400g,3,8906000000162,Saffola Oats Classic 400g,Same subcategory,-39.4,67.06
+8906000000137,Nataraj Stationery Original 10pc,1,8906000000272,Classmate Stationery Regular 1pc,Same subcategory,-6.75,86.325
+8906000000137,Nataraj Stationery Original 10pc,2,8906000000039,Camlin Stationery Original 10pc,Same subcategory,-11.15,77.885
+8906000000137,Nataraj Stationery Original 10pc,3,8906000000456,Nataraj Stationery Value Pack 10pc,Same subcategory,57.55,65.245
+8906000000138,Surf Excel Detergent Regular 2kg,1,8906000000135,Rin Detergent Fresh 1kg,Same subcategory,-3.1,86.69
+8906000000138,Surf Excel Detergent Regular 2kg,2,8906000000407,Surf Excel Detergent Premium 2kg,Same subcategory,-65.25,72.475
+8906000000138,Surf Excel Detergent Regular 2kg,3,8906000000054,Tide Detergent Family Pack 2kg,Same subcategory,-107.7,60.230000000000004
+8906000000139,Dove Conditioner Original 340ml,1,8906000000378,L'Oreal Conditioner Jumbo 175ml,Same subcategory,-3.9,86.61
+8906000000139,Dove Conditioner Original 340ml,2,8906000000347,Dove Conditioner Value Pack 175ml,Same subcategory,4.5,78.55
+8906000000139,Dove Conditioner Original 340ml,3,8906000000264,Dove Conditioner Lite 340ml,Same subcategory,-21.9,68.81
+8906000000140,Aashirvaad Salt Salt Regular 1kg,1,8906000000322,Tata Salt Salt Lite 1kg,Same subcategory,-19.13,85.087
+8906000000140,Aashirvaad Salt Salt Regular 1kg,2,8906000000090,Saffola Salt Salt Classic 1kg,Same subcategory,-120.93,66.907
+8906000000140,Aashirvaad Salt Salt Regular 1kg,3,8906000000252,Aashirvaad Salt Salt Mini 1kg,Same subcategory,-146.93,56.307
+8906000000141,Clean & Clear Face Wash Value Pack 100g,1,8906000000499,Nivea Face Wash Mini 150g,Same subcategory,-0.25,86.975
+8906000000141,Clean & Clear Face Wash Value Pack 100g,2,8906000000488,Ponds Face Wash Original 50g,Same subcategory,-3.15,78.685
+8906000000141,Clean & Clear Face Wash Value Pack 100g,3,8906000000369,Ponds Face Wash Family Pack 150g,Same subcategory,10.46,69.954
+8906000000142,Gowardhan Butter Mini 100g,1,8906000000055,Amul Butter Lite 100g,Same subcategory,6.0,86.4
+8906000000142,Gowardhan Butter Mini 100g,2,8906000000320,Gowardhan Butter Mini 100g,Same subcategory,-43.0,74.7
+8906000000142,Gowardhan Butter Mini 100g,3,8906000000124,Amul Butter Original 100g,Same subcategory,-72.96,63.704
+8906000000143,Hide & Seek Cream Biscuits Mini 150g,1,8906000000349,Treat Cream Biscuits Value Pack 150g,Same subcategory,-4.6,86.54
+8906000000143,Hide & Seek Cream Biscuits Mini 150g,2,8906000000089,Hide & Seek Cream Biscuits Regular 150g,Same subcategory,5.99,78.401
+8906000000143,Hide & Seek Cream Biscuits Mini 150g,3,8906000000061,Bourbon Cream Biscuits Jumbo 150g,Same subcategory,9.12,70.088
+8906000000144,Amul Butter Jumbo 100g,1,8906000000336,Gowardhan Butter Premium 500g,Same subcategory,5.55,86.445
+8906000000144,Amul Butter Jumbo 100g,2,8906000000091,Amul Butter Family Pack 100g,Same subcategory,24.03,76.597
+8906000000144,Amul Butter Jumbo 100g,3,8906000000201,Britannia Butter Lite 500g,Same subcategory,-26.65,68.335
+8906000000145,Rajdhani Suji Regular 500g,1,8906000000013,Aashirvaad Suji Original 1kg,Same subcategory,-153.03,71.697
+8906000000145,Rajdhani Suji Regular 500g,2,8906000000042,Rajdhani Suji Jumbo 1kg,Same subcategory,-210.35,57.965
+8906000000145,Rajdhani Suji Regular 500g,3,8906000000239,Rajdhani Suji Premium 500g,Same subcategory,-212.55,55
+8906000000146,Britannia Tiger Glucose Biscuits Premium 250g,1,8906000000323,Sunfeast Glucose Glucose Biscuits Original 250g,Same subcategory,-9.5,86.05
+8906000000146,Britannia Tiger Glucose Biscuits Premium 250g,2,8906000000427,Parle-G Glucose Biscuits Value Pack 150g,Same subcategory,-17.75,77.225
+8906000000146,Britannia Tiger Glucose Biscuits Premium 250g,3,8906000000478,Britannia Tiger Glucose Biscuits Regular 80g,Same subcategory,-21.85,68.815
+8906000000147,Vaseline Moisturizer Family Pack 100ml,1,8906000000295,Nivea Body Wash Lite 500ml,Same category fallback,-13.1,85.69
+8906000000147,Vaseline Moisturizer Family Pack 100ml,2,8906000000423,Ponds Talcum Powder Value Pack 100g,Same category fallback,-27.2,76.28
+8906000000147,Vaseline Moisturizer Family Pack 100ml,3,8906000000153,Himalaya Moisturizer Original 200ml,Same subcategory,-31.95,67.805
+8906000000148,Pepsi Soft Drinks Lite 2L,1,8906000000353,Pepsi Soft Drinks Premium 250ml,Same subcategory,-0.6,86.94
+8906000000148,Pepsi Soft Drinks Lite 2L,2,8906000000244,Sprite Soft Drinks Family Pack 600ml,Same subcategory,-12.0,77.8
+8906000000148,Pepsi Soft Drinks Lite 2L,3,8906000000130,Sprite Soft Drinks Lite 250ml,Same subcategory,12.75,69.725
+8906000000149,Listerine Mouthwash Classic 250ml,1,8906000000328,Listerine Mouthwash Lite 250ml,Same subcategory,3.86,86.614
+8906000000149,Listerine Mouthwash Classic 250ml,2,8906000000386,Colgate Mouthwash Premium 250ml,Same subcategory,-25.84,76.416
+8906000000149,Listerine Mouthwash Classic 250ml,3,8906000000421,Listerine Mouthwash Original 250ml,Same subcategory,30.41,67.959
+8906000000150,Kohinoor Rice Classic 10kg,1,8906000000374,Fortune Rice Value Pack 10kg,Same subcategory,42.91,82.709
+8906000000150,Kohinoor Rice Classic 10kg,2,8906000000151,India Gate Rice Premium 10kg,Same subcategory,198.22,59.178
+8906000000150,Kohinoor Rice Classic 10kg,3,8906000000222,Kohinoor Rice Regular 1kg,Same subcategory,628.9,55
+8906000000151,India Gate Rice Premium 10kg,1,8906000000374,Fortune Rice Value Pack 10kg,Same subcategory,-155.31,71.469
+8906000000151,India Gate Rice Premium 10kg,2,8906000000150,Kohinoor Rice Classic 10kg,Same subcategory,-198.22,59.178
+8906000000151,India Gate Rice Premium 10kg,3,8906000000222,Kohinoor Rice Regular 1kg,Same subcategory,430.68,55
+8906000000152,Whisper Sanitary Care Original 30pc,1,8906000000037,Sofy Sanitary Care Regular 30pc,Same subcategory,-13.0,85.7
+8906000000152,Whisper Sanitary Care Original 30pc,2,8906000000436,Sofy Sanitary Care Family Pack 30pc,Same subcategory,18.25,77.175
+8906000000152,Whisper Sanitary Care Original 30pc,3,8906000000179,Stayfree Sanitary Care Family Pack 30pc,Same subcategory,-52.88,65.712
+8906000000153,Himalaya Moisturizer Original 200ml,1,8906000000423,Ponds Talcum Powder Value Pack 100g,Same category fallback,4.75,86.525
+8906000000153,Himalaya Moisturizer Original 200ml,2,8906000000208,Garnier Face Wash Classic 150g,Same category fallback,-9.41,78.059
+8906000000153,Himalaya Moisturizer Original 200ml,3,8906000000428,Dove Body Wash Mini 250ml,Same category fallback,-10.82,69.918
+8906000000154,Medimix Soap Value Pack 100g,1,8906000000246,Medimix Soap Original 100g,Same subcategory,-1.45,86.855
+8906000000154,Medimix Soap Value Pack 100g,2,8906000000289,Santoor Soap Regular 75g,Same subcategory,-26.05,76.395
+8906000000154,Medimix Soap Value Pack 100g,3,8906000000350,Dove Soap Lite 125g,Same subcategory,-29.05,68.095
+8906000000155,Everest Masala Classic 200g,1,8906000000193,Catch Masala Original 200g,Same subcategory,15.5,85.45
+8906000000155,Everest Masala Classic 200g,2,8906000000261,Catch Masala Family Pack 200g,Same subcategory,-23.6,76.64
+8906000000155,Everest Masala Classic 200g,3,8906000000159,Catch Masala Fresh 100g,Same subcategory,-47.84,66.21600000000001
+8906000000156,Cabbage 1kg,1,8906000000190,Onion 1kg,Same subcategory,-14.08,85.592
+8906000000156,Cabbage 1kg,2,8906000000225,Onion 1kg,Same subcategory,-31.14,75.886
+8906000000156,Cabbage 1kg,3,8906000000389,Beans 1kg,Same subcategory,-33.24,67.676
+8906000000157,Dinshaw's Milk Value Pack 1L,1,8906000000285,Amul Milk Lite 500ml,Same subcategory,2.05,86.795
+8906000000157,Dinshaw's Milk Value Pack 1L,2,8906000000117,Dinshaw's Milk Original 1L,Same subcategory,4.77,78.523
+8906000000157,Dinshaw's Milk Value Pack 1L,3,8906000000370,Dinshaw's Milk Lite 500ml,Same subcategory,5.25,70.475
+8906000000158,Kinley Water Fresh 1L,1,8906000000067,Kinley Water Classic 1L,Same subcategory,-0.74,86.926
+8906000000158,Kinley Water Fresh 1L,2,8906000000110,Bisleri Water Value Pack 1L,Same subcategory,-2.0,78.8
+8906000000158,Kinley Water Fresh 1L,3,8906000000003,Bailey Water Lite 1L,Same subcategory,-4.13,70.587
+8906000000159,Catch Masala Fresh 100g,1,8906000000233,Everest Masala Regular 200g,Same subcategory,-0.36,86.964
+8906000000159,Catch Masala Fresh 100g,2,8906000000261,Catch Masala Family Pack 200g,Same subcategory,24.24,76.576
+8906000000159,Catch Masala Fresh 100g,3,8906000000155,Everest Masala Classic 200g,Same subcategory,47.84,66.21600000000001
+8906000000160,Bisk Farm Cookies Family Pack 200g,1,8906000000425,Bisk Farm Cookies Regular 75g,Same subcategory,-3.33,86.667
+8906000000160,Bisk Farm Cookies Family Pack 200g,2,8906000000002,Sunfeast Dark Fantasy Cookies Family Pack 120g,Same subcategory,-3.33,78.667
+8906000000160,Bisk Farm Cookies Family Pack 200g,3,8906000000439,Unibic Cookies Premium 75g,Same subcategory,19.57,69.043
+8906000000161,Organic Tattva Poha Family Pack 500g,1,8906000000302,Tata Sampann Poha Mini 500g,Same subcategory,-11.39,85.861
+8906000000161,Organic Tattva Poha Family Pack 500g,2,8906000000359,Organic Tattva Poha Classic 1kg,Same subcategory,-14.44,77.556
+8906000000161,Organic Tattva Poha Family Pack 500g,3,8906000000238,Local Mill Poha Family Pack 500g,Same subcategory,35.16,67.484
+8906000000162,Saffola Oats Classic 400g,1,8906000000093,Kellogg's Oats Family Pack 1kg,Same subcategory,-12.6,85.74
+8906000000162,Saffola Oats Classic 400g,2,8906000000210,Kellogg's Oats Regular 1kg,Same subcategory,16.5,77.35
+8906000000162,Saffola Oats Classic 400g,3,8906000000077,Saffola Oats Original 400g,Same subcategory,32.4,67.76
+8906000000163,Patanjali Ghee Regular 500ml,1,8906000000186,Mother Dairy Ghee Value Pack 500ml,Same subcategory,-21.93,84.80699999999999
+8906000000163,Patanjali Ghee Regular 500ml,2,8906000000088,Mother Dairy Ghee Original 500ml,Same subcategory,-27.62,76.238
+8906000000163,Patanjali Ghee Regular 500ml,3,8906000000449,Gowardhan Ghee Classic 1L,Same subcategory,-48.71,66.12899999999999
+8906000000164,Cinthol Talcum Powder Regular 300g,1,8906000000368,Cinthol Talcum Powder Classic 100g,Same subcategory,2.7,86.73
+8906000000164,Cinthol Talcum Powder Regular 300g,2,8906000000489,Ponds Talcum Powder Mini 300g,Same subcategory,-3.46,78.654
+8906000000164,Cinthol Talcum Powder Regular 300g,3,8906000000406,Navratna Talcum Powder Lite 100g,Same subcategory,-12.1,69.79
+8906000000165,Go Cheese Classic 200g,1,8906000000036,Amul Cheese Family Pack 400g,Same subcategory,4.9,86.51
+8906000000165,Go Cheese Classic 200g,2,8906000000416,Amul Cheese Premium 200g,Same subcategory,19.8,77.02
+8906000000165,Go Cheese Classic 200g,3,8906000000173,Go Cheese Value Pack 200g,Same subcategory,-42.2,66.78
+8906000000166,Pantene Conditioner Lite 340ml,1,8906000000278,L'Oreal Conditioner Mini 175ml,Same subcategory,24.36,84.56400000000001
+8906000000166,Pantene Conditioner Lite 340ml,2,8906000000329,Dove Conditioner Regular 175ml,Same subcategory,105.36,68.464
+8906000000166,Pantene Conditioner Lite 340ml,3,8906000000371,Dove Conditioner Family Pack 80ml,Same subcategory,137.16,57.284
+8906000000167,Navratna Hair Oil Jumbo 500ml,1,8906000000204,Bajaj Almond Drops Hair Oil Mini 500ml,Same subcategory,23.25,84.675
+8906000000167,Navratna Hair Oil Jumbo 500ml,2,8906000000060,Dabur Amla Hair Oil Lite 500ml,Same subcategory,31.55,75.845
+8906000000167,Navratna Hair Oil Jumbo 500ml,3,8906000000468,Parachute Hair Oil Family Pack 200ml,Same subcategory,85.03,62.497
+8906000000168,Yippee Noodles Mini 140g,1,8906000000171,Knorr Noodles Regular 70g,Same subcategory,1.3,86.87
+8906000000168,Yippee Noodles Mini 140g,2,8906000000303,Knorr Noodles Regular 140g,Same subcategory,-6.75,78.325
+8906000000168,Yippee Noodles Mini 140g,3,8906000000313,Yippee Noodles Value Pack 280g,Same subcategory,-22.8,68.72
+8906000000169,Whisper Sanitary Care Lite 7pc,1,8906000000243,Whisper Sanitary Care Jumbo 15pc,Same subcategory,20.15,84.985
+8906000000169,Whisper Sanitary Care Lite 7pc,2,8906000000179,Stayfree Sanitary Care Family Pack 30pc,Same subcategory,38.22,75.178
+8906000000169,Whisper Sanitary Care Lite 7pc,3,8906000000184,Whisper Sanitary Care Mini 7pc,Same subcategory,-43.6,66.64
+8906000000170,Dhampur Sugar Value Pack 5kg,1,8906000000420,Dhampur Sugar Value Pack 5kg,Same subcategory,6.71,86.329
+8906000000170,Dhampur Sugar Value Pack 5kg,2,8906000000346,Madhur Sugar Classic 5kg,Same subcategory,-13.2,77.68
+8906000000170,Dhampur Sugar Value Pack 5kg,3,8906000000403,Madhur Sugar Lite 5kg,Same subcategory,28.1,68.19
+8906000000171,Knorr Noodles Regular 70g,1,8906000000168,Yippee Noodles Mini 140g,Same subcategory,-1.3,86.87
+8906000000171,Knorr Noodles Regular 70g,2,8906000000303,Knorr Noodles Regular 140g,Same subcategory,-8.05,78.195
+8906000000171,Knorr Noodles Regular 70g,3,8906000000313,Yippee Noodles Value Pack 280g,Same subcategory,-24.1,68.59
+8906000000172,Camlin Stationery Jumbo 1pc,1,8906000000456,Nataraj Stationery Value Pack 10pc,Same subcategory,-8.65,86.135
+8906000000172,Camlin Stationery Jumbo 1pc,2,8906000000137,Nataraj Stationery Original 10pc,Same subcategory,-66.2,72.38
+8906000000172,Camlin Stationery Jumbo 1pc,3,8906000000387,Apsara Stationery Classic 1pc,Same subcategory,70.49,63.951
+8906000000173,Go Cheese Value Pack 200g,1,8906000000165,Go Cheese Classic 200g,Same subcategory,42.2,82.78
+8906000000173,Go Cheese Value Pack 200g,2,8906000000036,Amul Cheese Family Pack 400g,Same subcategory,47.1,74.29
+8906000000173,Go Cheese Value Pack 200g,3,8906000000416,Amul Cheese Premium 200g,Same subcategory,62.0,64.8
+8906000000174,Wheel Detergent Premium 2kg,1,8906000000460,Tide Detergent Original 4kg,Same subcategory,38.95,83.105
+8906000000174,Wheel Detergent Premium 2kg,2,8906000000388,Tide Detergent Classic 2kg,Same subcategory,72.95,71.705
+8906000000174,Wheel Detergent Premium 2kg,3,8906000000096,Tide Detergent Lite 2kg,Same subcategory,80.55,62.945
+8906000000175,ITC Master Chef Frozen Snacks Premium 1kg,1,8906000000129,Godrej Yummiez Frozen Snacks Value Pack 1kg,Same subcategory,-34.54,83.54599999999999
+8906000000175,ITC Master Chef Frozen Snacks Premium 1kg,2,8906000000237,ITC Master Chef Frozen Snacks Original 400g,Same subcategory,81.46,70.854
+8906000000175,ITC Master Chef Frozen Snacks Premium 1kg,3,8906000000176,ITC Master Chef Frozen Snacks Original 1kg,Same subcategory,85.46,62.454
+8906000000176,ITC Master Chef Frozen Snacks Original 1kg,1,8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,Same subcategory,1.03,86.897
+8906000000176,ITC Master Chef Frozen Snacks Original 1kg,2,8906000000237,ITC Master Chef Frozen Snacks Original 400g,Same subcategory,-4.0,78.6
+8906000000176,ITC Master Chef Frozen Snacks Original 1kg,3,8906000000022,McCain Frozen Snacks Jumbo 400g,Same subcategory,13.0,69.7
+8906000000177,Kinley Water Regular 2L,1,8906000000235,Kinley Water Classic 500ml,Same subcategory,0.0,87.0
+8906000000177,Kinley Water Regular 2L,2,8906000000108,Bisleri Water Jumbo 2L,Same subcategory,0.0,79.0
+8906000000177,Kinley Water Regular 2L,3,8906000000001,Bisleri Water Regular 2L,Same subcategory,-0.75,70.925
+8906000000178,Dinshaw's Ice Cream Lite 1L,1,8906000000005,Amul Ice Cream Value Pack 700ml,Same subcategory,9.5,86.05
+8906000000178,Dinshaw's Ice Cream Lite 1L,2,8906000000005,Amul Ice Cream Value Pack 700ml,Same subcategory,9.5,78.05
+8906000000178,Dinshaw's Ice Cream Lite 1L,3,8906000000480,McCain Frozen Snacks Regular 400g,Same category fallback,-11.75,69.825
+8906000000179,Stayfree Sanitary Care Family Pack 30pc,1,8906000000243,Whisper Sanitary Care Jumbo 15pc,Same subcategory,-18.07,85.193
+8906000000179,Stayfree Sanitary Care Family Pack 30pc,2,8906000000169,Whisper Sanitary Care Lite 7pc,Same subcategory,-38.22,75.178
+8906000000179,Stayfree Sanitary Care Family Pack 30pc,3,8906000000037,Sofy Sanitary Care Regular 30pc,Same subcategory,39.88,67.012
+8906000000180,Local Mill Dal Value Pack 500g,1,8906000000463,Tata Sampann Dal Family Pack 1kg,Same subcategory,-0.36,86.964
+8906000000180,Local Mill Dal Value Pack 500g,2,8906000000333,Tata Sampann Dal Jumbo 2kg,Same subcategory,4.54,78.546
+8906000000180,Local Mill Dal Value Pack 500g,3,8906000000301,24 Mantra Dal Family Pack 2kg,Same subcategory,-5.21,70.479
+8906000000181,Nivea Face Wash Mini 150g,1,8906000000369,Ponds Face Wash Family Pack 150g,Same subcategory,-1.94,86.806
+8906000000181,Nivea Face Wash Mini 150g,2,8906000000229,Himalaya Face Wash Value Pack 50g,Same subcategory,8.75,78.125
+8906000000181,Nivea Face Wash Mini 150g,3,8906000000141,Clean & Clear Face Wash Value Pack 100g,Same subcategory,-12.4,69.76
+8906000000182,Gowardhan Ghee Mini 500ml,1,8906000000393,Gowardhan Ghee Value Pack 500ml,Same subcategory,6.16,86.384
+8906000000182,Gowardhan Ghee Mini 500ml,2,8906000000449,Gowardhan Ghee Classic 1L,Same subcategory,36.96,75.304
+8906000000182,Gowardhan Ghee Mini 500ml,3,8906000000088,Mother Dairy Ghee Original 500ml,Same subcategory,58.05,65.195
+8906000000183,Knorr Soup Regular 45g,1,8906000000118,Knorr Soup Lite 100g,Same subcategory,-18.3,85.17
+8906000000183,Knorr Soup Regular 45g,2,8906000000431,Knorr Soup Regular 45g,Same subcategory,-39.2,75.08
+8906000000183,Knorr Soup Regular 45g,3,8906000000474,Knorr Soup Lite 100g,Same subcategory,-68.81,64.119
+8906000000184,Whisper Sanitary Care Mini 7pc,1,8906000000215,Stayfree Sanitary Care Classic 30pc,Same subcategory,-8.79,86.121
+8906000000184,Whisper Sanitary Care Mini 7pc,2,8906000000015,Sofy Sanitary Care Premium 30pc,Same subcategory,-13.3,77.67
+8906000000184,Whisper Sanitary Care Mini 7pc,3,8906000000169,Whisper Sanitary Care Lite 7pc,Same subcategory,43.6,66.64
+8906000000185,Britannia Bread Regular 700g,1,8906000000259,Harvest Gold Bread Fresh 400g,Same subcategory,-11.45,85.855
+8906000000185,Britannia Bread Regular 700g,2,8906000000298,Local Bakery Bread Jumbo 700g,Same subcategory,17.75,77.225
+8906000000185,Britannia Bread Regular 700g,3,8906000000133,Britannia Bread Regular 400g,Same subcategory,20.02,68.998
+8906000000186,Mother Dairy Ghee Value Pack 500ml,1,8906000000088,Mother Dairy Ghee Original 500ml,Same subcategory,-5.69,86.43100000000001
+8906000000186,Mother Dairy Ghee Value Pack 500ml,2,8906000000163,Patanjali Ghee Regular 500ml,Same subcategory,21.93,76.80699999999999
+8906000000186,Mother Dairy Ghee Value Pack 500ml,3,8906000000449,Gowardhan Ghee Classic 1L,Same subcategory,-26.78,68.322
+8906000000187,Nilon's Pickles Original 1kg,1,8906000000367,Pachranga Pickles Lite 200g,Same subcategory,-22.8,84.72
+8906000000187,Nilon's Pickles Original 1kg,2,8906000000051,Priya Pickles Jumbo 200g,Same subcategory,-72.0,71.8
+8906000000187,Nilon's Pickles Original 1kg,3,8906000000438,Mother's Recipe Pickles Mini 200g,Same subcategory,87.5,62.25
+8906000000188,Scotch-Brite Kitchen Tools Jumbo 2pc,1,8906000000401,Milton Kitchen Tools Regular 2pc,Same subcategory,62.7,80.73
+8906000000188,Scotch-Brite Kitchen Tools Jumbo 2pc,2,8906000000492,Prestige Kitchen Tools Mini 2pc,Same subcategory,165.07,62.493
+8906000000188,Scotch-Brite Kitchen Tools Jumbo 2pc,3,8906000000405,Cello Kitchen Tools Value Pack 2pc,Same subcategory,171.1,55
+8906000000189,Unibic Cookies Classic 75g,1,8906000000043,Sunfeast Dark Fantasy Cookies Lite 120g,Same subcategory,11.35,85.865
+8906000000189,Unibic Cookies Classic 75g,2,8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,Same subcategory,15.85,77.415
+8906000000189,Unibic Cookies Classic 75g,3,8906000000439,Unibic Cookies Premium 75g,Same subcategory,-32.98,67.702
+8906000000190,Onion 1kg,1,8906000000156,Cabbage 1kg,Same subcategory,14.08,85.592
+8906000000190,Onion 1kg,2,8906000000225,Onion 1kg,Same subcategory,-17.06,77.294
+8906000000190,Onion 1kg,3,8906000000389,Beans 1kg,Same subcategory,-19.16,69.084
+8906000000191,Weikfield Pasta Fresh 500g,1,8906000000493,Maggi Pasta Family Pack 200g,Same subcategory,-32.55,83.745
+8906000000191,Weikfield Pasta Fresh 500g,2,8906000000206,Del Monte Pasta Lite 500g,Same subcategory,-44.95,74.505
+8906000000191,Weikfield Pasta Fresh 500g,3,8906000000446,Maggi Pasta Original 200g,Same subcategory,-45.95,66.405
+8906000000192,Organic Tattva Poha Mini 500g,1,8906000000238,Local Mill Poha Family Pack 500g,Same subcategory,-23.28,84.672
+8906000000192,Organic Tattva Poha Mini 500g,2,8906000000010,Tata Sampann Poha Jumbo 500g,Same subcategory,31.89,75.81099999999999
+8906000000192,Organic Tattva Poha Mini 500g,3,8906000000161,Organic Tattva Poha Family Pack 500g,Same subcategory,-58.44,65.156
+8906000000193,Catch Masala Original 200g,1,8906000000155,Everest Masala Classic 200g,Same subcategory,-15.5,85.45
+8906000000193,Catch Masala Original 200g,2,8906000000261,Catch Masala Family Pack 200g,Same subcategory,-39.1,75.09
+8906000000193,Catch Masala Original 200g,3,8906000000159,Catch Masala Fresh 100g,Same subcategory,-63.34,64.666
+8906000000194,Domex Toilet Cleaner Premium 500ml,1,8906000000394,Domex Toilet Cleaner Value Pack 1L,Same subcategory,2.43,86.757
+8906000000194,Domex Toilet Cleaner Premium 500ml,2,8906000000200,Domex Toilet Cleaner Mini 500ml,Same subcategory,3.72,78.628
+8906000000194,Domex Toilet Cleaner Premium 500ml,3,8906000000109,Sanifresh Toilet Cleaner Regular 500ml,Same subcategory,11.75,69.825
+8906000000195,Gowardhan Butter Mini 500g,1,8906000000070,Amul Butter Jumbo 500g,Same subcategory,0.32,86.968
+8906000000195,Gowardhan Butter Mini 500g,2,8906000000079,Britannia Butter Fresh 100g,Same subcategory,-4.53,78.547
+8906000000195,Gowardhan Butter Mini 500g,3,8906000000500,Britannia Butter Fresh 500g,Same subcategory,-14.23,69.577
+8906000000196,Closeup Mouthwash Regular 250ml,1,8906000000231,Colgate Mouthwash Classic 250ml,Same subcategory,5.9,86.41
+8906000000196,Closeup Mouthwash Regular 250ml,2,8906000000386,Colgate Mouthwash Premium 250ml,Same subcategory,12.0,77.8
+8906000000196,Closeup Mouthwash Regular 250ml,3,8906000000149,Listerine Mouthwash Classic 250ml,Same subcategory,37.84,67.216
+8906000000197,Soulfull Cereal Family Pack 250g,1,8906000000311,Bagrry's Cereal Premium 1kg,Same subcategory,-4.31,86.569
+8906000000197,Soulfull Cereal Family Pack 250g,2,8906000000227,Kellogg's Cereal Original 1kg,Same subcategory,11.25,77.875
+8906000000197,Soulfull Cereal Family Pack 250g,3,8906000000249,Bagrry's Cereal Value Pack 250g,Same subcategory,36.15,67.385
+8906000000198,Rin Detergent Regular 500g,1,8906000000305,Rin Detergent Premium 2kg,Same subcategory,43.05,82.695
+8906000000198,Rin Detergent Regular 500g,2,8906000000486,Surf Excel Detergent Jumbo 2kg,Same subcategory,48.5,74.15
+8906000000198,Rin Detergent Regular 500g,3,8906000000054,Tide Detergent Family Pack 2kg,Same subcategory,54.35,65.565
+8906000000199,Tops Jam Value Pack 500g,1,8906000000402,Kissan Jam Family Pack 200g,Same subcategory,16.99,85.301
+8906000000199,Tops Jam Value Pack 500g,2,8906000000212,Mapro Jam Jumbo 500g,Same subcategory,19.25,77.075
+8906000000199,Tops Jam Value Pack 500g,3,8906000000473,Tops Jam Regular 200g,Same subcategory,-33.25,67.675
+8906000000200,Domex Toilet Cleaner Mini 500ml,1,8906000000394,Domex Toilet Cleaner Value Pack 1L,Same subcategory,-1.29,86.871
+8906000000200,Domex Toilet Cleaner Mini 500ml,2,8906000000194,Domex Toilet Cleaner Premium 500ml,Same subcategory,-3.72,78.628
+8906000000200,Domex Toilet Cleaner Mini 500ml,3,8906000000109,Sanifresh Toilet Cleaner Regular 500ml,Same subcategory,8.03,70.197
+8906000000201,Britannia Butter Lite 500g,1,8906000000144,Amul Butter Jumbo 100g,Same subcategory,26.65,84.335
+8906000000201,Britannia Butter Lite 500g,2,8906000000336,Gowardhan Butter Premium 500g,Same subcategory,32.2,75.78
+8906000000201,Britannia Butter Lite 500g,3,8906000000091,Amul Butter Family Pack 100g,Same subcategory,50.68,65.932
+8906000000202,Spinach 1 bunch,1,8906000000267,Spring Onion 1 bunch,Same subcategory,-2.31,86.769
+8906000000202,Spinach 1 bunch,2,8906000000381,Mint 1 bunch,Same subcategory,-2.31,78.769
+8906000000202,Spinach 1 bunch,3,8906000000024,Spring Onion 1 bunch,Same subcategory,-9.26,70.074
+8906000000203,Cadbury Chocolates Mini 50g,1,8906000000078,Cadbury Chocolates Original 100g,Same subcategory,-9.34,86.066
+8906000000203,Cadbury Chocolates Mini 50g,2,8906000000498,Nestle Chocolates Value Pack 100g,Same subcategory,-28.04,76.196
+8906000000203,Cadbury Chocolates Mini 50g,3,8906000000435,Ferrero Chocolates Family Pack 100g,Same subcategory,126.91,58.309
+8906000000204,Bajaj Almond Drops Hair Oil Mini 500ml,1,8906000000060,Dabur Amla Hair Oil Lite 500ml,Same subcategory,8.3,86.17
+8906000000204,Bajaj Almond Drops Hair Oil Mini 500ml,2,8906000000167,Navratna Hair Oil Jumbo 500ml,Same subcategory,-23.25,76.675
+8906000000204,Bajaj Almond Drops Hair Oil Mini 500ml,3,8906000000468,Parachute Hair Oil Family Pack 200ml,Same subcategory,61.78,64.822
+8906000000205,Grapes 1kg,1,8906000000248,Watermelon 1kg,Same subcategory,-34.58,83.542
+8906000000205,Grapes 1kg,2,8906000000044,Apple 1kg,Same subcategory,-74.48,71.552
+8906000000205,Grapes 1kg,3,8906000000087,Pomegranate 1kg,Same subcategory,-123.09,58.691
+8906000000206,Del Monte Pasta Lite 500g,1,8906000000446,Maggi Pasta Original 200g,Same subcategory,-1.0,86.9
+8906000000206,Del Monte Pasta Lite 500g,2,8906000000493,Maggi Pasta Family Pack 200g,Same subcategory,12.4,77.76
+8906000000206,Del Monte Pasta Lite 500g,3,8906000000307,Maggi Pasta Original 500g,Same subcategory,-30.0,68.0
+8906000000207,Haldiram Ready To Eat Jumbo 500g,1,8906000000132,MTR Ready To Eat Premium 500g,Same subcategory,9.74,86.026
+8906000000207,Haldiram Ready To Eat Jumbo 500g,2,8906000000103,MTR Ready To Eat Value Pack 500g,Same subcategory,-27.9,76.21
+8906000000207,Haldiram Ready To Eat Jumbo 500g,3,8906000000479,Haldiram Ready To Eat Jumbo 500g,Same subcategory,-55.35,65.465
+8906000000208,Garnier Face Wash Classic 150g,1,8906000000098,Nivea Face Wash Family Pack 100g,Same subcategory,-13.14,85.68599999999999
+8906000000208,Garnier Face Wash Classic 150g,2,8906000000382,Ponds Face Wash Fresh 150g,Same subcategory,-33.34,75.666
+8906000000208,Garnier Face Wash Classic 150g,3,8906000000481,Garnier Face Wash Regular 150g,Same subcategory,-41.79,66.821
+8906000000209,Oreo Cream Biscuits Family Pack 100g,1,8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,Same subcategory,-2.25,86.775
+8906000000209,Oreo Cream Biscuits Family Pack 100g,2,8906000000384,Bourbon Cream Biscuits Mini 150g,Same subcategory,-3.22,78.678
+8906000000209,Oreo Cream Biscuits Family Pack 100g,3,8906000000068,Bourbon Cream Biscuits Fresh 150g,Same subcategory,9.3,70.07
+8906000000210,Kellogg's Oats Regular 1kg,1,8906000000077,Saffola Oats Original 400g,Same subcategory,15.9,85.41
+8906000000210,Kellogg's Oats Regular 1kg,2,8906000000162,Saffola Oats Classic 400g,Same subcategory,-16.5,77.35
+8906000000210,Kellogg's Oats Regular 1kg,3,8906000000136,Quaker Oats Regular 400g,Same subcategory,22.9,68.71
+8906000000211,Tata Salt Salt Value Pack 1kg,1,8906000000260,Saffola Salt Salt Fresh 1kg,Same subcategory,12.8,85.72
+8906000000211,Tata Salt Salt Value Pack 1kg,2,8906000000470,Saffola Salt Salt Classic 1kg,Same subcategory,35.1,75.49
+8906000000211,Tata Salt Salt Value Pack 1kg,3,8906000000252,Aashirvaad Salt Salt Mini 1kg,Same subcategory,78.8,63.12
+8906000000212,Mapro Jam Jumbo 500g,1,8906000000402,Kissan Jam Family Pack 200g,Same subcategory,-2.26,86.774
+8906000000212,Mapro Jam Jumbo 500g,2,8906000000199,Tops Jam Value Pack 500g,Same subcategory,-19.25,77.075
+8906000000212,Mapro Jam Jumbo 500g,3,8906000000473,Tops Jam Regular 200g,Same subcategory,-52.5,65.75
+8906000000213,Dabur Amla Hair Oil Original 500ml,1,8906000000468,Parachute Hair Oil Family Pack 200ml,Same subcategory,-18.02,85.198
+8906000000213,Dabur Amla Hair Oil Original 500ml,2,8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,Same subcategory,29.01,76.099
+8906000000213,Dabur Amla Hair Oil Original 500ml,3,8906000000392,Parachute Hair Oil Value Pack 100ml,Same subcategory,37.41,67.259
+8906000000214,Tata Tea Tea Regular 500g,1,8906000000314,Red Label Tea Premium 250g,Same subcategory,-17.0,85.3
+8906000000214,Tata Tea Tea Regular 500g,2,8906000000348,Society Tea Premium 1kg,Same subcategory,71.6,71.84
+8906000000214,Tata Tea Tea Regular 500g,3,8906000000341,Wagh Bakri Tea Mini 500g,Same subcategory,-104.16,60.584
+8906000000215,Stayfree Sanitary Care Classic 30pc,1,8906000000015,Sofy Sanitary Care Premium 30pc,Same subcategory,-4.51,86.549
+8906000000215,Stayfree Sanitary Care Classic 30pc,2,8906000000184,Whisper Sanitary Care Mini 7pc,Same subcategory,8.79,78.121
+8906000000215,Stayfree Sanitary Care Classic 30pc,3,8906000000410,Whisper Sanitary Care Premium 15pc,Same subcategory,-35.51,67.449
+8906000000216,Clinic Plus Shampoo Jumbo 340ml,1,8906000000273,Clinic Plus Shampoo Family Pack 340ml,Same subcategory,4.85,86.515
+8906000000216,Clinic Plus Shampoo Jumbo 340ml,2,8906000000430,Sunsilk Shampoo Classic 180ml,Same subcategory,-67.87,72.213
+8906000000216,Clinic Plus Shampoo Jumbo 340ml,3,8906000000072,Pantene Shampoo Classic 340ml,Same subcategory,-269.2,55
+8906000000217,Bourbon Cream Biscuits Classic 100g,1,8906000000375,Oreo Cream Biscuits Original 100g,Same subcategory,0.0,87.0
+8906000000217,Bourbon Cream Biscuits Classic 100g,2,8906000000131,Oreo Cream Biscuits Fresh 150g,Same subcategory,0.22,78.978
+8906000000217,Bourbon Cream Biscuits Classic 100g,3,8906000000071,Hide & Seek Cream Biscuits Premium 150g,Same subcategory,-0.6,70.94
+8906000000218,Yippee Noodles Regular 70g,1,8906000000097,Top Ramen Noodles Original 140g,Same subcategory,9.8,86.02
+8906000000218,Yippee Noodles Regular 70g,2,8906000000313,Yippee Noodles Value Pack 280g,Same subcategory,14.45,77.555
+8906000000218,Yippee Noodles Regular 70g,3,8906000000303,Knorr Noodles Regular 140g,Same subcategory,30.5,67.95
+8906000000219,MamyPoko Baby Care Original 100ml,1,8906000000434,Pampers Baby Care Mini 200ml,Same subcategory,-32.24,83.776
+8906000000219,MamyPoko Baby Care Original 100ml,2,8906000000327,Pampers Baby Care Family Pack 100ml,Same subcategory,42.91,74.709
+8906000000219,MamyPoko Baby Care Original 100ml,3,8906000000280,MamyPoko Baby Care Family Pack 200ml,Same subcategory,68.06,64.194
+8906000000220,Kellogg's Cereal Regular 1kg,1,8906000000122,Kellogg's Cereal Original 250g,Same subcategory,-28.69,84.131
+8906000000220,Kellogg's Cereal Regular 1kg,2,8906000000105,Soulfull Cereal Fresh 500g,Same subcategory,-34.59,75.541
+8906000000220,Kellogg's Cereal Regular 1kg,3,8906000000418,Bagrry's Cereal Family Pack 1kg,Same subcategory,35.91,67.409
+8906000000221,Gowardhan Milk Premium 1L,1,8906000000270,Dinshaw's Milk Family Pack 1L,Same subcategory,-8.0,86.2
+8906000000221,Gowardhan Milk Premium 1L,2,8906000000065,Mother Dairy Milk Mini 1L,Same subcategory,-8.9,78.11
+8906000000221,Gowardhan Milk Premium 1L,3,8906000000370,Dinshaw's Milk Lite 500ml,Same subcategory,-10.2,69.98
+8906000000222,Kohinoor Rice Regular 1kg,1,8906000000151,India Gate Rice Premium 10kg,Same subcategory,-430.68,55
+8906000000222,Kohinoor Rice Regular 1kg,2,8906000000374,Fortune Rice Value Pack 10kg,Same subcategory,-585.99,55
+8906000000222,Kohinoor Rice Regular 1kg,3,8906000000150,Kohinoor Rice Classic 10kg,Same subcategory,-628.9,55
+8906000000223,Mother Dairy Milk Mini 500ml,1,8906000000395,Amul Milk Lite 500ml,Same subcategory,1.9,86.81
+8906000000223,Mother Dairy Milk Mini 500ml,2,8906000000338,Gowardhan Milk Original 1L,Same subcategory,6.65,78.335
+8906000000223,Mother Dairy Milk Mini 500ml,3,8906000000221,Gowardhan Milk Premium 1L,Same subcategory,-10.45,69.955
+8906000000224,Mint 1 bunch,1,8906000000024,Spring Onion 1 bunch,Same subcategory,3.25,86.675
+8906000000224,Mint 1 bunch,2,8906000000040,Methi 1 bunch,Same subcategory,-9.35,78.065
+8906000000224,Mint 1 bunch,3,8906000000267,Spring Onion 1 bunch,Same subcategory,10.2,69.98
+8906000000225,Onion 1kg,1,8906000000389,Beans 1kg,Same subcategory,-2.1,86.79
+8906000000225,Onion 1kg,2,8906000000190,Onion 1kg,Same subcategory,17.06,77.294
+8906000000225,Onion 1kg,3,8906000000127,Potato 1kg,Same subcategory,-19.1,69.09
+8906000000226,Nilon's Pickles Fresh 500g,1,8906000000257,Nilon's Pickles Regular 200g,Same subcategory,-9.8,86.02
+8906000000226,Nilon's Pickles Fresh 500g,2,8906000000262,Pachranga Pickles Regular 1kg,Same subcategory,18.95,77.105
+8906000000226,Nilon's Pickles Fresh 500g,3,8906000000051,Priya Pickles Jumbo 200g,Same subcategory,43.9,66.61
+8906000000227,Kellogg's Cereal Original 1kg,1,8906000000197,Soulfull Cereal Family Pack 250g,Same subcategory,-11.25,85.875
+8906000000227,Kellogg's Cereal Original 1kg,2,8906000000311,Bagrry's Cereal Premium 1kg,Same subcategory,-15.56,77.444
+8906000000227,Kellogg's Cereal Original 1kg,3,8906000000249,Bagrry's Cereal Value Pack 250g,Same subcategory,24.9,68.51
+8906000000228,Tops Jam Lite 200g,1,8906000000019,Tops Jam Lite 500g,Same subcategory,0.05,86.995
+8906000000228,Tops Jam Lite 200g,2,8906000000265,Mapro Jam Jumbo 500g,Same subcategory,-1.15,78.885
+8906000000228,Tops Jam Lite 200g,3,8906000000050,Tops Jam Jumbo 500g,Same subcategory,-21.75,68.825
+8906000000229,Himalaya Face Wash Value Pack 50g,1,8906000000181,Nivea Face Wash Mini 150g,Same subcategory,-8.75,86.125
+8906000000229,Himalaya Face Wash Value Pack 50g,2,8906000000369,Ponds Face Wash Family Pack 150g,Same subcategory,-10.69,77.931
+8906000000229,Himalaya Face Wash Value Pack 50g,3,8906000000399,Garnier Face Wash Lite 50g,Same subcategory,18.0,69.2
+8906000000230,Navratna Talcum Powder Regular 300g,1,8906000000368,Cinthol Talcum Powder Classic 100g,Same subcategory,-28.65,84.135
+8906000000230,Navratna Talcum Powder Regular 300g,2,8906000000164,Cinthol Talcum Powder Regular 300g,Same subcategory,-31.35,75.865
+8906000000230,Navratna Talcum Powder Regular 300g,3,8906000000489,Ponds Talcum Powder Mini 300g,Same subcategory,-34.81,67.519
+8906000000231,Colgate Mouthwash Classic 250ml,1,8906000000196,Closeup Mouthwash Regular 250ml,Same subcategory,-5.9,86.41
+8906000000231,Colgate Mouthwash Classic 250ml,2,8906000000386,Colgate Mouthwash Premium 250ml,Same subcategory,6.1,78.39
+8906000000231,Colgate Mouthwash Classic 250ml,3,8906000000149,Listerine Mouthwash Classic 250ml,Same subcategory,31.94,67.806
+8906000000232,Pampers Baby Care Family Pack 100ml,1,8906000000255,Pampers Baby Care Value Pack 200ml,Same subcategory,-2.74,86.726
+8906000000232,Pampers Baby Care Family Pack 100ml,2,8906000000434,Pampers Baby Care Mini 200ml,Same subcategory,111.16,67.884
+8906000000232,Pampers Baby Care Family Pack 100ml,3,8906000000219,MamyPoko Baby Care Original 100ml,Same subcategory,143.4,56.660000000000004
+8906000000233,Everest Masala Regular 200g,1,8906000000159,Catch Masala Fresh 100g,Same subcategory,0.36,86.964
+8906000000233,Everest Masala Regular 200g,2,8906000000261,Catch Masala Family Pack 200g,Same subcategory,24.6,76.54
+8906000000233,Everest Masala Regular 200g,3,8906000000155,Everest Masala Classic 200g,Same subcategory,48.2,66.18
+8906000000234,Duracell Batteries Mini 4pc,1,8906000000325,Nippo Batteries Fresh 2pc,Same subcategory,11.45,85.855
+8906000000234,Duracell Batteries Mini 4pc,2,8906000000240,Eveready Batteries Original 4pc,Same subcategory,36.45,75.355
+8906000000234,Duracell Batteries Mini 4pc,3,8906000000026,Duracell Batteries Regular 4pc,Same subcategory,39.76,67.024
+8906000000235,Kinley Water Classic 500ml,1,8906000000108,Bisleri Water Jumbo 2L,Same subcategory,0.0,87.0
+8906000000235,Kinley Water Classic 500ml,2,8906000000177,Kinley Water Regular 2L,Same subcategory,0.0,79.0
+8906000000235,Kinley Water Classic 500ml,3,8906000000001,Bisleri Water Regular 2L,Same subcategory,-0.75,70.925
+8906000000236,Colgate Toothpaste Value Pack 80g,1,8906000000074,Dabur Red Toothpaste Classic 150g,Same subcategory,6.8,86.32
+8906000000236,Colgate Toothpaste Value Pack 80g,2,8906000000074,Dabur Red Toothpaste Classic 150g,Same subcategory,6.8,78.32
+8906000000236,Colgate Toothpaste Value Pack 80g,3,8906000000095,Listerine Mouthwash Family Pack 250ml,Same category fallback,10.8,69.92
+8906000000237,ITC Master Chef Frozen Snacks Original 400g,1,8906000000176,ITC Master Chef Frozen Snacks Original 1kg,Same subcategory,4.0,86.6
+8906000000237,ITC Master Chef Frozen Snacks Original 400g,2,8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,Same subcategory,5.03,78.497
+8906000000237,ITC Master Chef Frozen Snacks Original 400g,3,8906000000022,McCain Frozen Snacks Jumbo 400g,Same subcategory,17.0,69.3
+8906000000238,Local Mill Poha Family Pack 500g,1,8906000000192,Organic Tattva Poha Mini 500g,Same subcategory,23.28,84.672
+8906000000238,Local Mill Poha Family Pack 500g,2,8906000000161,Organic Tattva Poha Family Pack 500g,Same subcategory,-35.16,75.484
+8906000000238,Local Mill Poha Family Pack 500g,3,8906000000302,Tata Sampann Poha Mini 500g,Same subcategory,-46.55,66.345
+8906000000239,Rajdhani Suji Premium 500g,1,8906000000409,Local Mill Suji Value Pack 500g,Same subcategory,-1.75,86.825
+8906000000239,Rajdhani Suji Premium 500g,2,8906000000042,Rajdhani Suji Jumbo 1kg,Same subcategory,2.2,78.78
+8906000000239,Rajdhani Suji Premium 500g,3,8906000000309,Rajdhani Suji Fresh 1kg,Same subcategory,-27.75,68.225
+8906000000240,Eveready Batteries Original 4pc,1,8906000000026,Duracell Batteries Regular 4pc,Same subcategory,3.31,86.669
+8906000000240,Eveready Batteries Original 4pc,2,8906000000326,Eveready Batteries Jumbo 2pc,Same subcategory,13.4,77.66
+8906000000240,Eveready Batteries Original 4pc,3,8906000000325,Nippo Batteries Fresh 2pc,Same subcategory,-25.0,68.5
+8906000000241,Del Monte Pasta Premium 500g,1,8906000000397,Weikfield Pasta Premium 500g,Same subcategory,-4.93,86.507
+8906000000241,Del Monte Pasta Premium 500g,2,8906000000307,Maggi Pasta Original 500g,Same subcategory,45.02,74.498
+8906000000241,Del Monte Pasta Premium 500g,3,8906000000446,Maggi Pasta Original 200g,Same subcategory,74.02,63.598
+8906000000242,4700BC Popcorn Value Pack 70g,1,8906000000365,Act II Popcorn Mini 30g,Same subcategory,1.7,86.83
+8906000000242,4700BC Popcorn Value Pack 70g,2,8906000000269,Cornitos Popcorn Jumbo 30g,Same subcategory,9.15,78.085
+8906000000242,4700BC Popcorn Value Pack 70g,3,8906000000376,Cornitos Popcorn Jumbo 30g,Same subcategory,-34.05,67.595
+8906000000243,Whisper Sanitary Care Jumbo 15pc,1,8906000000179,Stayfree Sanitary Care Family Pack 30pc,Same subcategory,18.07,85.193
+8906000000243,Whisper Sanitary Care Jumbo 15pc,2,8906000000169,Whisper Sanitary Care Lite 7pc,Same subcategory,-20.15,76.985
+8906000000243,Whisper Sanitary Care Jumbo 15pc,3,8906000000037,Sofy Sanitary Care Regular 30pc,Same subcategory,57.95,65.205
+8906000000244,Sprite Soft Drinks Family Pack 600ml,1,8906000000353,Pepsi Soft Drinks Premium 250ml,Same subcategory,11.4,85.86
+8906000000244,Sprite Soft Drinks Family Pack 600ml,2,8906000000148,Pepsi Soft Drinks Lite 2L,Same subcategory,12.0,77.8
+8906000000244,Sprite Soft Drinks Family Pack 600ml,3,8906000000130,Sprite Soft Drinks Lite 250ml,Same subcategory,24.75,68.525
+8906000000245,Gowardhan Paneer Original 500g,1,8906000000452,Mother Dairy Paneer Fresh 500g,Same subcategory,-50.05,81.995
+8906000000245,Gowardhan Paneer Original 500g,2,8906000000467,Amul Paneer Mini 500g,Same subcategory,88.25,70.175
+8906000000245,Gowardhan Paneer Original 500g,3,8906000000007,Amul Paneer Lite 200g,Same subcategory,-94.15,61.585
+8906000000246,Medimix Soap Original 100g,1,8906000000154,Medimix Soap Value Pack 100g,Same subcategory,1.45,86.855
+8906000000246,Medimix Soap Original 100g,2,8906000000289,Santoor Soap Regular 75g,Same subcategory,-24.6,76.54
+8906000000246,Medimix Soap Original 100g,3,8906000000350,Dove Soap Lite 125g,Same subcategory,-27.6,68.24
+8906000000247,MTR Ready To Eat Family Pack 500g,1,8906000000132,MTR Ready To Eat Premium 500g,Same subcategory,-80.91,78.909
+8906000000247,MTR Ready To Eat Family Pack 500g,2,8906000000207,Haldiram Ready To Eat Jumbo 500g,Same subcategory,-90.65,69.935
+8906000000247,MTR Ready To Eat Family Pack 500g,3,8906000000103,MTR Ready To Eat Value Pack 500g,Same subcategory,-118.55,59.144999999999996
+8906000000248,Watermelon 1kg,1,8906000000205,Grapes 1kg,Same subcategory,34.58,83.542
+8906000000248,Watermelon 1kg,2,8906000000044,Apple 1kg,Same subcategory,-39.9,75.01
+8906000000248,Watermelon 1kg,3,8906000000087,Pomegranate 1kg,Same subcategory,-88.51,62.149
+8906000000249,Bagrry's Cereal Value Pack 250g,1,8906000000227,Kellogg's Cereal Original 1kg,Same subcategory,-24.9,84.51
+8906000000249,Bagrry's Cereal Value Pack 250g,2,8906000000197,Soulfull Cereal Family Pack 250g,Same subcategory,-36.15,75.385
+8906000000249,Bagrry's Cereal Value Pack 250g,3,8906000000311,Bagrry's Cereal Premium 1kg,Same subcategory,-40.46,66.954
+8906000000250,Priya Pickles Mini 500g,1,8906000000438,Mother's Recipe Pickles Mini 200g,Same subcategory,-15.3,85.47
+8906000000250,Priya Pickles Mini 500g,2,8906000000187,Nilon's Pickles Original 1kg,Same subcategory,-102.8,68.72
+8906000000250,Priya Pickles Mini 500g,3,8906000000367,Pachranga Pickles Lite 200g,Same subcategory,-125.6,58.44
+8906000000251,Pillsbury Atta Mini 5kg,1,8906000000461,Fortune Atta Regular 1kg,Same subcategory,8.2,86.18
+8906000000251,Pillsbury Atta Mini 5kg,2,8906000000100,Pillsbury Atta Classic 5kg,Same subcategory,142.0,64.8
+8906000000251,Pillsbury Atta Mini 5kg,3,8906000000487,Aashirvaad Atta Regular 5kg,Same subcategory,240.9,55
+8906000000252,Aashirvaad Salt Salt Mini 1kg,1,8906000000090,Saffola Salt Salt Classic 1kg,Same subcategory,26.0,84.4
+8906000000252,Aashirvaad Salt Salt Mini 1kg,2,8906000000470,Saffola Salt Salt Classic 1kg,Same subcategory,-43.7,74.63
+8906000000252,Aashirvaad Salt Salt Mini 1kg,3,8906000000260,Saffola Salt Salt Fresh 1kg,Same subcategory,-66.0,64.4
+8906000000253,Act II Popcorn Jumbo 30g,1,8906000000256,Act II Popcorn Value Pack 30g,Same subcategory,-64.4,80.56
+8906000000253,Act II Popcorn Jumbo 30g,2,8906000000414,4700BC Popcorn Family Pack 70g,Same subcategory,74.4,71.56
+8906000000253,Act II Popcorn Jumbo 30g,3,8906000000269,Cornitos Popcorn Jumbo 30g,Same subcategory,-97.8,61.22
+8906000000254,MTR Instant Mix Jumbo 500g,1,8906000000082,Gits Instant Mix Mini 200g,Same subcategory,159.0,71.1
+8906000000254,MTR Instant Mix Jumbo 500g,2,8906000000029,MTR Instant Mix Value Pack 200g,Same subcategory,170.0,62.0
+8906000000254,MTR Instant Mix Jumbo 500g,3,8906000000490,Gits Instant Mix Lite 500g,Same subcategory,175.8,55
+8906000000255,Pampers Baby Care Value Pack 200ml,1,8906000000232,Pampers Baby Care Family Pack 100ml,Same subcategory,2.74,86.726
+8906000000255,Pampers Baby Care Value Pack 200ml,2,8906000000434,Pampers Baby Care Mini 200ml,Same subcategory,113.9,67.61
+8906000000255,Pampers Baby Care Value Pack 200ml,3,8906000000219,MamyPoko Baby Care Original 100ml,Same subcategory,146.14,56.386
+8906000000256,Act II Popcorn Value Pack 30g,1,8906000000269,Cornitos Popcorn Jumbo 30g,Same subcategory,-33.4,83.66
+8906000000256,Act II Popcorn Value Pack 30g,2,8906000000365,Act II Popcorn Mini 30g,Same subcategory,-40.85,74.915
+8906000000256,Act II Popcorn Value Pack 30g,3,8906000000242,4700BC Popcorn Value Pack 70g,Same subcategory,-42.55,66.745
+8906000000257,Nilon's Pickles Regular 200g,1,8906000000226,Nilon's Pickles Fresh 500g,Same subcategory,9.8,86.02
+8906000000257,Nilon's Pickles Regular 200g,2,8906000000262,Pachranga Pickles Regular 1kg,Same subcategory,28.75,76.125
+8906000000257,Nilon's Pickles Regular 200g,3,8906000000051,Priya Pickles Jumbo 200g,Same subcategory,53.7,65.63
+8906000000258,Real Juices Regular 200ml,1,8906000000092,Real Juices Value Pack 200ml,Same subcategory,17.67,85.233
+8906000000258,Real Juices Regular 200ml,2,8906000000025,Tropicana Juices Value Pack 1L,Same subcategory,28.83,76.117
+8906000000258,Real Juices Regular 200ml,3,8906000000119,B Natural Juices Mini 1L,Same subcategory,-29.55,68.045
+8906000000259,Harvest Gold Bread Fresh 400g,1,8906000000185,Britannia Bread Regular 700g,Same subcategory,11.45,85.855
+8906000000259,Harvest Gold Bread Fresh 400g,2,8906000000298,Local Bakery Bread Jumbo 700g,Same subcategory,29.2,76.08
+8906000000259,Harvest Gold Bread Fresh 400g,3,8906000000133,Britannia Bread Regular 400g,Same subcategory,31.47,67.853
+8906000000260,Saffola Salt Salt Fresh 1kg,1,8906000000211,Tata Salt Salt Value Pack 1kg,Same subcategory,-12.8,85.72
+8906000000260,Saffola Salt Salt Fresh 1kg,2,8906000000470,Saffola Salt Salt Classic 1kg,Same subcategory,22.3,76.77
+8906000000260,Saffola Salt Salt Fresh 1kg,3,8906000000252,Aashirvaad Salt Salt Mini 1kg,Same subcategory,66.0,64.4
+8906000000261,Catch Masala Family Pack 200g,1,8906000000155,Everest Masala Classic 200g,Same subcategory,23.6,84.64
+8906000000261,Catch Masala Family Pack 200g,2,8906000000159,Catch Masala Fresh 100g,Same subcategory,-24.24,76.576
+8906000000261,Catch Masala Family Pack 200g,3,8906000000233,Everest Masala Regular 200g,Same subcategory,-24.6,68.54
+8906000000262,Pachranga Pickles Regular 1kg,1,8906000000226,Nilon's Pickles Fresh 500g,Same subcategory,-18.95,85.105
+8906000000262,Pachranga Pickles Regular 1kg,2,8906000000051,Priya Pickles Jumbo 200g,Same subcategory,24.95,76.505
+8906000000262,Pachranga Pickles Regular 1kg,3,8906000000257,Nilon's Pickles Regular 200g,Same subcategory,-28.75,68.125
+8906000000263,Too Yumm Chips Fresh 90g,1,8906000000066,Bingo Chips Lite 150g,Same subcategory,-1.95,86.805
+8906000000263,Too Yumm Chips Fresh 90g,2,8906000000465,Lay's Chips Regular 52g,Same subcategory,-5.75,78.425
+8906000000263,Too Yumm Chips Fresh 90g,3,8906000000424,Too Yumm Chips Classic 90g,Same subcategory,-10.95,69.905
+8906000000264,Dove Conditioner Lite 340ml,1,8906000000378,L'Oreal Conditioner Jumbo 175ml,Same subcategory,18.0,85.2
+8906000000264,Dove Conditioner Lite 340ml,2,8906000000139,Dove Conditioner Original 340ml,Same subcategory,21.9,76.81
+8906000000264,Dove Conditioner Lite 340ml,3,8906000000347,Dove Conditioner Value Pack 175ml,Same subcategory,26.4,68.36
+8906000000265,Mapro Jam Jumbo 500g,1,8906000000228,Tops Jam Lite 200g,Same subcategory,1.15,86.885
+8906000000265,Mapro Jam Jumbo 500g,2,8906000000019,Tops Jam Lite 500g,Same subcategory,1.2,78.88
+8906000000265,Mapro Jam Jumbo 500g,3,8906000000050,Tops Jam Jumbo 500g,Same subcategory,-20.6,68.94
+8906000000266,Society Tea Family Pack 1kg,1,8906000000348,Society Tea Premium 1kg,Same subcategory,-44.3,82.57000000000001
+8906000000266,Society Tea Family Pack 1kg,2,8906000000411,Wagh Bakri Tea Jumbo 1kg,Same subcategory,69.1,72.09
+8906000000266,Society Tea Family Pack 1kg,3,8906000000214,Tata Tea Tea Regular 500g,Same subcategory,-115.9,59.410000000000004
+8906000000267,Spring Onion 1 bunch,1,8906000000381,Mint 1 bunch,Same subcategory,0.0,87.0
+8906000000267,Spring Onion 1 bunch,2,8906000000202,Spinach 1 bunch,Same subcategory,2.31,78.769
+8906000000267,Spring Onion 1 bunch,3,8906000000024,Spring Onion 1 bunch,Same subcategory,-6.95,70.305
+8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,1,8906000000392,Parachute Hair Oil Value Pack 100ml,Same subcategory,8.4,86.16
+8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,2,8906000000396,Dabur Amla Hair Oil Regular 500ml,Same subcategory,21.39,76.861
+8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,3,8906000000213,Dabur Amla Hair Oil Original 500ml,Same subcategory,-29.01,68.099
+8906000000269,Cornitos Popcorn Jumbo 30g,1,8906000000365,Act II Popcorn Mini 30g,Same subcategory,-7.45,86.255
+8906000000269,Cornitos Popcorn Jumbo 30g,2,8906000000242,4700BC Popcorn Value Pack 70g,Same subcategory,-9.15,78.085
+8906000000269,Cornitos Popcorn Jumbo 30g,3,8906000000256,Act II Popcorn Value Pack 30g,Same subcategory,33.4,67.66
+8906000000270,Dinshaw's Milk Family Pack 1L,1,8906000000065,Mother Dairy Milk Mini 1L,Same subcategory,-0.9,86.91
+8906000000270,Dinshaw's Milk Family Pack 1L,2,8906000000370,Dinshaw's Milk Lite 500ml,Same subcategory,-2.2,78.78
+8906000000270,Dinshaw's Milk Family Pack 1L,3,8906000000117,Dinshaw's Milk Original 1L,Same subcategory,-2.68,70.732
+8906000000271,Patanjali Honey Premium 500g,1,8906000000380,Saffola Honey Classic 500g,Same subcategory,20.65,84.935
+8906000000271,Patanjali Honey Premium 500g,2,8906000000304,Saffola Honey Lite 500g,Same subcategory,-25.35,76.465
+8906000000271,Patanjali Honey Premium 500g,3,8906000000457,Patanjali Honey Mini 500g,Same subcategory,-43.16,66.684
+8906000000272,Classmate Stationery Regular 1pc,1,8906000000039,Camlin Stationery Original 10pc,Same subcategory,-4.4,86.56
+8906000000272,Classmate Stationery Regular 1pc,2,8906000000137,Nataraj Stationery Original 10pc,Same subcategory,6.75,78.325
+8906000000272,Classmate Stationery Regular 1pc,3,8906000000456,Nataraj Stationery Value Pack 10pc,Same subcategory,64.3,64.57
+8906000000273,Clinic Plus Shampoo Family Pack 340ml,1,8906000000216,Clinic Plus Shampoo Jumbo 340ml,Same subcategory,-4.85,86.515
+8906000000273,Clinic Plus Shampoo Family Pack 340ml,2,8906000000430,Sunsilk Shampoo Classic 180ml,Same subcategory,-72.72,71.728
+8906000000273,Clinic Plus Shampoo Family Pack 340ml,3,8906000000072,Pantene Shampoo Classic 340ml,Same subcategory,-274.05,55
+8906000000274,Bisleri Water Premium 1L,1,8906000000324,Kinley Water Regular 500ml,Same subcategory,-0.9,86.91
+8906000000274,Bisleri Water Premium 1L,2,8906000000310,Kinley Water Family Pack 1L,Same subcategory,1.5,78.85
+8906000000274,Bisleri Water Premium 1L,3,8906000000008,Kinley Water Classic 500ml,Same subcategory,3.95,70.605
+8906000000275,Del Monte Pasta Jumbo 500g,1,8906000000450,Del Monte Pasta Original 500g,Same subcategory,-30.0,84.0
+8906000000275,Del Monte Pasta Jumbo 500g,2,8906000000191,Weikfield Pasta Fresh 500g,Same subcategory,-85.05,70.495
+8906000000275,Del Monte Pasta Jumbo 500g,3,8906000000493,Maggi Pasta Family Pack 200g,Same subcategory,-117.6,59.24
+8906000000276,Vim Dishwash Premium 250g,1,8906000000417,Vim Dishwash Lite 750ml,Same subcategory,6.34,86.366
+8906000000276,Vim Dishwash Premium 250g,2,8906000000290,Pril Dishwash Mini 750ml,Same subcategory,-18.41,77.159
+8906000000276,Vim Dishwash Premium 250g,3,8906000000106,Vim Dishwash Mini 750ml,Same subcategory,-51.41,65.859
+8906000000277,Colgate Toothbrush Lite 1pc,1,8906000000017,Pepsodent Toothbrush Family Pack 4pc,Same subcategory,-2.7,86.73
+8906000000277,Colgate Toothbrush Lite 1pc,2,8906000000084,Colgate Toothbrush Fresh 1pc,Same subcategory,9.0,78.1
+8906000000277,Colgate Toothbrush Lite 1pc,3,8906000000081,Oral-B Toothbrush Value Pack 1pc,Same subcategory,22.9,68.71000000000001
+8906000000278,L'Oreal Conditioner Mini 175ml,1,8906000000166,Pantene Conditioner Lite 340ml,Same subcategory,-24.36,84.56400000000001
+8906000000278,L'Oreal Conditioner Mini 175ml,2,8906000000329,Dove Conditioner Regular 175ml,Same subcategory,81.0,70.9
+8906000000278,L'Oreal Conditioner Mini 175ml,3,8906000000371,Dove Conditioner Family Pack 80ml,Same subcategory,112.8,59.72
+8906000000279,Del Monte Sauces Mini 1kg,1,8906000000262,Pachranga Pickles Regular 1kg,Same category fallback,1.45,86.855
+8906000000279,Del Monte Sauces Mini 1kg,2,8906000000261,Catch Masala Family Pack 200g,Same category fallback,-7.6,78.24
+8906000000279,Del Monte Sauces Mini 1kg,3,8906000000254,MTR Instant Mix Jumbo 500g,Same category fallback,13.4,69.66
+8906000000280,MamyPoko Baby Care Family Pack 200ml,1,8906000000327,Pampers Baby Care Family Pack 100ml,Same subcategory,-25.15,84.485
+8906000000280,MamyPoko Baby Care Family Pack 200ml,2,8906000000219,MamyPoko Baby Care Original 100ml,Same subcategory,-68.06,72.194
+8906000000280,MamyPoko Baby Care Family Pack 200ml,3,8906000000434,Pampers Baby Care Mini 200ml,Same subcategory,-100.3,60.97
+8906000000281,Knorr Soup Family Pack 100g,1,8906000000282,Knorr Soup Fresh 45g,Same subcategory,7.3,86.27
+8906000000281,Knorr Soup Family Pack 100g,2,8906000000337,Maggi Soup Fresh 100g,Same subcategory,61.2,72.88
+8906000000281,Knorr Soup Family Pack 100g,3,8906000000340,Maggi Soup Value Pack 45g,Same subcategory,-75.15,63.485
+8906000000282,Knorr Soup Fresh 45g,1,8906000000281,Knorr Soup Family Pack 100g,Same subcategory,-7.3,86.27
+8906000000282,Knorr Soup Fresh 45g,2,8906000000337,Maggi Soup Fresh 100g,Same subcategory,53.9,73.61
+8906000000282,Knorr Soup Fresh 45g,3,8906000000340,Maggi Soup Value Pack 45g,Same subcategory,-82.45,62.755
+8906000000283,Eveready Batteries Lite 2pc,1,8906000000429,Eveready Batteries Original 4pc,Same subcategory,7.24,86.276
+8906000000283,Eveready Batteries Lite 2pc,2,8906000000344,Eveready Batteries Regular 4pc,Same subcategory,-36.36,75.364
+8906000000283,Eveready Batteries Lite 2pc,3,8906000000083,Eveready Batteries Family Pack 4pc,Same subcategory,43.49,66.651
+8906000000284,Amul Paneer Lite 500g,1,8906000000467,Amul Paneer Mini 500g,Same subcategory,-14.78,85.522
+8906000000284,Amul Paneer Lite 500g,2,8906000000245,Gowardhan Paneer Original 500g,Same subcategory,-103.03,68.697
+8906000000284,Amul Paneer Lite 500g,3,8906000000452,Mother Dairy Paneer Fresh 500g,Same subcategory,-153.08,55.692
+8906000000285,Amul Milk Lite 500ml,1,8906000000157,Dinshaw's Milk Value Pack 1L,Same subcategory,-2.05,86.795
+8906000000285,Amul Milk Lite 500ml,2,8906000000117,Dinshaw's Milk Original 1L,Same subcategory,2.72,78.728
+8906000000285,Amul Milk Lite 500ml,3,8906000000370,Dinshaw's Milk Lite 500ml,Same subcategory,3.2,70.68
+8906000000286,McCain Frozen Snacks Family Pack 1kg,1,8906000000022,McCain Frozen Snacks Jumbo 400g,Same subcategory,-13.5,85.65
+8906000000286,McCain Frozen Snacks Family Pack 1kg,2,8906000000293,McCain Frozen Snacks Regular 400g,Same subcategory,25.2,76.48
+8906000000286,McCain Frozen Snacks Family Pack 1kg,3,8906000000046,Godrej Yummiez Frozen Snacks Jumbo 1kg,Same subcategory,-25.47,68.453
+8906000000287,Everest Masala Lite 50g,1,8906000000495,Everest Masala Fresh 50g,Same subcategory,-2.82,86.718
+8906000000287,Everest Masala Lite 50g,2,8906000000291,MDH Masala Classic 200g,Same subcategory,48.33,74.167
+8906000000287,Everest Masala Lite 50g,3,8906000000193,Catch Masala Original 200g,Same subcategory,-86.42,62.358
+8906000000288,Comfort Fabric Care Classic 1L,1,8906000000306,Lizol Floor Cleaner Mini 2L,Same category fallback,-9.1,86.09
+8906000000288,Comfort Fabric Care Classic 1L,2,8906000000109,Sanifresh Toilet Cleaner Regular 500ml,Same category fallback,-24.1,76.59
+8906000000288,Comfort Fabric Care Classic 1L,3,8906000000398,Rin Detergent Classic 1kg,Same category fallback,-30.73,67.927
+8906000000289,Santoor Soap Regular 75g,1,8906000000350,Dove Soap Lite 125g,Same subcategory,-3.0,86.7
+8906000000289,Santoor Soap Regular 75g,2,8906000000128,Pears Soap Fresh 100g,Same subcategory,-4.0,78.6
+8906000000289,Santoor Soap Regular 75g,3,8906000000101,Medimix Soap Fresh 75g,Same subcategory,-15.95,69.405
+8906000000290,Pril Dishwash Mini 750ml,1,8906000000276,Vim Dishwash Premium 250g,Same subcategory,18.41,85.159
+8906000000290,Pril Dishwash Mini 750ml,2,8906000000417,Vim Dishwash Lite 750ml,Same subcategory,24.75,76.525
+8906000000290,Pril Dishwash Mini 750ml,3,8906000000106,Vim Dishwash Mini 750ml,Same subcategory,-33.0,67.7
+8906000000291,MDH Masala Classic 200g,1,8906000000287,Everest Masala Lite 50g,Same subcategory,-48.33,82.167
+8906000000291,MDH Masala Classic 200g,2,8906000000495,Everest Masala Fresh 50g,Same subcategory,-51.15,73.885
+8906000000291,MDH Masala Classic 200g,3,8906000000193,Catch Masala Original 200g,Same subcategory,-134.75,57.525
+8906000000292,Dhampur Sugar Fresh 1kg,1,8906000000451,Dhampur Sugar Family Pack 1kg,Same subcategory,69.85,80.015
+8906000000292,Dhampur Sugar Fresh 1kg,2,8906000000346,Madhur Sugar Classic 5kg,Same subcategory,100.65,68.935
+8906000000292,Dhampur Sugar Fresh 1kg,3,8906000000170,Dhampur Sugar Value Pack 5kg,Same subcategory,113.85,59.615
+8906000000293,McCain Frozen Snacks Regular 400g,1,8906000000480,McCain Frozen Snacks Regular 400g,Same subcategory,1.8,86.82
+8906000000293,McCain Frozen Snacks Regular 400g,2,8906000000286,McCain Frozen Snacks Family Pack 1kg,Same subcategory,-25.2,76.48
+8906000000293,McCain Frozen Snacks Regular 400g,3,8906000000022,McCain Frozen Snacks Jumbo 400g,Same subcategory,-38.7,67.13
+8906000000294,Bisleri Water Mini 500ml,1,8906000000408,Aquafina Water Family Pack 2L,Same subcategory,0.6,86.94
+8906000000294,Bisleri Water Mini 500ml,2,8906000000016,Aquafina Water Family Pack 500ml,Same subcategory,-1.0,78.9
+8906000000294,Bisleri Water Mini 500ml,3,8906000000003,Bailey Water Lite 1L,Same subcategory,1.37,70.863
+8906000000295,Nivea Body Wash Lite 500ml,1,8906000000428,Dove Body Wash Mini 250ml,Same subcategory,-29.67,84.033
+8906000000295,Nivea Body Wash Lite 500ml,2,8906000000032,Pears Body Wash Regular 500ml,Same subcategory,-56.1,73.39
+8906000000295,Nivea Body Wash Lite 500ml,3,8906000000111,Nivea Body Wash Original 250ml,Same subcategory,-123.76,58.624
+8906000000296,Nescafe Coffee Fresh 50g,1,8906000000020,Continental Coffee Lite 100g,Same subcategory,-1.78,86.822
+8906000000296,Nescafe Coffee Fresh 50g,2,8906000000030,Nescafe Coffee Value Pack 50g,Same subcategory,-20.6,76.94
+8906000000296,Nescafe Coffee Fresh 50g,3,8906000000419,Nescafe Coffee Mini 50g,Same subcategory,102.6,60.74
+8906000000297,Cinthol Talcum Powder Fresh 300g,1,8906000000423,Ponds Talcum Powder Value Pack 100g,Same subcategory,25.6,84.44
+8906000000297,Cinthol Talcum Powder Fresh 300g,2,8906000000230,Navratna Talcum Powder Regular 300g,Same subcategory,-112.15,67.785
+8906000000297,Cinthol Talcum Powder Fresh 300g,3,8906000000368,Cinthol Talcum Powder Classic 100g,Same subcategory,-140.8,56.92
+8906000000298,Local Bakery Bread Jumbo 700g,1,8906000000133,Britannia Bread Regular 400g,Same subcategory,2.27,86.773
+8906000000298,Local Bakery Bread Jumbo 700g,2,8906000000185,Britannia Bread Regular 700g,Same subcategory,-17.75,77.225
+8906000000298,Local Bakery Bread Jumbo 700g,3,8906000000259,Harvest Gold Bread Fresh 400g,Same subcategory,-29.2,68.08
+8906000000299,Fortune Dal Mini 500g,1,8906000000035,Fortune Dal Fresh 1kg,Same subcategory,-6.65,86.335
+8906000000299,Fortune Dal Mini 500g,2,8906000000469,24 Mantra Dal Value Pack 500g,Same subcategory,15.44,77.456
+8906000000299,Fortune Dal Mini 500g,3,8906000000464,24 Mantra Dal Jumbo 1kg,Same subcategory,-22.4,68.76
+8906000000300,Stayfree Sanitary Care Original 15pc,1,8906000000410,Whisper Sanitary Care Premium 15pc,Same subcategory,8.56,86.144
+8906000000300,Stayfree Sanitary Care Original 15pc,2,8906000000049,Sofy Sanitary Care Jumbo 30pc,Same subcategory,-10.44,77.956
+8906000000300,Stayfree Sanitary Care Original 15pc,3,8906000000015,Sofy Sanitary Care Premium 30pc,Same subcategory,39.56,67.044
+8906000000301,24 Mantra Dal Family Pack 2kg,1,8906000000482,Tata Sampann Dal Original 500g,Same subcategory,-3.84,86.616
+8906000000301,24 Mantra Dal Family Pack 2kg,2,8906000000463,Tata Sampann Dal Family Pack 1kg,Same subcategory,4.85,78.515
+8906000000301,24 Mantra Dal Family Pack 2kg,3,8906000000180,Local Mill Dal Value Pack 500g,Same subcategory,5.21,70.479
+8906000000302,Tata Sampann Poha Mini 500g,1,8906000000359,Organic Tattva Poha Classic 1kg,Same subcategory,-3.05,86.695
+8906000000302,Tata Sampann Poha Mini 500g,2,8906000000161,Organic Tattva Poha Family Pack 500g,Same subcategory,11.39,77.861
+8906000000302,Tata Sampann Poha Mini 500g,3,8906000000238,Local Mill Poha Family Pack 500g,Same subcategory,46.55,66.345
+8906000000303,Knorr Noodles Regular 140g,1,8906000000168,Yippee Noodles Mini 140g,Same subcategory,6.75,86.325
+8906000000303,Knorr Noodles Regular 140g,2,8906000000171,Knorr Noodles Regular 70g,Same subcategory,8.05,78.195
+8906000000303,Knorr Noodles Regular 140g,3,8906000000313,Yippee Noodles Value Pack 280g,Same subcategory,-16.05,69.395
+8906000000304,Saffola Honey Lite 500g,1,8906000000457,Patanjali Honey Mini 500g,Same subcategory,-17.81,85.219
+8906000000304,Saffola Honey Lite 500g,2,8906000000271,Patanjali Honey Premium 500g,Same subcategory,25.35,76.465
+8906000000304,Saffola Honey Lite 500g,3,8906000000380,Saffola Honey Classic 500g,Same subcategory,46.0,66.4
+8906000000305,Rin Detergent Premium 2kg,1,8906000000486,Surf Excel Detergent Jumbo 2kg,Same subcategory,5.45,86.455
+8906000000305,Rin Detergent Premium 2kg,2,8906000000054,Tide Detergent Family Pack 2kg,Same subcategory,11.3,77.87
+8906000000305,Rin Detergent Premium 2kg,3,8906000000198,Rin Detergent Regular 500g,Same subcategory,-43.05,66.695
+8906000000306,Lizol Floor Cleaner Mini 2L,1,8906000000288,Comfort Fabric Care Classic 1L,Same category fallback,9.1,86.09
+8906000000306,Lizol Floor Cleaner Mini 2L,2,8906000000109,Sanifresh Toilet Cleaner Regular 500ml,Same category fallback,-15.0,77.5
+8906000000306,Lizol Floor Cleaner Mini 2L,3,8906000000398,Rin Detergent Classic 1kg,Same category fallback,-21.63,68.837
+8906000000307,Maggi Pasta Original 500g,1,8906000000446,Maggi Pasta Original 200g,Same subcategory,29.0,84.1
+8906000000307,Maggi Pasta Original 500g,2,8906000000206,Del Monte Pasta Lite 500g,Same subcategory,30.0,76.0
+8906000000307,Maggi Pasta Original 500g,3,8906000000493,Maggi Pasta Family Pack 200g,Same subcategory,42.4,66.76
+8906000000308,Colgate Toothpaste Jumbo 80g,1,8906000000491,Listerine Mouthwash Original 250ml,Same category fallback,-2.17,86.783
+8906000000308,Colgate Toothpaste Jumbo 80g,2,8906000000081,Oral-B Toothbrush Value Pack 1pc,Same category fallback,-8.82,78.118
+8906000000308,Colgate Toothpaste Jumbo 80g,3,8906000000421,Listerine Mouthwash Original 250ml,Same category fallback,-11.67,69.833
+8906000000309,Rajdhani Suji Fresh 1kg,1,8906000000409,Local Mill Suji Value Pack 500g,Same subcategory,26.0,84.4
+8906000000309,Rajdhani Suji Fresh 1kg,2,8906000000239,Rajdhani Suji Premium 500g,Same subcategory,27.75,76.225
+8906000000309,Rajdhani Suji Fresh 1kg,3,8906000000042,Rajdhani Suji Jumbo 1kg,Same subcategory,29.95,68.005
+8906000000310,Kinley Water Family Pack 1L,1,8906000000274,Bisleri Water Premium 1L,Same subcategory,-1.5,86.85
+8906000000310,Kinley Water Family Pack 1L,2,8906000000324,Kinley Water Regular 500ml,Same subcategory,-2.4,78.76
+8906000000310,Kinley Water Family Pack 1L,3,8906000000008,Kinley Water Classic 500ml,Same subcategory,2.45,70.755
+8906000000311,Bagrry's Cereal Premium 1kg,1,8906000000197,Soulfull Cereal Family Pack 250g,Same subcategory,4.31,86.569
+8906000000311,Bagrry's Cereal Premium 1kg,2,8906000000227,Kellogg's Cereal Original 1kg,Same subcategory,15.56,77.444
+8906000000311,Bagrry's Cereal Premium 1kg,3,8906000000249,Bagrry's Cereal Value Pack 250g,Same subcategory,40.46,66.954
+8906000000312,Quaker Oats Jumbo 1kg,1,8906000000093,Kellogg's Oats Family Pack 1kg,Same subcategory,118.0,75.2
+8906000000312,Quaker Oats Jumbo 1kg,2,8906000000162,Saffola Oats Classic 400g,Same subcategory,130.6,65.94
+8906000000312,Quaker Oats Jumbo 1kg,3,8906000000210,Kellogg's Oats Regular 1kg,Same subcategory,147.1,56.29
+8906000000313,Yippee Noodles Value Pack 280g,1,8906000000097,Top Ramen Noodles Original 140g,Same subcategory,-4.65,86.535
+8906000000313,Yippee Noodles Value Pack 280g,2,8906000000218,Yippee Noodles Regular 70g,Same subcategory,-14.45,77.555
+8906000000313,Yippee Noodles Value Pack 280g,3,8906000000303,Knorr Noodles Regular 140g,Same subcategory,16.05,69.395
+8906000000314,Red Label Tea Premium 250g,1,8906000000214,Tata Tea Tea Regular 500g,Same subcategory,17.0,85.3
+8906000000314,Red Label Tea Premium 250g,2,8906000000341,Wagh Bakri Tea Mini 500g,Same subcategory,-87.16,70.284
+8906000000314,Red Label Tea Premium 250g,3,8906000000348,Society Tea Premium 1kg,Same subcategory,88.6,62.14
+8906000000315,Apis Honey Classic 250g,1,8906000000332,Apis Honey Fresh 250g,Same subcategory,-15.88,85.412
+8906000000315,Apis Honey Classic 250g,2,8906000000339,Saffola Honey Value Pack 250g,Same subcategory,19.12,77.088
+8906000000315,Apis Honey Classic 250g,3,8906000000115,Dabur Honey Original 500g,Same subcategory,-39.88,67.012
+8906000000316,Harpic Toilet Cleaner Value Pack 1L,1,8906000000031,Harpic Toilet Cleaner Classic 500ml,Same subcategory,8.9,86.11
+8906000000316,Harpic Toilet Cleaner Value Pack 1L,2,8906000000052,Harpic Toilet Cleaner Original 1L,Same subcategory,-25.85,76.415
+8906000000316,Harpic Toilet Cleaner Value Pack 1L,3,8906000000390,Sanifresh Toilet Cleaner Jumbo 1L,Same subcategory,44.35,66.565
+8906000000317,Wagh Bakri Tea Family Pack 1kg,1,8906000000113,Wagh Bakri Tea Jumbo 500g,Same subcategory,0.75,86.925
+8906000000317,Wagh Bakri Tea Family Pack 1kg,2,8906000000496,Wagh Bakri Tea Lite 250g,Same subcategory,41.05,74.895
+8906000000317,Wagh Bakri Tea Family Pack 1kg,3,8906000000341,Wagh Bakri Tea Mini 500g,Same subcategory,86.24,62.376
+8906000000318,Garnier Hair Color Value Pack 1pc,1,8906000000455,L'Oreal Hair Color Value Pack 1pc,Same subcategory,45.6,82.44
+8906000000318,Garnier Hair Color Value Pack 1pc,2,8906000000009,Godrej Hair Color Premium 1pc,Same subcategory,-75.36,71.464
+8906000000318,Garnier Hair Color Value Pack 1pc,3,8906000000028,Garnier Hair Color Mini 1pc,Same subcategory,-147.65,56.235
+8906000000319,Thums Up Soft Drinks Original 2L,1,8906000000075,Pepsi Soft Drinks Fresh 600ml,Same subcategory,-10.1,85.99
+8906000000319,Thums Up Soft Drinks Original 2L,2,8906000000440,Pepsi Soft Drinks Regular 600ml,Same subcategory,12.19,77.781
+8906000000319,Thums Up Soft Drinks Original 2L,3,8906000000472,Fanta Soft Drinks Regular 1.25L,Same subcategory,-17.91,69.209
+8906000000320,Gowardhan Butter Mini 100g,1,8906000000124,Amul Butter Original 100g,Same subcategory,-29.96,84.004
+8906000000320,Gowardhan Butter Mini 100g,2,8906000000142,Gowardhan Butter Mini 100g,Same subcategory,43.0,74.7
+8906000000320,Gowardhan Butter Mini 100g,3,8906000000055,Amul Butter Lite 100g,Same subcategory,49.0,66.1
+8906000000321,B Natural Juices Jumbo 1L,1,8906000000025,Tropicana Juices Value Pack 1L,Same subcategory,-1.57,86.843
+8906000000321,B Natural Juices Jumbo 1L,2,8906000000092,Real Juices Value Pack 200ml,Same subcategory,-12.73,77.727
+8906000000321,B Natural Juices Jumbo 1L,3,8906000000258,Real Juices Regular 200ml,Same subcategory,-30.4,67.96
+8906000000322,Tata Salt Salt Lite 1kg,1,8906000000140,Aashirvaad Salt Salt Regular 1kg,Same subcategory,19.13,85.087
+8906000000322,Tata Salt Salt Lite 1kg,2,8906000000090,Saffola Salt Salt Classic 1kg,Same subcategory,-101.8,68.82
+8906000000322,Tata Salt Salt Lite 1kg,3,8906000000252,Aashirvaad Salt Salt Mini 1kg,Same subcategory,-127.8,58.22
+8906000000323,Sunfeast Glucose Glucose Biscuits Original 250g,1,8906000000427,Parle-G Glucose Biscuits Value Pack 150g,Same subcategory,-8.25,86.175
+8906000000323,Sunfeast Glucose Glucose Biscuits Original 250g,2,8906000000146,Britannia Tiger Glucose Biscuits Premium 250g,Same subcategory,9.5,78.05
+8906000000323,Sunfeast Glucose Glucose Biscuits Original 250g,3,8906000000478,Britannia Tiger Glucose Biscuits Regular 80g,Same subcategory,-12.35,69.765
+8906000000324,Kinley Water Regular 500ml,1,8906000000274,Bisleri Water Premium 1L,Same subcategory,0.9,86.91
+8906000000324,Kinley Water Regular 500ml,2,8906000000310,Kinley Water Family Pack 1L,Same subcategory,2.4,78.76
+8906000000324,Kinley Water Regular 500ml,3,8906000000158,Kinley Water Fresh 1L,Same subcategory,-4.6,70.54
+8906000000325,Nippo Batteries Fresh 2pc,1,8906000000234,Duracell Batteries Mini 4pc,Same subcategory,-11.45,85.855
+8906000000325,Nippo Batteries Fresh 2pc,2,8906000000240,Eveready Batteries Original 4pc,Same subcategory,25.0,76.5
+8906000000325,Nippo Batteries Fresh 2pc,3,8906000000026,Duracell Batteries Regular 4pc,Same subcategory,28.31,68.169
+8906000000326,Eveready Batteries Jumbo 2pc,1,8906000000026,Duracell Batteries Regular 4pc,Same subcategory,-10.09,85.991
+8906000000326,Eveready Batteries Jumbo 2pc,2,8906000000058,Eveready Batteries Premium 4pc,Same subcategory,12.35,77.765
+8906000000326,Eveready Batteries Jumbo 2pc,3,8906000000240,Eveready Batteries Original 4pc,Same subcategory,-13.4,69.66
+8906000000327,Pampers Baby Care Family Pack 100ml,1,8906000000280,MamyPoko Baby Care Family Pack 200ml,Same subcategory,25.15,84.485
+8906000000327,Pampers Baby Care Family Pack 100ml,2,8906000000219,MamyPoko Baby Care Original 100ml,Same subcategory,-42.91,74.709
+8906000000327,Pampers Baby Care Family Pack 100ml,3,8906000000434,Pampers Baby Care Mini 200ml,Same subcategory,-75.15,63.485
+8906000000328,Listerine Mouthwash Lite 250ml,1,8906000000149,Listerine Mouthwash Classic 250ml,Same subcategory,-3.86,86.614
+8906000000328,Listerine Mouthwash Lite 250ml,2,8906000000421,Listerine Mouthwash Original 250ml,Same subcategory,26.55,76.345
+8906000000328,Listerine Mouthwash Lite 250ml,3,8906000000386,Colgate Mouthwash Premium 250ml,Same subcategory,-29.7,68.03
+8906000000329,Dove Conditioner Regular 175ml,1,8906000000371,Dove Conditioner Family Pack 80ml,Same subcategory,31.8,83.82
+8906000000329,Dove Conditioner Regular 175ml,2,8906000000391,L'Oreal Conditioner Premium 175ml,Same subcategory,31.8,75.82
+8906000000329,Dove Conditioner Regular 175ml,3,8906000000335,Tresemme Conditioner Fresh 175ml,Same subcategory,48.4,66.16
+8906000000330,Dove Conditioner Mini 175ml,1,8906000000335,Tresemme Conditioner Fresh 175ml,Same subcategory,-0.8,86.92
+8906000000330,Dove Conditioner Mini 175ml,2,8906000000371,Dove Conditioner Family Pack 80ml,Same subcategory,-17.4,77.26
+8906000000330,Dove Conditioner Mini 175ml,3,8906000000391,L'Oreal Conditioner Premium 175ml,Same subcategory,-17.4,69.26
+8906000000331,Too Yumm Chips Fresh 52g,1,8906000000441,Kurkure Chips Regular 90g,Same subcategory,7.8,86.22
+8906000000331,Too Yumm Chips Fresh 52g,2,8906000000263,Too Yumm Chips Fresh 90g,Same subcategory,-47.25,74.275
+8906000000331,Too Yumm Chips Fresh 52g,3,8906000000066,Bingo Chips Lite 150g,Same subcategory,-49.2,66.08
+8906000000332,Apis Honey Fresh 250g,1,8906000000315,Apis Honey Classic 250g,Same subcategory,15.88,85.412
+8906000000332,Apis Honey Fresh 250g,2,8906000000115,Dabur Honey Original 500g,Same subcategory,-24.0,76.6
+8906000000332,Apis Honey Fresh 250g,3,8906000000339,Saffola Honey Value Pack 250g,Same subcategory,35.0,67.5
+8906000000333,Tata Sampann Dal Jumbo 2kg,1,8906000000180,Local Mill Dal Value Pack 500g,Same subcategory,-4.54,86.546
+8906000000333,Tata Sampann Dal Jumbo 2kg,2,8906000000463,Tata Sampann Dal Family Pack 1kg,Same subcategory,-4.9,78.51
+8906000000333,Tata Sampann Dal Jumbo 2kg,3,8906000000301,24 Mantra Dal Family Pack 2kg,Same subcategory,-9.75,70.025
+8906000000334,Mr Muscle Floor Cleaner Premium 500ml,1,8906000000290,Pril Dishwash Mini 750ml,Same category fallback,-2.35,86.765
+8906000000334,Mr Muscle Floor Cleaner Premium 500ml,2,8906000000031,Harpic Toilet Cleaner Classic 500ml,Same category fallback,-7.05,78.295
+8906000000334,Mr Muscle Floor Cleaner Premium 500ml,3,8906000000388,Tide Detergent Classic 2kg,Same category fallback,14.8,69.52
+8906000000335,Tresemme Conditioner Fresh 175ml,1,8906000000330,Dove Conditioner Mini 175ml,Same subcategory,0.8,86.92
+8906000000335,Tresemme Conditioner Fresh 175ml,2,8906000000371,Dove Conditioner Family Pack 80ml,Same subcategory,-16.6,77.34
+8906000000335,Tresemme Conditioner Fresh 175ml,3,8906000000391,L'Oreal Conditioner Premium 175ml,Same subcategory,-16.6,69.34
+8906000000336,Gowardhan Butter Premium 500g,1,8906000000144,Amul Butter Jumbo 100g,Same subcategory,-5.55,86.445
+8906000000336,Gowardhan Butter Premium 500g,2,8906000000091,Amul Butter Family Pack 100g,Same subcategory,18.48,77.152
+8906000000336,Gowardhan Butter Premium 500g,3,8906000000201,Britannia Butter Lite 500g,Same subcategory,-32.2,67.78
+8906000000337,Maggi Soup Fresh 100g,1,8906000000474,Knorr Soup Lite 100g,Same subcategory,30.49,83.951
+8906000000337,Maggi Soup Fresh 100g,2,8906000000282,Knorr Soup Fresh 45g,Same subcategory,-53.9,73.61
+8906000000337,Maggi Soup Fresh 100g,3,8906000000431,Knorr Soup Regular 45g,Same subcategory,60.1,64.99
+8906000000338,Gowardhan Milk Original 1L,1,8906000000395,Amul Milk Lite 500ml,Same subcategory,-4.75,86.525
+8906000000338,Gowardhan Milk Original 1L,2,8906000000223,Mother Dairy Milk Mini 500ml,Same subcategory,-6.65,78.335
+8906000000338,Gowardhan Milk Original 1L,3,8906000000221,Gowardhan Milk Premium 1L,Same subcategory,-17.1,69.29
+8906000000339,Saffola Honey Value Pack 250g,1,8906000000315,Apis Honey Classic 250g,Same subcategory,-19.12,85.088
+8906000000339,Saffola Honey Value Pack 250g,2,8906000000332,Apis Honey Fresh 250g,Same subcategory,-35.0,75.5
+8906000000339,Saffola Honey Value Pack 250g,3,8906000000004,Apis Honey Family Pack 500g,Same subcategory,58.32,65.168
+8906000000340,Maggi Soup Value Pack 45g,1,8906000000021,Maggi Soup Original 100g,Same subcategory,-15.15,85.485
+8906000000340,Maggi Soup Value Pack 45g,2,8906000000281,Knorr Soup Family Pack 100g,Same subcategory,75.15,71.485
+8906000000340,Maggi Soup Value Pack 45g,3,8906000000282,Knorr Soup Fresh 45g,Same subcategory,82.45,62.755
+8906000000341,Wagh Bakri Tea Mini 500g,1,8906000000496,Wagh Bakri Tea Lite 250g,Same subcategory,-45.19,82.481
+8906000000341,Wagh Bakri Tea Mini 500g,2,8906000000113,Wagh Bakri Tea Jumbo 500g,Same subcategory,-85.49,70.451
+8906000000341,Wagh Bakri Tea Mini 500g,3,8906000000317,Wagh Bakri Tea Family Pack 1kg,Same subcategory,-86.24,62.376
+8906000000342,24 Mantra Dal Original 1kg,1,8906000000006,Tata Sampann Dal Regular 2kg,Same subcategory,13.0,85.7
+8906000000342,24 Mantra Dal Original 1kg,2,8906000000333,Tata Sampann Dal Jumbo 2kg,Same subcategory,-21.3,76.87
+8906000000342,24 Mantra Dal Original 1kg,3,8906000000180,Local Mill Dal Value Pack 500g,Same subcategory,-25.84,68.416
+8906000000343,Local Farm Eggs Regular 12pc,1,8906000000102,Farm Fresh Eggs Lite 6pc,Same subcategory,0.4,86.96
+8906000000343,Local Farm Eggs Regular 12pc,2,8906000000107,Suguna Eggs Lite 12pc,Same subcategory,-0.65,78.935
+8906000000343,Local Farm Eggs Regular 12pc,3,8906000000497,Suguna Eggs Classic 12pc,Same subcategory,2.94,70.706
+8906000000344,Eveready Batteries Regular 4pc,1,8906000000283,Eveready Batteries Lite 2pc,Same subcategory,36.36,83.364
+8906000000344,Eveready Batteries Regular 4pc,2,8906000000429,Eveready Batteries Original 4pc,Same subcategory,43.6,74.64
+8906000000344,Eveready Batteries Regular 4pc,3,8906000000471,Nippo Batteries Classic 4pc,Same subcategory,-44.55,66.545
+8906000000345,Ponds Face Wash Regular 50g,1,8906000000488,Ponds Face Wash Original 50g,Same subcategory,28.1,84.19
+8906000000345,Ponds Face Wash Regular 50g,2,8906000000499,Nivea Face Wash Mini 150g,Same subcategory,31.0,75.9
+8906000000345,Ponds Face Wash Regular 50g,3,8906000000141,Clean & Clear Face Wash Value Pack 100g,Same subcategory,31.25,67.875
+8906000000346,Madhur Sugar Classic 5kg,1,8906000000170,Dhampur Sugar Value Pack 5kg,Same subcategory,13.2,85.68
+8906000000346,Madhur Sugar Classic 5kg,2,8906000000420,Dhampur Sugar Value Pack 5kg,Same subcategory,19.91,77.009
+8906000000346,Madhur Sugar Classic 5kg,3,8906000000451,Dhampur Sugar Family Pack 1kg,Same subcategory,-30.8,67.92
+8906000000347,Dove Conditioner Value Pack 175ml,1,8906000000139,Dove Conditioner Original 340ml,Same subcategory,-4.5,86.55
+8906000000347,Dove Conditioner Value Pack 175ml,2,8906000000378,L'Oreal Conditioner Jumbo 175ml,Same subcategory,-8.4,78.16
+8906000000347,Dove Conditioner Value Pack 175ml,3,8906000000264,Dove Conditioner Lite 340ml,Same subcategory,-26.4,68.36
+8906000000348,Society Tea Premium 1kg,1,8906000000266,Society Tea Family Pack 1kg,Same subcategory,44.3,82.57000000000001
+8906000000348,Society Tea Premium 1kg,2,8906000000214,Tata Tea Tea Regular 500g,Same subcategory,-71.6,71.84
+8906000000348,Society Tea Premium 1kg,3,8906000000314,Red Label Tea Premium 250g,Same subcategory,-88.6,62.14
+8906000000349,Treat Cream Biscuits Value Pack 150g,1,8906000000143,Hide & Seek Cream Biscuits Mini 150g,Same subcategory,4.6,86.54
+8906000000349,Treat Cream Biscuits Value Pack 150g,2,8906000000089,Hide & Seek Cream Biscuits Regular 150g,Same subcategory,10.59,77.941
+8906000000349,Treat Cream Biscuits Value Pack 150g,3,8906000000061,Bourbon Cream Biscuits Jumbo 150g,Same subcategory,13.72,69.628
+8906000000350,Dove Soap Lite 125g,1,8906000000128,Pears Soap Fresh 100g,Same subcategory,-1.0,86.9
+8906000000350,Dove Soap Lite 125g,2,8906000000289,Santoor Soap Regular 75g,Same subcategory,3.0,78.7
+8906000000350,Dove Soap Lite 125g,3,8906000000101,Medimix Soap Fresh 75g,Same subcategory,-12.95,69.705
+8906000000351,Amul Curd Classic 1kg,1,8906000000057,Amul Curd Regular 400g,Same subcategory,-20.5,84.95
+8906000000351,Amul Curd Classic 1kg,2,8906000000462,Gowardhan Curd Mini 1kg,Same subcategory,-41.26,74.874
+8906000000351,Amul Curd Classic 1kg,3,8906000000027,Mother Dairy Curd Jumbo 1kg,Same subcategory,-91.6,61.84
+8906000000352,Parle Small Snacks Family Pack 50g,1,8906000000477,Haldiram Small Snacks Value Pack 50g,Same subcategory,28.83,84.117
+8906000000352,Parle Small Snacks Family Pack 50g,2,8906000000412,Parle Small Snacks Regular 100g,Same subcategory,-46.52,74.348
+8906000000352,Parle Small Snacks Family Pack 50g,3,8906000000063,Parle Small Snacks Classic 100g,Same subcategory,80.68,62.932
+8906000000353,Pepsi Soft Drinks Premium 250ml,1,8906000000148,Pepsi Soft Drinks Lite 2L,Same subcategory,0.6,86.94
+8906000000353,Pepsi Soft Drinks Premium 250ml,2,8906000000244,Sprite Soft Drinks Family Pack 600ml,Same subcategory,-11.4,77.86
+8906000000353,Pepsi Soft Drinks Premium 250ml,3,8906000000130,Sprite Soft Drinks Lite 250ml,Same subcategory,13.35,69.665
+8906000000354,Tops Jam Mini 200g,1,8906000000466,Tops Jam Premium 500g,Same subcategory,17.1,85.29
+8906000000354,Tops Jam Mini 200g,2,8906000000473,Tops Jam Regular 200g,Same subcategory,19.0,77.1
+8906000000354,Tops Jam Mini 200g,3,8906000000019,Tops Jam Lite 500g,Same subcategory,-52.2,65.78
+8906000000355,Treat Cream Biscuits Jumbo 100g,1,8906000000068,Bourbon Cream Biscuits Fresh 150g,Same subcategory,-3.75,86.625
+8906000000355,Treat Cream Biscuits Jumbo 100g,2,8906000000209,Oreo Cream Biscuits Family Pack 100g,Same subcategory,-13.05,77.695
+8906000000355,Treat Cream Biscuits Jumbo 100g,3,8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,Same subcategory,-15.3,69.47
+8906000000356,Local Farm Eggs Lite 12pc,1,8906000000107,Suguna Eggs Lite 12pc,Same subcategory,6.15,86.385
+8906000000356,Local Farm Eggs Lite 12pc,2,8906000000343,Local Farm Eggs Regular 12pc,Same subcategory,6.8,78.32
+8906000000356,Local Farm Eggs Lite 12pc,3,8906000000102,Farm Fresh Eggs Lite 6pc,Same subcategory,7.2,70.28
+8906000000357,Go Cheese Regular 200g,1,8906000000358,Go Cheese Jumbo 200g,Same subcategory,-19.55,85.045
+8906000000357,Go Cheese Regular 200g,2,8906000000173,Go Cheese Value Pack 200g,Same subcategory,67.85,72.215
+8906000000357,Go Cheese Regular 200g,3,8906000000165,Go Cheese Classic 200g,Same subcategory,110.05,59.995000000000005
+8906000000358,Go Cheese Jumbo 200g,1,8906000000357,Go Cheese Regular 200g,Same subcategory,19.55,85.045
+8906000000358,Go Cheese Jumbo 200g,2,8906000000173,Go Cheese Value Pack 200g,Same subcategory,87.4,70.26
+8906000000358,Go Cheese Jumbo 200g,3,8906000000165,Go Cheese Classic 200g,Same subcategory,129.6,58.04
+8906000000359,Organic Tattva Poha Classic 1kg,1,8906000000302,Tata Sampann Poha Mini 500g,Same subcategory,3.05,86.695
+8906000000359,Organic Tattva Poha Classic 1kg,2,8906000000161,Organic Tattva Poha Family Pack 500g,Same subcategory,14.44,77.556
+8906000000359,Organic Tattva Poha Classic 1kg,3,8906000000238,Local Mill Poha Family Pack 500g,Same subcategory,49.6,66.04
+8906000000360,Amul Butter Classic 500g,1,8906000000383,Gowardhan Butter Lite 100g,Same subcategory,-6.22,86.378
+8906000000360,Amul Butter Classic 500g,2,8906000000500,Britannia Butter Fresh 500g,Same subcategory,25.65,76.435
+8906000000360,Amul Butter Classic 500g,3,8906000000091,Amul Butter Family Pack 100g,Same subcategory,-34.92,67.508
+8906000000361,Fiama Body Wash Value Pack 500ml,1,8906000000494,Pears Body Wash Classic 500ml,Same subcategory,16.9,85.31
+8906000000361,Fiama Body Wash Value Pack 500ml,2,8906000000111,Nivea Body Wash Original 250ml,Same subcategory,29.24,76.076
+8906000000361,Fiama Body Wash Value Pack 500ml,3,8906000000032,Pears Body Wash Regular 500ml,Same subcategory,96.9,61.31
+8906000000362,Local Farm Eggs Value Pack 12pc,1,8906000000497,Suguna Eggs Classic 12pc,Same subcategory,-2.11,86.789
+8906000000362,Local Farm Eggs Value Pack 12pc,2,8906000000102,Farm Fresh Eggs Lite 6pc,Same subcategory,-4.65,78.535
+8906000000362,Local Farm Eggs Value Pack 12pc,3,8906000000343,Local Farm Eggs Regular 12pc,Same subcategory,-5.05,70.495
+8906000000363,Amul Ice Cream Premium 1L,1,8906000000286,McCain Frozen Snacks Family Pack 1kg,Same category fallback,-6.6,86.34
+8906000000363,Amul Ice Cream Premium 1L,2,8906000000293,McCain Frozen Snacks Regular 400g,Same category fallback,18.6,77.14
+8906000000363,Amul Ice Cream Premium 1L,3,8906000000022,McCain Frozen Snacks Jumbo 400g,Same category fallback,-20.1,68.99
+8906000000364,Bikaji Namkeen Value Pack 200g,1,8906000000043,Sunfeast Dark Fantasy Cookies Lite 120g,Same category fallback,-2.1,86.79
+8906000000364,Bikaji Namkeen Value Pack 200g,2,8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,Same category fallback,2.4,78.76
+8906000000364,Bikaji Namkeen Value Pack 200g,3,8906000000189,Unibic Cookies Classic 75g,Same category fallback,-13.45,69.655
+8906000000365,Act II Popcorn Mini 30g,1,8906000000242,4700BC Popcorn Value Pack 70g,Same subcategory,-1.7,86.83
+8906000000365,Act II Popcorn Mini 30g,2,8906000000269,Cornitos Popcorn Jumbo 30g,Same subcategory,7.45,78.255
+8906000000365,Act II Popcorn Mini 30g,3,8906000000376,Cornitos Popcorn Jumbo 30g,Same subcategory,-35.75,67.425
+8906000000366,Sweet Lime 1kg,1,8906000000012,Pomegranate 1kg,Same subcategory,5.2,86.48
+8906000000366,Sweet Lime 1kg,2,8906000000087,Pomegranate 1kg,Same subcategory,21.95,76.805
+8906000000366,Sweet Lime 1kg,3,8906000000044,Apple 1kg,Same subcategory,70.56,63.943999999999996
+8906000000367,Pachranga Pickles Lite 200g,1,8906000000187,Nilon's Pickles Original 1kg,Same subcategory,22.8,84.72
+8906000000367,Pachranga Pickles Lite 200g,2,8906000000051,Priya Pickles Jumbo 200g,Same subcategory,-49.2,74.08
+8906000000367,Pachranga Pickles Lite 200g,3,8906000000262,Pachranga Pickles Regular 1kg,Same subcategory,-74.15,63.585
+8906000000368,Cinthol Talcum Powder Classic 100g,1,8906000000164,Cinthol Talcum Powder Regular 300g,Same subcategory,-2.7,86.73
+8906000000368,Cinthol Talcum Powder Classic 100g,2,8906000000489,Ponds Talcum Powder Mini 300g,Same subcategory,-6.16,78.384
+8906000000368,Cinthol Talcum Powder Classic 100g,3,8906000000406,Navratna Talcum Powder Lite 100g,Same subcategory,-14.8,69.52
+8906000000369,Ponds Face Wash Family Pack 150g,1,8906000000181,Nivea Face Wash Mini 150g,Same subcategory,1.94,86.806
+8906000000369,Ponds Face Wash Family Pack 150g,2,8906000000141,Clean & Clear Face Wash Value Pack 100g,Same subcategory,-10.46,77.954
+8906000000369,Ponds Face Wash Family Pack 150g,3,8906000000229,Himalaya Face Wash Value Pack 50g,Same subcategory,10.69,69.931
+8906000000370,Dinshaw's Milk Lite 500ml,1,8906000000117,Dinshaw's Milk Original 1L,Same subcategory,-0.48,86.952
+8906000000370,Dinshaw's Milk Lite 500ml,2,8906000000065,Mother Dairy Milk Mini 1L,Same subcategory,1.3,78.87
+8906000000370,Dinshaw's Milk Lite 500ml,3,8906000000270,Dinshaw's Milk Family Pack 1L,Same subcategory,2.2,70.78
+8906000000371,Dove Conditioner Family Pack 80ml,1,8906000000391,L'Oreal Conditioner Premium 175ml,Same subcategory,0.0,87.0
+8906000000371,Dove Conditioner Family Pack 80ml,2,8906000000335,Tresemme Conditioner Fresh 175ml,Same subcategory,16.6,77.34
+8906000000371,Dove Conditioner Family Pack 80ml,3,8906000000330,Dove Conditioner Mini 175ml,Same subcategory,17.4,69.26
+8906000000372,Continental Coffee Mini 200g,1,8906000000419,Nescafe Coffee Mini 50g,Same subcategory,-113.35,75.66499999999999
+8906000000372,Continental Coffee Mini 200g,2,8906000000296,Nescafe Coffee Fresh 50g,Same subcategory,-215.95,57.405
+8906000000372,Continental Coffee Mini 200g,3,8906000000020,Continental Coffee Lite 100g,Same subcategory,-217.73,55
+8906000000373,Local Mill Poha Jumbo 1kg,1,8906000000359,Organic Tattva Poha Classic 1kg,Same subcategory,70.5,79.95
+8906000000373,Local Mill Poha Jumbo 1kg,2,8906000000302,Tata Sampann Poha Mini 500g,Same subcategory,73.55,71.645
+8906000000373,Local Mill Poha Jumbo 1kg,3,8906000000161,Organic Tattva Poha Family Pack 500g,Same subcategory,84.94,62.506
+8906000000374,Fortune Rice Value Pack 10kg,1,8906000000150,Kohinoor Rice Classic 10kg,Same subcategory,-42.91,82.709
+8906000000374,Fortune Rice Value Pack 10kg,2,8906000000151,India Gate Rice Premium 10kg,Same subcategory,155.31,63.469
+8906000000374,Fortune Rice Value Pack 10kg,3,8906000000222,Kohinoor Rice Regular 1kg,Same subcategory,585.99,55
+8906000000375,Oreo Cream Biscuits Original 100g,1,8906000000217,Bourbon Cream Biscuits Classic 100g,Same subcategory,0.0,87.0
+8906000000375,Oreo Cream Biscuits Original 100g,2,8906000000131,Oreo Cream Biscuits Fresh 150g,Same subcategory,0.22,78.978
+8906000000375,Oreo Cream Biscuits Original 100g,3,8906000000071,Hide & Seek Cream Biscuits Premium 150g,Same subcategory,-0.6,70.94
+8906000000376,Cornitos Popcorn Jumbo 30g,1,8906000000242,4700BC Popcorn Value Pack 70g,Same subcategory,34.05,83.595
+8906000000376,Cornitos Popcorn Jumbo 30g,2,8906000000365,Act II Popcorn Mini 30g,Same subcategory,35.75,75.425
+8906000000376,Cornitos Popcorn Jumbo 30g,3,8906000000269,Cornitos Popcorn Jumbo 30g,Same subcategory,43.2,66.68
+8906000000377,Listerine Mouthwash Family Pack 250ml,1,8906000000426,Closeup Mouthwash Jumbo 250ml,Same subcategory,11.9,85.81
+8906000000377,Listerine Mouthwash Family Pack 250ml,2,8906000000404,Closeup Mouthwash Lite 250ml,Same subcategory,45.4,74.46
+8906000000377,Listerine Mouthwash Family Pack 250ml,3,8906000000095,Listerine Mouthwash Family Pack 250ml,Same subcategory,-49.1,66.09
+8906000000378,L'Oreal Conditioner Jumbo 175ml,1,8906000000139,Dove Conditioner Original 340ml,Same subcategory,3.9,86.61
+8906000000378,L'Oreal Conditioner Jumbo 175ml,2,8906000000347,Dove Conditioner Value Pack 175ml,Same subcategory,8.4,78.16
+8906000000378,L'Oreal Conditioner Jumbo 175ml,3,8906000000264,Dove Conditioner Lite 340ml,Same subcategory,-18.0,69.2
+8906000000379,Scotch-Brite Kitchen Tools Value Pack 2pc,1,8906000000442,Scotch-Brite Kitchen Tools Family Pack 2pc,Same subcategory,12.74,85.726
+8906000000379,Scotch-Brite Kitchen Tools Value Pack 2pc,2,8906000000405,Cello Kitchen Tools Value Pack 2pc,Same subcategory,-14.7,77.53
+8906000000379,Scotch-Brite Kitchen Tools Value Pack 2pc,3,8906000000492,Prestige Kitchen Tools Mini 2pc,Same subcategory,-20.73,68.92699999999999
+8906000000380,Saffola Honey Classic 500g,1,8906000000271,Patanjali Honey Premium 500g,Same subcategory,-20.65,84.935
+8906000000380,Saffola Honey Classic 500g,2,8906000000304,Saffola Honey Lite 500g,Same subcategory,-46.0,74.4
+8906000000380,Saffola Honey Classic 500g,3,8906000000457,Patanjali Honey Mini 500g,Same subcategory,-63.81,64.619
+8906000000381,Mint 1 bunch,1,8906000000267,Spring Onion 1 bunch,Same subcategory,0.0,87.0
+8906000000381,Mint 1 bunch,2,8906000000202,Spinach 1 bunch,Same subcategory,2.31,78.769
+8906000000381,Mint 1 bunch,3,8906000000024,Spring Onion 1 bunch,Same subcategory,-6.95,70.305
+8906000000382,Ponds Face Wash Fresh 150g,1,8906000000481,Garnier Face Wash Regular 150g,Same subcategory,-8.45,86.155
+8906000000382,Ponds Face Wash Fresh 150g,2,8906000000399,Garnier Face Wash Lite 50g,Same subcategory,-13.1,77.69
+8906000000382,Ponds Face Wash Fresh 150g,3,8906000000098,Nivea Face Wash Family Pack 100g,Same subcategory,20.2,68.98
+8906000000383,Gowardhan Butter Lite 100g,1,8906000000360,Amul Butter Classic 500g,Same subcategory,6.22,86.378
+8906000000383,Gowardhan Butter Lite 100g,2,8906000000091,Amul Butter Family Pack 100g,Same subcategory,-28.7,76.13
+8906000000383,Gowardhan Butter Lite 100g,3,8906000000500,Britannia Butter Fresh 500g,Same subcategory,31.87,67.813
+8906000000384,Bourbon Cream Biscuits Mini 150g,1,8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,Same subcategory,0.97,86.903
+8906000000384,Bourbon Cream Biscuits Mini 150g,2,8906000000209,Oreo Cream Biscuits Family Pack 100g,Same subcategory,3.22,78.678
+8906000000384,Bourbon Cream Biscuits Mini 150g,3,8906000000131,Oreo Cream Biscuits Fresh 150g,Same subcategory,-7.01,70.299
+8906000000385,Dove Shampoo Lite 650ml,1,8906000000034,Dove Shampoo Regular 650ml,Same subcategory,-29.55,84.045
+8906000000385,Dove Shampoo Lite 650ml,2,8906000000400,Pantene Shampoo Regular 80ml,Same subcategory,47.55,74.245
+8906000000385,Dove Shampoo Lite 650ml,3,8906000000072,Pantene Shampoo Classic 340ml,Same subcategory,50.85,65.91499999999999
+8906000000386,Colgate Mouthwash Premium 250ml,1,8906000000231,Colgate Mouthwash Classic 250ml,Same subcategory,-6.1,86.39
+8906000000386,Colgate Mouthwash Premium 250ml,2,8906000000196,Closeup Mouthwash Regular 250ml,Same subcategory,-12.0,77.8
+8906000000386,Colgate Mouthwash Premium 250ml,3,8906000000149,Listerine Mouthwash Classic 250ml,Same subcategory,25.84,68.416
+8906000000387,Apsara Stationery Classic 1pc,1,8906000000076,Apsara Stationery Mini 10pc,Same subcategory,33.3,83.67
+8906000000387,Apsara Stationery Classic 1pc,2,8906000000172,Camlin Stationery Jumbo 1pc,Same subcategory,-70.49,71.951
+8906000000387,Apsara Stationery Classic 1pc,3,8906000000456,Nataraj Stationery Value Pack 10pc,Same subcategory,-79.14,63.086
+8906000000388,Tide Detergent Classic 2kg,1,8906000000096,Tide Detergent Lite 2kg,Same subcategory,7.6,86.24
+8906000000388,Tide Detergent Classic 2kg,2,8906000000460,Tide Detergent Original 4kg,Same subcategory,-34.0,75.6
+8906000000388,Tide Detergent Classic 2kg,3,8906000000398,Rin Detergent Classic 1kg,Same subcategory,62.37,64.763
+8906000000389,Beans 1kg,1,8906000000225,Onion 1kg,Same subcategory,2.1,86.79
+8906000000389,Beans 1kg,2,8906000000127,Potato 1kg,Same subcategory,-17.0,77.3
+8906000000389,Beans 1kg,3,8906000000190,Onion 1kg,Same subcategory,19.16,69.084
+8906000000390,Sanifresh Toilet Cleaner Jumbo 1L,1,8906000000031,Harpic Toilet Cleaner Classic 500ml,Same subcategory,-35.45,83.455
+8906000000390,Sanifresh Toilet Cleaner Jumbo 1L,2,8906000000194,Domex Toilet Cleaner Premium 500ml,Same subcategory,43.65,74.635
+8906000000390,Sanifresh Toilet Cleaner Jumbo 1L,3,8906000000316,Harpic Toilet Cleaner Value Pack 1L,Same subcategory,-44.35,66.565
+8906000000391,L'Oreal Conditioner Premium 175ml,1,8906000000371,Dove Conditioner Family Pack 80ml,Same subcategory,0.0,87.0
+8906000000391,L'Oreal Conditioner Premium 175ml,2,8906000000335,Tresemme Conditioner Fresh 175ml,Same subcategory,16.6,77.34
+8906000000391,L'Oreal Conditioner Premium 175ml,3,8906000000330,Dove Conditioner Mini 175ml,Same subcategory,17.4,69.26
+8906000000392,Parachute Hair Oil Value Pack 100ml,1,8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,Same subcategory,-8.4,86.16
+8906000000392,Parachute Hair Oil Value Pack 100ml,2,8906000000396,Dabur Amla Hair Oil Regular 500ml,Same subcategory,12.99,77.70100000000001
+8906000000392,Parachute Hair Oil Value Pack 100ml,3,8906000000116,Navratna Hair Oil Mini 100ml,Same subcategory,21.34,68.866
+8906000000393,Gowardhan Ghee Value Pack 500ml,1,8906000000182,Gowardhan Ghee Mini 500ml,Same subcategory,-6.16,86.384
+8906000000393,Gowardhan Ghee Value Pack 500ml,2,8906000000449,Gowardhan Ghee Classic 1L,Same subcategory,30.8,75.92
+8906000000393,Gowardhan Ghee Value Pack 500ml,3,8906000000088,Mother Dairy Ghee Original 500ml,Same subcategory,51.89,65.81099999999999
+8906000000394,Domex Toilet Cleaner Value Pack 1L,1,8906000000200,Domex Toilet Cleaner Mini 500ml,Same subcategory,1.29,86.871
+8906000000394,Domex Toilet Cleaner Value Pack 1L,2,8906000000194,Domex Toilet Cleaner Premium 500ml,Same subcategory,-2.43,78.757
+8906000000394,Domex Toilet Cleaner Value Pack 1L,3,8906000000109,Sanifresh Toilet Cleaner Regular 500ml,Same subcategory,9.32,70.068
+8906000000395,Amul Milk Lite 500ml,1,8906000000223,Mother Dairy Milk Mini 500ml,Same subcategory,-1.9,86.81
+8906000000395,Amul Milk Lite 500ml,2,8906000000338,Gowardhan Milk Original 1L,Same subcategory,4.75,78.525
+8906000000395,Amul Milk Lite 500ml,3,8906000000221,Gowardhan Milk Premium 1L,Same subcategory,-12.35,69.765
+8906000000396,Dabur Amla Hair Oil Regular 500ml,1,8906000000116,Navratna Hair Oil Mini 100ml,Same subcategory,8.35,86.16499999999999
+8906000000396,Dabur Amla Hair Oil Regular 500ml,2,8906000000392,Parachute Hair Oil Value Pack 100ml,Same subcategory,-12.99,77.70100000000001
+8906000000396,Dabur Amla Hair Oil Regular 500ml,3,8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,Same subcategory,-21.39,68.861
+8906000000397,Weikfield Pasta Premium 500g,1,8906000000241,Del Monte Pasta Premium 500g,Same subcategory,4.93,86.507
+8906000000397,Weikfield Pasta Premium 500g,2,8906000000307,Maggi Pasta Original 500g,Same subcategory,49.95,74.005
+8906000000397,Weikfield Pasta Premium 500g,3,8906000000446,Maggi Pasta Original 200g,Same subcategory,78.95,63.105
+8906000000398,Rin Detergent Classic 1kg,1,8906000000096,Tide Detergent Lite 2kg,Same subcategory,-54.77,81.523
+8906000000398,Rin Detergent Classic 1kg,2,8906000000388,Tide Detergent Classic 2kg,Same subcategory,-62.37,72.763
+8906000000398,Rin Detergent Classic 1kg,3,8906000000460,Tide Detergent Original 4kg,Same subcategory,-96.37,61.363
+8906000000399,Garnier Face Wash Lite 50g,1,8906000000481,Garnier Face Wash Regular 150g,Same subcategory,4.65,86.535
+8906000000399,Garnier Face Wash Lite 50g,2,8906000000382,Ponds Face Wash Fresh 150g,Same subcategory,13.1,77.69
+8906000000399,Garnier Face Wash Lite 50g,3,8906000000229,Himalaya Face Wash Value Pack 50g,Same subcategory,-18.0,69.2
+8906000000400,Pantene Shampoo Regular 80ml,1,8906000000072,Pantene Shampoo Classic 340ml,Same subcategory,3.3,86.67
+8906000000400,Pantene Shampoo Regular 80ml,2,8906000000385,Dove Shampoo Lite 650ml,Same subcategory,-47.55,74.245
+8906000000400,Pantene Shampoo Regular 80ml,3,8906000000034,Dove Shampoo Regular 650ml,Same subcategory,-77.1,63.29
+8906000000401,Milton Kitchen Tools Regular 2pc,1,8906000000188,Scotch-Brite Kitchen Tools Jumbo 2pc,Same subcategory,-62.7,80.73
+8906000000401,Milton Kitchen Tools Regular 2pc,2,8906000000492,Prestige Kitchen Tools Mini 2pc,Same subcategory,102.37,68.763
+8906000000401,Milton Kitchen Tools Regular 2pc,3,8906000000405,Cello Kitchen Tools Value Pack 2pc,Same subcategory,108.4,60.16
+8906000000402,Kissan Jam Family Pack 200g,1,8906000000212,Mapro Jam Jumbo 500g,Same subcategory,2.26,86.774
+8906000000402,Kissan Jam Family Pack 200g,2,8906000000199,Tops Jam Value Pack 500g,Same subcategory,-16.99,77.301
+8906000000402,Kissan Jam Family Pack 200g,3,8906000000473,Tops Jam Regular 200g,Same subcategory,-50.24,65.976
+8906000000403,Madhur Sugar Lite 5kg,1,8906000000099,Dhampur Sugar Family Pack 1kg,Same subcategory,6.58,86.342
+8906000000403,Madhur Sugar Lite 5kg,2,8906000000420,Dhampur Sugar Value Pack 5kg,Same subcategory,-21.39,76.861
+8906000000403,Madhur Sugar Lite 5kg,3,8906000000170,Dhampur Sugar Value Pack 5kg,Same subcategory,-28.1,68.19
+8906000000404,Closeup Mouthwash Lite 250ml,1,8906000000426,Closeup Mouthwash Jumbo 250ml,Same subcategory,-33.5,83.65
+8906000000404,Closeup Mouthwash Lite 250ml,2,8906000000377,Listerine Mouthwash Family Pack 250ml,Same subcategory,-45.4,74.46
+8906000000404,Closeup Mouthwash Lite 250ml,3,8906000000095,Listerine Mouthwash Family Pack 250ml,Same subcategory,-94.5,61.55
+8906000000405,Cello Kitchen Tools Value Pack 2pc,1,8906000000492,Prestige Kitchen Tools Mini 2pc,Same subcategory,-6.03,86.397
+8906000000405,Cello Kitchen Tools Value Pack 2pc,2,8906000000379,Scotch-Brite Kitchen Tools Value Pack 2pc,Same subcategory,14.7,77.53
+8906000000405,Cello Kitchen Tools Value Pack 2pc,3,8906000000442,Scotch-Brite Kitchen Tools Family Pack 2pc,Same subcategory,27.44,68.256
+8906000000406,Navratna Talcum Powder Lite 100g,1,8906000000489,Ponds Talcum Powder Mini 300g,Same subcategory,8.64,86.136
+8906000000406,Navratna Talcum Powder Lite 100g,2,8906000000164,Cinthol Talcum Powder Regular 300g,Same subcategory,12.1,77.79
+8906000000406,Navratna Talcum Powder Lite 100g,3,8906000000368,Cinthol Talcum Powder Classic 100g,Same subcategory,14.8,69.52
+8906000000407,Surf Excel Detergent Premium 2kg,1,8906000000054,Tide Detergent Family Pack 2kg,Same subcategory,-42.45,82.755
+8906000000407,Surf Excel Detergent Premium 2kg,2,8906000000486,Surf Excel Detergent Jumbo 2kg,Same subcategory,-48.3,74.17
+8906000000407,Surf Excel Detergent Premium 2kg,3,8906000000305,Rin Detergent Premium 2kg,Same subcategory,-53.75,65.625
+8906000000408,Aquafina Water Family Pack 2L,1,8906000000294,Bisleri Water Mini 500ml,Same subcategory,-0.6,86.94
+8906000000408,Aquafina Water Family Pack 2L,2,8906000000003,Bailey Water Lite 1L,Same subcategory,0.77,78.923
+8906000000408,Aquafina Water Family Pack 2L,3,8906000000016,Aquafina Water Family Pack 500ml,Same subcategory,-1.6,70.84
+8906000000409,Local Mill Suji Value Pack 500g,1,8906000000239,Rajdhani Suji Premium 500g,Same subcategory,1.75,86.825
+8906000000409,Local Mill Suji Value Pack 500g,2,8906000000042,Rajdhani Suji Jumbo 1kg,Same subcategory,3.95,78.605
+8906000000409,Local Mill Suji Value Pack 500g,3,8906000000309,Rajdhani Suji Fresh 1kg,Same subcategory,-26.0,68.4
+8906000000410,Whisper Sanitary Care Premium 15pc,1,8906000000300,Stayfree Sanitary Care Original 15pc,Same subcategory,-8.56,86.144
+8906000000410,Whisper Sanitary Care Premium 15pc,2,8906000000049,Sofy Sanitary Care Jumbo 30pc,Same subcategory,-19.0,77.1
+8906000000410,Whisper Sanitary Care Premium 15pc,3,8906000000015,Sofy Sanitary Care Premium 30pc,Same subcategory,31.0,67.9
+8906000000411,Wagh Bakri Tea Jumbo 1kg,1,8906000000266,Society Tea Family Pack 1kg,Same subcategory,-69.1,80.09
+8906000000411,Wagh Bakri Tea Jumbo 1kg,2,8906000000348,Society Tea Premium 1kg,Same subcategory,-113.4,67.66
+8906000000411,Wagh Bakri Tea Jumbo 1kg,3,8906000000214,Tata Tea Tea Regular 500g,Same subcategory,-185.0,55
+8906000000412,Parle Small Snacks Regular 100g,1,8906000000448,Haldiram Small Snacks Fresh 50g,Same subcategory,-40.34,82.966
+8906000000412,Parle Small Snacks Regular 100g,2,8906000000415,Parle Small Snacks Original 50g,Same subcategory,-46.0,74.4
+8906000000412,Parle Small Snacks Regular 100g,3,8906000000352,Parle Small Snacks Family Pack 50g,Same subcategory,46.52,66.348
+8906000000413,Too Yumm Chips Family Pack 150g,1,8906000000424,Too Yumm Chips Classic 90g,Same subcategory,1.71,86.829
+8906000000413,Too Yumm Chips Family Pack 150g,2,8906000000433,Kurkure Chips Regular 52g,Same subcategory,-3.01,78.699
+8906000000413,Too Yumm Chips Family Pack 150g,3,8906000000465,Lay's Chips Regular 52g,Same subcategory,6.91,70.309
+8906000000414,4700BC Popcorn Family Pack 70g,1,8906000000253,Act II Popcorn Jumbo 30g,Same subcategory,-74.4,79.56
+8906000000414,4700BC Popcorn Family Pack 70g,2,8906000000256,Act II Popcorn Value Pack 30g,Same subcategory,-138.8,65.12
+8906000000414,4700BC Popcorn Family Pack 70g,3,8906000000269,Cornitos Popcorn Jumbo 30g,Same subcategory,-172.2,55
+8906000000415,Parle Small Snacks Original 50g,1,8906000000014,Parle Small Snacks Jumbo 50g,Same subcategory,-1.8,86.82
+8906000000415,Parle Small Snacks Original 50g,2,8906000000448,Haldiram Small Snacks Fresh 50g,Same subcategory,5.66,78.434
+8906000000415,Parle Small Snacks Original 50g,3,8906000000085,Balaji Small Snacks Family Pack 50g,Same subcategory,-6.1,70.39
+8906000000416,Amul Cheese Premium 200g,1,8906000000036,Amul Cheese Family Pack 400g,Same subcategory,-14.9,85.51
+8906000000416,Amul Cheese Premium 200g,2,8906000000165,Go Cheese Classic 200g,Same subcategory,-19.8,77.02
+8906000000416,Amul Cheese Premium 200g,3,8906000000073,Amul Cheese Mini 200g,Same subcategory,51.45,65.855
+8906000000417,Vim Dishwash Lite 750ml,1,8906000000276,Vim Dishwash Premium 250g,Same subcategory,-6.34,86.366
+8906000000417,Vim Dishwash Lite 750ml,2,8906000000290,Pril Dishwash Mini 750ml,Same subcategory,-24.75,76.525
+8906000000417,Vim Dishwash Lite 750ml,3,8906000000106,Vim Dishwash Mini 750ml,Same subcategory,-57.75,65.225
+8906000000418,Bagrry's Cereal Family Pack 1kg,1,8906000000220,Kellogg's Cereal Regular 1kg,Same subcategory,-35.91,83.409
+8906000000418,Bagrry's Cereal Family Pack 1kg,2,8906000000311,Bagrry's Cereal Premium 1kg,Same subcategory,56.49,73.351
+8906000000418,Bagrry's Cereal Family Pack 1kg,3,8906000000197,Soulfull Cereal Family Pack 250g,Same subcategory,60.8,64.92
+8906000000419,Nescafe Coffee Mini 50g,1,8906000000296,Nescafe Coffee Fresh 50g,Same subcategory,-102.6,76.74000000000001
+8906000000419,Nescafe Coffee Mini 50g,2,8906000000020,Continental Coffee Lite 100g,Same subcategory,-104.38,68.562
+8906000000419,Nescafe Coffee Mini 50g,3,8906000000372,Continental Coffee Mini 200g,Same subcategory,113.35,59.665
+8906000000420,Dhampur Sugar Value Pack 5kg,1,8906000000170,Dhampur Sugar Value Pack 5kg,Same subcategory,-6.71,86.329
+8906000000420,Dhampur Sugar Value Pack 5kg,2,8906000000346,Madhur Sugar Classic 5kg,Same subcategory,-19.91,77.009
+8906000000420,Dhampur Sugar Value Pack 5kg,3,8906000000403,Madhur Sugar Lite 5kg,Same subcategory,21.39,68.861
+8906000000421,Listerine Mouthwash Original 250ml,1,8906000000491,Listerine Mouthwash Original 250ml,Same subcategory,9.5,86.05
+8906000000421,Listerine Mouthwash Original 250ml,2,8906000000328,Listerine Mouthwash Lite 250ml,Same subcategory,-26.55,76.345
+8906000000421,Listerine Mouthwash Original 250ml,3,8906000000149,Listerine Mouthwash Classic 250ml,Same subcategory,-30.41,67.959
+8906000000422,Amul Paneer Original 200g,1,8906000000062,Mother Dairy Paneer Value Pack 500g,Same subcategory,1.4,86.86
+8906000000422,Amul Paneer Original 200g,2,8906000000007,Amul Paneer Lite 200g,Same subcategory,39.2,75.08
+8906000000422,Amul Paneer Original 200g,3,8906000000452,Mother Dairy Paneer Fresh 500g,Same subcategory,83.3,62.67
+8906000000423,Ponds Talcum Powder Value Pack 100g,1,8906000000297,Cinthol Talcum Powder Fresh 300g,Same subcategory,-25.6,84.44
+8906000000423,Ponds Talcum Powder Value Pack 100g,2,8906000000230,Navratna Talcum Powder Regular 300g,Same subcategory,-137.75,65.225
+8906000000423,Ponds Talcum Powder Value Pack 100g,3,8906000000368,Cinthol Talcum Powder Classic 100g,Same subcategory,-166.4,55
+8906000000424,Too Yumm Chips Classic 90g,1,8906000000413,Too Yumm Chips Family Pack 150g,Same subcategory,-1.71,86.829
+8906000000424,Too Yumm Chips Classic 90g,2,8906000000433,Kurkure Chips Regular 52g,Same subcategory,-4.72,78.528
+8906000000424,Too Yumm Chips Classic 90g,3,8906000000465,Lay's Chips Regular 52g,Same subcategory,5.2,70.48
+8906000000425,Bisk Farm Cookies Regular 75g,1,8906000000002,Sunfeast Dark Fantasy Cookies Family Pack 120g,Same subcategory,0.0,87.0
+8906000000425,Bisk Farm Cookies Regular 75g,2,8906000000160,Bisk Farm Cookies Family Pack 200g,Same subcategory,3.33,78.667
+8906000000425,Bisk Farm Cookies Regular 75g,3,8906000000439,Unibic Cookies Premium 75g,Same subcategory,22.9,68.71
+8906000000426,Closeup Mouthwash Jumbo 250ml,1,8906000000377,Listerine Mouthwash Family Pack 250ml,Same subcategory,-11.9,85.81
+8906000000426,Closeup Mouthwash Jumbo 250ml,2,8906000000404,Closeup Mouthwash Lite 250ml,Same subcategory,33.5,75.65
+8906000000426,Closeup Mouthwash Jumbo 250ml,3,8906000000095,Listerine Mouthwash Family Pack 250ml,Same subcategory,-61.0,64.9
+8906000000427,Parle-G Glucose Biscuits Value Pack 150g,1,8906000000478,Britannia Tiger Glucose Biscuits Regular 80g,Same subcategory,-4.1,86.59
+8906000000427,Parle-G Glucose Biscuits Value Pack 150g,2,8906000000323,Sunfeast Glucose Glucose Biscuits Original 250g,Same subcategory,8.25,78.175
+8906000000427,Parle-G Glucose Biscuits Value Pack 150g,3,8906000000146,Britannia Tiger Glucose Biscuits Premium 250g,Same subcategory,17.75,69.225
+8906000000428,Dove Body Wash Mini 250ml,1,8906000000032,Pears Body Wash Regular 500ml,Same subcategory,-26.43,84.357
+8906000000428,Dove Body Wash Mini 250ml,2,8906000000295,Nivea Body Wash Lite 500ml,Same subcategory,29.67,76.033
+8906000000428,Dove Body Wash Mini 250ml,3,8906000000111,Nivea Body Wash Original 250ml,Same subcategory,-94.09,61.591
+8906000000429,Eveready Batteries Original 4pc,1,8906000000283,Eveready Batteries Lite 2pc,Same subcategory,-7.24,86.276
+8906000000429,Eveready Batteries Original 4pc,2,8906000000083,Eveready Batteries Family Pack 4pc,Same subcategory,36.25,75.375
+8906000000429,Eveready Batteries Original 4pc,3,8906000000344,Eveready Batteries Regular 4pc,Same subcategory,-43.6,66.64
+8906000000430,Sunsilk Shampoo Classic 180ml,1,8906000000216,Clinic Plus Shampoo Jumbo 340ml,Same subcategory,67.87,80.213
+8906000000430,Sunsilk Shampoo Classic 180ml,2,8906000000273,Clinic Plus Shampoo Family Pack 340ml,Same subcategory,72.72,71.728
+8906000000430,Sunsilk Shampoo Classic 180ml,3,8906000000072,Pantene Shampoo Classic 340ml,Same subcategory,-201.33,55
+8906000000431,Knorr Soup Regular 45g,1,8906000000118,Knorr Soup Lite 100g,Same subcategory,20.9,84.91
+8906000000431,Knorr Soup Regular 45g,2,8906000000474,Knorr Soup Lite 100g,Same subcategory,-29.61,76.039
+8906000000431,Knorr Soup Regular 45g,3,8906000000183,Knorr Soup Regular 45g,Same subcategory,39.2,67.08
+8906000000432,Pril Dishwash Fresh 750ml,1,8906000000106,Vim Dishwash Mini 750ml,Same subcategory,48.5,82.15
+8906000000432,Pril Dishwash Fresh 750ml,2,8906000000290,Pril Dishwash Mini 750ml,Same subcategory,81.5,70.85
+8906000000432,Pril Dishwash Fresh 750ml,3,8906000000276,Vim Dishwash Premium 250g,Same subcategory,99.91,61.009
+8906000000433,Kurkure Chips Regular 52g,1,8906000000413,Too Yumm Chips Family Pack 150g,Same subcategory,3.01,86.699
+8906000000433,Kurkure Chips Regular 52g,2,8906000000424,Too Yumm Chips Classic 90g,Same subcategory,4.72,78.528
+8906000000433,Kurkure Chips Regular 52g,3,8906000000465,Lay's Chips Regular 52g,Same subcategory,9.92,70.008
+8906000000434,Pampers Baby Care Mini 200ml,1,8906000000219,MamyPoko Baby Care Original 100ml,Same subcategory,32.24,83.776
+8906000000434,Pampers Baby Care Mini 200ml,2,8906000000327,Pampers Baby Care Family Pack 100ml,Same subcategory,75.15,71.485
+8906000000434,Pampers Baby Care Mini 200ml,3,8906000000280,MamyPoko Baby Care Family Pack 200ml,Same subcategory,100.3,60.97
+8906000000435,Ferrero Chocolates Family Pack 100g,1,8906000000447,Nestle Chocolates Premium 100g,Same subcategory,6.85,86.315
+8906000000435,Ferrero Chocolates Family Pack 100g,2,8906000000459,Nestle Chocolates Mini 100g,Same subcategory,24.25,76.575
+8906000000435,Ferrero Chocolates Family Pack 100g,3,8906000000203,Cadbury Chocolates Mini 50g,Same subcategory,-126.91,58.309
+8906000000436,Sofy Sanitary Care Family Pack 30pc,1,8906000000152,Whisper Sanitary Care Original 30pc,Same subcategory,-18.25,85.175
+8906000000436,Sofy Sanitary Care Family Pack 30pc,2,8906000000037,Sofy Sanitary Care Regular 30pc,Same subcategory,-31.25,75.875
+8906000000436,Sofy Sanitary Care Family Pack 30pc,3,8906000000179,Stayfree Sanitary Care Family Pack 30pc,Same subcategory,-71.13,63.887
+8906000000437,MTR Ready To Eat Classic 500g,1,8906000000479,Haldiram Ready To Eat Jumbo 500g,Same subcategory,0.0,87.0
+8906000000437,MTR Ready To Eat Classic 500g,2,8906000000103,MTR Ready To Eat Value Pack 500g,Same subcategory,27.45,76.255
+8906000000437,MTR Ready To Eat Classic 500g,3,8906000000483,MTR Ready To Eat Mini 300g,Same subcategory,-43.55,66.645
+8906000000438,Mother's Recipe Pickles Mini 200g,1,8906000000250,Priya Pickles Mini 500g,Same subcategory,15.3,85.47
+8906000000438,Mother's Recipe Pickles Mini 200g,2,8906000000187,Nilon's Pickles Original 1kg,Same subcategory,-87.5,70.25
+8906000000438,Mother's Recipe Pickles Mini 200g,3,8906000000367,Pachranga Pickles Lite 200g,Same subcategory,-110.3,59.97
+8906000000439,Unibic Cookies Premium 75g,1,8906000000160,Bisk Farm Cookies Family Pack 200g,Same subcategory,-19.57,85.043
+8906000000439,Unibic Cookies Premium 75g,2,8906000000425,Bisk Farm Cookies Regular 75g,Same subcategory,-22.9,76.71
+8906000000439,Unibic Cookies Premium 75g,3,8906000000002,Sunfeast Dark Fantasy Cookies Family Pack 120g,Same subcategory,-22.9,68.71
+8906000000440,Pepsi Soft Drinks Regular 600ml,1,8906000000319,Thums Up Soft Drinks Original 2L,Same subcategory,-12.19,85.781
+8906000000440,Pepsi Soft Drinks Regular 600ml,2,8906000000075,Pepsi Soft Drinks Fresh 600ml,Same subcategory,-22.29,76.771
+8906000000440,Pepsi Soft Drinks Regular 600ml,3,8906000000472,Fanta Soft Drinks Regular 1.25L,Same subcategory,-30.1,67.99
+8906000000441,Kurkure Chips Regular 90g,1,8906000000331,Too Yumm Chips Fresh 52g,Same subcategory,-7.8,86.22
+8906000000441,Kurkure Chips Regular 90g,2,8906000000263,Too Yumm Chips Fresh 90g,Same subcategory,-55.05,73.495
+8906000000441,Kurkure Chips Regular 90g,3,8906000000066,Bingo Chips Lite 150g,Same subcategory,-57.0,65.3
+8906000000442,Scotch-Brite Kitchen Tools Family Pack 2pc,1,8906000000379,Scotch-Brite Kitchen Tools Value Pack 2pc,Same subcategory,-12.74,85.726
+8906000000442,Scotch-Brite Kitchen Tools Family Pack 2pc,2,8906000000405,Cello Kitchen Tools Value Pack 2pc,Same subcategory,-27.44,76.256
+8906000000442,Scotch-Brite Kitchen Tools Family Pack 2pc,3,8906000000492,Prestige Kitchen Tools Mini 2pc,Same subcategory,-33.47,67.653
+8906000000443,Yippee Noodles Family Pack 280g,1,8906000000475,Maggi Noodles Fresh 140g,Same subcategory,-4.33,86.56700000000001
+8906000000443,Yippee Noodles Family Pack 280g,2,8906000000171,Knorr Noodles Regular 70g,Same subcategory,-51.95,73.805
+8906000000443,Yippee Noodles Family Pack 280g,3,8906000000168,Yippee Noodles Mini 140g,Same subcategory,-53.25,65.675
+8906000000444,Chitale Namkeen Mini 1kg,1,8906000000256,Act II Popcorn Value Pack 30g,Same category fallback,-18.4,85.16
+8906000000444,Chitale Namkeen Mini 1kg,2,8906000000011,Sunfeast Dark Fantasy Cookies Original 75g,Same category fallback,-32.0,75.8
+8906000000444,Chitale Namkeen Mini 1kg,3,8906000000364,Bikaji Namkeen Value Pack 200g,Same subcategory,-34.4,67.56
+8906000000445,Patanjali Ghee Fresh 1L,1,8906000000134,Patanjali Ghee Lite 1L,Same subcategory,-8.0,86.2
+8906000000445,Patanjali Ghee Fresh 1L,2,8906000000163,Patanjali Ghee Regular 500ml,Same subcategory,-61.53,72.84700000000001
+8906000000445,Patanjali Ghee Fresh 1L,3,8906000000186,Mother Dairy Ghee Value Pack 500ml,Same subcategory,-83.46,62.653999999999996
+8906000000446,Maggi Pasta Original 200g,1,8906000000206,Del Monte Pasta Lite 500g,Same subcategory,1.0,86.9
+8906000000446,Maggi Pasta Original 200g,2,8906000000493,Maggi Pasta Family Pack 200g,Same subcategory,13.4,77.66
+8906000000446,Maggi Pasta Original 200g,3,8906000000307,Maggi Pasta Original 500g,Same subcategory,-29.0,68.1
+8906000000447,Nestle Chocolates Premium 100g,1,8906000000435,Ferrero Chocolates Family Pack 100g,Same subcategory,-6.85,86.315
+8906000000447,Nestle Chocolates Premium 100g,2,8906000000459,Nestle Chocolates Mini 100g,Same subcategory,17.4,77.26
+8906000000447,Nestle Chocolates Premium 100g,3,8906000000203,Cadbury Chocolates Mini 50g,Same subcategory,-133.76,57.624
+8906000000448,Haldiram Small Snacks Fresh 50g,1,8906000000415,Parle Small Snacks Original 50g,Same subcategory,-5.66,86.434
+8906000000448,Haldiram Small Snacks Fresh 50g,2,8906000000014,Parle Small Snacks Jumbo 50g,Same subcategory,-7.46,78.254
+8906000000448,Haldiram Small Snacks Fresh 50g,3,8906000000085,Balaji Small Snacks Family Pack 50g,Same subcategory,-11.76,69.824
+8906000000449,Gowardhan Ghee Classic 1L,1,8906000000088,Mother Dairy Ghee Original 500ml,Same subcategory,21.09,84.89099999999999
+8906000000449,Gowardhan Ghee Classic 1L,2,8906000000186,Mother Dairy Ghee Value Pack 500ml,Same subcategory,26.78,76.322
+8906000000449,Gowardhan Ghee Classic 1L,3,8906000000393,Gowardhan Ghee Value Pack 500ml,Same subcategory,-30.8,67.92
+8906000000450,Del Monte Pasta Original 500g,1,8906000000275,Del Monte Pasta Jumbo 500g,Same subcategory,30.0,84.0
+8906000000450,Del Monte Pasta Original 500g,2,8906000000191,Weikfield Pasta Fresh 500g,Same subcategory,-55.05,73.495
+8906000000450,Del Monte Pasta Original 500g,3,8906000000493,Maggi Pasta Family Pack 200g,Same subcategory,-87.6,62.24
+8906000000451,Dhampur Sugar Family Pack 1kg,1,8906000000346,Madhur Sugar Classic 5kg,Same subcategory,30.8,83.92
+8906000000451,Dhampur Sugar Family Pack 1kg,2,8906000000170,Dhampur Sugar Value Pack 5kg,Same subcategory,44.0,74.6
+8906000000451,Dhampur Sugar Family Pack 1kg,3,8906000000420,Dhampur Sugar Value Pack 5kg,Same subcategory,50.71,65.929
+8906000000452,Mother Dairy Paneer Fresh 500g,1,8906000000007,Amul Paneer Lite 200g,Same subcategory,-44.1,82.59
+8906000000452,Mother Dairy Paneer Fresh 500g,2,8906000000245,Gowardhan Paneer Original 500g,Same subcategory,50.05,73.995
+8906000000452,Mother Dairy Paneer Fresh 500g,3,8906000000062,Mother Dairy Paneer Value Pack 500g,Same subcategory,-81.9,62.81
+8906000000453,Balaji Namkeen Lite 200g,1,8906000000253,Act II Popcorn Jumbo 30g,Same category fallback,-8.4,86.16
+8906000000453,Balaji Namkeen Lite 200g,2,8906000000444,Chitale Namkeen Mini 1kg,Same subcategory,-54.4,73.56
+8906000000453,Balaji Namkeen Lite 200g,3,8906000000444,Chitale Namkeen Mini 1kg,Same subcategory,-54.4,65.56
+8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,1,8906000000384,Bourbon Cream Biscuits Mini 150g,Same subcategory,-0.97,86.903
+8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,2,8906000000209,Oreo Cream Biscuits Family Pack 100g,Same subcategory,2.25,78.775
+8906000000454,Hide & Seek Cream Biscuits Family Pack 100g,3,8906000000131,Oreo Cream Biscuits Fresh 150g,Same subcategory,-7.98,70.202
+8906000000455,L'Oreal Hair Color Value Pack 1pc,1,8906000000318,Garnier Hair Color Value Pack 1pc,Same subcategory,-45.6,82.44
+8906000000455,L'Oreal Hair Color Value Pack 1pc,2,8906000000009,Godrej Hair Color Premium 1pc,Same subcategory,-120.96,66.904
+8906000000455,L'Oreal Hair Color Value Pack 1pc,3,8906000000028,Garnier Hair Color Mini 1pc,Same subcategory,-193.25,55
+8906000000456,Nataraj Stationery Value Pack 10pc,1,8906000000172,Camlin Stationery Jumbo 1pc,Same subcategory,8.65,86.135
+8906000000456,Nataraj Stationery Value Pack 10pc,2,8906000000137,Nataraj Stationery Original 10pc,Same subcategory,-57.55,73.245
+8906000000456,Nataraj Stationery Value Pack 10pc,3,8906000000272,Classmate Stationery Regular 1pc,Same subcategory,-64.3,64.57
+8906000000457,Patanjali Honey Mini 500g,1,8906000000304,Saffola Honey Lite 500g,Same subcategory,17.81,85.219
+8906000000457,Patanjali Honey Mini 500g,2,8906000000271,Patanjali Honey Premium 500g,Same subcategory,43.16,74.684
+8906000000457,Patanjali Honey Mini 500g,3,8906000000380,Saffola Honey Classic 500g,Same subcategory,63.81,64.619
+8906000000458,Gemini Edible Oil Lite 1L,1,8906000000445,Patanjali Ghee Fresh 1L,Same category fallback,1.0,86.9
+8906000000458,Gemini Edible Oil Lite 1L,2,8906000000134,Patanjali Ghee Lite 1L,Same category fallback,-7.0,78.3
+8906000000458,Gemini Edible Oil Lite 1L,3,8906000000163,Patanjali Ghee Regular 500ml,Same category fallback,-60.53,64.947
+8906000000459,Nestle Chocolates Mini 100g,1,8906000000447,Nestle Chocolates Premium 100g,Same subcategory,-17.4,85.26
+8906000000459,Nestle Chocolates Mini 100g,2,8906000000435,Ferrero Chocolates Family Pack 100g,Same subcategory,-24.25,76.575
+8906000000459,Nestle Chocolates Mini 100g,3,8906000000203,Cadbury Chocolates Mini 50g,Same subcategory,-151.16,55.884
+8906000000460,Tide Detergent Original 4kg,1,8906000000388,Tide Detergent Classic 2kg,Same subcategory,34.0,83.6
+8906000000460,Tide Detergent Original 4kg,2,8906000000174,Wheel Detergent Premium 2kg,Same subcategory,-38.95,75.105
+8906000000460,Tide Detergent Original 4kg,3,8906000000096,Tide Detergent Lite 2kg,Same subcategory,41.6,66.84
+8906000000461,Fortune Atta Regular 1kg,1,8906000000251,Pillsbury Atta Mini 5kg,Same subcategory,-8.2,86.18
+8906000000461,Fortune Atta Regular 1kg,2,8906000000100,Pillsbury Atta Classic 5kg,Same subcategory,133.8,65.62
+8906000000461,Fortune Atta Regular 1kg,3,8906000000487,Aashirvaad Atta Regular 5kg,Same subcategory,232.7,55
+8906000000462,Gowardhan Curd Mini 1kg,1,8906000000057,Amul Curd Regular 400g,Same subcategory,20.76,84.924
+8906000000462,Gowardhan Curd Mini 1kg,2,8906000000351,Amul Curd Classic 1kg,Same subcategory,41.26,74.874
+8906000000462,Gowardhan Curd Mini 1kg,3,8906000000027,Mother Dairy Curd Jumbo 1kg,Same subcategory,-50.34,65.966
+8906000000463,Tata Sampann Dal Family Pack 1kg,1,8906000000180,Local Mill Dal Value Pack 500g,Same subcategory,0.36,86.964
+8906000000463,Tata Sampann Dal Family Pack 1kg,2,8906000000301,24 Mantra Dal Family Pack 2kg,Same subcategory,-4.85,78.515
+8906000000463,Tata Sampann Dal Family Pack 1kg,3,8906000000333,Tata Sampann Dal Jumbo 2kg,Same subcategory,4.9,70.51
+8906000000464,24 Mantra Dal Jumbo 1kg,1,8906000000035,Fortune Dal Fresh 1kg,Same subcategory,15.75,85.425
+8906000000464,24 Mantra Dal Jumbo 1kg,2,8906000000299,Fortune Dal Mini 500g,Same subcategory,22.4,76.76
+8906000000464,24 Mantra Dal Jumbo 1kg,3,8906000000469,24 Mantra Dal Value Pack 500g,Same subcategory,37.84,67.216
+8906000000465,Lay's Chips Regular 52g,1,8906000000066,Bingo Chips Lite 150g,Same subcategory,3.8,86.62
+8906000000465,Lay's Chips Regular 52g,2,8906000000424,Too Yumm Chips Classic 90g,Same subcategory,-5.2,78.48
+8906000000465,Lay's Chips Regular 52g,3,8906000000263,Too Yumm Chips Fresh 90g,Same subcategory,5.75,70.425
+8906000000466,Tops Jam Premium 500g,1,8906000000473,Tops Jam Regular 200g,Same subcategory,1.9,86.81
+8906000000466,Tops Jam Premium 500g,2,8906000000354,Tops Jam Mini 200g,Same subcategory,-17.1,77.29
+8906000000466,Tops Jam Premium 500g,3,8906000000199,Tops Jam Value Pack 500g,Same subcategory,35.15,67.485
+8906000000467,Amul Paneer Mini 500g,1,8906000000284,Amul Paneer Lite 500g,Same subcategory,14.78,85.522
+8906000000467,Amul Paneer Mini 500g,2,8906000000245,Gowardhan Paneer Original 500g,Same subcategory,-88.25,70.175
+8906000000467,Amul Paneer Mini 500g,3,8906000000452,Mother Dairy Paneer Fresh 500g,Same subcategory,-138.3,57.17
+8906000000468,Parachute Hair Oil Family Pack 200ml,1,8906000000213,Dabur Amla Hair Oil Original 500ml,Same subcategory,18.02,85.198
+8906000000468,Parachute Hair Oil Family Pack 200ml,2,8906000000268,Bajaj Almond Drops Hair Oil Fresh 500ml,Same subcategory,47.03,74.297
+8906000000468,Parachute Hair Oil Family Pack 200ml,3,8906000000060,Dabur Amla Hair Oil Lite 500ml,Same subcategory,-53.48,65.652
+8906000000469,24 Mantra Dal Value Pack 500g,1,8906000000299,Fortune Dal Mini 500g,Same subcategory,-15.44,85.456
+8906000000469,24 Mantra Dal Value Pack 500g,2,8906000000035,Fortune Dal Fresh 1kg,Same subcategory,-22.09,76.791
+8906000000469,24 Mantra Dal Value Pack 500g,3,8906000000482,Tata Sampann Dal Original 500g,Same subcategory,25.27,68.473
+8906000000470,Saffola Salt Salt Classic 1kg,1,8906000000260,Saffola Salt Salt Fresh 1kg,Same subcategory,-22.3,84.77
+8906000000470,Saffola Salt Salt Classic 1kg,2,8906000000211,Tata Salt Salt Value Pack 1kg,Same subcategory,-35.1,75.49
+8906000000470,Saffola Salt Salt Classic 1kg,3,8906000000252,Aashirvaad Salt Salt Mini 1kg,Same subcategory,43.7,66.63
+8906000000471,Nippo Batteries Classic 4pc,1,8906000000069,Duracell Batteries Original 4pc,Same subcategory,-6.85,86.315
+8906000000471,Nippo Batteries Classic 4pc,2,8906000000344,Eveready Batteries Regular 4pc,Same subcategory,44.55,74.545
+8906000000471,Nippo Batteries Classic 4pc,3,8906000000283,Eveready Batteries Lite 2pc,Same subcategory,80.91,62.909
+8906000000472,Fanta Soft Drinks Regular 1.25L,1,8906000000094,Thums Up Soft Drinks Mini 600ml,Same subcategory,-4.5,86.55
+8906000000472,Fanta Soft Drinks Regular 1.25L,2,8906000000484,Sprite Soft Drinks Regular 250ml,Same subcategory,-5.8,78.42
+8906000000472,Fanta Soft Drinks Regular 1.25L,3,8906000000075,Pepsi Soft Drinks Fresh 600ml,Same subcategory,7.81,70.219
+8906000000473,Tops Jam Regular 200g,1,8906000000466,Tops Jam Premium 500g,Same subcategory,-1.9,86.81
+8906000000473,Tops Jam Regular 200g,2,8906000000354,Tops Jam Mini 200g,Same subcategory,-19.0,77.1
+8906000000473,Tops Jam Regular 200g,3,8906000000199,Tops Jam Value Pack 500g,Same subcategory,33.25,67.675
+8906000000474,Knorr Soup Lite 100g,1,8906000000431,Knorr Soup Regular 45g,Same subcategory,29.61,84.039
+8906000000474,Knorr Soup Lite 100g,2,8906000000337,Maggi Soup Fresh 100g,Same subcategory,-30.49,75.951
+8906000000474,Knorr Soup Lite 100g,3,8906000000118,Knorr Soup Lite 100g,Same subcategory,50.51,65.949
+8906000000475,Maggi Noodles Fresh 140g,1,8906000000443,Yippee Noodles Family Pack 280g,Same subcategory,4.33,86.56700000000001
+8906000000475,Maggi Noodles Fresh 140g,2,8906000000171,Knorr Noodles Regular 70g,Same subcategory,-47.62,74.238
+8906000000475,Maggi Noodles Fresh 140g,3,8906000000168,Yippee Noodles Mini 140g,Same subcategory,-48.92,66.108
+8906000000476,Dhara Edible Oil Mini 1L,1,8906000000033,Sunrich Edible Oil Jumbo 5L,Same subcategory,18.7,85.13
+8906000000476,Dhara Edible Oil Mini 1L,2,8906000000033,Sunrich Edible Oil Jumbo 5L,Same subcategory,18.7,77.13
+8906000000476,Dhara Edible Oil Mini 1L,3,8906000000182,Gowardhan Ghee Mini 500ml,Same category fallback,61.6,64.84
+8906000000477,Haldiram Small Snacks Value Pack 50g,1,8906000000352,Parle Small Snacks Family Pack 50g,Same subcategory,-28.83,84.117
+8906000000477,Haldiram Small Snacks Value Pack 50g,2,8906000000063,Parle Small Snacks Classic 100g,Same subcategory,51.85,73.815
+8906000000477,Haldiram Small Snacks Value Pack 50g,3,8906000000412,Parle Small Snacks Regular 100g,Same subcategory,-75.35,63.465
+8906000000478,Britannia Tiger Glucose Biscuits Regular 80g,1,8906000000427,Parle-G Glucose Biscuits Value Pack 150g,Same subcategory,4.1,86.59
+8906000000478,Britannia Tiger Glucose Biscuits Regular 80g,2,8906000000323,Sunfeast Glucose Glucose Biscuits Original 250g,Same subcategory,12.35,77.765
+8906000000478,Britannia Tiger Glucose Biscuits Regular 80g,3,8906000000146,Britannia Tiger Glucose Biscuits Premium 250g,Same subcategory,21.85,68.815
+8906000000479,Haldiram Ready To Eat Jumbo 500g,1,8906000000437,MTR Ready To Eat Classic 500g,Same subcategory,0.0,87.0
+8906000000479,Haldiram Ready To Eat Jumbo 500g,2,8906000000103,MTR Ready To Eat Value Pack 500g,Same subcategory,27.45,76.255
+8906000000479,Haldiram Ready To Eat Jumbo 500g,3,8906000000483,MTR Ready To Eat Mini 300g,Same subcategory,-43.55,66.645
+8906000000480,McCain Frozen Snacks Regular 400g,1,8906000000293,McCain Frozen Snacks Regular 400g,Same subcategory,-1.8,86.82
+8906000000480,McCain Frozen Snacks Regular 400g,2,8906000000286,McCain Frozen Snacks Family Pack 1kg,Same subcategory,-27.0,76.3
+8906000000480,McCain Frozen Snacks Regular 400g,3,8906000000022,McCain Frozen Snacks Jumbo 400g,Same subcategory,-40.5,66.95
+8906000000481,Garnier Face Wash Regular 150g,1,8906000000399,Garnier Face Wash Lite 50g,Same subcategory,-4.65,86.535
+8906000000481,Garnier Face Wash Regular 150g,2,8906000000382,Ponds Face Wash Fresh 150g,Same subcategory,8.45,78.155
+8906000000481,Garnier Face Wash Regular 150g,3,8906000000229,Himalaya Face Wash Value Pack 50g,Same subcategory,-22.65,68.735
+8906000000482,Tata Sampann Dal Original 500g,1,8906000000301,24 Mantra Dal Family Pack 2kg,Same subcategory,3.84,86.616
+8906000000482,Tata Sampann Dal Original 500g,2,8906000000463,Tata Sampann Dal Family Pack 1kg,Same subcategory,8.69,78.131
+8906000000482,Tata Sampann Dal Original 500g,3,8906000000180,Local Mill Dal Value Pack 500g,Same subcategory,9.05,70.095
+8906000000483,MTR Ready To Eat Mini 300g,1,8906000000479,Haldiram Ready To Eat Jumbo 500g,Same subcategory,43.55,82.645
+8906000000483,MTR Ready To Eat Mini 300g,2,8906000000437,MTR Ready To Eat Classic 500g,Same subcategory,43.55,74.645
+8906000000483,MTR Ready To Eat Mini 300g,3,8906000000103,MTR Ready To Eat Value Pack 500g,Same subcategory,71.0,63.9
+8906000000484,Sprite Soft Drinks Regular 250ml,1,8906000000094,Thums Up Soft Drinks Mini 600ml,Same subcategory,1.3,86.87
+8906000000484,Sprite Soft Drinks Regular 250ml,2,8906000000472,Fanta Soft Drinks Regular 1.25L,Same subcategory,5.8,78.42
+8906000000484,Sprite Soft Drinks Regular 250ml,3,8906000000075,Pepsi Soft Drinks Fresh 600ml,Same subcategory,13.61,69.639
+8906000000485,Suguna Eggs Classic 12pc,1,8906000000059,Farm Fresh Eggs Fresh 12pc,Same subcategory,-11.45,85.855
+8906000000485,Suguna Eggs Classic 12pc,2,8906000000047,Farm Fresh Eggs Lite 6pc,Same subcategory,-12.35,77.765
+8906000000485,Suguna Eggs Classic 12pc,3,8906000000356,Local Farm Eggs Lite 12pc,Same subcategory,16.65,69.335
+8906000000486,Surf Excel Detergent Jumbo 2kg,1,8906000000305,Rin Detergent Premium 2kg,Same subcategory,-5.45,86.455
+8906000000486,Surf Excel Detergent Jumbo 2kg,2,8906000000054,Tide Detergent Family Pack 2kg,Same subcategory,5.85,78.41499999999999
+8906000000486,Surf Excel Detergent Jumbo 2kg,3,8906000000407,Surf Excel Detergent Premium 2kg,Same subcategory,48.3,66.17
+8906000000487,Aashirvaad Atta Regular 5kg,1,8906000000100,Pillsbury Atta Classic 5kg,Same subcategory,-98.9,77.11
+8906000000487,Aashirvaad Atta Regular 5kg,2,8906000000461,Fortune Atta Regular 1kg,Same subcategory,-232.7,55.730000000000004
+8906000000487,Aashirvaad Atta Regular 5kg,3,8906000000251,Pillsbury Atta Mini 5kg,Same subcategory,-240.9,55
+8906000000488,Ponds Face Wash Original 50g,1,8906000000499,Nivea Face Wash Mini 150g,Same subcategory,2.9,86.71
+8906000000488,Ponds Face Wash Original 50g,2,8906000000141,Clean & Clear Face Wash Value Pack 100g,Same subcategory,3.15,78.685
+8906000000488,Ponds Face Wash Original 50g,3,8906000000369,Ponds Face Wash Family Pack 150g,Same subcategory,13.61,69.639
+8906000000489,Ponds Talcum Powder Mini 300g,1,8906000000164,Cinthol Talcum Powder Regular 300g,Same subcategory,3.46,86.654
+8906000000489,Ponds Talcum Powder Mini 300g,2,8906000000368,Cinthol Talcum Powder Classic 100g,Same subcategory,6.16,78.384
+8906000000489,Ponds Talcum Powder Mini 300g,3,8906000000406,Navratna Talcum Powder Lite 100g,Same subcategory,-8.64,70.136
+8906000000490,Gits Instant Mix Lite 500g,1,8906000000029,MTR Instant Mix Value Pack 200g,Same subcategory,-5.8,86.42
+8906000000490,Gits Instant Mix Lite 500g,2,8906000000082,Gits Instant Mix Mini 200g,Same subcategory,-16.8,77.32
+8906000000490,Gits Instant Mix Lite 500g,3,8906000000254,MTR Instant Mix Jumbo 500g,Same subcategory,-175.8,55
+8906000000491,Listerine Mouthwash Original 250ml,1,8906000000421,Listerine Mouthwash Original 250ml,Same subcategory,-9.5,86.05
+8906000000491,Listerine Mouthwash Original 250ml,2,8906000000328,Listerine Mouthwash Lite 250ml,Same subcategory,-36.05,75.395
+8906000000491,Listerine Mouthwash Original 250ml,3,8906000000149,Listerine Mouthwash Classic 250ml,Same subcategory,-39.91,67.009
+8906000000492,Prestige Kitchen Tools Mini 2pc,1,8906000000405,Cello Kitchen Tools Value Pack 2pc,Same subcategory,6.03,86.397
+8906000000492,Prestige Kitchen Tools Mini 2pc,2,8906000000379,Scotch-Brite Kitchen Tools Value Pack 2pc,Same subcategory,20.73,76.92699999999999
+8906000000492,Prestige Kitchen Tools Mini 2pc,3,8906000000442,Scotch-Brite Kitchen Tools Family Pack 2pc,Same subcategory,33.47,67.653
+8906000000493,Maggi Pasta Family Pack 200g,1,8906000000206,Del Monte Pasta Lite 500g,Same subcategory,-12.4,85.76
+8906000000493,Maggi Pasta Family Pack 200g,2,8906000000446,Maggi Pasta Original 200g,Same subcategory,-13.4,77.66
+8906000000493,Maggi Pasta Family Pack 200g,3,8906000000191,Weikfield Pasta Fresh 500g,Same subcategory,32.55,67.745
+8906000000494,Pears Body Wash Classic 500ml,1,8906000000111,Nivea Body Wash Original 250ml,Same subcategory,12.34,85.766
+8906000000494,Pears Body Wash Classic 500ml,2,8906000000361,Fiama Body Wash Value Pack 500ml,Same subcategory,-16.9,77.31
+8906000000494,Pears Body Wash Classic 500ml,3,8906000000032,Pears Body Wash Regular 500ml,Same subcategory,80.0,63.0
+8906000000495,Everest Masala Fresh 50g,1,8906000000287,Everest Masala Lite 50g,Same subcategory,2.82,86.718
+8906000000495,Everest Masala Fresh 50g,2,8906000000291,MDH Masala Classic 200g,Same subcategory,51.15,73.885
+8906000000495,Everest Masala Fresh 50g,3,8906000000193,Catch Masala Original 200g,Same subcategory,-83.6,62.64
+8906000000496,Wagh Bakri Tea Lite 250g,1,8906000000113,Wagh Bakri Tea Jumbo 500g,Same subcategory,-40.3,82.97
+8906000000496,Wagh Bakri Tea Lite 250g,2,8906000000317,Wagh Bakri Tea Family Pack 1kg,Same subcategory,-41.05,74.895
+8906000000496,Wagh Bakri Tea Lite 250g,3,8906000000341,Wagh Bakri Tea Mini 500g,Same subcategory,45.19,66.481
+8906000000497,Suguna Eggs Classic 12pc,1,8906000000362,Local Farm Eggs Value Pack 12pc,Same subcategory,2.11,86.789
+8906000000497,Suguna Eggs Classic 12pc,2,8906000000102,Farm Fresh Eggs Lite 6pc,Same subcategory,-2.54,78.746
+8906000000497,Suguna Eggs Classic 12pc,3,8906000000343,Local Farm Eggs Regular 12pc,Same subcategory,-2.94,70.706
+8906000000498,Nestle Chocolates Value Pack 100g,1,8906000000078,Cadbury Chocolates Original 100g,Same subcategory,18.7,85.13
+8906000000498,Nestle Chocolates Value Pack 100g,2,8906000000203,Cadbury Chocolates Mini 50g,Same subcategory,28.04,76.196
+8906000000498,Nestle Chocolates Value Pack 100g,3,8906000000435,Ferrero Chocolates Family Pack 100g,Same subcategory,154.95,55.505
+8906000000499,Nivea Face Wash Mini 150g,1,8906000000141,Clean & Clear Face Wash Value Pack 100g,Same subcategory,0.25,86.975
+8906000000499,Nivea Face Wash Mini 150g,2,8906000000488,Ponds Face Wash Original 50g,Same subcategory,-2.9,78.71
+8906000000499,Nivea Face Wash Mini 150g,3,8906000000369,Ponds Face Wash Family Pack 150g,Same subcategory,10.71,69.929
+8906000000500,Britannia Butter Fresh 500g,1,8906000000079,Britannia Butter Fresh 100g,Same subcategory,9.7,86.03
+8906000000500,Britannia Butter Fresh 500g,2,8906000000195,Gowardhan Butter Mini 500g,Same subcategory,14.23,77.577
+8906000000500,Britannia Butter Fresh 500g,3,8906000000070,Amul Butter Jumbo 500g,Same subcategory,14.55,69.545

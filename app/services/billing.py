@@ -2,6 +2,7 @@ from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
 from app.models.product import Product
 from app.models.bill import Bill, BillItem
+from app.models.inventory_mapping import InventoryMapping
 from app.services.product import ProductService
 from app.services.customer import CustomerService
 from app.services.email_service import EmailService
@@ -123,6 +124,11 @@ class BillingService:
             for barcode, item in cls._cart.items():
                 product = db.query(Product).filter(Product.id == item["product_id"]).first()
                 product.quantity -= item["quantity"]
+
+                # Hook: Decrement shelf quantity
+                mapping = db.query(InventoryMapping).filter(InventoryMapping.product_id == product.id).first()
+                if mapping:
+                    mapping.current_shelf_quantity = max(0, mapping.current_shelf_quantity - item["quantity"])
 
                 db_bill_item = BillItem(
                     bill_id=db_bill.id,

@@ -1,0 +1,31 @@
+pair_id,primary_subcategory,recommended_adjacent_subcategory,support_percent,confidence_percent,lift,planogram_action
+1,Tea,Sugar,20.03,57.06,2.26,Keep Tea near Sugar to improve basket size
+2,Tea,Glucose Biscuits,29.37,76.84,2.35,Keep Tea near Glucose Biscuits to improve basket size
+3,Sugar,Glucose Biscuits,35.2,41.33,4.02,Keep Sugar near Glucose Biscuits to improve basket size
+4,Bread,Butter,28.59,41.09,4.1,Keep Bread near Butter to improve basket size
+5,Bread,Jam,36.72,38.99,3.93,Keep Bread near Jam to improve basket size
+6,Butter,Jam,19.61,71.13,3.14,Keep Butter near Jam to improve basket size
+7,Noodles,Sauces,21.06,71.1,2.31,Keep Noodles near Sauces to improve basket size
+8,Noodles,Soup,23.66,47.69,4.59,Keep Noodles near Soup to improve basket size
+9,Sauces,Soup,34.28,62.94,3.47,Keep Sauces near Soup to improve basket size
+10,Rice,Dal,31.58,54.41,3.54,Keep Rice near Dal to improve basket size
+11,Rice,Masala,11.75,52.37,1.77,Keep Rice near Masala to improve basket size
+12,Dal,Masala,22.93,58.08,3.66,Keep Dal near Masala to improve basket size
+13,Shampoo,Conditioner,9.34,37.96,2.51,Keep Shampoo near Conditioner to improve basket size
+14,Shampoo,Hair Oil,36.04,79.74,1.94,Keep Shampoo near Hair Oil to improve basket size
+15,Conditioner,Hair Oil,29.5,41.93,1.73,Keep Conditioner near Hair Oil to improve basket size
+16,Toothpaste,Toothbrush,13.38,44.54,1.74,Keep Toothpaste near Toothbrush to improve basket size
+17,Toothpaste,Mouthwash,32.83,53.34,1.32,Keep Toothpaste near Mouthwash to improve basket size
+18,Toothbrush,Mouthwash,23.63,70.02,3.08,Keep Toothbrush near Mouthwash to improve basket size
+19,Detergent,Fabric Care,26.58,63.21,4.36,Keep Detergent near Fabric Care to improve basket size
+20,Detergent,Floor Cleaner,21.58,40.08,4.64,Keep Detergent near Floor Cleaner to improve basket size
+21,Fabric Care,Floor Cleaner,9.7,71.32,1.23,Keep Fabric Care near Floor Cleaner to improve basket size
+22,Chips,Soft Drinks,18.8,69.41,2.02,Keep Chips near Soft Drinks to improve basket size
+23,Chips,Namkeen,13.98,39.12,3.79,Keep Chips near Namkeen to improve basket size
+24,Soft Drinks,Namkeen,23.45,52.46,2.69,Keep Soft Drinks near Namkeen to improve basket size
+25,Milk,Bread,17.88,80.15,3.45,Keep Milk near Bread to improve basket size
+26,Milk,Eggs,16.64,42.02,1.74,Keep Milk near Eggs to improve basket size
+27,Bread,Eggs,29.77,68.42,1.22,Keep Bread near Eggs to improve basket size
+28,Atta,Ghee,10.56,41.9,4.36,Keep Atta near Ghee to improve basket size
+29,Atta,Pickles,16.13,47.13,3.88,Keep Atta near Pickles to improve basket size
+30,Ghee,Pickles,29.77,72.26,2.2,Keep Ghee near Pickles to improve basket size

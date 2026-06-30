@@ -65,13 +65,19 @@ Verify or edit database credentials in the `.env` file at the root:
 DATABASE_URL=postgresql://postgres:root@localhost:5432/smart_retail
 ```
 
-### 3. Execution (Windows)
+### 3. Database Seeding (Nagpur 500-Product Dataset)
+Run the seeding script to set up all tables and import the 500-product master, customers list, transaction history, shelves, and inventory planograms:
+```cmd
+venv\Scripts\python seed_shelf_data.py
+```
+
+### 4. Execution (Windows)
 Double-click `run.bat` or run it via terminal to install dependencies and boot up the server:
 ```cmd
 run.bat
 ```
 
-### 4. Direct Manual Commands
+### 5. Direct Manual Commands
 If you prefer running manual commands:
 ```bash
 # Install dependencies
@@ -81,12 +87,20 @@ pip install -r requirements.txt
 uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
 
+## Shelf Refill Workflow
+The **Shelf Management & Replenishment** system simulates moving stock from warehouse storage to customer-facing shelves:
+1. **Purchase stock deduction**: When a cashier processes a transaction (using the billing checkout screen), the quantity of purchased items is automatically decremented from both the total product stock and the physical shelf (`current_shelf_quantity`).
+2. **Low shelf stock warning**: When `current_shelf_quantity <= minimum_shelf_quantity`, the shelf status turns into **Yellow: Refill Required** on the dashboard.
+3. **Refill trigger**: Operators click **Refill Shelf** which sends a request to `POST /shelf/refill/{product_id}`.
+4. **Stock replenishment**: The system moves inventory from the warehouse (`warehouse_quantity`) to the shelf (`current_shelf_quantity`) up to the shelf capacity, logging the transaction details in the `refill_logs` table. If the warehouse runs out of stock, the status transitions to **Red: Warehouse Empty**.
+
 ## Access Points
 
 - **JSON Health API**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 - **Detailed health status**: [http://127.0.0.1:8000/api/health](http://127.0.0.1:8000/api/health)
 - **Web Dashboard**: [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard)
 - **Inventory Dashboard**: [http://127.0.0.1:8000/inventory-dashboard](http://127.0.0.1:8000/inventory-dashboard)
+- **Shelf Management Dashboard**: [http://127.0.0.1:8000/shelf-management](http://127.0.0.1:8000/shelf-management)
 - **Swagger interactive API documentation**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ## Product Management API Endpoints
