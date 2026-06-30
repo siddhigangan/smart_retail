@@ -73,7 +73,13 @@ class BillingService:
         db: Session,
         customer_name: str = None,
         customer_phone: str = None,
-        customer_email: str = None
+        customer_email: str = None,
+        payment_method: str = "Cash",
+        cash_received: float = None,
+        change_returned: float = None,
+        split_cash: float = None,
+        split_upi: float = None,
+        split_card: float = None
     ) -> dict:
         """
         Generates a bill from the current cart items.
@@ -115,7 +121,13 @@ class BillingService:
                 customer_id=customer_id,
                 customer_name=customer_name,
                 customer_phone=customer_phone,
-                customer_email=customer_email
+                customer_email=customer_email,
+                payment_method=payment_method,
+                cash_received=cash_received,
+                change_returned=change_returned,
+                split_cash=split_cash,
+                split_upi=split_upi,
+                split_card=split_card
             )
             db.add(db_bill)
             db.flush()  # Get bill ID
@@ -216,7 +228,13 @@ class BillingService:
                 "loyalty_points_earned": loyalty_points_earned,
                 "customer_total_points": customer_total_points,
                 "email_sent": email_sent,
-                "sms_sent": sms_sent
+                "sms_sent": sms_sent,
+                "payment_method": db_bill.payment_method,
+                "cash_received": db_bill.cash_received,
+                "change_returned": db_bill.change_returned,
+                "split_cash": db_bill.split_cash,
+                "split_upi": db_bill.split_upi,
+                "split_card": db_bill.split_card
             }
 
         except HTTPException:

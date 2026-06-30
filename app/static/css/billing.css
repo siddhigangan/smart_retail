@@ -477,3 +477,100 @@
     color: var(--text-mut);
     font-size: 0.95rem;
 }
+
+/* POS Payment and controls custom classes */
+.payment-detail-box {
+    background: #F8FAFC;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #CBD5E1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-row label {
+    font-weight: 600;
+    color: #475569;
+}
+
+.payment-input-inline {
+    width: 100px;
+    padding: 4px 8px;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-align: right;
+    outline: none;
+}
+
+.payment-input-inline:focus {
+    border-color: #2E8B57;
+}
+
+.payment-display-value {
+    font-weight: 700;
+    color: #0F172A;
+    font-size: 0.9rem;
+}
+
+.error-text {
+    color: #B91C1C;
+    font-weight: 700;
+}
+
+.success-text {
+    color: #15803D;
+    font-weight: 700;
+}
+
+.btn-control {
+    flex: 1;
+    padding: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #334155;
+    transition: all 0.15s ease;
+    text-align: center;
+}
+
+.btn-control:hover {
+    background-color: #F1F5F9;
+}
+
+.btn-control.active {
+    background-color: #E2F0D9;
+    border-color: #2E8B57;
+    color: #2E8B57;
+}
+
+.modal-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 12px;
+}
+
+.modal-list-table th, .modal-list-table td {
+    padding: 8px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.modal-list-table th {
+    background: #F8FAFC;
+    font-weight: 700;
+}
+

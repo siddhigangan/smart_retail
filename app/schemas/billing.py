@@ -42,10 +42,15 @@ class CartItemResponse(BaseModel):
     subtotal: Decimal
 
 class GenerateBillRequest(BaseModel):
-    """Customer details to attach to the bill."""
+    """Customer details and payment details to attach to the bill."""
     customer_name: str = Field(..., max_length=100)
     customer_phone: str = Field(..., max_length=15)
-    customer_email: Optional[str] = Field(None, max_length=255)
+    payment_method: Optional[str] = Field("Cash", max_length=50)
+    cash_received: Optional[Decimal] = None
+    change_returned: Optional[Decimal] = None
+    split_cash: Optional[Decimal] = None
+    split_upi: Optional[Decimal] = None
+    split_card: Optional[Decimal] = None
 
     @field_validator('customer_phone')
     @classmethod
@@ -85,6 +90,13 @@ class BillResponse(BaseModel):
     # Loyalty
     loyalty_points_earned: int = 0
     customer_total_points: int = 0
+    # Payment info
+    payment_method: Optional[str] = "Cash"
+    cash_received: Optional[Decimal] = None
+    change_returned: Optional[Decimal] = None
+    split_cash: Optional[Decimal] = None
+    split_upi: Optional[Decimal] = None
+    split_card: Optional[Decimal] = None
 
     model_config = ConfigDict(from_attributes=True)
 

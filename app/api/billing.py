@@ -43,13 +43,24 @@ def generate_bill(
     """
     customer_name = request.customer_name if request else None
     customer_phone = request.customer_phone if request else None
-    customer_email = request.customer_email if request else None
+    payment_method = request.payment_method if request else "Cash"
+    cash_received = request.cash_received if request else None
+    change_returned = request.change_returned if request else None
+    split_cash = request.split_cash if request else None
+    split_upi = request.split_upi if request else None
+    split_card = request.split_card if request else None
 
     return BillingService.generate_bill(
         db,
         customer_name=customer_name,
         customer_phone=customer_phone,
-        customer_email=customer_email
+        customer_email=None,
+        payment_method=payment_method,
+        cash_received=cash_received,
+        change_returned=change_returned,
+        split_cash=split_cash,
+        split_upi=split_upi,
+        split_card=split_card
     )
 
 @router.get("/history", response_model=list[BillHistoryResponse], status_code=status.HTTP_200_OK)

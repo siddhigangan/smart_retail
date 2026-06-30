@@ -94,6 +94,18 @@ The **Shelf Management & Replenishment** system simulates moving stock from ware
 3. **Refill trigger**: Operators click **Refill Shelf** which sends a request to `POST /shelf/refill/{product_id}`.
 4. **Stock replenishment**: The system moves inventory from the warehouse (`warehouse_quantity`) to the shelf (`current_shelf_quantity`) up to the shelf capacity, logging the transaction details in the `refill_logs` table. If the warehouse runs out of stock, the status transitions to **Red: Warehouse Empty**.
 
+## Payment & Checkout Workflow
+The **Supermarket POS system** supports robust checkout payment operations:
+1. **Mandatory Customer Info**: Cashiers must enter Customer Name and a valid 10-digit WhatsApp phone number (Email has been fully removed).
+2. **Multiple Payment Methods**:
+   - **Cash**: Cashiers type the "Cash Received" amount, and the system automatically calculates either the "Change to Return" or the "Remaining Amount" dynamically. Invoices are blocked until full payment is received.
+   - **UPI / Card**: Quick single-tap transactions with instant receipt generation.
+   - **Split Payments**: Allows combining two modes: Cash + UPI, Cash + Card, or UPI + Card. Remaining balances are calculated dynamically and checkout is locked until exactly 100% of the total amount is split.
+3. **Bill Controls**:
+   - **Hold Bill / Suspend Bill**: Park current active cart data with customer details to serve the next customer. Restored instantly using **Resume Bill**.
+   - **Cancel Bill**: Allows cashiers to void/cancel an active cart, saving details into a session audit log viewable via **Cancelled Bills**.
+4. **WhatsApp Dispatch**: Post-checkout, cashiers can dispatch invoices instantly to customer WhatsApp numbers. The UI displays **WhatsApp Status** as `Pending` until dispatched, which then toggles to `Sent`.
+
 ## Access Points
 
 - **JSON Health API**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)

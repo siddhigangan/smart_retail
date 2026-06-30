@@ -16,6 +16,14 @@ class Bill(Base):
     customer_phone = Column(String(15), nullable=True)
     customer_email = Column(String(255), nullable=True)
 
+    # Payment details
+    payment_method = Column(String(50), nullable=True, default="Cash")
+    cash_received = Column(Numeric(10, 2), nullable=True)
+    change_returned = Column(Numeric(10, 2), nullable=True)
+    split_cash = Column(Numeric(10, 2), nullable=True)
+    split_upi = Column(Numeric(10, 2), nullable=True)
+    split_card = Column(Numeric(10, 2), nullable=True)
+
     items = relationship("BillItem", back_populates="bill", cascade="all, delete-orphan")
     customer = relationship("Customer", back_populates="bills")
 
