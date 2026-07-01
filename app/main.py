@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from sqlalchemy.orm import Session
 
 # Import health, products & billing routers
-from app.api import health, products, billing, shelf
+from app.api import health, products, billing, shelf, products_management
 from app.database.session import engine, Base, get_db
 # Import models to register them on Base metadata
 from app.models.product import Product
@@ -46,6 +46,7 @@ app.include_router(health.router, prefix="/api")
 app.include_router(products.router)
 app.include_router(billing.router)
 app.include_router(shelf.router)
+app.include_router(products_management.router, prefix="/api")
 
 
 @app.get("/", response_class=JSONResponse)
@@ -277,6 +278,92 @@ def reset_transactions(db: Session = Depends(get_db)):
             status_code=500,
             detail=f"Failed to reset transactional data: {str(e)}"
         )
+
+@app.get("/products-management", response_class=HTMLResponse)
+def get_products_management_page(
+    request: Request,
+    q: str | None = Query(None),
+    category: str | None = Query(None),
+    supplier: str | None = Query(None),
+    shelf_id: int | None = Query(None),
+    filter_status: str | None = Query(None),
+    db: Session = Depends(get_db)
+):
+    """
+    Renders the central Products Management ERP dashboard.
+    """
+    from datetime import date, timedelta
+    from app.models.product import Product
+    from app.models.inventory_mapping import InventoryMapping
+    from app.models.shelf import Shelf
+
+    query = db.query(Product, InventoryMapping, Shelf).\
+        outerjoin(InventoryMapping, Product.id == InventoryMapping.product_id).\
+        outerjoin(Shelf, InventoryMapping.shelf_id == Shelf.id)
+
+    if q:
+        q_str = f"%{q.strip()}%"
+        query = query.filter(
+            (Product.name.ilike(q_str)) |
+            (Product.barcode.ilike(q_str)) |
+            (Product.category.ilike(q_str)) |
+            (Product.brand.ilike(q_str)) |
+            (Product.supplier.ilike(q_str)) |
+            (Shelf.shelf_number.ilike(q_str))
+        )
+
+    if category:
+        query = query.filter(Product.category == category)
+    if supplier:
+        query = query.filter(Product.supplier == supplier)
+    if shelf_id:
+        query = query.filter(Shelf.id == shelf_id)
+
+    if filter_status == "low_stock":
+        query = query.filter(Product.quantity <= Product.reorder_level)
+    elif filter_status == "out_of_stock":
+        query = query.filter(Product.quantity == 0)
+    elif filter_status == "expiring":
+        query = query.filter(Product.expiry_date.between(date.today(), date.today() + timedelta(days=30)))
+
+    records = query.all()
+
+    # Form products structures
+    products_list = []
+    for p, m, s in records:
+        products_list.append({
+            "id": p.id,
+            "barcode": p.barcode,
+            "name": p.name,
+            "category": p.category,
+            "brand": p.brand or "N/A",
+            "shelf_number": s.shelf_number if s else "Unassigned",
+            "shelf_quantity": m.current_shelf_quantity if m else 0,
+            "warehouse_quantity": m.warehouse_quantity if m else 0,
+            "selling_price": float(p.price),
+            "mrp": float(p.mrp) if p.mrp else float(p.price),
+            "gst": float(p.gst) if p.gst else 0.0,
+            "supplier": p.supplier or "N/A",
+            "status": "Low Stock" if p.quantity <= p.reorder_level else "Healthy"
+        })
+
+    # Dropdown selections helper lists
+    all_categories = [r[0] for r in db.query(Product.category).distinct().all() if r[0]]
+    all_suppliers = [r[0] for r in db.query(Product.supplier).distinct().all() if r[0]]
+    all_shelves = db.query(Shelf).all()
+
+    return templates.TemplateResponse(request, "products_management.html", {
+        "products": products_list,
+        "categories": sorted(all_categories),
+        "suppliers": sorted(all_suppliers),
+        "shelves": all_shelves,
+        "q": q or "",
+        "selected_category": category or "",
+        "selected_supplier": supplier or "",
+        "selected_shelf_id": shelf_id or "",
+        "selected_status": filter_status or ""
+    })
+
 
 
 

@@ -139,6 +139,15 @@ For local development, an admin data purge tool has been created:
 3. **Reset Customers**: Resets customer loyalty totals (`total_points = 0`) to baseline.
 4. **Trigger Mechanism**: Access the reset button via the main **System Health Dashboard** (`/dashboard`). Prompts for user confirmation before executing a `POST` request to `/admin/reset-transactions`.
 
+## Product Management Module
+A complete ERP-style catalog and inventory manager is served at `/products-management`:
+1. **Manual Add Product**: Add new products with automatic fields (mrp, selling_price, brand, gst %, sub_category).
+2. **Shelf Recommendation**: Upon category selection, queries the database to recommend shelves matching the category zone, sorted by highest remaining capacity.
+3. **Stock Split & Distribution**: Splits the total quantity of new/imported products into shelf stock (limited by shelf capacity) and backroom warehouse stock automatically.
+4. **Bulk Imports**: Upload `.csv` or `.xlsx` files using a multi-step validation engine (Upload -> Validate -> Preview -> Commit). Unprovided shelves are assigned using the best recommended category matches.
+5. **Bulk Stock Update**: Adjust stock levels via file uploads or simple textbox lines (Format: `Barcode, NewQuantity, Reason`).
+6. **Inventory Adjustments**: Adjust stock levels (positive or negative) with reasons (*Damaged*, *Expired*, *Lost*, *Theft*, *Returned*) which create audit records in `adjustment_logs`.
+
 ## Access Points
 
 - **JSON Health API**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
@@ -147,6 +156,7 @@ For local development, an admin data purge tool has been created:
 - **Inventory Dashboard**: [http://127.0.0.1:8000/inventory-dashboard](http://127.0.0.1:8000/inventory-dashboard)
 - **Shelf Management Dashboard**: [http://127.0.0.1:8000/shelf-management](http://127.0.0.1:8000/shelf-management)
 - **Inventory Analytics Dashboard**: [http://127.0.0.1:8000/inventory-analytics](http://127.0.0.1:8000/inventory-analytics)
+- **Products Management Dashboard**: [http://127.0.0.1:8000/products-management](http://127.0.0.1:8000/products-management)
 - **Invoice Retrieval Page**: [http://127.0.0.1:8000/invoice/{invoice_number}](http://127.0.0.1:8000/invoice/INV-20260630-0001)
 - **Swagger interactive API documentation**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 

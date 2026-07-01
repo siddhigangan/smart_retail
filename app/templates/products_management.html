@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail - Product Management</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2E8B57; /* SeaGreen */
+            --primary-hover: #256e46;
+            --primary-glow: rgba(46, 139, 87, 0.12);
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --text-main: #0F172A;
+            --text-sec: #475569;
+            --text-mut: #94A3B8;
+            --danger: #EF4444;
+            --warning: #F59E0B;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 8px;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        /* Nav links button */
+        .btn-nav-back {
+            text-decoration: none;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .btn-nav-back:hover {
+            background-color: var(--primary-glow);
+        }
+
+        /* Top Action Bar */
+        .action-bar {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            background-color: #FFFFFF;
+            color: var(--text-sec);
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #F1F5F9;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-danger {
+            background-color: var(--danger);
+            color: #FFFFFF;
+            border-color: var(--danger);
+        }
+
+        .btn-danger:hover {
+            background-color: #DC2626;
+        }
+
+        /* Search & Filters Section */
+        .controls-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .controls-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            align-items: end;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-sec);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-input, select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #CBD5E1;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.85rem;
+            background-color: #FFFFFF;
+        }
+
+        .form-input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+        }
+
+        /* Product Table Wrapper */
+        .table-wrapper {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow-x: auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #F8FAFC;
+            padding: 12px 16px;
+            font-weight: 700;
+            color: var(--text-sec);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #F1F5F9;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #FAFAFA;
+        }
+
+        tr:hover td {
+            background-color: var(--primary-glow);
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            border-radius: 999px;
+            text-transform: uppercase;
+        }
+
+        .badge-green {
+            background-color: #DCFCE7;
+            color: #15803D;
+        }
+
+        .badge-red {
+            background-color: #FEE2E2;
+            color: #B91C1C;
+        }
+
+        /* Modals & Dialogs overlays */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(15, 23, 42, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            opacity: 1;
+            transition: all 0.2s;
+        }
+
+        .modal-overlay.hide {
+            display: none !important;
+        }
+
+        .modal-content {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            width: 720px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .modal-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .btn-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-sec);
+        }
+
+        /* Two Column Forms in Modals */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .grid-full {
+            grid-column: 1 / -1;
+        }
+
+        /* Recommendations dropdown styles */
+        .recommendation-card {
+            background-color: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .recommendation-card:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-glow);
+        }
+
+        .recommendation-card.selected {
+            border-color: var(--primary);
+            background-color: #DCFCE7;
+        }
+
+        /* Import preview table */
+        .preview-table-wrapper {
+            max-height: 250px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+        }
+
+        /* Profiles View Tab layout */
+        .profile-tabs {
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            color: var(--text-sec);
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .tab-pane {
+            display: none;
+            padding-top: 12px;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        /* Layout limits suited for 1366x768 screens */
+        @media (max-height: 768px) {
+            body {
+                padding: 15px;
+            }
+            .modal-content {
+                max-height: 95vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <div class="logo-area">
+                <div class="logo-icon">P</div>
+                <h1 class="logo-text">Products & Inventory Manager</h1>
+            </div>
+            <div style="display: flex; gap:12px;">
+                <a href="/inventory-analytics" class="btn-nav-back">Analytics Dashboard</a>
+                <a href="/dashboard" class="btn-nav-back">System Dashboard</a>
+            </div>
+        </header>
+
+        <!-- Top Action Bar -->
+        <section class="action-bar">
+            <button id="btn-manual-add" class="btn btn-primary">
+                ➕ Add Product
+            </button>
+            <button id="btn-import" class="btn">
+                📥 Import Products
+            </button>
+            <button id="btn-bulk-update" class="btn">
+                📦 Bulk Stock Update
+            </button>
+            <button id="btn-adjust" class="btn">
+                🛠 Inventory Adjustment
+            </button>
+            <a href="/api/products-management/template" class="btn">
+                📄 Download Product Template
+            </a>
+        </section>
+
+        <!-- Search & Filter Controls -->
+        <section class="controls-card">
+            <form class="controls-form" id="filters-form" method="GET" action="/products-management">
+                <div class="form-group">
+                    <label>Search catalog</label>
+                    <input type="text" name="q" class="form-input" placeholder="Barcode, Name, Category, Brand, Shelf..." value="{{ q }}">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select name="category">
+                        <option value="">-- All Categories --</option>
+                        {% for c in categories %}
+                            <option value="{{ c }}" {% if selected_category == c %}selected{% endif %}>{{ c }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Supplier</label>
+                    <select name="supplier">
+                        <option value="">-- All Suppliers --</option>
+                        {% for s in suppliers %}
+                            <option value="{{ s }}" {% if selected_supplier == s %}selected{% endif %}>{{ s }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Shelf Location</label>
+                    <select name="shelf_id">
+                        <option value="">-- All Shelves --</option>
+                        {% for sh in shelves %}
+                            <option value="{{ sh.id }}" {% if selected_shelf_id|string == sh.id|string %}selected{% endif %}>{{ sh.shelf_number }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Status Warning</label>
+                    <select name="filter_status">
+                        <option value="">-- All Statuses --</option>
+                        <option value="low_stock" {% if selected_status == 'low_stock' %}selected{% endif %}>Low Stock Warnings</option>
+                        <option value="out_of_stock" {% if selected_status == 'out_of_stock' %}selected{% endif %}>Out of Stock</option>
+                        <option value="expiring" {% if selected_status == 'expiring' %}selected{% endif %}>Expiring within 30 Days</option>
+                    </select>
+                </div>
+                <div style="display:flex; gap: 8px;">
+                    <button type="submit" class="btn btn-primary" style="padding: 9px 15px;">Search</button>
+                    <a href="/products-management" class="btn" style="padding: 9px 15px; text-decoration:none; text-align:center;">Reset</a>
+                </div>
+            </form>
+        </section>
+
+        <!-- Product Listings Table -->
+        <section class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Barcode</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Brand</th>
+                        <th>Shelf</th>
+                        <th style="text-align:center;">Shelf Qty</th>
+                        <th style="text-align:center;">Warehouse Qty</th>
+                        <th>Price</th>
+                        <th>MRP</th>
+                        <th>GST</th>
+                        <th>Supplier</th>
+                        <th>Status</th>
+                        <th style="text-align:center;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in products %}
+                    <tr>
+                        <td style="font-family: monospace; font-size: 0.8rem;">{{ p.barcode }}</td>
+                        <td style="font-weight: 600;">{{ p.name }}</td>
+                        <td>{{ p.category }}</td>
+                        <td>{{ p.brand }}</td>
+                        <td style="font-weight: 600; color: var(--primary);">{{ p.shelf_number }}</td>
+                        <td style="text-align:center;">{{ p.shelf_quantity }}</td>
+                        <td style="text-align:center;">{{ p.warehouse_quantity }}</td>
+                        <td>₹{{ "%.2f"|format(p.selling_price) }}</td>
+                        <td>₹{{ "%.2f"|format(p.mrp) }}</td>
+                        <td>{{ p.gst }}%</td>
+                        <td>{{ p.supplier }}</td>
+                        <td>
+                            {% if p.status == 'Low Stock' %}
+                                <span class="badge badge-red">Low Stock</span>
+                            {% else %}
+                                <span class="badge badge-green">Healthy</span>
+                            {% endif %}
+                        </td>
+                        <td style="text-align:center; display: flex; gap: 6px; justify-content: center;">
+                            <button onclick="viewProductProfile({{ p.id }})" class="btn" style="padding: 4px 8px; font-size: 0.75rem;">Profile</button>
+                            <button onclick="openEditModal({{ p.id }})" class="btn btn-primary" style="padding: 4px 8px; font-size: 0.75rem;">Edit</button>
+                            <button onclick="deleteProduct({{ p.id }})" class="btn btn-danger" style="padding: 4px 8px; font-size: 0.75rem;">Delete</button>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="13" style="text-align:center; padding: 30px; color: var(--text-mut);">
+                            No products match your active search filters.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <!-- MODAL 1: MANUAL PRODUCT ENTRY -->
+    <div id="modal-manual" class="modal-overlay hide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="manual-modal-title">Manual Product Entry</h3>
+                <button onclick="closeModal('modal-manual')" class="btn-close">&times;</button>
+            </div>
+            <form id="form-manual-product">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Barcode *</label>
+                        <input type="text" id="manual-barcode" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Name *</label>
+                        <input type="text" id="manual-name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Brand</label>
+                        <input type="text" id="manual-brand" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Category *</label>
+                        <select id="manual-category" required onchange="onCategorySelect()">
+                            <option value="">-- Choose Category --</option>
+                            <option value="Biscuits">Biscuits</option>
+                            <option value="Chips">Chips</option>
+                            <option value="Beverages">Beverages</option>
+                            <option value="Chocolates">Chocolates</option>
+                            <option value="Food">Food</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Sub Category</label>
+                        <input type="text" id="manual-sub-category" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Supplier</label>
+                        <input type="text" id="manual-supplier" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Unit (e.g. Kg, Pkt)</label>
+                        <input type="text" id="manual-unit" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Pack Size (e.g. 100g, 1L)</label>
+                        <input type="text" id="manual-pack-size" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>MRP *</label>
+                        <input type="number" step="0.01" id="manual-mrp" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Selling Price *</label>
+                        <input type="number" step="0.01" id="manual-selling-price" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Cost Price *</label>
+                        <input type="number" step="0.01" id="manual-cost-price" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>GST %</label>
+                        <input type="number" step="0.01" id="manual-gst" class="form-input" value="0.00">
+                    </div>
+                    <div class="form-group">
+                        <label>HSN Code</label>
+                        <input type="text" id="manual-hsn" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Reorder Level</label>
+                        <input type="number" id="manual-reorder" class="form-input" value="5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Expiry Tracking</label>
+                        <div style="display:flex; align-items:center; gap: 8px; margin-top: 8px;">
+                            <input type="checkbox" id="manual-expiry-req" onchange="toggleExpiryRequired()">
+                            <span>Expiry Required</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Expiry Date</label>
+                        <input type="date" id="manual-expiry-date" class="form-input" disabled>
+                    </div>
+
+                    <!-- Shelf Suggestion -->
+                    <div class="form-group grid-full" style="border-top:1px solid var(--border-color); padding-top:12px; margin-top:8px;">
+                        <label>Recommend Shelf Allocation</label>
+                        <span style="font-size:0.75rem; color:var(--text-sec); display:block; margin-bottom:6px;">Select a category to view recommended shelves</span>
+                        <div id="shelf-recommendations-list" style="display:flex; flex-direction:column; gap:6px;"></div>
+                        <input type="hidden" id="selected-shelf-id" required>
+                    </div>
+
+                    <!-- Quantity Distribution -->
+                    <div class="form-group">
+                        <label>Total Stock Quantity *</label>
+                        <input type="number" id="manual-quantity" class="form-input" value="0" required oninput="calculateStockSplit()">
+                    </div>
+                    <div class="form-group">
+                        <label>Shelf Max Capacity</label>
+                        <input type="number" id="manual-shelf-cap" class="form-input" value="20" required oninput="calculateStockSplit()">
+                    </div>
+                    <div class="form-group">
+                        <label>Shelf Stock Allocation</label>
+                        <input type="number" id="manual-shelf-allocated" class="form-input" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Backroom Warehouse Allocation</label>
+                        <input type="number" id="manual-wh-allocated" class="form-input" value="0" required>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:16px;">
+                    <button type="button" onclick="closeModal('modal-manual')" class="btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 2: BULK IMPORT -->
+    <div id="modal-import" class="modal-overlay hide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">📥 Import Products (CSV / XLSX)</h3>
+                <button onclick="closeModal('modal-import')" class="btn-close">&times;</button>
+            </div>
+            
+            <!-- Step 1: Upload -->
+            <div id="import-step-1" class="form-grid">
+                <div class="form-group grid-full">
+                    <label>Select CSV or Excel (.xlsx) file</label>
+                    <input type="file" id="import-file-input" class="form-input" accept=".csv, .xlsx">
+                </div>
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:16px;" class="grid-full">
+                    <button onclick="closeModal('modal-import')" class="btn">Cancel</button>
+                    <button onclick="validateImportFile()" class="btn btn-primary">Validate File</button>
+                </div>
+            </div>
+
+            <!-- Step 2/3: Validation Preview -->
+            <div id="import-step-2" class="hide" style="display:flex; flex-direction:column; gap:12px;">
+                <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px;">
+                    <div class="controls-card" style="padding:10px; background-color:#DCFCE7; text-align:center;">
+                        <h4 style="color:#15803D;">Valid Records</h4>
+                        <span id="import-count-valid" style="font-size:1.5rem; font-weight:800; color:#15803D;">0</span>
+                    </div>
+                    <div class="controls-card" style="padding:10px; background-color:#FEF9C3; text-align:center;">
+                        <h4 style="color:#A16207;">Duplicates</h4>
+                        <span id="import-count-dup" style="font-size:1.5rem; font-weight:800; color:#A16207;">0</span>
+                    </div>
+                    <div class="controls-card" style="padding:10px; background-color:#FEE2E2; text-align:center;">
+                        <h4 style="color:#B91C1C;">Invalid Records</h4>
+                        <span id="import-count-invalid" style="font-size:1.5rem; font-weight:800; color:#B91C1C;">0</span>
+                    </div>
+                </div>
+
+                <div class="preview-table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Row</th>
+                                <th>Barcode</th>
+                                <th>Name</th>
+                                <th>Errors</th>
+                            </tr>
+                        </thead>
+                        <tbody id="import-preview-tbody"></tbody>
+                    </table>
+                </div>
+
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:16px;">
+                    <button onclick="resetImportModal()" class="btn">Back</button>
+                    <button id="btn-confirm-import" onclick="commitImport()" class="btn btn-primary">Import Valid Records</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Summary -->
+            <div id="import-step-3" class="hide" style="display:flex; flex-direction:column; gap:16px;">
+                <div class="controls-card" style="text-align:center; border-color:#2E8B57; background-color:#F0FDF4; padding:20px;">
+                    <h3 style="color:#15803D; margin-bottom:10px;">Import Complete!</h3>
+                    <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; margin-top:10px;">
+                        <div>
+                            <span style="font-size:0.75rem; color:var(--text-sec); text-transform:uppercase;">Imported</span>
+                            <h4 id="summary-imported" style="font-size:1.25rem;">0</h4>
+                        </div>
+                        <div>
+                            <span style="font-size:0.75rem; color:var(--text-sec); text-transform:uppercase;">Skipped</span>
+                            <h4 id="summary-skipped" style="font-size:1.25rem;">0</h4>
+                        </div>
+                        <div>
+                            <span style="font-size:0.75rem; color:var(--text-sec); text-transform:uppercase;">Errors</span>
+                            <h4 id="summary-errors" style="font-size:1.25rem;">0</h4>
+                        </div>
+                        <div>
+                            <span style="font-size:0.75rem; color:var(--text-sec); text-transform:uppercase;">Duration</span>
+                            <h4 id="summary-duration" style="font-size:1.25rem;">0s</h4>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content:flex-end; gap:8px;">
+                    <button onclick="location.reload()" class="btn btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: BULK STOCK UPDATE -->
+    <div id="modal-bulk-update" class="modal-overlay hide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">📦 Bulk Stock Update</h3>
+                <button onclick="closeModal('modal-bulk-update')" class="btn-close">&times;</button>
+            </div>
+            <form id="form-bulk-update">
+                <div style="display:flex; flex-direction:column; gap:12px;">
+                    <label style="font-size:0.8rem; font-weight:700; color:var(--text-sec);">Upload CSV updates file (Format: Barcode, New Quantity, Reason)</label>
+                    <input type="file" id="bulk-update-file" class="form-input" accept=".csv">
+                    
+                    <div style="display:flex; justify-content:center; align-items:center; margin: 8px 0;">
+                        <span style="color:var(--text-mut);">-- OR --</span>
+                    </div>
+
+                    <div style="display:flex; flex-direction:column; gap:6px;">
+                        <label style="font-size:0.8rem; font-weight:700; color:var(--text-sec);">Manual input (one barcode update per line: Barcode,NewQuantity,Reason)</label>
+                        <textarea id="bulk-update-text" rows="5" class="form-input" placeholder="8901234567890,150,Supplier Delivery&#10;8901112223334,80,Stock Count Correction" style="resize:vertical; font-family:monospace;"></textarea>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:16px;">
+                    <button type="button" onclick="closeModal('modal-bulk-update')" class="btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Apply Updates</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 4: INVENTORY ADJUSTMENT -->
+    <div id="modal-adjust" class="modal-overlay hide">
+        <div class="modal-content" style="width:500px;">
+            <div class="modal-header">
+                <h3 class="modal-title">🛠 Inventory Adjustment</h3>
+                <button onclick="closeModal('modal-adjust')" class="btn-close">&times;</button>
+            </div>
+            <form id="form-adjust">
+                <div class="form-grid">
+                    <div class="form-group grid-full">
+                        <label>Barcode *</label>
+                        <input type="text" id="adjust-barcode" class="form-input" required>
+                    </div>
+                    <div class="form-group grid-full">
+                        <label>Quantity Delta * (e.g. -5 to reduce, 10 to increase)</label>
+                        <input type="number" id="adjust-delta" class="form-input" required>
+                    </div>
+                    <div class="form-group grid-full">
+                        <label>Reason *</label>
+                        <select id="adjust-reason" required>
+                            <option value="">-- Choose Reason --</option>
+                            <option value="Damaged">Damaged</option>
+                            <option value="Expired">Expired</option>
+                            <option value="Lost">Lost</option>
+                            <option value="Theft">Theft</option>
+                            <option value="Returned to Supplier">Returned to Supplier</option>
+                            <option value="Manual Correction">Manual Correction</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:16px;">
+                    <button type="button" onclick="closeModal('modal-adjust')" class="btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Register Adjustment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 5: COMPLETE PRODUCT PROFILE -->
+    <div id="modal-profile" class="modal-overlay hide">
+        <div class="modal-content" style="width:800px;">
+            <div class="modal-header">
+                <h3 class="modal-title">📄 Product Profile Profile</h3>
+                <button onclick="closeModal('modal-profile')" class="btn-close">&times;</button>
+            </div>
+            
+            <div class="profile-tabs">
+                <button class="tab-btn active" onclick="switchProfileTab('info')">Basic Info</button>
+                <button class="tab-btn" onclick="switchProfileTab('stock')">Stocks & Locations</button>
+                <button class="tab-btn" onclick="switchProfileTab('adjusts')">Adjustments Audit</button>
+                <button class="tab-btn" onclick="switchProfileTab('refills')">Refill Log</button>
+                <button class="tab-btn" onclick="switchProfileTab('sales')">Sales Log</button>
+            </div>
+
+            <!-- Tab content views -->
+            <div id="tab-info" class="tab-pane active">
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; font-size:0.9rem;">
+                    <div><strong>Barcode:</strong> <span id="prof-barcode"></span></div>
+                    <div><strong>Product Name:</strong> <span id="prof-name"></span></div>
+                    <div><strong>Brand:</strong> <span id="prof-brand"></span></div>
+                    <div><strong>Category:</strong> <span id="prof-category"></span></div>
+                    <div><strong>Sub Category:</strong> <span id="prof-sub-category"></span></div>
+                    <div><strong>Supplier:</strong> <span id="prof-supplier"></span></div>
+                    <div><strong>Unit / Pack Size:</strong> <span id="prof-pack"></span></div>
+                    <div><strong>MRP:</strong> <span id="prof-mrp"></span></div>
+                    <div><strong>Selling Price:</strong> <span id="prof-price"></span></div>
+                    <div><strong>Cost Price:</strong> <span id="prof-cost"></span></div>
+                    <div><strong>GST Rate:</strong> <span id="prof-gst"></span></div>
+                    <div><strong>HSN Code:</strong> <span id="prof-hsn"></span></div>
+                    <div><strong>Expiry Date:</strong> <span id="prof-expiry"></span></div>
+                    <div class="grid-full"><strong>Description:</strong> <p id="prof-desc" style="color:var(--text-sec); margin-top:4px;"></p></div>
+                </div>
+            </div>
+
+            <div id="tab-stock" class="tab-pane">
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; font-size:0.9rem;">
+                    <div><strong>Active Shelf Allocation:</strong> <span id="prof-shelf-num"></span></div>
+                    <div><strong>Shelf Max Capacity:</strong> <span id="prof-shelf-cap"></span></div>
+                    <div><strong>Current Shelf Quantity:</strong> <span id="prof-shelf-qty" style="font-weight:700; color:var(--primary);"></span></div>
+                    <div><strong>Warehouse Backroom Qty:</strong> <span id="prof-wh-qty" style="font-weight:700;"></span></div>
+                    <div><strong>Minimum Stock Alert:</strong> <span id="prof-shelf-min"></span></div>
+                </div>
+            </div>
+
+            <div id="tab-adjusts" class="tab-pane">
+                <div class="preview-table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Quantity Changed</th>
+                                <th>Before</th>
+                                <th>After</th>
+                                <th>Reason</th>
+                            </tr>
+                        </thead>
+                        <tbody id="prof-adjusts-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="tab-refills" class="tab-pane">
+                <div class="preview-table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Quantity Transferred</th>
+                                <th>Before Shelf</th>
+                                <th>After Shelf</th>
+                                <th>Before Backroom</th>
+                                <th>After Backroom</th>
+                            </tr>
+                        </thead>
+                        <tbody id="prof-refills-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="tab-sales" class="tab-pane">
+                <div class="preview-table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bill ID</th>
+                                <th>Quantity Sold</th>
+                                <th>Sold Price</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="prof-sales-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:flex-end; margin-top:16px;">
+                <button onclick="closeModal('modal-profile')" class="btn btn-primary">Close Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripting operations -->
+    <script>
+        // Modal toggling
+        const manualModal = document.getElementById('modal-manual');
+        const importModal = document.getElementById('modal-import');
+        const bulkUpdateModal = document.getElementById('modal-bulk-update');
+        const adjustModal = document.getElementById('modal-adjust');
+        const profileModal = document.getElementById('modal-profile');
+
+        let importValidRecords = [];
+        let editingProductId = null; // tracking if editing
+
+        document.getElementById('btn-manual-add').addEventListener('click', () => {
+            editingProductId = null;
+            document.getElementById('manual-modal-title').textContent = "Manual Product Entry";
+            document.getElementById('form-manual-product').reset();
+            document.getElementById('manual-barcode').disabled = false;
+            document.getElementById('shelf-recommendations-list').innerHTML = '';
+            document.getElementById('selected-shelf-id').value = '';
+            manualModal.classList.remove('hide');
+        });
+
+        document.getElementById('btn-import').addEventListener('click', () => {
+            resetImportModal();
+            importModal.classList.remove('hide');
+        });
+
+        document.getElementById('btn-bulk-update').addEventListener('click', () => {
+            document.getElementById('form-bulk-update').reset();
+            bulkUpdateModal.classList.remove('hide');
+        });
+
+        document.getElementById('btn-adjust').addEventListener('click', () => {
+            document.getElementById('form-adjust').reset();
+            adjustModal.classList.remove('hide');
+        });
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hide');
+        }
+
+        // Toggles Date disabled status
+        function toggleExpiryRequired() {
+            const req = document.getElementById('manual-expiry-req').checked;
+            const field = document.getElementById('manual-expiry-date');
+            field.disabled = !req;
+            if (!req) field.value = '';
+        }
+
+        // Automatic suggest query
+        async function onCategorySelect() {
+            const cat = document.getElementById('manual-category').value;
+            const recomDiv = document.getElementById('shelf-recommendations-list');
+            recomDiv.innerHTML = '<span>Searching shelves...</span>';
+            
+            try {
+                const response = await fetch(`/api/products-management/recommend-shelves?category=${cat}`);
+                const list = await response.json();
+                
+                recomDiv.innerHTML = '';
+                if (list.length === 0) {
+                    recomDiv.innerHTML = '<span>No matching shelves found.</span>';
+                    return;
+                }
+
+                list.forEach((shelf, idx) => {
+                    const card = document.createElement('div');
+                    card.className = 'recommendation-card';
+                    card.setAttribute('data-id', shelf.id);
+                    card.innerHTML = `
+                        <div>
+                            <strong>Floor ${shelf.floor_number} • ${shelf.aisle} • ${shelf.rack} • ${shelf.shelf_number}</strong>
+                            <div style="font-size:0.7rem; color:var(--text-sec); margin-top:2px;">Category Zone: ${shelf.category}</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <span style="font-size:0.75rem; font-weight:700;">${shelf.remaining_capacity} Remaining</span>
+                            <div style="font-size:0.7rem; margin-top:2px; font-weight:700; color: ${shelf.remaining_capacity > 0 ? 'var(--primary)' : 'var(--danger)'};">${shelf.status}</div>
+                        </div>
+                    `;
+                    card.addEventListener('click', () => {
+                        document.querySelectorAll('.recommendation-card').forEach(c => c.classList.remove('selected'));
+                        card.classList.add('selected');
+                        document.getElementById('selected-shelf-id').value = shelf.id;
+                    });
+                    recomDiv.appendChild(card);
+                    
+                    // Auto select the first recommendation
+                    if (idx === 0) {
+                        card.classList.add('selected');
+                        document.getElementById('selected-shelf-id').value = shelf.id;
+                    }
+                });
+            } catch (err) {
+                recomDiv.innerHTML = '<span>Failed to fetch suggestions.</span>';
+            }
+        }
+
+        // Stock Split Calculations
+        function calculateStockSplit() {
+            const qty = parseInt(document.getElementById('manual-quantity').value) || 0;
+            const cap = parseInt(document.getElementById('manual-shelf-cap').value) || 20;
+            
+            const shelfQty = Math.min(qty, cap);
+            const whQty = qty - shelfQty;
+            
+            document.getElementById('manual-shelf-allocated').value = shelfQty;
+            document.getElementById('manual-wh-allocated').value = whQty;
+        }
+
+        // POST MANUAL PRODUCT SUBMIT OR EDIT
+        document.getElementById('form-manual-product').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const shelfId = document.getElementById('selected-shelf-id').value;
+            if (!shelfId) {
+                alert("Please select a shelf allocation.");
+                return;
+            }
+
+            const payload = {
+                barcode: document.getElementById('manual-barcode').value,
+                name: document.getElementById('manual-name').value,
+                brand: document.getElementById('manual-brand').value,
+                category: document.getElementById('manual-category').value,
+                sub_category: document.getElementById('manual-sub-category').value,
+                supplier: document.getElementById('manual-supplier').value,
+                unit: document.getElementById('manual-unit').value,
+                pack_size: document.getElementById('manual-pack-size').value,
+                mrp: document.getElementById('manual-mrp').value,
+                selling_price: document.getElementById('manual-selling-price').value,
+                cost_price: document.getElementById('manual-cost-price').value,
+                gst: document.getElementById('manual-gst').value,
+                hsn_code: document.getElementById('manual-hsn').value,
+                reorder_level: document.getElementById('manual-reorder').value,
+                expiry_required: document.getElementById('manual-expiry-req').checked,
+                expiry_date: document.getElementById('manual-expiry-date').value || null,
+                shelf_id: shelfId,
+                quantity: document.getElementById('manual-quantity').value,
+                shelf_capacity: document.getElementById('manual-shelf-cap').value,
+                current_shelf_quantity: document.getElementById('manual-shelf-allocated').value,
+                warehouse_quantity: document.getElementById('manual-wh-allocated').value,
+                minimum_shelf_quantity: 5
+            };
+
+            try {
+                let url = "/api/products-management/manual-add";
+                let method = "POST";
+                
+                if (editingProductId) {
+                    url = `/api/products-management/edit/${editingProductId}`;
+                    method = "PUT";
+                }
+
+                const response = await fetch(url, {
+                    method: method,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                const result = await response.json();
+                if (response.ok && result.status === 'success') {
+                    alert(result.message);
+                    location.reload();
+                } else {
+                    alert("Error saving: " + (result.detail || "Failed operation"));
+                }
+            } catch (err) {
+                alert("Network error saving product.");
+            }
+        });
+
+        // STEP 1: VALIDATE UPLOAD FILE
+        async function validateImportFile() {
+            const input = document.getElementById('import-file-input');
+            if (input.files.length === 0) {
+                alert("Please select a file to validate.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", input.files[0]);
+
+            try {
+                const response = await fetch('/api/products-management/import/validate', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                if (response.ok && result.status === 'success') {
+                    importValidRecords = result.preview.valid;
+                    
+                    document.getElementById('import-count-valid').textContent = result.preview.valid.length;
+                    document.getElementById('import-count-dup').textContent = result.preview.duplicates.length;
+                    document.getElementById('import-count-invalid').textContent = result.preview.invalid.length;
+
+                    // Build rows preview
+                    const tbody = document.getElementById('import-preview-tbody');
+                    tbody.innerHTML = '';
+                    
+                    // Show all invalid / duplicate records first
+                    const showList = [...result.preview.duplicates, ...result.preview.invalid, ...result.preview.valid];
+                    
+                    if (showList.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:12px;">No items found.</td></tr>';
+                    }
+
+                    showList.forEach(rec => {
+                        const tr = document.createElement('tr');
+                        const isErr = rec.errors && rec.errors.length > 0;
+                        tr.style.backgroundColor = isErr ? '#FFF5F5' : '#F0FDF4';
+                        
+                        tr.innerHTML = `
+                            <td>${rec.row_index}</td>
+                            <td style="font-family:monospace;">${rec.barcode}</td>
+                            <td>${rec.name}</td>
+                            <td style="color:${isErr ? 'var(--danger)' : 'var(--primary)'}; font-weight:600;">
+                                ${isErr ? rec.errors.join(' | ') : '🟢 Valid'}
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+
+                    // Move to preview step
+                    document.getElementById('import-step-1').classList.add('hide');
+                    document.getElementById('import-step-2').classList.remove('hide');
+                    
+                    // Toggle import trigger button state
+                    document.getElementById('btn-confirm-import').disabled = (importValidRecords.length === 0);
+                } else {
+                    alert("Validation failed: " + (result.detail || "Invalid format"));
+                }
+            } catch (err) {
+                alert("Error validating file.");
+            }
+        }
+
+        // STEP 4: COMMIT IMPORT
+        async function commitImport() {
+            if (importValidRecords.length === 0) return;
+            
+            const btn = document.getElementById('btn-confirm-import');
+            btn.disabled = true;
+            btn.textContent = "Importing...";
+
+            try {
+                const response = await fetch('/api/products-management/import/commit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ valid_records: importValidRecords })
+                });
+                const result = await response.json();
+
+                if (response.ok && result.status === 'success') {
+                    document.getElementById('summary-imported').textContent = result.summary.imported;
+                    document.getElementById('summary-skipped').textContent = result.summary.skipped;
+                    document.getElementById('summary-errors').textContent = result.summary.errors;
+                    document.getElementById('summary-duration').textContent = result.summary.duration_seconds + "s";
+
+                    // Show final step
+                    document.getElementById('import-step-2').classList.add('hide');
+                    document.getElementById('import-step-3').classList.remove('hide');
+                } else {
+                    alert("Import failed: " + (result.detail || "Error committing records"));
+                    btn.disabled = false;
+                    btn.textContent = "Import Valid Records";
+                }
+            } catch (err) {
+                alert("Network error executing import.");
+                btn.disabled = false;
+                btn.textContent = "Import Valid Records";
+            }
+        }
+
+        function resetImportModal() {
+            document.getElementById('import-step-1').classList.remove('hide');
+            document.getElementById('import-step-2').classList.add('hide');
+            document.getElementById('import-step-3').classList.add('hide');
+            document.getElementById('import-file-input').value = '';
+            importValidRecords = [];
+        }
+
+        // POST BULK UPDATE SUBMIT
+        document.getElementById('form-bulk-update').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('bulk-update-file');
+            const textInput = document.getElementById('bulk-update-text').value;
+            
+            let updates = [];
+            
+            // Case 1: Pasted Text
+            if (textInput && textInput.trim()) {
+                const lines = textInput.split('\n');
+                lines.forEach(line => {
+                    const parts = line.split(',');
+                    if (parts.length >= 2) {
+                        updates.push({
+                            barcode: parts[0].trim(),
+                            new_quantity: parseInt(parts[1].trim()) || 0,
+                            reason: parts[2] ? parts[2].trim() : "Bulk Stock Update"
+                        });
+                    }
+                });
+            } 
+            // Case 2: File Upload (reads file client-side as text for fast uploads processing)
+            else if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const text = await file.text();
+                const lines = text.split('\n');
+                // Skip header line
+                for (let i = 1; i < lines.length; i++) {
+                    const line = lines[i];
+                    if (!line || !line.trim()) continue;
+                    const parts = line.split(',');
+                    if (parts.length >= 2) {
+                        updates.push({
+                            barcode: parts[0].trim(),
+                            new_quantity: parseInt(parts[1].trim()) || 0,
+                            reason: parts[2] ? parts[2].trim() : "Bulk Stock Update"
+                        });
+                    }
+                }
+            } else {
+                alert("Please upload a file or write manual stock adjustments.");
+                return;
+            }
+
+            if (updates.length === 0) {
+                alert("No valid stock entries parsed.");
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/products-management/bulk-update', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ updates })
+                });
+                const result = await response.json();
+                if (response.ok && result.status === 'success') {
+                    alert(result.message);
+                    location.reload();
+                } else {
+                    alert("Failed: " + (result.detail || "Invalid bulk payload"));
+                }
+            } catch (err) {
+                alert("Error sending bulk stock updates.");
+            }
+        });
+
+        // POST SINGLE ADJUSTMENT SUBMIT
+        document.getElementById('form-adjust').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const payload = {
+                barcode: document.getElementById('adjust-barcode').value,
+                quantity_changed: parseInt(document.getElementById('adjust-delta').value),
+                reason: document.getElementById('adjust-reason').value
+            };
+
+            try {
+                const response = await fetch('/api/products-management/adjust', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+                if (response.ok && result.status === 'success') {
+                    alert(result.message);
+                    location.reload();
+                } else {
+                    alert("Adjustment failed: " + (result.detail || "Error"));
+                }
+            } catch (err) {
+                alert("Network error lodging stock adjustments.");
+            }
+        });
+
+        // GET PROFILE LOADS
+        async function viewProductProfile(id) {
+            try {
+                const response = await fetch(`/api/products-management/profile/${id}`);
+                const data = await response.json();
+
+                // Basic Info
+                document.getElementById('prof-barcode').textContent = data.barcode;
+                document.getElementById('prof-name').textContent = data.name;
+                document.getElementById('prof-brand').textContent = data.brand;
+                document.getElementById('prof-category').textContent = data.category;
+                document.getElementById('prof-sub-category').textContent = data.sub_category;
+                document.getElementById('prof-supplier').textContent = data.supplier;
+                document.getElementById('prof-pack').textContent = `${data.unit} / ${data.pack_size}`;
+                document.getElementById('prof-mrp').textContent = `₹${data.mrp.toFixed(2)}`;
+                document.getElementById('prof-price').textContent = `₹${data.price.toFixed(2)}`;
+                document.getElementById('prof-cost').textContent = `₹${data.cost_price.toFixed(2)}`;
+                document.getElementById('prof-gst').textContent = `${data.gst}%`;
+                document.getElementById('prof-hsn').textContent = data.hsn_code;
+                document.getElementById('prof-expiry').textContent = data.expiry_date;
+                document.getElementById('prof-desc').textContent = data.description;
+
+                // Shelf Stock Info
+                if (data.shelf) {
+                    document.getElementById('prof-shelf-num').textContent = data.shelf.shelf_number;
+                    document.getElementById('prof-shelf-cap').textContent = data.shelf.shelf_capacity;
+                    document.getElementById('prof-shelf-qty').textContent = data.shelf.current_shelf_quantity;
+                    document.getElementById('prof-wh-qty').textContent = data.shelf.warehouse_quantity;
+                    document.getElementById('prof-shelf-min').textContent = data.shelf.minimum_shelf_quantity;
+                } else {
+                    document.getElementById('prof-shelf-num').textContent = "Unassigned";
+                    document.getElementById('prof-shelf-cap').textContent = "N/A";
+                    document.getElementById('prof-shelf-qty').textContent = "0";
+                    document.getElementById('prof-wh-qty').textContent = "0";
+                    document.getElementById('prof-shelf-min').textContent = "N/A";
+                }
+
+                // Adjustments Table
+                const adjTbody = document.getElementById('prof-adjusts-tbody');
+                adjTbody.innerHTML = '';
+                if (data.adjustment_history.length === 0) {
+                    adjTbody.innerHTML = '<tr><td colspan="5" style="text-align:center;">No stock adjustments found.</td></tr>';
+                }
+                data.adjustment_history.forEach(adj => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${adj.adjusted_at}</td>
+                        <td style="color:${adj.quantity_changed >= 0 ? 'var(--primary)' : 'var(--danger)'}; font-weight:700;">
+                            ${adj.quantity_changed >= 0 ? '+' : ''}${adj.quantity_changed}
+                        </td>
+                        <td>${adj.before_quantity}</td>
+                        <td>${adj.after_quantity}</td>
+                        <td>${adj.reason}</td>
+                    `;
+                    adjTbody.appendChild(tr);
+                });
+
+                // Refill Log Table
+                const refTbody = document.getElementById('prof-refills-tbody');
+                refTbody.innerHTML = '';
+                if (data.refill_history.length === 0) {
+                    refTbody.innerHTML = '<tr><td colspan="6" style="text-align:center;">No shelf refilling logs found.</td></tr>';
+                }
+                data.refill_history.forEach(ref => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${ref.refilled_at}</td>
+                        <td>+${ref.quantity_moved}</td>
+                        <td>${ref.before_quantity}</td>
+                        <td>${ref.after_quantity}</td>
+                        <td>${ref.before_quantity + ref.quantity_moved}</td>
+                        <td>${ref.after_quantity - ref.quantity_moved}</td>
+                    `;
+                    refTbody.appendChild(tr);
+                });
+
+                // Sales Table
+                const salesTbody = document.getElementById('prof-sales-tbody');
+                salesTbody.innerHTML = '';
+                if (data.sales_history.length === 0) {
+                    salesTbody.innerHTML = '<tr><td colspan="4" style="text-align:center;">No checkout transactions recorded.</td></tr>';
+                }
+                data.sales_history.forEach(sale => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>SR-${sale.bill_id.toString().padStart(6, '0')}</td>
+                        <td>${sale.quantity} Units</td>
+                        <td>₹${sale.unit_price.toFixed(2)}</td>
+                        <td>₹${sale.subtotal.toFixed(2)}</td>
+                    `;
+                    salesTbody.appendChild(tr);
+                });
+
+                switchProfileTab('info');
+                profileModal.classList.remove('hide');
+            } catch (err) {
+                alert("Failed to load product profile.");
+            }
+        }
+
+        function switchProfileTab(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            
+            // Set active
+            event.target.classList.add('active');
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+        }
+
+        // PUT EDIT DETAILS FILL
+        async function openEditModal(id) {
+            editingProductId = id;
+            document.getElementById('manual-modal-title').textContent = "Edit Product Details";
+            document.getElementById('form-manual-product').reset();
+            document.getElementById('manual-barcode').disabled = true; // barcode is immutable key
+            document.getElementById('shelf-recommendations-list').innerHTML = '';
+            document.getElementById('selected-shelf-id').value = '';
+
+            try {
+                const response = await fetch(`/api/products-management/profile/${id}`);
+                const data = await response.json();
+
+                document.getElementById('manual-barcode').value = data.barcode;
+                document.getElementById('manual-name').value = data.name;
+                document.getElementById('manual-brand').value = data.brand !== "N/A" ? data.brand : "";
+                document.getElementById('manual-category').value = data.category;
+                document.getElementById('manual-sub-category').value = data.sub_category !== "N/A" ? data.sub_category : "";
+                document.getElementById('manual-supplier').value = data.supplier !== "N/A" ? data.supplier : "";
+                
+                const splitPack = data.pack_size !== "N/A" ? data.pack_size : "";
+                document.getElementById('manual-unit').value = data.unit !== "N/A" ? data.unit : "";
+                document.getElementById('manual-pack-size').value = splitPack;
+                
+                document.getElementById('manual-mrp').value = data.mrp;
+                document.getElementById('manual-selling-price').value = data.price;
+                document.getElementById('manual-cost-price').value = data.cost_price;
+                document.getElementById('manual-gst').value = data.gst;
+                document.getElementById('manual-hsn').value = data.hsn_code !== "N/A" ? data.hsn_code : "";
+                document.getElementById('manual-reorder').value = data.reorder_level;
+
+                const hasExpiry = data.expiry_date !== "N/A";
+                document.getElementById('manual-expiry-req').checked = hasExpiry;
+                document.getElementById('manual-expiry-date').disabled = !hasExpiry;
+                if (hasExpiry) document.getElementById('manual-expiry-date').value = data.expiry_date;
+
+                if (data.shelf) {
+                    document.getElementById('manual-quantity').value = data.quantity;
+                    document.getElementById('manual-shelf-cap').value = data.shelf.shelf_capacity;
+                    document.getElementById('manual-shelf-allocated').value = data.shelf.current_shelf_quantity;
+                    document.getElementById('manual-wh-allocated').value = data.shelf.warehouse_quantity;
+                    document.getElementById('selected-shelf-id').value = data.shelf.id;
+                    
+                    // Render suggestions list containing active shelf
+                    await onCategorySelect();
+                    // Select it explicitly
+                    setTimeout(() => {
+                        const card = document.querySelector(`.recommendation-card[data-id="${data.shelf.id}"]`);
+                        if (card) {
+                            document.querySelectorAll('.recommendation-card').forEach(c => c.classList.remove('selected'));
+                            card.classList.add('selected');
+                            document.getElementById('selected-shelf-id').value = data.shelf.id;
+                        }
+                    }, 500);
+                } else {
+                    document.getElementById('manual-quantity').value = data.quantity;
+                    calculateStockSplit();
+                }
+
+                manualModal.classList.remove('hide');
+            } catch (err) {
+                alert("Failed to load details for editing.");
+            }
+        }
+
+        // DELETE PRODUCT TRIGGER
+        async function deleteProduct(id) {
+            const confirmed = confirm("Are you sure you want to delete this product? This will also delete its shelf inventory mappings. This action is permanent and cannot be undone.");
+            if (!confirmed) return;
+
+            try {
+                const response = await fetch(`/api/products-management/delete/${id}`, {
+                    method: 'DELETE'
+                });
+                const result = await response.json();
+                if (response.ok && result.status === 'success') {
+                    alert(result.message);
+                    location.reload();
+                } else {
+                    alert("Delete failed: " + (result.detail || "Error"));
+                }
+            } catch (err) {
+                alert("Network error trying to delete product.");
+            }
+        }
+    </script>
+</body>
+</html>

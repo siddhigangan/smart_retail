@@ -6,7 +6,8 @@ from app.models.shelf import Shelf
 from app.models.inventory_mapping import InventoryMapping
 from app.models.refill_log import RefillLog
 from app.models.invoice import Invoice
+from app.models.adjustment_log import AdjustmentLog
 
-__all__ = ["Product", "Bill", "BillItem", "Customer", "Shelf", "InventoryMapping", "RefillLog", "Invoice"]
+__all__ = ["Product", "Bill", "BillItem", "Customer", "Shelf", "InventoryMapping", "RefillLog", "Invoice", "AdjustmentLog"]
 
 
