@@ -84,6 +84,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // Bind event listener
     refreshBtn.addEventListener('click', checkSystemHealth);
 
+    // Reset button event handler
+    const resetBtn = document.getElementById('reset-btn');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', async () => {
+            const confirmed = confirm("Are you sure you want to reset all transactional history? This will delete all bills, items, invoices, and reset customer loyalty points. This action cannot be undone.");
+            if (!confirmed) return;
+
+            resetBtn.disabled = true;
+            const originalText = resetBtn.innerText;
+            resetBtn.innerText = "Resetting...";
+
+            try {
+                const response = await fetch('/admin/reset-transactions', {
+                    method: 'POST'
+                });
+                const result = await response.json();
+                if (response.ok && result.status === 'success') {
+                    alert(result.message);
+                    checkSystemHealth();
+                } else {
+                    alert("Error: " + (result.detail || "Failed to reset transactions"));
+                }
+            } catch (err) {
+                alert("Network error resetting transactional data.");
+            } finally {
+                resetBtn.disabled = false;
+                resetBtn.innerText = originalText;
+            }
+        });
+    }
+
     // Run health check initially on page load
     checkSystemHealth();
 });

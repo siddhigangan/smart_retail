@@ -106,19 +106,19 @@ class InventoryService:
         elif filter_type == "fast_moving":
             if not groups["has_sales"]:
                 placeholder_message = "Fast moving analytics will be available after sales history is generated."
-                products_query = products_query.filter(func.false())
+                products_query = products_query.filter(Product.id == -1)
             else:
                 products_query = products_query.filter(Product.id.in_(list(groups["fast_ids"])))
         elif filter_type == "slow_moving":
             if not groups["has_sales"]:
                 placeholder_message = "Slow moving analytics will be available after sales history is generated."
-                products_query = products_query.filter(func.false())
+                products_query = products_query.filter(Product.id == -1)
             else:
                 products_query = products_query.filter(Product.id.in_(list(groups["slow_ids"])))
         elif filter_type == "expiring_soon":
             if not has_expiry_date:
                 placeholder_message = "Expiry tracking will be available after expiry data is added."
-                products_query = products_query.filter(func.false())
+                products_query = products_query.filter(Product.id == -1)
             else:
                 products_query = products_query.filter(Product.expiry_date <= func.current_date() + 30)
         elif filter_type == "warehouse_empty":

@@ -229,6 +229,56 @@ def get_invoice_page(
         "loyalty_points": loyalty_points
     })
 
+@app.post("/admin/reset-transactions")
+def reset_transactions(db: Session = Depends(get_db)):
+    """
+    Clears all bills, bill items, invoices, local PDF receipts,
+    and resets customer loyalty points.
+    """
+    import os
+    import shutil
+    from fastapi import HTTPException
+    from app.models.bill import Bill, BillItem
+    from app.models.invoice import Invoice
+    from app.models.customer import Customer
+
+    try:
+        # Delete transactional data records
+        db.query(BillItem).delete()
+        db.query(Bill).delete()
+        db.query(Invoice).delete()
+
+        # Reset customer loyalty points
+        db.query(Customer).update({
+            Customer.total_points: 0
+        })
+
+        # Clear local static PDF invoice files
+        invoices_dir = "app/static/invoices"
+        if os.path.exists(invoices_dir):
+            for filename in os.listdir(invoices_dir):
+                file_path = os.path.join(invoices_dir, filename)
+                try:
+                    if os.path.isfile(file_path) or os.path.islink(file_path):
+                        os.unlink(file_path)
+                    elif os.path.isdir(file_path):
+                        shutil.rmtree(file_path)
+                except Exception as e:
+                    pass
+
+        db.commit()
+        return {
+            "status": "success",
+            "message": "All transactional data cleared successfully."
+        }
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to reset transactional data: {str(e)}"
+        )
+
+
 
 
 

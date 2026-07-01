@@ -132,6 +132,13 @@ The **Invoicing System** generates professional PDF invoices on checkout and log
 3. **Receipt Retrieval Screen**: The web route `/invoice/{invoice_number}` renders a corporate green/white template displaying the items table (quantities, prices, GST, discounts), loyalty points earned, a print window trigger, and a PDF downloader link.
 4. **Simulated WhatsApp Dispatch**: In development mode, the checkout system prints the outbound customer SMS/WhatsApp message containing the invoice url directly to the stdout console.
 
+## Reset Transactional Data
+For local development, an admin data purge tool has been created:
+1. **Clear Tables**: Deletes all records from `bill_items`, `bills`, and `invoices` tables.
+2. **Local Receipts Purge**: Deletes all generated PDF files under `app/static/invoices/`.
+3. **Reset Customers**: Resets customer loyalty totals (`total_points = 0`) to baseline.
+4. **Trigger Mechanism**: Access the reset button via the main **System Health Dashboard** (`/dashboard`). Prompts for user confirmation before executing a `POST` request to `/admin/reset-transactions`.
+
 ## Access Points
 
 - **JSON Health API**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
